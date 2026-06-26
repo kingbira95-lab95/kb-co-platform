@@ -1,8 +1,8 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
-  BarChart, Bar, LineChart, Line, ComposedChart, RadarChart, Radar, PolarGrid,
+  BarChart, Bar, LineChart, Line, RadarChart, Radar, PolarGrid,
   PolarAngleAxis, ReferenceLine,
 } from 'recharts';
 import { NGX_STOCKS } from '../data/stocks';
@@ -11,9 +11,9 @@ import { formatPrice, formatLargeNumber, getRiskColor, getScoreColor } from '../
 import { getStockAnalysis, getStockNews, getTechnicalAnalysis } from '../services/openrouter';
 import {
   ArrowLeft, TrendingUp, TrendingDown, Star, Download, ExternalLink,
-  Building2, Globe, Users, Calendar, FileText, RefreshCw, AlertCircle,
+  Building2, Globe, Users, Calendar, FileText, AlertCircle,
   BarChart3, DollarSign, Info, ChevronRight, Plus, Brain, Activity,
-  Newspaper, Target, Zap, Shield, Award, TrendingUp as TU,
+  Newspaper, Award,
 } from 'lucide-react';
 
 const BASE_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:8000';
@@ -73,8 +73,8 @@ function StatCard({ label, value, color, sub }: { label: string; value: string; 
   );
 }
 
-function TabBtn({ id, label, icon: Icon, active, onClick }: {
-  id: string; label: string; icon?: React.ElementType; active: boolean; onClick: () => void;
+function TabBtn({ label, icon: Icon, active, onClick }: {
+  id?: string; label: string; icon?: React.ElementType; active: boolean; onClick: () => void;
 }) {
   return (
     <button
@@ -254,12 +254,6 @@ export default function StockProfile({ symbol, onBack }: { symbol: string; onBac
     eps: stock.financials.eps[i],
   }));
 
-  // Price with YoY % for chart tooltip
-  const priceChartData = stock.priceHistory.map((p, i, arr) => ({
-    year: String(p.year),
-    price: p.price,
-    yoy: i > 0 ? ((p.price - arr[i - 1].price) / arr[i - 1].price * 100) : 0,
-  }));
 
   // Technicals computed data
   const techData = stock.priceHistory.map((p, i, arr) => {
@@ -424,7 +418,7 @@ export default function StockProfile({ symbol, onBack }: { symbol: string; onBac
           <TabBtn id="summary"     label="Summary"     icon={Activity}    active={tab === 'summary'}     onClick={() => setTab('summary')} />
           <TabBtn id="financials"  label="Financials"  icon={BarChart3}   active={tab === 'financials'}  onClick={() => setTab('financials')} />
           <TabBtn id="news"        label="News"        icon={Newspaper}   active={tab === 'news'}        onClick={() => setTab('news')} />
-          <TabBtn id="technicals"  label="Technicals"  icon={TU}          active={tab === 'technicals'}  onClick={() => setTab('technicals')} />
+          <TabBtn id="technicals"  label="Technicals"  icon={TrendingUp}   active={tab === 'technicals'}  onClick={() => setTab('technicals')} />
         </div>
 
         {/* ═══════════════════════════════════════════════════════════════════
@@ -1043,7 +1037,7 @@ export default function StockProfile({ symbol, onBack }: { symbol: string; onBac
                     <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" vertical={false} />
                     <XAxis dataKey="year" tick={{ fontSize: 10, fill: '#6b7280' }} axisLine={false} tickLine={false} />
                     <YAxis tick={{ fontSize: 9, fill: '#6b7280' }} axisLine={false} tickLine={false} width={35} tickFormatter={v => `${v}%`} />
-                    <Tooltip formatter={(v: number) => [`${v.toFixed(1)}%`, 'Return']}
+                    <Tooltip formatter={(v) => [typeof v === 'number' ? `${v.toFixed(1)}%` : `${v}%`, 'Return']}
                       contentStyle={{ background: '#0D1530', border: '1px solid rgba(212,175,55,0.2)', borderRadius: 8 }} />
                     <ReferenceLine y={0} stroke="rgba(255,255,255,0.2)" />
                     <Bar dataKey="yoy" name="Annual Return" radius={[3,3,0,0]}>
