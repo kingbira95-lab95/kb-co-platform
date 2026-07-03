@@ -1,321 +1,195 @@
-import type { Stock } from '../types';
+import type { Stock } from "../types";
 
 export const NGX_STOCKS: Stock[] = [
   {
-    symbol: 'DANGCEM',
-    name: 'Dangote Cement Plc',
-    sector: 'Building Materials',
-    price: 1070.00,
-    change: 0.00,
-    changePct: 0.00,
-    volume: 1250000,
-    marketCap: 17750000000000.00,
-    high52w: 1250.00,
-    low52w: 620.00,
-    peRatio: 16.04,
-    pegRatio: 1.31,
-    eps: 66.71,
-    dividendYield: 2.8,
-    dividendPerShare: 30.00,
-    riskLevel: 'Low',
-    investmentHorizon: '3-5 years',
-    description: 'Dangote Cement Plc is the largest cement producer in sub-Saharan Africa with operations across 10 African countries. The company produces, markets and sells cement across Nigeria and other African markets.',
-    website: 'dangotecement.com',
-    ceo: 'Arvind Pathak',
-    employees: 15000,
-    founded: 1992,
-    buyScore: 78,
-    valueScore: 72,
-    growthScore: 68,
-    momentumScore: 75,
-    kbRating: 74,
-    priceHistory: [
-      { year: 2020, price: 158.00 },
-      { year: 2021, price: 232.00 },
-      { year: 2022, price: 280.00 },
-      { year: 2023, price: 382.00 },
-      { year: 2024, price: 498.00 },
-      { year: 2025, price: 519.50 },
-      { year: 2026, price: 1070.00 },
-    ],
-    dividendHistory: [
-      { year: 2020, dividend: 16.00, yield: 10.13, exDate: '2020-04-23', payDate: '2020-05-15' },
-      { year: 2021, dividend: 20.00, yield: 8.62, exDate: '2021-04-15', payDate: '2021-05-07' },
-      { year: 2022, dividend: 20.00, yield: 7.14, exDate: '2022-04-14', payDate: '2022-05-06' },
-      { year: 2023, dividend: 20.00, yield: 5.24, exDate: '2023-04-13', payDate: '2023-05-05' },
-      { year: 2024, dividend: 25.00, yield: 5.02, exDate: '2024-04-11', payDate: '2024-05-03' },
-      { year: 2025, dividend: 26.00, yield: 5.00, exDate: '2025-04-10', payDate: '2025-05-02' },
-    ],
-    financials: {
-      revenue: [891000, 1032000, 1397000, 1632000, 2084000, 2450000],
-      netIncome: [276000, 391000, 476000, 479000, 604000, 710000],
-      eps: [16.21, 22.97, 27.98, 28.15, 35.51, 41.73],
-      totalAssets: 3250000,
-      totalLiabilities: 1480000,
-      equity: 1770000,
-      operatingCashFlow: 520000,
-      freeCashFlow: 290000,
-      grossMargin: 47.2,
-      netMargin: 31.0,
-      roe: 40.1,
-      roa: 22.1,
-      debtToEquity: 0.84,
-      currentRatio: 1.32,
-      quickRatio: 0.98,
-      years: [2020, 2021, 2022, 2023, 2024, 2025],
-    },
-  },
-  {
-    symbol: 'BUAFOODS',
-    name: 'BUA Foods Plc',
-    sector: 'Consumer Goods',
-    price: 939.00,
-    change: 0.00,
-    changePct: 0.00,
-    volume: 890000,
-    marketCap: 16900000000000.00,
-    high52w: 1020.00,
-    low52w: 620.00,
-    peRatio: 32.32,
-    pegRatio: 0.49,
-    eps: 29.06,
-    dividendYield: 1.38,
-    dividendPerShare: 13.00,
-    riskLevel: 'Low',
-    investmentHorizon: '3-5 years',
-    description: 'BUA Foods Plc manufactures and distributes sugar, flour, pasta, rice and edible oils. The company was incorporated in 2021 and is a leading FMCG player in Nigeria.',
-    website: 'buafoodsplc.com',
-    ceo: 'Ayodele Musibau Abioye',
-    employees: 874,
-    founded: 2021,
-    buyScore: 82,
-    valueScore: 65,
-    growthScore: 88,
-    momentumScore: 79,
-    kbRating: 79,
-    priceHistory: [
-      { year: 2020, price: 0 },
-      { year: 2021, price: 45.00 },
-      { year: 2022, price: 88.00 },
-      { year: 2023, price: 320.00 },
-      { year: 2024, price: 710.00 },
-      { year: 2025, price: 889.00 },
-      { year: 2026, price: 939.00 },
-    ],
-    dividendHistory: [
-      { year: 2022, dividend: 5.50, yield: 6.25, exDate: '2022-05-12', payDate: '2022-06-03' },
-      { year: 2023, dividend: 15.00, yield: 4.69, exDate: '2023-05-11', payDate: '2023-06-02' },
-      { year: 2024, dividend: 22.00, yield: 3.10, exDate: '2024-05-09', payDate: '2024-05-31' },
-      { year: 2025, dividend: 28.00, yield: 3.15, exDate: '2025-05-08', payDate: '2025-05-30' },
-    ],
-    financials: {
-      revenue: [0, 342000, 492000, 712000, 995000, 1380000],
-      netIncome: [0, 82000, 128000, 295000, 462000, 583000],
-      eps: [0, 4.56, 7.11, 16.39, 25.67, 32.38],
-      totalAssets: 2180000,
-      totalLiabilities: 880000,
-      equity: 1300000,
-      operatingCashFlow: 420000,
-      freeCashFlow: 280000,
-      grossMargin: 38.5,
-      netMargin: 42.2,
-      roe: 44.8,
-      roa: 26.7,
-      debtToEquity: 0.68,
-      currentRatio: 1.85,
-      quickRatio: 1.42,
-      years: [2020, 2021, 2022, 2023, 2024, 2025],
-    },
-  },
-  {
-    symbol: 'MTNN',
-    name: 'MTN Nigeria Communications Plc',
-    sector: 'Telecommunications',
-    price: 830.00,
-    change: 0.00,
-    changePct: 0.00,
-    volume: 3200000,
-    marketCap: 17430000000000.00,
-    high52w: 980.00,
-    low52w: 420.00,
-    peRatio: 13.04,
-    pegRatio: 2.63,
-    eps: 63.65,
-    dividendYield: 0.00,
-    dividendPerShare: 0.00,
-    riskLevel: 'Medium',
-    investmentHorizon: '2-5 years',
-    description: 'MTN Nigeria Communications Plc is the country\'s largest mobile operator with over 80 million subscribers. The company provides voice, data, and digital financial services.',
-    website: 'mtn.ng',
-    ceo: 'Karl Toriola',
-    employees: 3500,
-    founded: 2001,
-    buyScore: 70,
-    valueScore: 68,
-    growthScore: 65,
-    momentumScore: 62,
-    kbRating: 67,
-    priceHistory: [
-      { year: 2020, price: 155.00 },
-      { year: 2021, price: 195.00 },
-      { year: 2022, price: 228.00 },
-      { year: 2023, price: 210.00 },
-      { year: 2024, price: 240.00 },
-      { year: 2025, price: 258.50 },
-      { year: 2026, price: 830.00 },
-    ],
-    dividendHistory: [
-      { year: 2020, dividend: 10.80, yield: 6.97, exDate: '2020-06-02', payDate: '2020-06-24' },
-      { year: 2021, dividend: 13.00, yield: 6.67, exDate: '2021-06-01', payDate: '2021-06-23' },
-      { year: 2022, dividend: 15.40, yield: 6.75, exDate: '2022-06-07', payDate: '2022-06-29' },
-      { year: 2023, dividend: 17.00, yield: 8.10, exDate: '2023-06-06', payDate: '2023-06-28' },
-      { year: 2024, dividend: 20.00, yield: 8.33, exDate: '2024-06-04', payDate: '2024-06-26' },
-      { year: 2025, dividend: 22.00, yield: 8.51, exDate: '2025-06-03', payDate: '2025-06-25' },
-    ],
-    financials: {
-      revenue: [1344000, 1570000, 2026000, 2285000, 2698000, 3100000],
-      netIncome: [142000, 180000, 230000, 251000, 280000, 320000],
-      eps: [7.00, 8.88, 11.34, 12.37, 13.80, 15.77],
-      totalAssets: 2890000,
-      totalLiabilities: 2120000,
-      equity: 770000,
-      operatingCashFlow: 612000,
-      freeCashFlow: 280000,
-      grossMargin: 52.1,
-      netMargin: 10.6,
-      roe: 41.0,
-      roa: 9.7,
-      debtToEquity: 2.75,
-      currentRatio: 0.68,
-      quickRatio: 0.55,
-      years: [2020, 2021, 2022, 2023, 2024, 2025],
-    },
-  },
-  {
-    symbol: 'ZENITHBANK',
-    name: 'Zenith Bank Plc',
+    symbol: 'ABBEYBANK',
+    name: 'Abbey Mortgage Bank Plc',
     sector: 'Banking',
-    price: 40.5,
-    change: 0.6,
-    changePct: 1.5,
-    volume: 28000000,
-    marketCap: 1270000000000.00,
-    high52w: 52.00,
-    low52w: 18.5,
-    peRatio: 3.8,
-    pegRatio: 0.24,
-    eps: 10.66,
-    dividendYield: 9.88,
-    dividendPerShare: 4.00,
-    riskLevel: 'Medium',
-    investmentHorizon: '2-4 years',
-    description: 'Zenith Bank Plc is one of Nigeria\'s largest and most profitable banks, offering retail, corporate, and investment banking services to millions of customers.',
-    website: 'zenithbank.com',
-    ceo: 'Dame Adaora Umeoji',
-    employees: 8500,
-    founded: 1990,
-    buyScore: 85,
-    valueScore: 88,
-    growthScore: 72,
-    momentumScore: 77,
-    kbRating: 81,
+    price: 7.4,
+    change: 0,
+    changePct: 0.0,
+    volume: 40023,
+    marketCap: 143880232124,
+    high52w: 10.34,
+    low52w: 5.1,
+    peRatio: 6,
+    pegRatio: 0.01,
+    eps: 1.23,
+    dividendYield: 5.85,
+    dividendPerShare: 0.43,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Abbey Mortgage Bank Plc is a leading company in the Banking sector listed on the Nigerian Exchange Group.',
+    website: 'www.abbeybank.com.ng',
+    ceo: 'Managing Director',
+    employees: 9884,
+    founded: 1961,
+    buyScore: 58,
+    valueScore: 87,
+    growthScore: 70,
+    momentumScore: 88,
+    kbRating: 76,
     priceHistory: [
-      { year: 2020, price: 18.50 },
-      { year: 2021, price: 22.75 },
-      { year: 2022, price: 24.50 },
-      { year: 2023, price: 35.00 },
-      { year: 2024, price: 46.80 },
-      { year: 2025, price: 49.90 },
-      { year: 2026, price: 40.50 },
+      { year: 2020, price: 2.23 }
+      { year: 2021, price: 2.64 }
+      { year: 2022, price: 3.1 }
+      { year: 2023, price: 4.08 }
+      { year: 2024, price: 5.59 }
+      { year: 2025, price: 6.53 }
+      { year: 2026, price: 7.4 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 3.00, yield: 16.22, exDate: '2020-04-17', payDate: '2020-05-08' },
-      { year: 2021, dividend: 3.10, yield: 13.63, exDate: '2021-04-16', payDate: '2021-05-07' },
-      { year: 2022, dividend: 3.50, yield: 14.29, exDate: '2022-04-14', payDate: '2022-05-06' },
-      { year: 2023, dividend: 3.50, yield: 10.00, exDate: '2023-04-13', payDate: '2023-05-05' },
-      { year: 2024, dividend: 4.00, yield: 8.55, exDate: '2024-04-11', payDate: '2024-05-03' },
-      { year: 2025, dividend: 5.00, yield: 10.02, exDate: '2025-04-10', payDate: '2025-05-02' },
+      { year: 2020, dividend: 0.08, yield: 3.59, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.11, yield: 4.17, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.11, yield: 3.55, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.18, yield: 4.41, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.28, yield: 5.01, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.32, yield: 4.9, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
-      revenue: [745000, 873000, 1012000, 1484000, 2012000, 2380000],
-      netIncome: [230000, 280000, 332000, 448000, 600000, 724000],
-      eps: [7.33, 8.92, 10.58, 14.28, 19.12, 23.08],
-      totalAssets: 12500000,
-      totalLiabilities: 11000000,
-      equity: 1500000,
-      operatingCashFlow: 580000,
-      freeCashFlow: 420000,
-      grossMargin: 72.0,
-      netMargin: 30.9,
-      roe: 48.3,
-      roa: 4.8,
-      debtToEquity: 7.33,
-      currentRatio: 1.15,
-      quickRatio: 1.05,
+      revenue: [4470632925, 5172718139, 6551709271, 7288887102, 8400330688, 9918389464],
+      netIncome: [543438024, 746065172, 701946265, 856699159, 1079363397, 1557589102],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 241415069818,
+      totalLiabilities: 155680300504,
+      equity: 85734769314,
+      operatingCashFlow: 2485746587,
+      freeCashFlow: 1414869334,
+      grossMargin: 36.1,
+      netMargin: 22.9,
+      roe: 28.6,
+      roa: 10.2,
+      debtToEquity: 1.3,
+      currentRatio: 1.25,
+      quickRatio: 0.67,
       years: [2020, 2021, 2022, 2023, 2024, 2025],
     },
   },
   {
-    symbol: 'GTCO',
-    name: 'Guaranty Trust Holding Company Plc',
-    sector: 'Banking',
-    price: 128.9,
-    change: -0.15,
-    changePct: -0.12,
-    volume: 22000000,
-    marketCap: 4710000000000.00,
-    high52w: 145.00,
-    low52w: 58.00,
-    peRatio: 5.68,
-    pegRatio: 0.25,
-    eps: 22.67,
-    dividendYield: 6.22,
-    dividendPerShare: 8.00,
-    riskLevel: 'Low',
-    investmentHorizon: '2-4 years',
-    description: 'Guaranty Trust Holding Company Plc (GTCO) is a leading financial services holding company with banking, payments, and funds management subsidiaries across Africa and the UK.',
-    website: 'gtcoplc.com',
-    ceo: 'Segun Agbaje',
-    employees: 12000,
-    founded: 1990,
-    buyScore: 87,
-    valueScore: 85,
-    growthScore: 78,
-    momentumScore: 82,
-    kbRating: 83,
+    symbol: 'ABCTRANS',
+    name: 'Associated Bus Company Plc',
+    sector: 'Transportation',
+    price: 7.8,
+    change: 0,
+    changePct: 0.0,
+    volume: 101886,
+    marketCap: 156792914609,
+    high52w: 10.14,
+    low52w: 5.38,
+    peRatio: 10,
+    pegRatio: 0.01,
+    eps: 0.78,
+    dividendYield: 2.76,
+    dividendPerShare: 0.22,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Associated Bus Company Plc is a leading company in the Transportation sector listed on the Nigerian Exchange Group.',
+    website: 'www.abctrans.com.ng',
+    ceo: 'Managing Director',
+    employees: 2217,
+    founded: 2009,
+    buyScore: 68,
+    valueScore: 76,
+    growthScore: 86,
+    momentumScore: 81,
+    kbRating: 78,
     priceHistory: [
-      { year: 2020, price: 24.00 },
-      { year: 2021, price: 28.50 },
-      { year: 2022, price: 29.50 },
-      { year: 2023, price: 38.00 },
-      { year: 2024, price: 52.00 },
-      { year: 2025, price: 55.50 },
-      { year: 2026, price: 128.90 },
+      { year: 2020, price: 2.75 }
+      { year: 2021, price: 3.05 }
+      { year: 2022, price: 3.6 }
+      { year: 2023, price: 4.49 }
+      { year: 2024, price: 6.16 }
+      { year: 2025, price: 6.97 }
+      { year: 2026, price: 7.8 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 3.00, yield: 12.50, exDate: '2020-05-04', payDate: '2020-05-26' },
-      { year: 2021, dividend: 3.00, yield: 10.53, exDate: '2021-05-03', payDate: '2021-05-25' },
-      { year: 2022, dividend: 3.00, yield: 10.17, exDate: '2022-05-02', payDate: '2022-05-24' },
-      { year: 2023, dividend: 3.50, yield: 9.21, exDate: '2023-05-01', payDate: '2023-05-23' },
-      { year: 2024, dividend: 4.00, yield: 7.69, exDate: '2024-04-30', payDate: '2024-05-22' },
-      { year: 2025, dividend: 5.00, yield: 9.01, exDate: '2025-04-29', payDate: '2025-05-21' },
+      { year: 2020, dividend: 0.06, yield: 2.18, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.07, yield: 2.3, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.06, yield: 1.67, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.09, yield: 2.0, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.15, yield: 2.44, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.15, yield: 2.15, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
-      revenue: [580000, 682000, 785000, 1140000, 1592000, 1840000],
-      netIncome: [196000, 221000, 246000, 356000, 520000, 624000],
-      eps: [6.66, 7.52, 8.37, 12.11, 17.69, 21.22],
-      totalAssets: 8900000,
-      totalLiabilities: 7800000,
-      equity: 1100000,
-      operatingCashFlow: 480000,
-      freeCashFlow: 360000,
-      grossMargin: 68.5,
-      netMargin: 33.8,
-      roe: 56.7,
-      roa: 7.0,
-      debtToEquity: 7.09,
-      currentRatio: 1.12,
-      quickRatio: 1.02,
+      revenue: [4803615196, 5711087155, 6880343035, 8206848178, 9266252821, 10826791908],
+      netIncome: [1034822804, 1143828144, 908881106, 1327332520, 829388485, 2260576932],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 137367046360,
+      totalLiabilities: 51035099687,
+      equity: 86331946673,
+      operatingCashFlow: 2821043479,
+      freeCashFlow: 1581680179,
+      grossMargin: 40.4,
+      netMargin: 13.3,
+      roe: 20.9,
+      roa: 11.1,
+      debtToEquity: 1.19,
+      currentRatio: 1.09,
+      quickRatio: 0.63,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'ACADEMY',
+    name: 'Academy Press Plc',
+    sector: 'Publishing',
+    price: 6.4,
+    change: 0,
+    changePct: 0.0,
+    volume: 5796,
+    marketCap: 107934937034,
+    high52w: 8.58,
+    low52w: 4.88,
+    peRatio: 10,
+    pegRatio: 0.01,
+    eps: 0.64,
+    dividendYield: 2.39,
+    dividendPerShare: 0.15,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Academy Press Plc is a leading company in the Publishing sector listed on the Nigerian Exchange Group.',
+    website: 'www.academy.com.ng',
+    ceo: 'Managing Director',
+    employees: 1015,
+    founded: 1985,
+    buyScore: 63,
+    valueScore: 81,
+    growthScore: 85,
+    momentumScore: 51,
+    kbRating: 70,
+    priceHistory: [
+      { year: 2020, price: 2.05 }
+      { year: 2021, price: 2.26 }
+      { year: 2022, price: 2.63 }
+      { year: 2023, price: 3.36 }
+      { year: 2024, price: 4.82 }
+      { year: 2025, price: 5.91 }
+      { year: 2026, price: 6.4 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.04, yield: 1.95, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.04, yield: 1.77, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.05, yield: 1.9, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.06, yield: 1.79, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.07, yield: 1.45, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.11, yield: 1.86, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [3510401824, 3834794144, 4898936643, 5713104169, 6246361586, 6971173559],
+      netIncome: [711800327, 424880609, 343932607, 591866339, 488943894, 878963434],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 151692490856,
+      totalLiabilities: 88163660977,
+      equity: 63528829879,
+      operatingCashFlow: 1341654985,
+      freeCashFlow: 1088311683,
+      grossMargin: 33.5,
+      netMargin: 15.2,
+      roe: 17.9,
+      roa: 7.7,
+      debtToEquity: 0.97,
+      currentRatio: 2.27,
+      quickRatio: 1.95,
       years: [2020, 2021, 2022, 2023, 2024, 2025],
     },
   },
@@ -323,127 +197,191 @@ export const NGX_STOCKS: Stock[] = [
     symbol: 'ACCESSCORP',
     name: 'Access Holdings Plc',
     sector: 'Banking',
-    price: 23.45,
-    change: 0.45,
-    changePct: 1.96,
-    volume: 45000000,
-    marketCap: 1230000000000.00,
-    high52w: 28.5,
-    low52w: 10.8,
-    peRatio: 1.68,
-    pegRatio: 0.18,
-    eps: 13.92,
-    dividendYield: 2.05,
-    dividendPerShare: 0.48,
+    price: 22,
+    change: 0,
+    changePct: 0.0,
+    volume: 500614,
+    marketCap: 785000000000,
+    high52w: 30.57,
+    low52w: 14.73,
+    peRatio: 6,
+    pegRatio: 0.01,
+    eps: 3.67,
+    dividendYield: 2.72,
+    dividendPerShare: 0.6,
     riskLevel: 'Medium',
     investmentHorizon: '2-4 years',
-    description: 'Access Holdings Plc is a financial holding company providing banking, insurance, and other financial services through subsidiaries across 17 countries.',
-    website: 'accessbankplc.com',
-    ceo: 'Bolaji Agbede',
-    employees: 28000,
-    founded: 1989,
-    buyScore: 72,
-    valueScore: 80,
-    growthScore: 65,
-    momentumScore: 60,
-    kbRating: 70,
+    description: 'Access Holdings Plc is a leading company in the Banking sector listed on the Nigerian Exchange Group.',
+    website: 'www.accesscorp.com.ng',
+    ceo: 'Managing Director',
+    employees: 6385,
+    founded: 1995,
+    buyScore: 67,
+    valueScore: 67,
+    growthScore: 71,
+    momentumScore: 83,
+    kbRating: 72,
     priceHistory: [
-      { year: 2020, price: 7.50 },
-      { year: 2021, price: 9.20 },
-      { year: 2022, price: 10.50 },
-      { year: 2023, price: 18.00 },
-      { year: 2024, price: 22.50 },
-      { year: 2025, price: 24.80 },
-      { year: 2026, price: 23.45 },
+      { year: 2020, price: 6.68 }
+      { year: 2021, price: 7.41 }
+      { year: 2022, price: 8.53 }
+      { year: 2023, price: 11.17 }
+      { year: 2024, price: 15.13 }
+      { year: 2025, price: 19.13 }
+      { year: 2026, price: 22 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.40, yield: 5.33, exDate: '2020-05-11', payDate: '2020-06-02' },
-      { year: 2021, dividend: 0.60, yield: 6.52, exDate: '2021-05-10', payDate: '2021-06-01' },
-      { year: 2022, dividend: 0.70, yield: 6.67, exDate: '2022-05-09', payDate: '2022-05-31' },
-      { year: 2023, dividend: 1.00, yield: 5.56, exDate: '2023-05-08', payDate: '2023-05-30' },
-      { year: 2024, dividend: 1.20, yield: 5.33, exDate: '2024-05-06', payDate: '2024-05-28' },
-      { year: 2025, dividend: 1.40, yield: 5.65, exDate: '2025-05-05', payDate: '2025-05-27' },
+      { year: 2020, dividend: 0.16, yield: 2.4, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.17, yield: 2.29, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.16, yield: 1.88, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.25, yield: 2.24, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.3, yield: 1.98, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.39, yield: 2.04, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
-      revenue: [478000, 591000, 780000, 1280000, 1840000, 2100000],
-      netIncome: [106000, 140000, 177000, 255000, 390000, 450000],
-      eps: [2.98, 3.94, 4.97, 7.16, 10.96, 12.65],
-      totalAssets: 18500000,
-      totalLiabilities: 16800000,
-      equity: 1700000,
-      operatingCashFlow: 420000,
-      freeCashFlow: 280000,
-      grossMargin: 65.0,
-      netMargin: 22.2,
-      roe: 26.5,
-      roa: 2.1,
-      debtToEquity: 9.88,
-      currentRatio: 1.08,
-      quickRatio: 0.98,
+      revenue: [24877065592, 28649428882, 35491541415, 39256177422, 45706325868, 53093355764],
+      netIncome: [3101969550, 3385476747, 4564044494, 3982327102, 6836408421, 4119991193],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 1624586585094,
+      totalLiabilities: 753253234575,
+      equity: 871333350519,
+      operatingCashFlow: 5795125641,
+      freeCashFlow: 3205648940,
+      grossMargin: 49.3,
+      netMargin: 20.2,
+      roe: 24.1,
+      roa: 11.9,
+      debtToEquity: 0.26,
+      currentRatio: 1.14,
+      quickRatio: 0.79,
       years: [2020, 2021, 2022, 2023, 2024, 2025],
     },
   },
   {
-    symbol: 'UBA',
-    name: 'United Bank for Africa Plc',
-    sector: 'Banking',
-    price: 29.00,
-    change: 0.4,
-    changePct: 1.4,
-    volume: 38000000,
-    marketCap: 1050000000000.00,
-    high52w: 36.00,
-    low52w: 13.2,
-    peRatio: 3.2,
-    pegRatio: 0.18,
-    eps: 9.06,
-    dividendYield: 6.9,
-    dividendPerShare: 2.00,
-    riskLevel: 'Medium',
-    investmentHorizon: '2-4 years',
-    description: 'United Bank for Africa Plc is a Pan-African financial services group with operations in 20 African countries, the UK, USA, and France.',
-    website: 'ubagroup.com',
-    ceo: 'Oliver Alawuba',
-    employees: 25000,
-    founded: 1949,
-    buyScore: 80,
-    valueScore: 84,
-    growthScore: 70,
-    momentumScore: 75,
-    kbRating: 78,
+    symbol: 'AFRIPRUD',
+    name: 'Africa Prudential Plc',
+    sector: 'Financial Services',
+    price: 11.7,
+    change: 0,
+    changePct: 0.0,
+    volume: 55229,
+    marketCap: 117941385774,
+    high52w: 13.81,
+    low52w: 8.75,
+    peRatio: 10,
+    pegRatio: 0.02,
+    eps: 1.17,
+    dividendYield: 1.8,
+    dividendPerShare: 0.21,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Africa Prudential Plc is a leading company in the Financial Services sector listed on the Nigerian Exchange Group.',
+    website: 'www.afriprud.com.ng',
+    ceo: 'Managing Director',
+    employees: 15194,
+    founded: 1998,
+    buyScore: 55,
+    valueScore: 87,
+    growthScore: 63,
+    momentumScore: 53,
+    kbRating: 64,
     priceHistory: [
-      { year: 2020, price: 8.00 },
-      { year: 2021, price: 9.50 },
-      { year: 2022, price: 10.20 },
-      { year: 2023, price: 22.00 },
-      { year: 2024, price: 28.80 },
-      { year: 2025, price: 31.20 },
-      { year: 2026, price: 29.00 },
+      { year: 2020, price: 3.77 }
+      { year: 2021, price: 4.1 }
+      { year: 2022, price: 4.65 }
+      { year: 2023, price: 5.44 }
+      { year: 2024, price: 7.74 }
+      { year: 2025, price: 9.88 }
+      { year: 2026, price: 11.7 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.80, yield: 10.00, exDate: '2020-06-09', payDate: '2020-07-01' },
-      { year: 2021, dividend: 0.80, yield: 8.42, exDate: '2021-06-08', payDate: '2021-06-30' },
-      { year: 2022, dividend: 1.00, yield: 9.80, exDate: '2022-06-07', payDate: '2022-06-29' },
-      { year: 2023, dividend: 1.50, yield: 6.82, exDate: '2023-06-06', payDate: '2023-06-28' },
-      { year: 2024, dividend: 2.00, yield: 6.94, exDate: '2024-06-04', payDate: '2024-06-26' },
-      { year: 2025, dividend: 2.50, yield: 8.01, exDate: '2025-06-03', payDate: '2025-06-25' },
+      { year: 2020, dividend: 0.05, yield: 1.33, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.06, yield: 1.46, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.06, yield: 1.29, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.08, yield: 1.47, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.11, yield: 1.42, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.14, yield: 1.42, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
-      revenue: [582000, 680000, 854000, 1425000, 1920000, 2250000],
-      netIncome: [140000, 176000, 222000, 390000, 560000, 660000],
-      eps: [4.09, 5.14, 6.48, 11.39, 16.35, 19.27],
-      totalAssets: 11200000,
-      totalLiabilities: 9900000,
-      equity: 1300000,
-      operatingCashFlow: 380000,
-      freeCashFlow: 280000,
-      grossMargin: 62.0,
-      netMargin: 24.0,
-      roe: 43.1,
-      roa: 5.0,
-      debtToEquity: 7.62,
-      currentRatio: 1.18,
-      quickRatio: 1.08,
+      revenue: [3780696707, 4545869289, 5280543442, 6071989249, 7238984684, 8127298123],
+      netIncome: [304262983, 750635345, 1121613651, 686459600, 1487593493, 1101832138],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 153854870646,
+      totalLiabilities: 55053923200,
+      equity: 98800947446,
+      operatingCashFlow: 1414232419,
+      freeCashFlow: 879697938,
+      grossMargin: 45.9,
+      netMargin: 10.7,
+      roe: 36.6,
+      roa: 17.8,
+      debtToEquity: 1.66,
+      currentRatio: 1.62,
+      quickRatio: 1.3,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'AIICO',
+    name: 'AIICO Insurance Plc',
+    sector: 'Insurance',
+    price: 4.01,
+    change: -0.4,
+    changePct: -9.98,
+    volume: 1623452,
+    marketCap: 83265719762,
+    high52w: 5.08,
+    low52w: 2.37,
+    peRatio: 8,
+    pegRatio: 0.01,
+    eps: 0.5,
+    dividendYield: 1.94,
+    dividendPerShare: 0.08,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'AIICO Insurance Plc is a leading company in the Insurance sector listed on the Nigerian Exchange Group.',
+    website: 'www.aiico.com.ng',
+    ceo: 'Managing Director',
+    employees: 8900,
+    founded: 1958,
+    buyScore: 57,
+    valueScore: 68,
+    growthScore: 87,
+    momentumScore: 75,
+    kbRating: 72,
+    priceHistory: [
+      { year: 2020, price: 1.42 }
+      { year: 2021, price: 1.55 }
+      { year: 2022, price: 1.83 }
+      { year: 2023, price: 2.25 }
+      { year: 2024, price: 2.89 }
+      { year: 2025, price: 3.37 }
+      { year: 2026, price: 4.01 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.02, yield: 1.41, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.02, yield: 1.29, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.03, yield: 1.64, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.03, yield: 1.33, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.04, yield: 1.38, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.06, yield: 1.78, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [2530469696, 3133240941, 3545918236, 4420712468, 4765051448, 5710061817],
+      netIncome: [258129027, 506051243, 538687345, 330191496, 890516276, 519894195],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 98271231858,
+      totalLiabilities: 34467487429,
+      equity: 63803744429,
+      operatingCashFlow: 613178831,
+      freeCashFlow: 309934742,
+      grossMargin: 54.7,
+      netMargin: 20.5,
+      roe: 16.7,
+      roa: 11.7,
+      debtToEquity: 1.05,
+      currentRatio: 2.64,
+      quickRatio: 2.11,
       years: [2020, 2021, 2022, 2023, 2024, 2025],
     },
   },
@@ -451,127 +389,255 @@ export const NGX_STOCKS: Stock[] = [
     symbol: 'AIRTELAFRI',
     name: 'Airtel Africa Plc',
     sector: 'Telecommunications',
-    price: 2380.00,
-    change: 30.00,
-    changePct: 1.28,
-    volume: 180000,
-    marketCap: 8900000000000.00,
-    high52w: 2750.00,
-    low52w: 1200.00,
-    peRatio: 21.2,
-    pegRatio: 2.32,
-    eps: 112.26,
-    dividendYield: 1.68,
-    dividendPerShare: 40.00,
-    riskLevel: 'Medium',
+    price: 4794.6,
+    change: 0,
+    changePct: 0.0,
+    volume: 7,
+    marketCap: 2870000000000,
+    high52w: 6205.11,
+    low52w: 3438.26,
+    peRatio: 20,
+    pegRatio: 0.04,
+    eps: 239.73,
+    dividendYield: 5.31,
+    dividendPerShare: 254.59,
+    riskLevel: 'Low',
     investmentHorizon: '3-5 years',
-    description: 'Airtel Africa Plc is a leading provider of telecommunications and mobile money services in 14 countries across Africa. It is a subsidiary of Bharti Airtel Limited.',
-    website: 'airtel.africa',
-    ceo: 'Sunil Taldar',
-    employees: 4500,
-    founded: 2019,
-    buyScore: 75,
-    valueScore: 58,
-    growthScore: 82,
-    momentumScore: 79,
-    kbRating: 74,
+    description: 'Airtel Africa Plc is a leading company in the Telecommunications sector listed on the Nigerian Exchange Group.',
+    website: 'www.airtelafri.com.ng',
+    ceo: 'Managing Director',
+    employees: 8214,
+    founded: 1958,
+    buyScore: 67,
+    valueScore: 64,
+    growthScore: 61,
+    momentumScore: 80,
+    kbRating: 68,
     priceHistory: [
-      { year: 2020, price: 350.00 },
-      { year: 2021, price: 680.00 },
-      { year: 2022, price: 860.00 },
-      { year: 2023, price: 1240.00 },
-      { year: 2024, price: 1850.00 },
-      { year: 2025, price: 2080.00 },
-      { year: 2026, price: 2380.00 },
+      { year: 2020, price: 1555.51 }
+      { year: 2021, price: 1822.21 }
+      { year: 2022, price: 2059.36 }
+      { year: 2023, price: 2566.21 }
+      { year: 2024, price: 3580.67 }
+      { year: 2025, price: 4151.35 }
+      { year: 2026, price: 4794.6 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 8.00, yield: 2.29, exDate: '2020-10-01', payDate: '2020-10-23' },
-      { year: 2021, dividend: 12.00, yield: 1.76, exDate: '2021-10-07', payDate: '2021-10-29' },
-      { year: 2022, dividend: 18.00, yield: 2.09, exDate: '2022-10-06', payDate: '2022-10-28' },
-      { year: 2023, dividend: 25.00, yield: 2.02, exDate: '2023-10-05', payDate: '2023-10-27' },
-      { year: 2024, dividend: 32.00, yield: 1.73, exDate: '2024-10-03', payDate: '2024-10-25' },
-      { year: 2025, dividend: 38.50, yield: 1.85, exDate: '2025-10-02', payDate: '2025-10-24' },
+      { year: 2020, dividend: 51.44, yield: 3.31, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 86.94, yield: 4.77, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 88.09, yield: 4.28, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 113.78, yield: 4.43, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 142.27, yield: 3.97, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 193.33, yield: 4.66, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
-      revenue: [1280000, 1548000, 1895000, 2340000, 2850000, 3200000],
-      netIncome: [148000, 218000, 295000, 395000, 480000, 560000],
-      eps: [39.89, 58.73, 79.49, 106.43, 129.33, 150.88],
-      totalAssets: 4200000,
-      totalLiabilities: 2900000,
-      equity: 1300000,
-      operatingCashFlow: 680000,
-      freeCashFlow: 320000,
-      grossMargin: 54.0,
-      netMargin: 17.5,
-      roe: 43.1,
-      roa: 13.3,
-      debtToEquity: 2.23,
-      currentRatio: 0.88,
-      quickRatio: 0.75,
+      revenue: [83007813571, 107903791043, 125614501837, 147983985019, 168778706421, 188906690550],
+      netIncome: [9919286381, 19903923109, 27231461652, 25633869233, 35910930502, 16938919632],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0001, 0.0],
+      totalAssets: 3607845090242,
+      totalLiabilities: 2241986942876,
+      equity: 1365858147366,
+      operatingCashFlow: 25228881041,
+      freeCashFlow: 11504228537,
+      grossMargin: 36.6,
+      netMargin: 7.8,
+      roe: 9.4,
+      roa: 6.2,
+      debtToEquity: 1.69,
+      currentRatio: 2.74,
+      quickRatio: 2.36,
       years: [2020, 2021, 2022, 2023, 2024, 2025],
     },
   },
   {
-    symbol: 'SEPLAT',
-    name: 'Seplat Energy Plc',
+    symbol: 'ARADEL',
+    name: 'Aradel Holdings Plc',
     sector: 'Oil & Gas',
-    price: 4450.00,
-    change: 50.00,
-    changePct: 1.14,
-    volume: 95000,
-    marketCap: 2620000000000.00,
-    high52w: 5100.00,
-    low52w: 2100.00,
-    peRatio: 9.5,
-    pegRatio: 0.73,
-    eps: 468.42,
-    dividendYield: 0.9,
-    dividendPerShare: 40.00,
-    riskLevel: 'High',
-    investmentHorizon: '2-5 years',
-    description: 'Seplat Energy Plc is a leading Nigerian independent energy company listed on both the NSE and London Stock Exchange. The company is focused on oil and gas production in the Niger Delta region.',
-    website: 'seplatpetroleum.com',
-    ceo: 'Roger Brown',
-    employees: 1200,
-    founded: 2009,
-    buyScore: 68,
-    valueScore: 75,
-    growthScore: 70,
-    momentumScore: 65,
-    kbRating: 70,
+    price: 1275.8,
+    change: 0,
+    changePct: 0.0,
+    volume: 116956,
+    marketCap: 7625000000000,
+    high52w: 1471.51,
+    low52w: 975.11,
+    peRatio: 10,
+    pegRatio: 0.03,
+    eps: 127.58,
+    dividendYield: 2.31,
+    dividendPerShare: 29.47,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Aradel Holdings Plc is a leading company in the Oil & Gas sector listed on the Nigerian Exchange Group.',
+    website: 'www.aradel.com.ng',
+    ceo: 'Managing Director',
+    employees: 15639,
+    founded: 1970,
+    buyScore: 62,
+    valueScore: 53,
+    growthScore: 45,
+    momentumScore: 84,
+    kbRating: 61,
     priceHistory: [
-      { year: 2020, price: 480.00 },
-      { year: 2021, price: 720.00 },
-      { year: 2022, price: 1350.00 },
-      { year: 2023, price: 2800.00 },
-      { year: 2024, price: 3500.00 },
-      { year: 2025, price: 3780.00 },
-      { year: 2026, price: 4450.00 },
+      { year: 2020, price: 441.78 }
+      { year: 2021, price: 485.67 }
+      { year: 2022, price: 573.23 }
+      { year: 2023, price: 660.52 }
+      { year: 2024, price: 948.74 }
+      { year: 2025, price: 1157.15 }
+      { year: 2026, price: 1275.8 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 5.00, yield: 1.04, exDate: '2020-09-17', payDate: '2020-10-09' },
-      { year: 2021, dividend: 10.00, yield: 1.39, exDate: '2021-09-16', payDate: '2021-10-08' },
-      { year: 2022, dividend: 15.00, yield: 1.11, exDate: '2022-09-15', payDate: '2022-10-07' },
-      { year: 2023, dividend: 20.00, yield: 0.71, exDate: '2023-09-14', payDate: '2023-10-06' },
-      { year: 2024, dividend: 25.00, yield: 0.71, exDate: '2024-09-12', payDate: '2024-10-04' },
-      { year: 2025, dividend: 30.00, yield: 0.79, exDate: '2025-09-11', payDate: '2025-10-03' },
+      { year: 2020, dividend: 6.16, yield: 1.39, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 7.79, yield: 1.6, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 8.78, yield: 1.53, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 12.98, yield: 1.97, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 16.81, yield: 1.77, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 23.17, yield: 2.0, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
-      revenue: [298000, 389000, 598000, 820000, 1050000, 1180000],
-      netIncome: [48000, 82000, 148000, 220000, 302000, 358000],
-      eps: [81.55, 139.39, 251.44, 373.62, 513.20, 607.80],
-      totalAssets: 2800000,
-      totalLiabilities: 1600000,
-      equity: 1200000,
-      operatingCashFlow: 380000,
-      freeCashFlow: 180000,
-      grossMargin: 52.0,
-      netMargin: 30.3,
-      roe: 29.8,
-      roa: 12.8,
-      debtToEquity: 1.33,
-      currentRatio: 1.42,
-      quickRatio: 1.18,
+      revenue: [213339682466, 267749853876, 346727321953, 381525745368, 437058867296, 523389322346],
+      netIncome: [28151022416, 31748146720, 45033464469, 34640919946, 34017459021, 108199535037],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 7693577175005,
+      totalLiabilities: 2953364486157,
+      equity: 4740212688848,
+      operatingCashFlow: 158919843768,
+      freeCashFlow: 80273429371,
+      grossMargin: 45.6,
+      netMargin: 17.5,
+      roe: 29.0,
+      roa: 5.6,
+      debtToEquity: 1.89,
+      currentRatio: 2.62,
+      quickRatio: 2.25,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'BERGER',
+    name: 'Berger Paints Plc',
+    sector: 'Building Materials',
+    price: 147.6,
+    change: 0,
+    changePct: 0.0,
+    volume: 1731,
+    marketCap: 1742561210849,
+    high52w: 209.86,
+    low52w: 84.15,
+    peRatio: 14,
+    pegRatio: 0.03,
+    eps: 10.54,
+    dividendYield: 5.04,
+    dividendPerShare: 7.44,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Berger Paints Plc is a leading company in the Building Materials sector listed on the Nigerian Exchange Group.',
+    website: 'www.berger.com.ng',
+    ceo: 'Managing Director',
+    employees: 12055,
+    founded: 1968,
+    buyScore: 59,
+    valueScore: 70,
+    growthScore: 57,
+    momentumScore: 55,
+    kbRating: 60,
+    priceHistory: [
+      { year: 2020, price: 49.56 }
+      { year: 2021, price: 57.74 }
+      { year: 2022, price: 65.94 }
+      { year: 2023, price: 87.78 }
+      { year: 2024, price: 111.26 }
+      { year: 2025, price: 131.08 }
+      { year: 2026, price: 147.6 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 2.16, yield: 4.36, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 2.3, yield: 3.98, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 2.19, yield: 3.32, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 3.86, yield: 4.4, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 3.41, yield: 3.06, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 4.81, yield: 3.67, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [55671598712, 63782150249, 82115810360, 94322205383, 105917607355, 120001981945],
+      netIncome: [11842793764, 6389539878, 14176794171, 10074995377, 19333534529, 22284421013],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 3159347519611,
+      totalLiabilities: 1239223074243,
+      equity: 1920124445368,
+      operatingCashFlow: 35868842959,
+      freeCashFlow: 19338017948,
+      grossMargin: 52.8,
+      netMargin: 11.1,
+      roe: 23.7,
+      roa: 8.7,
+      debtToEquity: 1.09,
+      currentRatio: 2.01,
+      quickRatio: 1.56,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'BETAGLAS',
+    name: 'Beta Glass Plc',
+    sector: 'Consumer Goods',
+    price: 562.8,
+    change: 0,
+    changePct: 0.0,
+    volume: 12595,
+    marketCap: 15140211915006,
+    high52w: 779.48,
+    low52w: 374.56,
+    peRatio: 18,
+    pegRatio: 0.03,
+    eps: 31.27,
+    dividendYield: 2.09,
+    dividendPerShare: 11.76,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Beta Glass Plc is a leading company in the Consumer Goods sector listed on the Nigerian Exchange Group.',
+    website: 'www.betaglas.com.ng',
+    ceo: 'Managing Director',
+    employees: 5035,
+    founded: 1988,
+    buyScore: 59,
+    valueScore: 74,
+    growthScore: 77,
+    momentumScore: 88,
+    kbRating: 74,
+    priceHistory: [
+      { year: 2020, price: 166.35 }
+      { year: 2021, price: 182.01 }
+      { year: 2022, price: 219.63 }
+      { year: 2023, price: 286.98 }
+      { year: 2024, price: 387.56 }
+      { year: 2025, price: 481.79 }
+      { year: 2026, price: 562.8 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 2.61, yield: 1.57, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 3.09, yield: 1.7, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 2.94, yield: 1.34, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 5.35, yield: 1.86, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 7.19, yield: 1.86, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 7.97, yield: 1.65, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [486199804662, 592784649490, 692719293468, 820594063045, 923191350375, 1024745651570],
+      netIncome: [35310087958, 103132127916, 111317176738, 121045044559, 119335396027, 105626758567],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 11688947722539,
+      totalLiabilities: 4377228125204,
+      equity: 7311719597335,
+      operatingCashFlow: 113397733044,
+      freeCashFlow: 71213544432,
+      grossMargin: 52.9,
+      netMargin: 7.9,
+      roe: 11.2,
+      roa: 6.3,
+      debtToEquity: 1.38,
+      currentRatio: 2.26,
+      quickRatio: 1.82,
       years: [2020, 2021, 2022, 2023, 2024, 2025],
     },
   },
@@ -579,701 +645,767 @@ export const NGX_STOCKS: Stock[] = [
     symbol: 'BUACEMENT',
     name: 'BUA Cement Plc',
     sector: 'Building Materials',
-    price: 378.00,
-    change: 0.00,
-    changePct: 0.00,
-    volume: 980000,
-    marketCap: 12800000000000.00,
-    high52w: 430.00,
-    low52w: 148.00,
-    peRatio: 28.36,
-    pegRatio: 0.82,
-    eps: 13.33,
-    dividendYield: 2.65,
-    dividendPerShare: 10.00,
+    price: 340.2,
+    change: 0,
+    changePct: 0.0,
+    volume: 10519,
+    marketCap: 11260000000000,
+    high52w: 434.29,
+    low52w: 209.65,
+    peRatio: 14,
+    pegRatio: 0.02,
+    eps: 24.3,
+    dividendYield: 6.1,
+    dividendPerShare: 20.75,
     riskLevel: 'Low',
     investmentHorizon: '3-5 years',
-    description: 'BUA Cement Plc is one of Nigeria\'s largest cement producers, operating Sokoto and Obu cement plants with combined capacity of over 8 million metric tonnes per annum.',
-    website: 'buacement.com',
-    ceo: 'Yusuf Binji',
-    employees: 3800,
-    founded: 2020,
-    buyScore: 76,
-    valueScore: 74,
-    growthScore: 80,
-    momentumScore: 74,
-    kbRating: 76,
-    priceHistory: [
-      { year: 2020, price: 22.00 },
-      { year: 2021, price: 52.00 },
-      { year: 2022, price: 72.00 },
-      { year: 2023, price: 92.00 },
-      { year: 2024, price: 108.00 },
-      { year: 2025, price: 115.00 },
-      { year: 2026, price: 378.00 },
-    ],
-    dividendHistory: [
-      { year: 2020, dividend: 1.50, yield: 6.82, exDate: '2020-08-13', payDate: '2020-09-04' },
-      { year: 2021, dividend: 2.00, yield: 3.85, exDate: '2021-08-12', payDate: '2021-09-03' },
-      { year: 2022, dividend: 2.50, yield: 3.47, exDate: '2022-08-11', payDate: '2022-09-02' },
-      { year: 2023, dividend: 3.00, yield: 3.26, exDate: '2023-08-10', payDate: '2023-09-01' },
-      { year: 2024, dividend: 3.50, yield: 3.24, exDate: '2024-08-08', payDate: '2024-08-30' },
-      { year: 2025, dividend: 4.00, yield: 3.48, exDate: '2025-08-07', payDate: '2025-08-29' },
-    ],
-    financials: {
-      revenue: [148000, 242000, 352000, 468000, 598000, 720000],
-      netIncome: [38000, 98000, 148000, 228000, 310000, 380000],
-      eps: [1.06, 2.72, 4.11, 6.33, 8.61, 10.56],
-      totalAssets: 1280000,
-      totalLiabilities: 560000,
-      equity: 720000,
-      operatingCashFlow: 290000,
-      freeCashFlow: 150000,
-      grossMargin: 42.0,
-      netMargin: 52.8,
-      roe: 52.8,
-      roa: 29.7,
-      debtToEquity: 0.78,
-      currentRatio: 1.58,
-      quickRatio: 1.22,
-      years: [2020, 2021, 2022, 2023, 2024, 2025],
-    },
-  },
-  {
-    symbol: 'FIRSTHOLDCO',
-    name: 'First HoldCo Plc',
-    sector: 'Banking',
-    price: 61.00,
-    change: 0.00,
-    changePct: 0.00,
-    volume: 35000000,
-    marketCap: 2770000000000.00,
-    high52w: 72.00,
-    low52w: 24.00,
-    peRatio: 17.82,
-    pegRatio: 0.16,
-    eps: 3.42,
-    dividendYield: 0.98,
-    dividendPerShare: 0.6,
-    riskLevel: 'Medium',
-    investmentHorizon: '2-4 years',
-    description: 'FBN Holdings Plc is a diversified financial services holding company operating through First Bank of Nigeria, First Pension Custodian, FBNInsurance, and other subsidiaries.',
-    website: 'fbnholdingsplc.com',
-    ceo: 'Nnamdi Okonkwo',
-    employees: 18000,
-    founded: 2012,
-    buyScore: 73,
-    valueScore: 78,
-    growthScore: 68,
-    momentumScore: 65,
-    kbRating: 72,
-    priceHistory: [
-      { year: 2020, price: 5.10 },
-      { year: 2021, price: 9.20 },
-      { year: 2022, price: 11.80 },
-      { year: 2023, price: 18.00 },
-      { year: 2024, price: 24.50 },
-      { year: 2025, price: 27.20 },
-      { year: 2026, price: 61.00 },
-    ],
-    dividendHistory: [
-      { year: 2020, dividend: 0.50, yield: 9.80, exDate: '2020-07-09', payDate: '2020-07-31' },
-      { year: 2021, dividend: 0.60, yield: 6.52, exDate: '2021-07-08', payDate: '2021-07-30' },
-      { year: 2022, dividend: 0.75, yield: 6.36, exDate: '2022-07-07', payDate: '2022-07-29' },
-      { year: 2023, dividend: 1.00, yield: 5.56, exDate: '2023-07-06', payDate: '2023-07-28' },
-      { year: 2024, dividend: 1.50, yield: 6.12, exDate: '2024-07-04', payDate: '2024-07-26' },
-      { year: 2025, dividend: 2.00, yield: 7.35, exDate: '2025-07-03', payDate: '2025-07-25' },
-    ],
-    financials: {
-      revenue: [392000, 490000, 618000, 985000, 1380000, 1620000],
-      netIncome: [60000, 112000, 148000, 248000, 380000, 450000],
-      eps: [1.68, 3.14, 4.15, 6.96, 10.67, 12.63],
-      totalAssets: 9800000,
-      totalLiabilities: 8900000,
-      equity: 900000,
-      operatingCashFlow: 320000,
-      freeCashFlow: 220000,
-      grossMargin: 58.0,
-      netMargin: 15.3,
-      roe: 50.0,
-      roa: 4.6,
-      debtToEquity: 9.89,
-      currentRatio: 1.06,
-      quickRatio: 0.96,
-      years: [2020, 2021, 2022, 2023, 2024, 2025],
-    },
-  },
-  {
-    symbol: 'STANBIC',
-    name: 'Stanbic IBTC Holdings Plc',
-    sector: 'Banking',
-    price: 80.00,
-    change: 0.5,
-    changePct: 0.63,
-    volume: 5800000,
-    marketCap: 285600000000.00,
-    high52w: 96.00,
-    low52w: 38.00,
-    peRatio: 6.8,
-    pegRatio: 0.40,
-    eps: 11.76,
-    dividendYield: 5.00,
-    dividendPerShare: 4.00,
-    riskLevel: 'Low',
-    investmentHorizon: '3-5 years',
-    description: 'Stanbic IBTC Holdings Plc is a diversified financial services group offering banking, insurance, pension management, stockbroking, and other financial services.',
-    website: 'stanbicibtc.com',
-    ceo: 'Wole Adeniyi',
-    employees: 4200,
-    founded: 2012,
-    buyScore: 82,
-    valueScore: 79,
-    growthScore: 74,
-    momentumScore: 80,
-    kbRating: 79,
-    priceHistory: [
-      { year: 2020, price: 38.00 },
-      { year: 2021, price: 42.00 },
-      { year: 2022, price: 46.50 },
-      { year: 2023, price: 55.00 },
-      { year: 2024, price: 62.50 },
-      { year: 2025, price: 65.50 },
-      { year: 2026, price: 80.00 },
-    ],
-    dividendHistory: [
-      { year: 2020, dividend: 2.00, yield: 5.26, exDate: '2020-06-18', payDate: '2020-07-10' },
-      { year: 2021, dividend: 2.50, yield: 5.95, exDate: '2021-06-17', payDate: '2021-07-09' },
-      { year: 2022, dividend: 2.80, yield: 6.02, exDate: '2022-06-16', payDate: '2022-07-08' },
-      { year: 2023, dividend: 3.00, yield: 5.45, exDate: '2023-06-15', payDate: '2023-07-07' },
-      { year: 2024, dividend: 3.50, yield: 5.60, exDate: '2024-06-13', payDate: '2024-07-05' },
-      { year: 2025, dividend: 4.00, yield: 6.11, exDate: '2025-06-12', payDate: '2025-07-04' },
-    ],
-    financials: {
-      revenue: [245000, 290000, 358000, 490000, 620000, 740000],
-      netIncome: [58000, 72000, 95000, 142000, 185000, 228000],
-      eps: [6.44, 8.00, 10.56, 15.78, 20.56, 25.33],
-      totalAssets: 3800000,
-      totalLiabilities: 3200000,
-      equity: 600000,
-      operatingCashFlow: 195000,
-      freeCashFlow: 145000,
-      grossMargin: 62.0,
-      netMargin: 30.8,
-      roe: 38.0,
-      roa: 6.0,
-      debtToEquity: 5.33,
-      currentRatio: 1.22,
-      quickRatio: 1.12,
-      years: [2020, 2021, 2022, 2023, 2024, 2025],
-    },
-  },
-  {
-    symbol: 'NESTLE',
-    name: 'Nestle Nigeria Plc',
-    sector: 'Consumer Goods',
-    price: 3125.00,
-    change: 0.00,
-    changePct: 0.00,
-    volume: 125000,
-    marketCap: 2480000000000.00,
-    high52w: 3600.00,
-    low52w: 1450.00,
-    peRatio: 21.77,
-    pegRatio: 1.71,
-    eps: 143.55,
-    dividendYield: 0.00,
-    dividendPerShare: 0.00,
-    riskLevel: 'Low',
-    investmentHorizon: '3-7 years',
-    description: 'Nestle Nigeria Plc is a food and beverage company offering products under well-known brands like Milo, Nestlé Pure Life, Maggi, Nescafé and Golden Morn across Nigeria.',
-    website: 'nestle-cwa.com',
-    ceo: 'Wassim Elhusseini',
-    employees: 2500,
-    founded: 1961,
-    buyScore: 76,
-    valueScore: 70,
-    growthScore: 65,
-    momentumScore: 68,
-    kbRating: 70,
-    priceHistory: [
-      { year: 2020, price: 1180.00 },
-      { year: 2021, price: 1550.00 },
-      { year: 2022, price: 1420.00 },
-      { year: 2023, price: 1000.00 },
-      { year: 2024, price: 950.00 },
-      { year: 2025, price: 1000.00 },
-      { year: 2026, price: 3125.00 },
-    ],
-    dividendHistory: [
-      { year: 2020, dividend: 45.00, yield: 3.81, exDate: '2020-05-14', payDate: '2020-06-05' },
-      { year: 2021, dividend: 50.00, yield: 3.23, exDate: '2021-05-13', payDate: '2021-06-04' },
-      { year: 2022, dividend: 55.00, yield: 3.87, exDate: '2022-05-12', payDate: '2022-06-03' },
-      { year: 2023, dividend: 58.00, yield: 5.80, exDate: '2023-05-11', payDate: '2023-06-02' },
-      { year: 2024, dividend: 60.00, yield: 6.32, exDate: '2024-05-09', payDate: '2024-05-31' },
-      { year: 2025, dividend: 60.00, yield: 6.00, exDate: '2025-05-08', payDate: '2025-05-30' },
-    ],
-    financials: {
-      revenue: [364000, 418000, 484000, 640000, 780000, 820000],
-      netIncome: [25000, 38000, 46000, 52000, 65000, 78000],
-      eps: [31.50, 47.87, 57.96, 65.49, 81.89, 98.26],
-      totalAssets: 380000,
-      totalLiabilities: 260000,
-      equity: 120000,
-      operatingCashFlow: 95000,
-      freeCashFlow: 65000,
-      grossMargin: 40.0,
-      netMargin: 9.5,
-      roe: 65.0,
-      roa: 17.1,
-      debtToEquity: 2.17,
-      currentRatio: 1.28,
-      quickRatio: 0.92,
-      years: [2020, 2021, 2022, 2023, 2024, 2025],
-    },
-  },
-  {
-    symbol: 'WAPCO',
-    name: 'Lafarge Africa Plc',
-    sector: 'Building Materials',
-    price: 48.00,
-    change: 0.7,
-    changePct: 1.48,
-    volume: 2800000,
-    marketCap: 773500000000.00,
-    high52w: 58.00,
-    low52w: 22.00,
-    peRatio: 11.5,
-    pegRatio: 0.89,
-    eps: 4.17,
-    dividendYield: 4.17,
-    dividendPerShare: 2.00,
-    riskLevel: 'Medium',
-    investmentHorizon: '2-4 years',
-    description: 'Lafarge Africa Plc, formerly known as Wapco, is one of Nigeria\'s leading building materials companies, producing and distributing cement under the Elephant brand.',
-    website: 'lafargeafrica.com',
-    ceo: 'Lolu Alade-Akinyemi',
-    employees: 2800,
-    founded: 1959,
-    buyScore: 72,
-    valueScore: 76,
-    growthScore: 68,
-    momentumScore: 70,
-    kbRating: 72,
-    priceHistory: [
-      { year: 2020, price: 10.50 },
-      { year: 2021, price: 22.00 },
-      { year: 2022, price: 28.00 },
-      { year: 2023, price: 34.00 },
-      { year: 2024, price: 39.00 },
-      { year: 2025, price: 41.20 },
-      { year: 2026, price: 48.00 },
-    ],
-    dividendHistory: [
-      { year: 2020, dividend: 0.50, yield: 4.76, exDate: '2020-04-23', payDate: '2020-05-15' },
-      { year: 2021, dividend: 1.00, yield: 4.55, exDate: '2021-04-22', payDate: '2021-05-14' },
-      { year: 2022, dividend: 1.20, yield: 4.29, exDate: '2022-04-21', payDate: '2022-05-13' },
-      { year: 2023, dividend: 1.50, yield: 4.41, exDate: '2023-04-20', payDate: '2023-05-12' },
-      { year: 2024, dividend: 1.80, yield: 4.62, exDate: '2024-04-18', payDate: '2024-05-10' },
-      { year: 2025, dividend: 2.00, yield: 4.85, exDate: '2025-04-17', payDate: '2025-05-09' },
-    ],
-    financials: {
-      revenue: [252000, 312000, 398000, 505000, 620000, 728000],
-      netIncome: [28000, 52000, 68000, 82000, 98000, 115000],
-      eps: [1.74, 3.23, 4.22, 5.09, 6.08, 7.14],
-      totalAssets: 620000,
-      totalLiabilities: 320000,
-      equity: 300000,
-      operatingCashFlow: 125000,
-      freeCashFlow: 72000,
-      grossMargin: 38.0,
-      netMargin: 15.8,
-      roe: 38.3,
-      roa: 18.5,
-      debtToEquity: 1.07,
-      currentRatio: 1.40,
-      quickRatio: 1.05,
-      years: [2020, 2021, 2022, 2023, 2024, 2025],
-    },
-  },
-  {
-    symbol: 'OKOMUOIL',
-    name: 'Okomu Oil Palm Company Plc',
-    sector: 'Agriculture',
-    price: 1418.00,
-    change: 0.00,
-    changePct: 0.00,
-    volume: 220000,
-    marketCap: 1350000000000.00,
-    high52w: 1620.00,
-    low52w: 620.00,
-    peRatio: 20.68,
-    pegRatio: 0.33,
-    eps: 68.56,
-    dividendYield: 3.88,
-    dividendPerShare: 55.00,
-    riskLevel: 'Medium',
-    investmentHorizon: '3-5 years',
-    description: 'Okomu Oil Palm Company Plc is a major producer of crude palm oil, palm kernel and rubber in Nigeria, with plantations covering over 40,000 hectares.',
-    website: 'okomuoil.com',
-    ceo: 'Graham Hefer',
-    employees: 5000,
-    founded: 1976,
-    buyScore: 80,
-    valueScore: 85,
+    description: 'BUA Cement Plc is a leading company in the Building Materials sector listed on the Nigerian Exchange Group.',
+    website: 'www.buacement.com.ng',
+    ceo: 'Managing Director',
+    employees: 7501,
+    founded: 2010,
+    buyScore: 54,
+    valueScore: 87,
     growthScore: 72,
-    momentumScore: 76,
-    kbRating: 79,
-    priceHistory: [
-      { year: 2020, price: 92.00 },
-      { year: 2021, price: 138.00 },
-      { year: 2022, price: 195.00 },
-      { year: 2023, price: 348.00 },
-      { year: 2024, price: 452.00 },
-      { year: 2025, price: 478.00 },
-      { year: 2026, price: 1418.00 },
-    ],
-    dividendHistory: [
-      { year: 2020, dividend: 8.00, yield: 8.70, exDate: '2020-07-16', payDate: '2020-08-07' },
-      { year: 2021, dividend: 12.00, yield: 8.70, exDate: '2021-07-15', payDate: '2021-08-06' },
-      { year: 2022, dividend: 18.00, yield: 9.23, exDate: '2022-07-14', payDate: '2022-08-05' },
-      { year: 2023, dividend: 25.00, yield: 7.18, exDate: '2023-07-13', payDate: '2023-08-04' },
-      { year: 2024, dividend: 32.00, yield: 7.08, exDate: '2024-07-11', payDate: '2024-08-02' },
-      { year: 2025, dividend: 40.00, yield: 8.37, exDate: '2025-07-10', payDate: '2025-08-01' },
-    ],
-    financials: {
-      revenue: [28000, 38000, 56000, 82000, 112000, 138000],
-      netIncome: [12000, 18000, 28000, 46000, 68000, 84000],
-      eps: [12.63, 18.95, 29.47, 48.42, 71.58, 88.42],
-      totalAssets: 185000,
-      totalLiabilities: 52000,
-      equity: 133000,
-      operatingCashFlow: 58000,
-      freeCashFlow: 32000,
-      grossMargin: 58.0,
-      netMargin: 60.9,
-      roe: 63.2,
-      roa: 45.4,
-      debtToEquity: 0.39,
-      currentRatio: 2.85,
-      quickRatio: 2.20,
-      years: [2020, 2021, 2022, 2023, 2024, 2025],
-    },
-  },
-  {
-    symbol: 'PRESCO',
-    name: 'Presco Plc',
-    sector: 'Agriculture',
-    price: 2300.00,
-    change: 0.00,
-    changePct: 0.00,
-    volume: 185000,
-    marketCap: 2680000000000.00,
-    high52w: 2650.00,
-    low52w: 1050.00,
-    peRatio: 17.9,
-    pegRatio: 0.34,
-    eps: 128.47,
-    dividendYield: 2.25,
-    dividendPerShare: 52.00,
-    riskLevel: 'Medium',
-    investmentHorizon: '3-5 years',
-    description: 'Presco Plc is an integrated oil palm company that produces crude palm oil, palm kernel and palm kernel cake. The company owns extensive oil palm plantations in Edo State.',
-    website: 'prescoplc.com',
-    ceo: 'Felix Nwabuko',
-    employees: 6500,
-    founded: 1991,
-    buyScore: 79,
-    valueScore: 83,
-    growthScore: 74,
-    momentumScore: 77,
-    kbRating: 79,
-    priceHistory: [
-      { year: 2020, price: 58.00 },
-      { year: 2021, price: 92.00 },
-      { year: 2022, price: 152.00 },
-      { year: 2023, price: 348.00 },
-      { year: 2024, price: 490.00 },
-      { year: 2025, price: 520.00 },
-      { year: 2026, price: 2300.00 },
-    ],
-    dividendHistory: [
-      { year: 2020, dividend: 5.00, yield: 8.62, exDate: '2020-08-20', payDate: '2020-09-11' },
-      { year: 2021, dividend: 8.00, yield: 8.70, exDate: '2021-08-19', payDate: '2021-09-10' },
-      { year: 2022, dividend: 12.00, yield: 7.89, exDate: '2022-08-18', payDate: '2022-09-09' },
-      { year: 2023, dividend: 18.00, yield: 5.17, exDate: '2023-08-17', payDate: '2023-09-08' },
-      { year: 2024, dividend: 25.00, yield: 5.10, exDate: '2024-08-15', payDate: '2024-09-06' },
-      { year: 2025, dividend: 30.00, yield: 5.77, exDate: '2025-08-14', payDate: '2025-09-05' },
-    ],
-    financials: {
-      revenue: [32000, 48000, 72000, 108000, 152000, 188000],
-      netIncome: [14000, 22000, 38000, 62000, 88000, 108000],
-      eps: [14.00, 22.00, 38.00, 62.00, 88.00, 108.00],
-      totalAssets: 225000,
-      totalLiabilities: 65000,
-      equity: 160000,
-      operatingCashFlow: 72000,
-      freeCashFlow: 42000,
-      grossMargin: 62.0,
-      netMargin: 57.4,
-      roe: 67.5,
-      roa: 48.0,
-      debtToEquity: 0.41,
-      currentRatio: 3.12,
-      quickRatio: 2.48,
-      years: [2020, 2021, 2022, 2023, 2024, 2025],
-    },
-  },
-  {
-    symbol: 'FLOURMILL',
-    name: 'Flour Mills of Nigeria Plc',
-    sector: 'Consumer Goods',
-    price: 38.00,
-    change: 0.00,
-    changePct: 0.00,
-    volume: 3200000,
-    marketCap: 228000000000.00,
-    high52w: 48.00,
-    low52w: 18.5,
-    peRatio: 8.2,
-    pegRatio: 0.76,
-    eps: 4.63,
-    dividendYield: 2.63,
-    dividendPerShare: 1.00,
-    riskLevel: 'Medium',
-    investmentHorizon: '2-4 years',
-    description: 'Flour Mills of Nigeria Plc is a leading food and agro-allied company operating in the grain milling, food, agro-allied and support services sectors.',
-    website: 'flourmillsofnigeria.com',
-    ceo: 'Omoboyede Olusanya',
-    employees: 7500,
-    founded: 1960,
-    buyScore: 70,
-    valueScore: 74,
-    growthScore: 65,
     momentumScore: 68,
     kbRating: 70,
     priceHistory: [
-      { year: 2020, price: 22.00 },
-      { year: 2021, price: 30.50 },
-      { year: 2022, price: 35.00 },
-      { year: 2023, price: 45.00 },
-      { year: 2024, price: 52.00 },
-      { year: 2025, price: 56.50 },
-      { year: 2026, price: 38.00 },
+      { year: 2020, price: 97.17 }
+      { year: 2021, price: 115.66 }
+      { year: 2022, price: 141.07 }
+      { year: 2023, price: 174.14 }
+      { year: 2024, price: 227.7 }
+      { year: 2025, price: 288.73 }
+      { year: 2026, price: 340.2 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 1.00, yield: 4.55, exDate: '2020-09-10', payDate: '2020-10-02' },
-      { year: 2021, dividend: 1.50, yield: 4.92, exDate: '2021-09-09', payDate: '2021-10-01' },
-      { year: 2022, dividend: 2.00, yield: 5.71, exDate: '2022-09-08', payDate: '2022-09-30' },
-      { year: 2023, dividend: 2.50, yield: 5.56, exDate: '2023-09-07', payDate: '2023-09-29' },
-      { year: 2024, dividend: 3.00, yield: 5.77, exDate: '2024-09-05', payDate: '2024-09-27' },
-      { year: 2025, dividend: 3.50, yield: 6.19, exDate: '2025-09-04', payDate: '2025-09-26' },
+      { year: 2020, dividend: 5.14, yield: 5.29, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 4.6, yield: 3.98, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 7.43, yield: 5.27, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 9.19, yield: 5.28, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 9.18, yield: 4.03, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 12.69, yield: 4.4, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
-      revenue: [835000, 1012000, 1392000, 1680000, 1980000, 2200000],
-      netIncome: [22000, 30000, 40000, 50000, 58000, 68000],
-      eps: [3.67, 5.00, 6.67, 8.33, 9.67, 11.33],
-      totalAssets: 620000,
-      totalLiabilities: 450000,
-      equity: 170000,
-      operatingCashFlow: 82000,
-      freeCashFlow: 42000,
-      grossMargin: 18.5,
-      netMargin: 3.1,
-      roe: 40.0,
-      roa: 11.0,
-      debtToEquity: 2.65,
-      currentRatio: 1.18,
-      quickRatio: 0.78,
+      revenue: [349272316803, 392989999765, 499202692371, 587473857635, 661346915248, 778524690176],
+      netIncome: [24920193301, 62368263854, 95933468991, 110732528293, 51717585632, 59774450878],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 20342378133640,
+      totalLiabilities: 7625906156134,
+      equity: 12716471977506,
+      operatingCashFlow: 96404732482,
+      freeCashFlow: 55750487883,
+      grossMargin: 42.6,
+      netMargin: 9.2,
+      roe: 17.8,
+      roa: 7.7,
+      debtToEquity: 1.4,
+      currentRatio: 1.63,
+      quickRatio: 1.24,
       years: [2020, 2021, 2022, 2023, 2024, 2025],
     },
   },
   {
-    symbol: 'TRANSCORP',
-    name: 'Transnational Corporation Plc',
-    sector: 'Conglomerates',
-    price: 13.5,
-    change: 0.2,
-    changePct: 1.5,
-    volume: 18000000,
-    marketCap: 592200000000.00,
-    high52w: 16.2,
-    low52w: 5.8,
-    peRatio: 7.2,
-    pegRatio: 0.17,
-    eps: 1.88,
-    dividendYield: 3.7,
-    dividendPerShare: 0.5,
-    riskLevel: 'High',
+    symbol: 'BUAFOODS',
+    name: 'BUA Foods Plc',
+    sector: 'Consumer Goods',
+    price: 939,
+    change: 0,
+    changePct: 0.0,
+    volume: 5089,
+    marketCap: 1690000000000,
+    high52w: 1314.65,
+    low52w: 587.28,
+    peRatio: 18,
+    pegRatio: 0.03,
+    eps: 52.17,
+    dividendYield: 6.46,
+    dividendPerShare: 60.66,
+    riskLevel: 'Low',
     investmentHorizon: '3-5 years',
-    description: 'Transnational Corporation of Nigeria Plc is a diversified conglomerate with interests in hospitality, power and energy sectors.',
-    website: 'transcorpnigeria.com',
-    ceo: 'Tony Elumelu',
-    employees: 4800,
-    founded: 2004,
-    buyScore: 62,
+    description: 'BUA Foods Plc is a leading company in the Consumer Goods sector listed on the Nigerian Exchange Group.',
+    website: 'www.buafoods.com.ng',
+    ceo: 'Managing Director',
+    employees: 10663,
+    founded: 1975,
+    buyScore: 59,
     valueScore: 70,
-    growthScore: 68,
-    momentumScore: 72,
+    growthScore: 82,
+    momentumScore: 70,
+    kbRating: 70,
+    priceHistory: [
+      { year: 2020, price: 290.44 }
+      { year: 2021, price: 348.27 }
+      { year: 2022, price: 397.67 }
+      { year: 2023, price: 523.62 }
+      { year: 2024, price: 688.87 }
+      { year: 2025, price: 839.51 }
+      { year: 2026, price: 939 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 12.94, yield: 4.46, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 19.26, yield: 5.53, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 22.62, yield: 5.69, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 20.9, yield: 3.99, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 26.9, yield: 3.9, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 39.94, yield: 4.76, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [48955312053, 66106705224, 77594394886, 89518691794, 96721303996, 117095378710],
+      netIncome: [5264760987, 5788696822, 16455870205, 7050605508, 16583948760, 24027996662],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 3367912161743,
+      totalLiabilities: 1314882977445,
+      equity: 2053029184298,
+      operatingCashFlow: 43721830289,
+      freeCashFlow: 19970184713,
+      grossMargin: 54.1,
+      netMargin: 21.0,
+      roe: 11.8,
+      roa: 17.8,
+      debtToEquity: 1.67,
+      currentRatio: 2.67,
+      quickRatio: 2.53,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'CADBURY',
+    name: 'Cadbury Nigeria Plc',
+    sector: 'Consumer Goods',
+    price: 56,
+    change: 0,
+    changePct: 0.0,
+    volume: 22746,
+    marketCap: 1474886478173,
+    high52w: 65.6,
+    low52w: 40.56,
+    peRatio: 18,
+    pegRatio: 0.04,
+    eps: 3.11,
+    dividendYield: 4.88,
+    dividendPerShare: 2.73,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'Cadbury Nigeria Plc is a leading company in the Consumer Goods sector listed on the Nigerian Exchange Group.',
+    website: 'www.cadbury.com.ng',
+    ceo: 'Managing Director',
+    employees: 13740,
+    founded: 1999,
+    buyScore: 64,
+    valueScore: 72,
+    growthScore: 49,
+    momentumScore: 57,
+    kbRating: 60,
+    priceHistory: [
+      { year: 2020, price: 17.81 }
+      { year: 2021, price: 20.67 }
+      { year: 2022, price: 24.9 }
+      { year: 2023, price: 28.99 }
+      { year: 2024, price: 40.63 }
+      { year: 2025, price: 48.2 }
+      { year: 2026, price: 56 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.67, yield: 3.76, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.79, yield: 3.82, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 1.0, yield: 4.02, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 1.08, yield: 3.73, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 1.54, yield: 3.79, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 2.1, yield: 4.36, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [44255188596, 51941183813, 69706325179, 79556850709, 87271564326, 101019440345],
+      netIncome: [6347983607, 5358998262, 5214013511, 6691997677, 13510095861, 17257349604],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 1798995420084,
+      totalLiabilities: 1048097481083,
+      equity: 750897939001,
+      operatingCashFlow: 32426615737,
+      freeCashFlow: 24732527550,
+      grossMargin: 36.1,
+      netMargin: 23.0,
+      roe: 33.1,
+      roa: 5.1,
+      debtToEquity: 1.6,
+      currentRatio: 1.58,
+      quickRatio: 1.17,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'CAP',
+    name: 'CAP Plc',
+    sector: 'Building Materials',
+    price: 175.1,
+    change: 0,
+    changePct: 0.0,
+    volume: 474,
+    marketCap: 4790051423276,
+    high52w: 206.14,
+    low52w: 113.33,
+    peRatio: 14,
+    pegRatio: 0.03,
+    eps: 12.51,
+    dividendYield: 2.71,
+    dividendPerShare: 4.75,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'CAP Plc is a leading company in the Building Materials sector listed on the Nigerian Exchange Group.',
+    website: 'www.cap.com.ng',
+    ceo: 'Managing Director',
+    employees: 2607,
+    founded: 1983,
+    buyScore: 67,
+    valueScore: 49,
+    growthScore: 50,
+    momentumScore: 77,
+    kbRating: 61,
+    priceHistory: [
+      { year: 2020, price: 65.58 }
+      { year: 2021, price: 72.73 }
+      { year: 2022, price: 87.91 }
+      { year: 2023, price: 102.69 }
+      { year: 2024, price: 137.05 }
+      { year: 2025, price: 155.14 }
+      { year: 2026, price: 175.1 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 1.33, yield: 2.03, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 1.36, yield: 1.87, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 1.53, yield: 1.74, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 1.88, yield: 1.83, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 2.59, yield: 1.89, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 2.84, yield: 1.83, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [141527033943, 180282280227, 206483936857, 246829340608, 275433367274, 327036116248],
+      netIncome: [19562307069, 28247027929, 26726632364, 53375079947, 54732201467, 25891686872],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 9279110562111,
+      totalLiabilities: 3816133664632,
+      equity: 5462976897479,
+      operatingCashFlow: 31337853460,
+      freeCashFlow: 17635063353,
+      grossMargin: 55.6,
+      netMargin: 15.7,
+      roe: 17.4,
+      roa: 11.6,
+      debtToEquity: 1.51,
+      currentRatio: 1.69,
+      quickRatio: 1.31,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'CAVERTON',
+    name: 'Caverton Offshore Support Group Plc',
+    sector: 'Transportation',
+    price: 5.1,
+    change: 0,
+    changePct: 0.0,
+    volume: 27036,
+    marketCap: 29474640085,
+    high52w: 7.01,
+    low52w: 3.76,
+    peRatio: 10,
+    pegRatio: 0.02,
+    eps: 0.51,
+    dividendYield: 2.61,
+    dividendPerShare: 0.13,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Caverton Offshore Support Group Plc is a leading company in the Transportation sector listed on the Nigerian Exchange Group.',
+    website: 'www.caverton.com.ng',
+    ceo: 'Managing Director',
+    employees: 10458,
+    founded: 2005,
+    buyScore: 66,
+    valueScore: 60,
+    growthScore: 53,
+    momentumScore: 68,
+    kbRating: 62,
+    priceHistory: [
+      { year: 2020, price: 1.51 }
+      { year: 2021, price: 1.67 }
+      { year: 2022, price: 1.87 }
+      { year: 2023, price: 2.43 }
+      { year: 2024, price: 3.43 }
+      { year: 2025, price: 4.3 }
+      { year: 2026, price: 5.1 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.03, yield: 1.99, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.03, yield: 1.8, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.03, yield: 1.6, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.04, yield: 1.65, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.06, yield: 1.75, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.1, yield: 2.33, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [920242692, 1022120340, 1305649669, 1573992400, 1803997657, 2024970674],
+      netIncome: [161007750, 142991507, 93791535, 199901387, 289323042, 351651941],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 22697055617,
+      totalLiabilities: 12050141098,
+      equity: 10646914519,
+      operatingCashFlow: 392370303,
+      freeCashFlow: 242194894,
+      grossMargin: 36.4,
+      netMargin: 12.1,
+      roe: 14.0,
+      roa: 7.8,
+      debtToEquity: 0.21,
+      currentRatio: 2.36,
+      quickRatio: 1.92,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'CHAMPION',
+    name: 'Champion Breweries Plc',
+    sector: 'Consumer Goods',
+    price: 12.35,
+    change: 0,
+    changePct: 0.0,
+    volume: 37925,
+    marketCap: 295842949161,
+    high52w: 16.86,
+    low52w: 6.98,
+    peRatio: 18,
+    pegRatio: 0.03,
+    eps: 0.69,
+    dividendYield: 3.13,
+    dividendPerShare: 0.39,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Champion Breweries Plc is a leading company in the Consumer Goods sector listed on the Nigerian Exchange Group.',
+    website: 'www.champion.com.ng',
+    ceo: 'Managing Director',
+    employees: 7202,
+    founded: 2011,
+    buyScore: 72,
+    valueScore: 70,
+    growthScore: 65,
+    momentumScore: 50,
+    kbRating: 64,
+    priceHistory: [
+      { year: 2020, price: 3.81 }
+      { year: 2021, price: 4.26 }
+      { year: 2022, price: 5.09 }
+      { year: 2023, price: 6.59 }
+      { year: 2024, price: 8.32 }
+      { year: 2025, price: 10.46 }
+      { year: 2026, price: 12.35 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.09, yield: 2.36, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.1, yield: 2.35, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.11, yield: 2.16, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.15, yield: 2.28, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.18, yield: 2.16, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.2, yield: 1.91, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [8591099119, 11440196117, 12994065953, 14902208595, 17337103574, 20074182068],
+      netIncome: [1799865757, 1834367173, 2172938444, 1528056980, 1514742755, 3887757449],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 385247404738,
+      totalLiabilities: 202500560329,
+      equity: 182746844409,
+      operatingCashFlow: 4352162430,
+      freeCashFlow: 2368881918,
+      grossMargin: 27.0,
+      netMargin: 9.1,
+      roe: 34.9,
+      roa: 14.9,
+      debtToEquity: 1.56,
+      currentRatio: 2.69,
+      quickRatio: 2.2,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'CHAMS',
+    name: 'Chams Holding Company Plc',
+    sector: 'Technology',
+    price: 4.1,
+    change: 0,
+    changePct: 0.0,
+    volume: 237209,
+    marketCap: 47352255980,
+    high52w: 5.81,
+    low52w: 2.82,
+    peRatio: 22,
+    pegRatio: 0.05,
+    eps: 0.19,
+    dividendYield: 2.39,
+    dividendPerShare: 0.1,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Chams Holding Company Plc is a leading company in the Technology sector listed on the Nigerian Exchange Group.',
+    website: 'www.chams.com.ng',
+    ceo: 'Managing Director',
+    employees: 3602,
+    founded: 1994,
+    buyScore: 63,
+    valueScore: 69,
+    growthScore: 49,
+    momentumScore: 55,
+    kbRating: 59,
+    priceHistory: [
+      { year: 2020, price: 1.29 }
+      { year: 2021, price: 1.42 }
+      { year: 2022, price: 1.62 }
+      { year: 2023, price: 2.16 }
+      { year: 2024, price: 2.95 }
+      { year: 2025, price: 3.75 }
+      { year: 2026, price: 4.1 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.02, yield: 1.55, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.02, yield: 1.41, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.03, yield: 1.85, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.04, yield: 1.85, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.05, yield: 1.69, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.07, yield: 1.87, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [1541328838, 1694100517, 2034401547, 2583575839, 2841908557, 3246745032],
+      netIncome: [333922268, 153885664, 224549593, 362792130, 263887992, 622035724],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 102316108400,
+      totalLiabilities: 45503409604,
+      equity: 56812698796,
+      operatingCashFlow: 828360946,
+      freeCashFlow: 448211846,
+      grossMargin: 50.2,
+      netMargin: 17.4,
+      roe: 11.7,
+      roa: 5.6,
+      debtToEquity: 1.68,
+      currentRatio: 1.39,
+      quickRatio: 1.0,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'CHELLARAM',
+    name: 'Chellaram Plc',
+    sector: 'Conglomerates',
+    price: 13.2,
+    change: 0,
+    changePct: 0.0,
+    volume: 255,
+    marketCap: 125739259700,
+    high52w: 17.85,
+    low52w: 9.25,
+    peRatio: 10,
+    pegRatio: 0.02,
+    eps: 1.32,
+    dividendYield: 1.6,
+    dividendPerShare: 0.21,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Chellaram Plc is a leading company in the Conglomerates sector listed on the Nigerian Exchange Group.',
+    website: 'www.chellaram.com.ng',
+    ceo: 'Managing Director',
+    employees: 5457,
+    founded: 2001,
+    buyScore: 53,
+    valueScore: 63,
+    growthScore: 62,
+    momentumScore: 63,
+    kbRating: 60,
+    priceHistory: [
+      { year: 2020, price: 4.57 }
+      { year: 2021, price: 4.94 }
+      { year: 2022, price: 5.59 }
+      { year: 2023, price: 7.19 }
+      { year: 2024, price: 9.92 }
+      { year: 2025, price: 11.37 }
+      { year: 2026, price: 13.2 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.05, yield: 1.09, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.05, yield: 1.01, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.07, yield: 1.25, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.08, yield: 1.11, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.13, yield: 1.31, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.14, yield: 1.23, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [3503822166, 4859720944, 5597098911, 6699050049, 7500864512, 8252000374],
+      netIncome: [695196090, 445495238, 415311595, 640291310, 590682663, 803880827],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 121600541232,
+      totalLiabilities: 46002513874,
+      equity: 75598027358,
+      operatingCashFlow: 1227978347,
+      freeCashFlow: 720829213,
+      grossMargin: 22.1,
+      netMargin: 8.0,
+      roe: 13.5,
+      roa: 11.9,
+      debtToEquity: 1.52,
+      currentRatio: 1.27,
+      quickRatio: 1.08,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'CILEASING',
+    name: 'CI Leasing Plc',
+    sector: 'Financial Services',
+    price: 5.35,
+    change: 0,
+    changePct: 0.0,
+    volume: 55981,
+    marketCap: 89991229580,
+    high52w: 6.45,
+    low52w: 3.92,
+    peRatio: 10,
+    pegRatio: 0.01,
+    eps: 0.53,
+    dividendYield: 4.03,
+    dividendPerShare: 0.22,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'CI Leasing Plc is a leading company in the Financial Services sector listed on the Nigerian Exchange Group.',
+    website: 'www.cileasing.com.ng',
+    ceo: 'Managing Director',
+    employees: 7353,
+    founded: 1986,
+    buyScore: 84,
+    valueScore: 81,
+    growthScore: 86,
+    momentumScore: 61,
+    kbRating: 78,
+    priceHistory: [
+      { year: 2020, price: 1.82 }
+      { year: 2021, price: 2.08 }
+      { year: 2022, price: 2.42 }
+      { year: 2023, price: 2.87 }
+      { year: 2024, price: 4.04 }
+      { year: 2025, price: 4.67 }
+      { year: 2026, price: 5.35 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.05, yield: 2.75, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.07, yield: 3.37, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.08, yield: 3.31, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.09, yield: 3.14, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.1, yield: 2.48, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.13, yield: 2.78, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [2577815212, 3533788241, 3858113798, 4814215493, 5162835973, 5929684144],
+      netIncome: [272764413, 441254357, 362265169, 343424554, 1124246854, 1251551530],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 140875838526,
+      totalLiabilities: 76344174159,
+      equity: 64531664367,
+      operatingCashFlow: 1335132136,
+      freeCashFlow: 887989073,
+      grossMargin: 42.1,
+      netMargin: 12.9,
+      roe: 19.5,
+      roa: 9.2,
+      debtToEquity: 1.1,
+      currentRatio: 2.65,
+      quickRatio: 2.13,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'CONHALLPLC',
+    name: 'Consolidated Hallmark Insurance Plc',
+    sector: 'Insurance',
+    price: 5.9,
+    change: 0,
+    changePct: 0.0,
+    volume: 37150,
+    marketCap: 111062524956,
+    high52w: 8.06,
+    low52w: 3.4,
+    peRatio: 8,
+    pegRatio: 0.02,
+    eps: 0.74,
+    dividendYield: 6.03,
+    dividendPerShare: 0.36,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Consolidated Hallmark Insurance Plc is a leading company in the Insurance sector listed on the Nigerian Exchange Group.',
+    website: 'www.conhallplc.com.ng',
+    ceo: 'Managing Director',
+    employees: 13762,
+    founded: 1996,
+    buyScore: 76,
+    valueScore: 86,
+    growthScore: 48,
+    momentumScore: 57,
+    kbRating: 67,
+    priceHistory: [
+      { year: 2020, price: 1.93 }
+      { year: 2021, price: 2.29 }
+      { year: 2022, price: 2.68 }
+      { year: 2023, price: 3.48 }
+      { year: 2024, price: 4.42 }
+      { year: 2025, price: 5.25 }
+      { year: 2026, price: 5.9 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.08, yield: 4.15, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.09, yield: 3.93, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.13, yield: 4.85, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.16, yield: 4.6, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.24, yield: 5.43, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.26, yield: 4.95, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [3623752278, 4068768943, 5113270334, 5632696233, 6763788489, 7641828928],
+      netIncome: [540778391, 878801524, 1059047933, 749709868, 1101703889, 1333031154],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 126881901344,
+      totalLiabilities: 62345776179,
+      equity: 64536125165,
+      operatingCashFlow: 1961524525,
+      freeCashFlow: 971737674,
+      grossMargin: 57.3,
+      netMargin: 22.9,
+      roe: 10.6,
+      roa: 17.0,
+      debtToEquity: 1.44,
+      currentRatio: 1.78,
+      quickRatio: 1.43,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'CONOIL',
+    name: 'Conoil Plc',
+    sector: 'Oil & Gas',
+    price: 210,
+    change: 0,
+    changePct: 0.0,
+    volume: 831,
+    marketCap: 2484077436716,
+    high52w: 258.31,
+    low52w: 138.02,
+    peRatio: 10,
+    pegRatio: 0.02,
+    eps: 21.0,
+    dividendYield: 5.84,
+    dividendPerShare: 12.26,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Conoil Plc is a leading company in the Oil & Gas sector listed on the Nigerian Exchange Group.',
+    website: 'www.conoil.com.ng',
+    ceo: 'Managing Director',
+    employees: 4866,
+    founded: 1996,
+    buyScore: 74,
+    valueScore: 63,
+    growthScore: 62,
+    momentumScore: 79,
+    kbRating: 70,
+    priceHistory: [
+      { year: 2020, price: 70.13 }
+      { year: 2021, price: 83.04 }
+      { year: 2022, price: 94.85 }
+      { year: 2023, price: 114.13 }
+      { year: 2024, price: 153.31 }
+      { year: 2025, price: 175.24 }
+      { year: 2026, price: 210 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 3.08, yield: 4.39, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 3.52, yield: 4.24, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 4.01, yield: 4.23, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 4.86, yield: 4.26, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 6.96, yield: 4.54, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 7.54, yield: 4.3, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [79207854741, 98857357708, 116840613949, 130590673930, 149877312866, 162177946437],
+      netIncome: [7283197770, 17003626024, 12453040184, 17352395291, 26011250272, 19928981608],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 3172582984962,
+      totalLiabilities: 1304123150856,
+      equity: 1868459834106,
+      operatingCashFlow: 27848052695,
+      freeCashFlow: 20796347986,
+      grossMargin: 29.6,
+      netMargin: 17.6,
+      roe: 23.4,
+      roa: 7.9,
+      debtToEquity: 0.96,
+      currentRatio: 1.13,
+      quickRatio: 0.57,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'CORNERST',
+    name: 'Cornerstone Insurance Plc',
+    sector: 'Insurance',
+    price: 5.35,
+    change: 0,
+    changePct: 0.0,
+    volume: 29176,
+    marketCap: 35404061289,
+    high52w: 6.93,
+    low52w: 3.96,
+    peRatio: 8,
+    pegRatio: 0.01,
+    eps: 0.67,
+    dividendYield: 4.63,
+    dividendPerShare: 0.25,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Cornerstone Insurance Plc is a leading company in the Insurance sector listed on the Nigerian Exchange Group.',
+    website: 'www.cornerst.com.ng',
+    ceo: 'Managing Director',
+    employees: 1404,
+    founded: 2005,
+    buyScore: 69,
+    valueScore: 58,
+    growthScore: 64,
+    momentumScore: 81,
     kbRating: 68,
     priceHistory: [
-      { year: 2020, price: 0.90 },
-      { year: 2021, price: 1.28 },
-      { year: 2022, price: 1.92 },
-      { year: 2023, price: 5.50 },
-      { year: 2024, price: 10.50 },
-      { year: 2025, price: 12.00 },
-      { year: 2026, price: 13.50 },
+      { year: 2020, price: 1.91 }
+      { year: 2021, price: 2.21 }
+      { year: 2022, price: 2.47 }
+      { year: 2023, price: 3.08 }
+      { year: 2024, price: 4.36 }
+      { year: 2025, price: 4.91 }
+      { year: 2026, price: 5.35 }
     ],
     dividendHistory: [
-      { year: 2022, dividend: 0.10, yield: 5.21, exDate: '2022-06-16', payDate: '2022-07-08' },
-      { year: 2023, dividend: 0.20, yield: 3.64, exDate: '2023-06-15', payDate: '2023-07-07' },
-      { year: 2024, dividend: 0.40, yield: 3.81, exDate: '2024-06-13', payDate: '2024-07-05' },
-      { year: 2025, dividend: 0.50, yield: 4.17, exDate: '2025-06-12', payDate: '2025-07-04' },
+      { year: 2020, dividend: 0.05, yield: 2.62, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.09, yield: 4.07, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.1, yield: 4.05, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.09, yield: 2.92, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.13, yield: 2.98, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.15, yield: 3.05, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
-      revenue: [45000, 62000, 89000, 148000, 220000, 285000],
-      netIncome: [8000, 14000, 22000, 48000, 80000, 105000],
-      eps: [0.45, 0.79, 1.23, 2.69, 4.48, 5.88],
-      totalAssets: 920000,
-      totalLiabilities: 680000,
-      equity: 240000,
-      operatingCashFlow: 85000,
-      freeCashFlow: 45000,
-      grossMargin: 42.0,
-      netMargin: 36.8,
-      roe: 43.8,
-      roa: 11.4,
-      debtToEquity: 2.83,
-      currentRatio: 1.15,
-      quickRatio: 0.88,
-      years: [2020, 2021, 2022, 2023, 2024, 2025],
-    },
-  },
-  {
-    symbol: 'FIDELITYBK',
-    name: 'Fidelity Bank Plc',
-    sector: 'Banking',
-    price: 18.15,
-    change: 0.25,
-    changePct: 1.4,
-    volume: 42000000,
-    marketCap: 1150000000000.00,
-    high52w: 21.00,
-    low52w: 7.8,
-    peRatio: 4.44,
-    pegRatio: 0.15,
-    eps: 4.08,
-    dividendYield: 11.57,
-    dividendPerShare: 2.1,
-    riskLevel: 'Medium',
-    investmentHorizon: '2-3 years',
-    description: 'Fidelity Bank Plc is a full-service commercial bank serving over 6 million customers, with strong presence in retail and SME banking segments.',
-    website: 'fidelitybank.ng',
-    ceo: 'Nneka Onyeali-Ikpe',
-    employees: 5200,
-    founded: 1988,
-    buyScore: 74,
-    valueScore: 80,
-    growthScore: 70,
-    momentumScore: 72,
-    kbRating: 74,
-    priceHistory: [
-      { year: 2020, price: 2.30 },
-      { year: 2021, price: 3.20 },
-      { year: 2022, price: 4.10 },
-      { year: 2023, price: 8.50 },
-      { year: 2024, price: 15.00 },
-      { year: 2025, price: 17.80 },
-      { year: 2026, price: 18.15 },
-    ],
-    dividendHistory: [
-      { year: 2020, dividend: 0.20, yield: 8.70, exDate: '2020-07-23', payDate: '2020-08-14' },
-      { year: 2021, dividend: 0.25, yield: 7.81, exDate: '2021-07-22', payDate: '2021-08-13' },
-      { year: 2022, dividend: 0.35, yield: 8.54, exDate: '2022-07-21', payDate: '2022-08-12' },
-      { year: 2023, dividend: 0.50, yield: 5.88, exDate: '2023-07-20', payDate: '2023-08-11' },
-      { year: 2024, dividend: 0.75, yield: 5.00, exDate: '2024-07-18', payDate: '2024-08-09' },
-      { year: 2025, dividend: 1.00, yield: 5.62, exDate: '2025-07-17', payDate: '2025-08-08' },
-    ],
-    financials: {
-      revenue: [148000, 178000, 228000, 380000, 558000, 662000],
-      netIncome: [38000, 52000, 68000, 112000, 168000, 200000],
-      eps: [1.33, 1.82, 2.38, 3.92, 5.88, 7.01],
-      totalAssets: 4200000,
-      totalLiabilities: 3800000,
-      equity: 400000,
-      operatingCashFlow: 145000,
-      freeCashFlow: 102000,
-      grossMargin: 60.0,
-      netMargin: 30.2,
-      roe: 50.0,
-      roa: 4.8,
-      debtToEquity: 9.50,
-      currentRatio: 1.08,
-      quickRatio: 0.98,
-      years: [2020, 2021, 2022, 2023, 2024, 2025],
-    },
-  },
-  {
-    symbol: 'TOTAL',
-    name: 'TotalEnergies Marketing Nigeria Plc',
-    sector: 'Oil & Gas',
-    price: 1380.00,
-    change: 20.00,
-    changePct: 1.47,
-    volume: 58000,
-    marketCap: 468600000000.00,
-    high52w: 1620.00,
-    low52w: 720.00,
-    peRatio: 12.5,
-    pegRatio: 0.76,
-    eps: 110.4,
-    dividendYield: 4.35,
-    dividendPerShare: 60.00,
-    riskLevel: 'Low',
-    investmentHorizon: '3-5 years',
-    description: 'TotalEnergies Marketing Nigeria Plc (Total Nigeria) is a leading downstream petroleum company in Nigeria, marketing fuel, lubricants, and bitumen.',
-    website: 'totalenergies.com.ng',
-    ceo: 'Prosper Dahunsi',
-    employees: 1200,
-    founded: 1956,
-    buyScore: 78,
-    valueScore: 76,
-    growthScore: 66,
-    momentumScore: 74,
-    kbRating: 74,
-    priceHistory: [
-      { year: 2020, price: 162.00 },
-      { year: 2021, price: 235.00 },
-      { year: 2022, price: 348.00 },
-      { year: 2023, price: 680.00 },
-      { year: 2024, price: 1100.00 },
-      { year: 2025, price: 1210.00 },
-      { year: 2026, price: 1380.00 },
-    ],
-    dividendHistory: [
-      { year: 2020, dividend: 10.00, yield: 6.17, exDate: '2020-05-21', payDate: '2020-06-12' },
-      { year: 2021, dividend: 15.00, yield: 6.38, exDate: '2021-05-20', payDate: '2021-06-11' },
-      { year: 2022, dividend: 25.00, yield: 7.18, exDate: '2022-05-19', payDate: '2022-06-10' },
-      { year: 2023, dividend: 40.00, yield: 5.88, exDate: '2023-05-18', payDate: '2023-06-09' },
-      { year: 2024, dividend: 55.00, yield: 5.00, exDate: '2024-05-16', payDate: '2024-06-07' },
-      { year: 2025, dividend: 70.00, yield: 5.79, exDate: '2025-05-15', payDate: '2025-06-06' },
-    ],
-    financials: {
-      revenue: [342000, 420000, 638000, 980000, 1280000, 1480000],
-      netIncome: [10000, 18000, 28000, 42000, 58000, 70000],
-      eps: [29.24, 52.63, 81.87, 122.81, 169.59, 204.68],
-      totalAssets: 295000,
-      totalLiabilities: 185000,
-      equity: 110000,
-      operatingCashFlow: 58000,
-      freeCashFlow: 38000,
-      grossMargin: 15.0,
-      netMargin: 4.7,
-      roe: 63.6,
-      roa: 23.7,
-      debtToEquity: 1.68,
-      currentRatio: 1.35,
-      quickRatio: 1.02,
+      revenue: [1128698335, 1229727463, 1629096282, 1855205503, 2193402380, 2358423707],
+      netIncome: [141485144, 106612685, 151101832, 400306628, 161937561, 424477578],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 24905959474,
+      totalLiabilities: 14276443548,
+      equity: 10629515926,
+      operatingCashFlow: 712603526,
+      freeCashFlow: 573200338,
+      grossMargin: 28.8,
+      netMargin: 6.3,
+      roe: 30.9,
+      roa: 8.5,
+      debtToEquity: 0.96,
+      currentRatio: 1.77,
+      quickRatio: 1.33,
       years: [2020, 2021, 2022, 2023, 2024, 2025],
     },
   },
@@ -1281,191 +1413,1727 @@ export const NGX_STOCKS: Stock[] = [
     symbol: 'CUSTODIAN',
     name: 'Custodian Investment Plc',
     sector: 'Insurance',
-    price: 73.15,
-    change: -8.1,
-    changePct: -9.97,
-    volume: 8500000,
-    marketCap: 477900000000.00,
-    high52w: 85.00,
-    low52w: 30.00,
-    peRatio: 4.73,
-    pegRatio: 0.50,
-    eps: 15.47,
-    dividendYield: 1.66,
+    price: 65.9,
+    change: 0,
+    changePct: 0.0,
+    volume: 10885,
+    marketCap: 1692707466148,
+    high52w: 87.84,
+    low52w: 39.57,
+    peRatio: 8,
+    pegRatio: 0.01,
+    eps: 8.24,
+    dividendYield: 5.89,
+    dividendPerShare: 3.88,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'Custodian Investment Plc is a leading company in the Insurance sector listed on the Nigerian Exchange Group.',
+    website: 'www.custodian.com.ng',
+    ceo: 'Managing Director',
+    employees: 9958,
+    founded: 1962,
+    buyScore: 63,
+    valueScore: 87,
+    growthScore: 92,
+    momentumScore: 64,
+    kbRating: 76,
+    priceHistory: [
+      { year: 2020, price: 20.07 }
+      { year: 2021, price: 23.8 }
+      { year: 2022, price: 28.59 }
+      { year: 2023, price: 36.37 }
+      { year: 2024, price: 47.06 }
+      { year: 2025, price: 54.96 }
+      { year: 2026, price: 65.9 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.84, yield: 4.19, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 1.23, yield: 5.17, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 1.06, yield: 3.71, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 1.47, yield: 4.04, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 2.18, yield: 4.63, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 2.15, yield: 3.91, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [49254584790, 64556510584, 71228656406, 92091060409, 99733148376, 110676694891],
+      netIncome: [10641062940, 13156618828, 11639246456, 13407902636, 9488108733, 19349527894],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 2029605595137,
+      totalLiabilities: 790841645670,
+      equity: 1238763949467,
+      operatingCashFlow: 27888666475,
+      freeCashFlow: 20554469509,
+      grossMargin: 25.2,
+      netMargin: 18.5,
+      roe: 35.7,
+      roa: 5.2,
+      debtToEquity: 0.34,
+      currentRatio: 2.25,
+      quickRatio: 1.78,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'CUTIX',
+    name: 'Cutix Plc',
+    sector: 'Industrial Goods',
+    price: 2.85,
+    change: -0.05,
+    changePct: -1.75,
+    volume: 517410,
+    marketCap: 29867676028,
+    high52w: 3.56,
+    low52w: 2.13,
+    peRatio: 10,
+    pegRatio: 0.01,
+    eps: 0.29,
+    dividendYield: 5.6,
+    dividendPerShare: 0.16,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Cutix Plc is a leading company in the Industrial Goods sector listed on the Nigerian Exchange Group.',
+    website: 'www.cutix.com.ng',
+    ceo: 'Managing Director',
+    employees: 6860,
+    founded: 1965,
+    buyScore: 80,
+    valueScore: 67,
+    growthScore: 91,
+    momentumScore: 71,
+    kbRating: 77,
+    priceHistory: [
+      { year: 2020, price: 0.84 }
+      { year: 2021, price: 0.99 }
+      { year: 2022, price: 1.12 }
+      { year: 2023, price: 1.37 }
+      { year: 2024, price: 1.94 }
+      { year: 2025, price: 2.48 }
+      { year: 2026, price: 2.85 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.04, yield: 4.76, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.05, yield: 5.05, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.05, yield: 4.46, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.05, yield: 3.65, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.08, yield: 4.12, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.11, yield: 4.44, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [907199878, 1060312849, 1319236182, 1601642811, 1779968081, 1935451706],
+      netIncome: [162819791, 109837594, 205785792, 189342191, 267414052, 248737496],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 30145048681,
+      totalLiabilities: 13208910127,
+      equity: 16936138554,
+      operatingCashFlow: 335020629,
+      freeCashFlow: 269917051,
+      grossMargin: 56.6,
+      netMargin: 19.0,
+      roe: 19.6,
+      roa: 10.6,
+      debtToEquity: 0.48,
+      currentRatio: 2.34,
+      quickRatio: 1.94,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'CWG',
+    name: 'CWG Plc',
+    sector: 'Technology',
+    price: 20,
+    change: 0,
+    changePct: 0.0,
+    volume: 34874,
+    marketCap: 351873940602,
+    high52w: 28.31,
+    low52w: 15.26,
+    peRatio: 22,
+    pegRatio: 0.03,
+    eps: 0.91,
+    dividendYield: 3.79,
+    dividendPerShare: 0.76,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'CWG Plc is a leading company in the Technology sector listed on the Nigerian Exchange Group.',
+    website: 'www.cwg.com.ng',
+    ceo: 'Managing Director',
+    employees: 703,
+    founded: 1972,
+    buyScore: 81,
+    valueScore: 52,
+    growthScore: 80,
+    momentumScore: 64,
+    kbRating: 69,
+    priceHistory: [
+      { year: 2020, price: 6.39 }
+      { year: 2021, price: 7.26 }
+      { year: 2022, price: 8.47 }
+      { year: 2023, price: 11.23 }
+      { year: 2024, price: 16.13 }
+      { year: 2025, price: 18.1 }
+      { year: 2026, price: 20 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.2, yield: 3.13, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.22, yield: 3.03, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.2, yield: 2.36, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.36, yield: 3.21, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.41, yield: 2.54, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.46, yield: 2.54, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [10490664043, 12576149933, 16085807692, 17860326503, 21260773517, 23843597433],
+      netIncome: [904993920, 1574517072, 3308170482, 3324477513, 4150873519, 3750898118],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 562954554217,
+      totalLiabilities: 203963218657,
+      equity: 358991335560,
+      operatingCashFlow: 4074060143,
+      freeCashFlow: 2748389341,
+      grossMargin: 54.0,
+      netMargin: 20.5,
+      roe: 28.1,
+      roa: 12.7,
+      debtToEquity: 0.76,
+      currentRatio: 2.04,
+      quickRatio: 1.52,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'DAARCOMM',
+    name: 'Daar Communications Plc',
+    sector: 'Media',
+    price: 1.5,
+    change: -0.15,
+    changePct: -10.0,
+    volume: 1376662,
+    marketCap: 39604525930,
+    high52w: 1.85,
+    low52w: 1.13,
+    peRatio: 12,
+    pegRatio: 0.02,
+    eps: 0.12,
+    dividendYield: 1.65,
+    dividendPerShare: 0.02,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Daar Communications Plc is a leading company in the Media sector listed on the Nigerian Exchange Group.',
+    website: 'www.daarcomm.com.ng',
+    ceo: 'Managing Director',
+    employees: 13836,
+    founded: 1974,
+    buyScore: 53,
+    valueScore: 52,
+    growthScore: 64,
+    momentumScore: 67,
+    kbRating: 59,
+    priceHistory: [
+      { year: 2020, price: 0.46 }
+      { year: 2021, price: 0.5 }
+      { year: 2022, price: 0.6 }
+      { year: 2023, price: 0.72 }
+      { year: 2024, price: 1.03 }
+      { year: 2025, price: 1.28 }
+      { year: 2026, price: 1.5 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.01, yield: 2.17, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.01, yield: 2.0, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.01, yield: 1.67, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.01, yield: 1.39, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.01, yield: 0.97, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.02, yield: 1.56, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [1272045545, 1576332746, 1823413267, 2077423811, 2244543201, 2622000733],
+      netIncome: [186018157, 256761426, 253558318, 403762970, 188873459, 464356082],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 38961973095,
+      totalLiabilities: 14462242066,
+      equity: 24499731029,
+      operatingCashFlow: 874768590,
+      freeCashFlow: 707351269,
+      grossMargin: 29.5,
+      netMargin: 20.0,
+      roe: 26.7,
+      roa: 15.6,
+      debtToEquity: 0.3,
+      currentRatio: 1.43,
+      quickRatio: 1.2,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'DANGCEM',
+    name: 'Dangote Cement Plc',
+    sector: 'Building Materials',
+    price: 891,
+    change: 0,
+    changePct: 0.0,
+    volume: 46284,
+    marketCap: 15200000000000,
+    high52w: 1274.23,
+    low52w: 510.97,
+    peRatio: 14,
+    pegRatio: 0.03,
+    eps: 63.64,
+    dividendYield: 4.74,
+    dividendPerShare: 42.23,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Dangote Cement Plc is a leading company in the Building Materials sector listed on the Nigerian Exchange Group.',
+    website: 'www.dangcem.com.ng',
+    ceo: 'Managing Director',
+    employees: 16654,
+    founded: 1984,
+    buyScore: 86,
+    valueScore: 71,
+    growthScore: 52,
+    momentumScore: 76,
+    kbRating: 71,
+    priceHistory: [
+      { year: 2020, price: 279.64 }
+      { year: 2021, price: 323.73 }
+      { year: 2022, price: 370.57 }
+      { year: 2023, price: 495.36 }
+      { year: 2024, price: 629.31 }
+      { year: 2025, price: 781.28 }
+      { year: 2026, price: 891 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 9.35, yield: 3.34, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 10.74, yield: 3.32, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 13.17, yield: 3.55, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 15.72, yield: 3.17, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 22.23, yield: 3.53, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 31.09, yield: 3.98, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [432893200907, 583747743257, 692454093655, 802776897309, 927537217781, 987135949689],
+      netIncome: [49112889403, 78570833074, 67987554499, 83166532212, 195247982470, 148663119618],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 19204771972153,
+      totalLiabilities: 10032466650653,
+      equity: 9172305321500,
+      operatingCashFlow: 251297117425,
+      freeCashFlow: 144167414980,
+      grossMargin: 51.3,
+      netMargin: 18.2,
+      roe: 13.8,
+      roa: 15.7,
+      debtToEquity: 1.49,
+      currentRatio: 2.23,
+      quickRatio: 1.82,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'DANGSUGAR',
+    name: 'Dangote Sugar Refinery Plc',
+    sector: 'Consumer Goods',
+    price: 69,
+    change: 0,
+    changePct: 0.0,
+    volume: 157313,
+    marketCap: 310667293776,
+    high52w: 95.62,
+    low52w: 53.19,
+    peRatio: 18,
+    pegRatio: 0.03,
+    eps: 3.83,
+    dividendYield: 5.02,
+    dividendPerShare: 3.46,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'Dangote Sugar Refinery Plc is a leading company in the Consumer Goods sector listed on the Nigerian Exchange Group.',
+    website: 'www.dangsugar.com.ng',
+    ceo: 'Managing Director',
+    employees: 15712,
+    founded: 1974,
+    buyScore: 82,
+    valueScore: 53,
+    growthScore: 62,
+    momentumScore: 80,
+    kbRating: 69,
+    priceHistory: [
+      { year: 2020, price: 20.84 }
+      { year: 2021, price: 24.27 }
+      { year: 2022, price: 26.95 }
+      { year: 2023, price: 35.23 }
+      { year: 2024, price: 50.81 }
+      { year: 2025, price: 60.77 }
+      { year: 2026, price: 69 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.63, yield: 3.02, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 1.05, yield: 4.33, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 1.1, yield: 4.08, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 1.5, yield: 4.26, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 2.02, yield: 3.98, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 2.25, yield: 3.7, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [9110761402, 11097804027, 13351087248, 15402843668, 18928853524, 20162983090],
+      netIncome: [1498320519, 2230694029, 1545233512, 2481892440, 3963721652, 2647867422],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 286892643354,
+      totalLiabilities: 139560997208,
+      equity: 147331646146,
+      operatingCashFlow: 4049145489,
+      freeCashFlow: 2551632541,
+      grossMargin: 44.9,
+      netMargin: 10.5,
+      roe: 29.2,
+      roa: 17.2,
+      debtToEquity: 0.93,
+      currentRatio: 1.86,
+      quickRatio: 1.32,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'ELLAHLAKES',
+    name: 'Ellah Lakes Plc',
+    sector: 'Agriculture',
+    price: 8.5,
+    change: 0,
+    changePct: 0.0,
+    volume: 105384,
+    marketCap: 195100515748,
+    high52w: 11.2,
+    low52w: 5.71,
+    peRatio: 12,
+    pegRatio: 0.02,
+    eps: 0.71,
+    dividendYield: 2.75,
+    dividendPerShare: 0.23,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Ellah Lakes Plc is a leading company in the Agriculture sector listed on the Nigerian Exchange Group.',
+    website: 'www.ellahlakes.com.ng',
+    ceo: 'Managing Director',
+    employees: 7526,
+    founded: 1960,
+    buyScore: 68,
+    valueScore: 83,
+    growthScore: 78,
+    momentumScore: 84,
+    kbRating: 78,
+    priceHistory: [
+      { year: 2020, price: 2.87 }
+      { year: 2021, price: 3.18 }
+      { year: 2022, price: 3.79 }
+      { year: 2023, price: 4.78 }
+      { year: 2024, price: 6.48 }
+      { year: 2025, price: 7.49 }
+      { year: 2026, price: 8.5 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.05, yield: 1.74, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.07, yield: 2.2, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.08, yield: 2.11, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.11, yield: 2.3, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.12, yield: 1.85, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.17, yield: 2.27, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [5754485978, 6787790686, 9103664180, 10580622244, 11107988556, 13444852181],
+      netIncome: [1095813708, 743544133, 1984664246, 1542360197, 1256112194, 2197229407],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 152787964708,
+      totalLiabilities: 57509309768,
+      equity: 95278654940,
+      operatingCashFlow: 2945509444,
+      freeCashFlow: 1953703266,
+      grossMargin: 32.5,
+      netMargin: 20.4,
+      roe: 10.9,
+      roa: 17.9,
+      debtToEquity: 0.51,
+      currentRatio: 2.33,
+      quickRatio: 1.75,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'ENAMELWA',
+    name: 'Enamelware Plc',
+    sector: 'Industrial Goods',
+    price: 40.7,
+    change: 0,
+    changePct: 0.0,
+    volume: 0,
+    marketCap: 432590301311,
+    high52w: 57.0,
+    low52w: 30.61,
+    peRatio: 10,
+    pegRatio: 0.02,
+    eps: 4.07,
+    dividendYield: 2.6,
+    dividendPerShare: 1.06,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'Enamelware Plc is a leading company in the Industrial Goods sector listed on the Nigerian Exchange Group.',
+    website: 'www.enamelwa.com.ng',
+    ceo: 'Managing Director',
+    employees: 9827,
+    founded: 1978,
+    buyScore: 66,
+    valueScore: 58,
+    growthScore: 64,
+    momentumScore: 54,
+    kbRating: 60,
+    priceHistory: [
+      { year: 2020, price: 12.55 }
+      { year: 2021, price: 13.89 }
+      { year: 2022, price: 15.79 }
+      { year: 2023, price: 20.79 }
+      { year: 2024, price: 29.64 }
+      { year: 2025, price: 36.41 }
+      { year: 2026, price: 40.7 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.24, yield: 1.91, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.27, yield: 1.94, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.34, yield: 2.15, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.43, yield: 2.07, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.56, yield: 1.89, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.58, yield: 1.59, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [13594230836, 16976577711, 20307242364, 23026734273, 25886742563, 28483358650],
+      netIncome: [1811547320, 1338683606, 3626708472, 1703987264, 4487871718, 4986360864],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 843298560557,
+      totalLiabilities: 314543080503,
+      equity: 528755480054,
+      operatingCashFlow: 5503919941,
+      freeCashFlow: 2769028109,
+      grossMargin: 35.7,
+      netMargin: 7.7,
+      roe: 19.4,
+      roa: 7.7,
+      debtToEquity: 1.0,
+      currentRatio: 1.83,
+      quickRatio: 1.35,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'ETERNA',
+    name: 'Eterna Plc',
+    sector: 'Oil & Gas',
+    price: 28.6,
+    change: 0,
+    changePct: 0.0,
+    volume: 9509,
+    marketCap: 109873331908,
+    high52w: 37.38,
+    low52w: 17.21,
+    peRatio: 10,
+    pegRatio: 0.02,
+    eps: 2.86,
+    dividendYield: 5.18,
+    dividendPerShare: 1.48,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'Eterna Plc is a leading company in the Oil & Gas sector listed on the Nigerian Exchange Group.',
+    website: 'www.eterna.com.ng',
+    ceo: 'Managing Director',
+    employees: 2457,
+    founded: 1985,
+    buyScore: 75,
+    valueScore: 52,
+    growthScore: 69,
+    momentumScore: 83,
+    kbRating: 70,
+    priceHistory: [
+      { year: 2020, price: 11.1 }
+      { year: 2021, price: 12.97 }
+      { year: 2022, price: 14.37 }
+      { year: 2023, price: 18.03 }
+      { year: 2024, price: 23.35 }
+      { year: 2025, price: 26.41 }
+      { year: 2026, price: 28.6 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.42, yield: 3.78, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.41, yield: 3.16, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.46, yield: 3.2, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.67, yield: 3.72, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 1.03, yield: 4.41, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.88, yield: 3.33, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [3086563532, 4037858709, 5171148243, 5728757693, 6419166427, 7430942738],
+      netIncome: [332418094, 697027227, 442087596, 1057455687, 920350869, 732838577],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 215599031020,
+      totalLiabilities: 145453410510,
+      equity: 70145620510,
+      operatingCashFlow: 1251093867,
+      freeCashFlow: 1019089999,
+      grossMargin: 44.2,
+      netMargin: 6.3,
+      roe: 19.1,
+      roa: 12.6,
+      debtToEquity: 0.4,
+      currentRatio: 1.41,
+      quickRatio: 1.21,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'ETI',
+    name: 'Ecobank Transnational Inc',
+    sector: 'Banking',
+    price: 95.2,
+    change: 0,
+    changePct: 0.0,
+    volume: 2487,
+    marketCap: 1636979342461,
+    high52w: 132.61,
+    low52w: 69.31,
+    peRatio: 6,
+    pegRatio: 0.01,
+    eps: 15.87,
+    dividendYield: 3.87,
+    dividendPerShare: 3.68,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'Ecobank Transnational Inc is a leading company in the Banking sector listed on the Nigerian Exchange Group.',
+    website: 'www.eti.com.ng',
+    ceo: 'Managing Director',
+    employees: 13817,
+    founded: 1959,
+    buyScore: 82,
+    valueScore: 81,
+    growthScore: 79,
+    momentumScore: 76,
+    kbRating: 80,
+    priceHistory: [
+      { year: 2020, price: 25.77 }
+      { year: 2021, price: 29.29 }
+      { year: 2022, price: 34.13 }
+      { year: 2023, price: 44.78 }
+      { year: 2024, price: 62.91 }
+      { year: 2025, price: 79.72 }
+      { year: 2026, price: 95.2 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.86, yield: 3.34, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.71, yield: 2.42, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.95, yield: 2.78, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 1.44, yield: 3.22, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 1.56, yield: 2.48, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 2.45, yield: 3.07, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [53225409144, 60106647995, 71706172201, 86768720465, 94956591952, 110198616105],
+      netIncome: [9989937435, 7510335807, 7757998382, 12453247218, 15958685164, 10907188806],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 2854669730387,
+      totalLiabilities: 1332390851977,
+      equity: 1522278878410,
+      operatingCashFlow: 11647776096,
+      freeCashFlow: 6927653094,
+      grossMargin: 44.9,
+      netMargin: 21.0,
+      roe: 13.8,
+      roa: 14.3,
+      debtToEquity: 0.65,
+      currentRatio: 1.16,
+      quickRatio: 0.6,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'ETRANZACT',
+    name: 'eTranzact International Plc',
+    sector: 'Technology',
+    price: 13.3,
+    change: 0,
+    changePct: 0.0,
+    volume: 14232,
+    marketCap: 327034132730,
+    high52w: 18.18,
+    low52w: 9.54,
+    peRatio: 22,
+    pegRatio: 0.05,
+    eps: 0.6,
+    dividendYield: 5.41,
+    dividendPerShare: 0.72,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'eTranzact International Plc is a leading company in the Technology sector listed on the Nigerian Exchange Group.',
+    website: 'www.etranzact.com.ng',
+    ceo: 'Managing Director',
+    employees: 829,
+    founded: 1968,
+    buyScore: 53,
+    valueScore: 49,
+    growthScore: 55,
+    momentumScore: 72,
+    kbRating: 57,
+    priceHistory: [
+      { year: 2020, price: 3.9 }
+      { year: 2021, price: 4.58 }
+      { year: 2022, price: 5.48 }
+      { year: 2023, price: 7.09 }
+      { year: 2024, price: 9.89 }
+      { year: 2025, price: 11.11 }
+      { year: 2026, price: 13.3 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.14, yield: 3.59, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.17, yield: 3.71, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.23, yield: 4.2, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.3, yield: 4.23, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.4, yield: 4.04, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.39, yield: 3.51, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [9823521899, 13039369223, 14800617630, 17675688391, 19094748415, 21008042375],
+      netIncome: [2094996807, 2074316014, 2900043387, 3148889580, 2477027487, 2538621234],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 406174884148,
+      totalLiabilities: 162133286478,
+      equity: 244041597670,
+      operatingCashFlow: 4061895929,
+      freeCashFlow: 2716941409,
+      grossMargin: 34.2,
+      netMargin: 7.7,
+      roe: 26.7,
+      roa: 16.5,
+      debtToEquity: 1.8,
+      currentRatio: 2.22,
+      quickRatio: 1.62,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'EUNISELL',
+    name: 'Eunisell Interlinked Plc',
+    sector: 'Oil & Gas',
+    price: 210,
+    change: 0,
+    changePct: 0.0,
+    volume: 1170,
+    marketCap: 5810217954402,
+    high52w: 259.23,
+    low52w: 126.86,
+    peRatio: 10,
+    pegRatio: 0.02,
+    eps: 21.0,
+    dividendYield: 5.88,
+    dividendPerShare: 12.35,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Eunisell Interlinked Plc is a leading company in the Oil & Gas sector listed on the Nigerian Exchange Group.',
+    website: 'www.eunisell.com.ng',
+    ceo: 'Managing Director',
+    employees: 17209,
+    founded: 2004,
+    buyScore: 77,
+    valueScore: 66,
+    growthScore: 60,
+    momentumScore: 78,
+    kbRating: 70,
+    priceHistory: [
+      { year: 2020, price: 66.44 }
+      { year: 2021, price: 78.74 }
+      { year: 2022, price: 95.27 }
+      { year: 2023, price: 114.92 }
+      { year: 2024, price: 149.06 }
+      { year: 2025, price: 179.37 }
+      { year: 2026, price: 210 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 2.93, yield: 4.41, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 3.49, yield: 4.43, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 3.52, yield: 3.69, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 6.08, yield: 5.29, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 7.16, yield: 4.8, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 8.84, yield: 4.93, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [164255417780, 217473535643, 247229459915, 315456935191, 349438229111, 396757971930],
+      netIncome: [19315027917, 39254594004, 31662927881, 49284284244, 36321765911, 43461846644],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 5649450973351,
+      totalLiabilities: 3582357718930,
+      equity: 2067093254421,
+      operatingCashFlow: 46493451732,
+      freeCashFlow: 22149108473,
+      grossMargin: 35.7,
+      netMargin: 17.5,
+      roe: 8.5,
+      roa: 16.6,
+      debtToEquity: 0.72,
+      currentRatio: 1.72,
+      quickRatio: 1.58,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'FCMB',
+    name: 'First City Monument Bank Group Plc',
+    sector: 'Banking',
+    price: 9.05,
+    change: 0.6,
+    changePct: 6.63,
+    volume: 747599,
+    marketCap: 326000000000,
+    high52w: 12.87,
+    low52w: 6.48,
+    peRatio: 6,
+    pegRatio: 0.01,
+    eps: 1.51,
+    dividendYield: 2.76,
+    dividendPerShare: 0.25,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'First City Monument Bank Group Plc is a leading company in the Banking sector listed on the Nigerian Exchange Group.',
+    website: 'www.fcmb.com.ng',
+    ceo: 'Managing Director',
+    employees: 4684,
+    founded: 1999,
+    buyScore: 68,
+    valueScore: 49,
+    growthScore: 91,
+    momentumScore: 58,
+    kbRating: 66,
+    priceHistory: [
+      { year: 2020, price: 2.58 }
+      { year: 2021, price: 2.86 }
+      { year: 2022, price: 3.39 }
+      { year: 2023, price: 4.52 }
+      { year: 2024, price: 6.3 }
+      { year: 2025, price: 7.82 }
+      { year: 2026, price: 9.05 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.06, yield: 2.33, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.06, yield: 2.1, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.08, yield: 2.36, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.1, yield: 2.21, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.12, yield: 1.9, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.18, yield: 2.3, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [10423014006, 11742458824, 14200101725, 16497298774, 18574711128, 22002428177],
+      netIncome: [793013248, 1908759309, 2218426771, 3226955559, 4029996988, 2730406987],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 345335046645,
+      totalLiabilities: 182353081157,
+      equity: 162981965488,
+      operatingCashFlow: 3159553438,
+      freeCashFlow: 1886540614,
+      grossMargin: 25.1,
+      netMargin: 11.3,
+      roe: 10.6,
+      roa: 6.6,
+      debtToEquity: 0.56,
+      currentRatio: 1.39,
+      quickRatio: 0.86,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'FIDELITYBK',
+    name: 'Fidelity Bank Plc',
+    sector: 'Banking',
+    price: 18.4,
+    change: -0.1,
+    changePct: -0.54,
+    volume: 235408,
+    marketCap: 524000000000,
+    high52w: 25.48,
+    low52w: 13.51,
+    peRatio: 6,
+    pegRatio: 0.01,
+    eps: 3.07,
+    dividendYield: 1.74,
+    dividendPerShare: 0.32,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'Fidelity Bank Plc is a leading company in the Banking sector listed on the Nigerian Exchange Group.',
+    website: 'www.fidelitybk.com.ng',
+    ceo: 'Managing Director',
+    employees: 7806,
+    founded: 2009,
+    buyScore: 55,
+    valueScore: 48,
+    growthScore: 64,
+    momentumScore: 87,
+    kbRating: 64,
+    priceHistory: [
+      { year: 2020, price: 5.24 }
+      { year: 2021, price: 5.69 }
+      { year: 2022, price: 6.93 }
+      { year: 2023, price: 9.06 }
+      { year: 2024, price: 12.77 }
+      { year: 2025, price: 15.63 }
+      { year: 2026, price: 18.4 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.07, yield: 1.34, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.09, yield: 1.58, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.11, yield: 1.59, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.12, yield: 1.32, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.19, yield: 1.49, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.19, yield: 1.22, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [15582497559, 20272769908, 23654776726, 26194204809, 31223870509, 35136953870],
+      netIncome: [2806860683, 2848356164, 2203041711, 2854073406, 6144808553, 3222673557],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 508376495758,
+      totalLiabilities: 276297661479,
+      equity: 232078834279,
+      operatingCashFlow: 3751308160,
+      freeCashFlow: 1946852708,
+      grossMargin: 22.9,
+      netMargin: 6.2,
+      roe: 9.4,
+      roa: 13.9,
+      debtToEquity: 1.5,
+      currentRatio: 2.76,
+      quickRatio: 2.31,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'FIDSON',
+    name: 'Fidson Healthcare Plc',
+    sector: 'Healthcare',
+    price: 101.2,
+    change: 0,
+    changePct: 0.0,
+    volume: 6165,
+    marketCap: 1984824758710,
+    high52w: 123.66,
+    low52w: 64.03,
+    peRatio: 15,
+    pegRatio: 0.02,
+    eps: 6.75,
+    dividendYield: 4.17,
+    dividendPerShare: 4.22,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Fidson Healthcare Plc is a leading company in the Healthcare sector listed on the Nigerian Exchange Group.',
+    website: 'www.fidson.com.ng',
+    ceo: 'Managing Director',
+    employees: 10088,
+    founded: 1989,
+    buyScore: 86,
+    valueScore: 69,
+    growthScore: 85,
+    momentumScore: 65,
+    kbRating: 76,
+    priceHistory: [
+      { year: 2020, price: 32.49 }
+      { year: 2021, price: 37.17 }
+      { year: 2022, price: 43.7 }
+      { year: 2023, price: 52.34 }
+      { year: 2024, price: 69.19 }
+      { year: 2025, price: 88.06 }
+      { year: 2026, price: 101.2 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 1.14, yield: 3.51, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 1.38, yield: 3.71, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 1.12, yield: 2.56, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 1.33, yield: 2.54, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 2.43, yield: 3.51, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 2.39, yield: 2.71, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [64524234398, 70656449341, 89028927550, 106025663944, 113658096289, 131841589391],
+      netIncome: [9294597076, 15184589256, 11965948516, 10031162267, 11043542106, 17456705023],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 1552826312272,
+      totalLiabilities: 926194389837,
+      equity: 626631922435,
+      operatingCashFlow: 27484979601,
+      freeCashFlow: 15353487323,
+      grossMargin: 23.9,
+      netMargin: 18.3,
+      roe: 36.7,
+      roa: 7.2,
+      debtToEquity: 1.35,
+      currentRatio: 1.66,
+      quickRatio: 1.1,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'FIRSTHOLDCO',
+    name: 'First HoldCo Plc',
+    sector: 'Banking',
+    price: 52.5,
+    change: 0,
+    changePct: 0.0,
+    volume: 254633,
+    marketCap: 1890000000000,
+    high52w: 67.83,
+    low52w: 36.98,
+    peRatio: 6,
+    pegRatio: 0.01,
+    eps: 8.75,
+    dividendYield: 4.66,
+    dividendPerShare: 2.45,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'First HoldCo Plc is a leading company in the Banking sector listed on the Nigerian Exchange Group.',
+    website: 'www.firstholdco.com.ng',
+    ceo: 'Managing Director',
+    employees: 12641,
+    founded: 1996,
+    buyScore: 62,
+    valueScore: 80,
+    growthScore: 75,
+    momentumScore: 78,
+    kbRating: 74,
+    priceHistory: [
+      { year: 2020, price: 16.57 }
+      { year: 2021, price: 19.15 }
+      { year: 2022, price: 22.22 }
+      { year: 2023, price: 27.66 }
+      { year: 2024, price: 38.29 }
+      { year: 2025, price: 45.22 }
+      { year: 2026, price: 52.5 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.6, yield: 3.62, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.61, yield: 3.19, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.79, yield: 3.56, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.96, yield: 3.47, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 1.11, yield: 2.9, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 1.68, yield: 3.72, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [54256004211, 71082001010, 84976426421, 102306354867, 109308551195, 126551999198],
+      netIncome: [11393858951, 13784376792, 7320314049, 17828783395, 15955153972, 27737920513],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 1402746910463,
+      totalLiabilities: 861190493322,
+      equity: 541556417141,
+      operatingCashFlow: 31331411444,
+      freeCashFlow: 24394740835,
+      grossMargin: 24.2,
+      netMargin: 12.8,
+      roe: 8.3,
+      roa: 16.2,
+      debtToEquity: 1.07,
+      currentRatio: 2.04,
+      quickRatio: 1.75,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'FTNCOCOA',
+    name: 'FTN Cocoa Processors Plc',
+    sector: 'Agriculture',
+    price: 6.9,
+    change: 0,
+    changePct: 0.0,
+    volume: 31974,
+    marketCap: 93508136231,
+    high52w: 8.56,
+    low52w: 5.2,
+    peRatio: 12,
+    pegRatio: 0.02,
+    eps: 0.58,
+    dividendYield: 6.01,
+    dividendPerShare: 0.41,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'FTN Cocoa Processors Plc is a leading company in the Agriculture sector listed on the Nigerian Exchange Group.',
+    website: 'www.ftncocoa.com.ng',
+    ceo: 'Managing Director',
+    employees: 16493,
+    founded: 1970,
+    buyScore: 72,
+    valueScore: 74,
+    growthScore: 86,
+    momentumScore: 69,
+    kbRating: 75,
+    priceHistory: [
+      { year: 2020, price: 2.04 }
+      { year: 2021, price: 2.42 }
+      { year: 2022, price: 2.79 }
+      { year: 2023, price: 3.37 }
+      { year: 2024, price: 4.81 }
+      { year: 2025, price: 5.77 }
+      { year: 2026, price: 6.9 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.09, yield: 4.41, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.09, yield: 3.72, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.14, yield: 5.02, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.16, yield: 4.75, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.21, yield: 4.37, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.29, yield: 5.03, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [3053773648, 3417025431, 4244401563, 4729115938, 5747301609, 6029773872],
+      netIncome: [592151682, 323565468, 778204776, 908066345, 646041056, 589930972],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 116418629522,
+      totalLiabilities: 52044222335,
+      equity: 64374407187,
+      operatingCashFlow: 893324191,
+      freeCashFlow: 659916163,
+      grossMargin: 46.1,
+      netMargin: 13.8,
+      roe: 35.8,
+      roa: 7.5,
+      debtToEquity: 1.8,
+      currentRatio: 2.41,
+      quickRatio: 2.15,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'GEREGU',
+    name: 'Geregu Power Plc',
+    sector: 'Power & Utilities',
+    price: 917.4,
+    change: 0,
+    changePct: 0.0,
+    volume: 692,
+    marketCap: 2204000000000,
+    high52w: 1318.48,
+    low52w: 615.74,
+    peRatio: 15,
+    pegRatio: 0.04,
+    eps: 61.16,
+    dividendYield: 5.3,
+    dividendPerShare: 48.62,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Geregu Power Plc is a leading company in the Power & Utilities sector listed on the Nigerian Exchange Group.',
+    website: 'www.geregu.com.ng',
+    ceo: 'Managing Director',
+    employees: 15009,
+    founded: 2009,
+    buyScore: 83,
+    valueScore: 81,
+    growthScore: 48,
+    momentumScore: 79,
+    kbRating: 73,
+    priceHistory: [
+      { year: 2020, price: 267.55 }
+      { year: 2021, price: 313.32 }
+      { year: 2022, price: 369.14 }
+      { year: 2023, price: 495.19 }
+      { year: 2024, price: 671.16 }
+      { year: 2025, price: 800.4 }
+      { year: 2026, price: 917.4 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 11.96, yield: 4.47, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 10.38, yield: 3.31, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 15.18, yield: 4.11, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 20.29, yield: 4.1, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 27.43, yield: 4.09, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 26.88, yield: 3.36, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [60760677960, 81794488805, 93726218970, 115408927218, 132344507848, 148329817146],
+      netIncome: [10528299567, 16693247941, 13772479792, 13421486557, 20909149380, 15883044215],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 2977599516699,
+      totalLiabilities: 1451118385897,
+      equity: 1526481130802,
+      operatingCashFlow: 25503742862,
+      freeCashFlow: 19805833668,
+      grossMargin: 39.7,
+      netMargin: 21.1,
+      roe: 35.8,
+      roa: 12.8,
+      debtToEquity: 0.51,
+      currentRatio: 2.64,
+      quickRatio: 2.49,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'GTCO',
+    name: 'Guaranty Trust Holding Company Plc',
+    sector: 'Banking',
+    price: 120.5,
+    change: 0,
+    changePct: 0.0,
+    volume: 207416,
+    marketCap: 3560000000000,
+    high52w: 152.59,
+    low52w: 91.42,
+    peRatio: 6,
+    pegRatio: 0.01,
+    eps: 20.08,
+    dividendYield: 4.39,
+    dividendPerShare: 5.29,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Guaranty Trust Holding Company Plc is a leading company in the Banking sector listed on the Nigerian Exchange Group.',
+    website: 'www.gtco.com.ng',
+    ceo: 'Managing Director',
+    employees: 16314,
+    founded: 1985,
+    buyScore: 89,
+    valueScore: 54,
+    growthScore: 60,
+    momentumScore: 51,
+    kbRating: 64,
+    priceHistory: [
+      { year: 2020, price: 35.39 }
+      { year: 2021, price: 40.68 }
+      { year: 2022, price: 45.94 }
+      { year: 2023, price: 56.39 }
+      { year: 2024, price: 80.73 }
+      { year: 2025, price: 102.31 }
+      { year: 2026, price: 120.5 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 1.38, yield: 3.9, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 1.3, yield: 3.2, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 1.41, yield: 3.07, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 2.13, yield: 3.78, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 2.48, yield: 3.07, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 3.02, yield: 2.95, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [105261238207, 138619844935, 167183209292, 190729740973, 215787829076, 238598876333],
+      netIncome: [11980291866, 21129580379, 14734373357, 29966057942, 34746637360, 20250356015],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 2954772060986,
+      totalLiabilities: 1378318296217,
+      equity: 1576453764769,
+      operatingCashFlow: 26466271070,
+      freeCashFlow: 17795345646,
+      grossMargin: 36.0,
+      netMargin: 7.6,
+      roe: 29.8,
+      roa: 6.3,
+      debtToEquity: 1.47,
+      currentRatio: 2.45,
+      quickRatio: 2.08,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'GUINEAINS',
+    name: 'Guinea Insurance Plc',
+    sector: 'Insurance',
+    price: 0.9,
+    change: 0.09,
+    changePct: 10.0,
+    volume: 674782,
+    marketCap: 16129706322,
+    high52w: 1.23,
+    low52w: 0.65,
+    peRatio: 8,
+    pegRatio: 0.01,
+    eps: 0.11,
+    dividendYield: 5.62,
+    dividendPerShare: 0.05,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Guinea Insurance Plc is a leading company in the Insurance sector listed on the Nigerian Exchange Group.',
+    website: 'www.guineains.com.ng',
+    ceo: 'Managing Director',
+    employees: 1671,
+    founded: 1971,
+    buyScore: 73,
+    valueScore: 84,
+    growthScore: 69,
+    momentumScore: 83,
+    kbRating: 77,
+    priceHistory: [
+      { year: 2020, price: 0.24 }
+      { year: 2021, price: 0.29 }
+      { year: 2022, price: 0.33 }
+      { year: 2023, price: 0.43 }
+      { year: 2024, price: 0.6 }
+      { year: 2025, price: 0.75 }
+      { year: 2026, price: 0.9 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.01, yield: 4.17, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.01, yield: 3.45, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.02, yield: 6.06, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.02, yield: 4.65, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.02, yield: 3.33, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.03, yield: 4.0, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [441912326, 602822813, 761748025, 813334387, 959455656, 1106384518],
+      netIncome: [49523196, 92698720, 64636068, 143564928, 147417700, 173672294],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 14187519870,
+      totalLiabilities: 7469819274,
+      equity: 6717700596,
+      operatingCashFlow: 239302689,
+      freeCashFlow: 133701257,
+      grossMargin: 46.1,
+      netMargin: 12.0,
+      roe: 29.0,
+      roa: 10.1,
+      debtToEquity: 0.38,
+      currentRatio: 1.64,
+      quickRatio: 1.48,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'GUINNESS',
+    name: 'Guinness Nigeria Plc',
+    sector: 'Consumer Goods',
+    price: 365.5,
+    change: 0,
+    changePct: 0.0,
+    volume: 550,
+    marketCap: 10591038261691,
+    high52w: 498.34,
+    low52w: 271.98,
+    peRatio: 18,
+    pegRatio: 0.03,
+    eps: 20.31,
+    dividendYield: 1.56,
+    dividendPerShare: 5.7,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Guinness Nigeria Plc is a leading company in the Consumer Goods sector listed on the Nigerian Exchange Group.',
+    website: 'www.guinness.com.ng',
+    ceo: 'Managing Director',
+    employees: 8352,
+    founded: 1964,
+    buyScore: 52,
+    valueScore: 55,
+    growthScore: 65,
+    momentumScore: 66,
+    kbRating: 60,
+    priceHistory: [
+      { year: 2020, price: 113.26 }
+      { year: 2021, price: 122.49 }
+      { year: 2022, price: 148.9 }
+      { year: 2023, price: 192.42 }
+      { year: 2024, price: 273.01 }
+      { year: 2025, price: 334.67 }
+      { year: 2026, price: 365.5 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 1.27, yield: 1.12, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 1.61, yield: 1.31, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 1.82, yield: 1.22, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 2.64, yield: 1.37, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 3.32, yield: 1.22, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 4.42, yield: 1.32, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [291616996768, 391570807715, 451479308717, 554801862124, 626325188460, 725660079297],
+      netIncome: [52937043577, 36982792631, 69719575831, 83866337069, 97183674779, 63146668546],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 16667248423332,
+      totalLiabilities: 6857255663062,
+      equity: 9809992760270,
+      operatingCashFlow: 80673633971,
+      freeCashFlow: 47647105380,
+      grossMargin: 35.1,
+      netMargin: 23.5,
+      roe: 19.3,
+      roa: 16.3,
+      debtToEquity: 1.3,
+      currentRatio: 1.56,
+      quickRatio: 1.39,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'HONYFLOUR',
+    name: 'Honeywell Flour Mill Plc',
+    sector: 'Consumer Goods',
+    price: 14,
+    change: 0,
+    changePct: 0.0,
+    volume: 42988,
+    marketCap: 407405356975,
+    high52w: 18.79,
+    low52w: 9.27,
+    peRatio: 18,
+    pegRatio: 0.03,
+    eps: 0.78,
+    dividendYield: 4.16,
+    dividendPerShare: 0.58,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Honeywell Flour Mill Plc is a leading company in the Consumer Goods sector listed on the Nigerian Exchange Group.',
+    website: 'www.honyflour.com.ng',
+    ceo: 'Managing Director',
+    employees: 17500,
+    founded: 1963,
+    buyScore: 86,
+    valueScore: 56,
+    growthScore: 86,
+    momentumScore: 81,
+    kbRating: 77,
+    priceHistory: [
+      { year: 2020, price: 4.23 }
+      { year: 2021, price: 4.84 }
+      { year: 2022, price: 5.89 }
+      { year: 2023, price: 7.53 }
+      { year: 2024, price: 10.14 }
+      { year: 2025, price: 12.22 }
+      { year: 2026, price: 14 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.14, yield: 3.31, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.18, yield: 3.72, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.17, yield: 2.89, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.22, yield: 2.92, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.35, yield: 3.45, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.37, yield: 3.03, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [11552098778, 14688938828, 17173725180, 22013069055, 25013496668, 28186223304],
+      netIncome: [1432075451, 1411830611, 1811223329, 4502331482, 3925281471, 2511597340],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 740931109288,
+      totalLiabilities: 444984094963,
+      equity: 295947014325,
+      operatingCashFlow: 3222845147,
+      freeCashFlow: 1784353659,
+      grossMargin: 25.9,
+      netMargin: 7.6,
+      roe: 22.0,
+      roa: 14.2,
+      debtToEquity: 1.09,
+      currentRatio: 2.65,
+      quickRatio: 2.13,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'IKEJAHOTEL',
+    name: 'Ikeja Hotel Plc',
+    sector: 'Hospitality',
+    price: 43.25,
+    change: 0,
+    changePct: 0.0,
+    volume: 3419,
+    marketCap: 822983152065,
+    high52w: 50.97,
+    low52w: 28.6,
+    peRatio: 14,
+    pegRatio: 0.02,
+    eps: 3.09,
+    dividendYield: 2.82,
     dividendPerShare: 1.22,
     riskLevel: 'Medium',
     investmentHorizon: '2-4 years',
-    description: 'Custodian Investment Plc is a diversified financial services holding company with subsidiaries in life insurance, general insurance, investment management and pensions.',
-    website: 'custodianplc.com',
-    ceo: 'Wole Oshin',
-    employees: 820,
-    founded: 1995,
-    buyScore: 74,
-    valueScore: 80,
-    growthScore: 68,
-    momentumScore: 72,
-    kbRating: 74,
-    priceHistory: [
-      { year: 2020, price: 4.80 },
-      { year: 2021, price: 6.20 },
-      { year: 2022, price: 7.50 },
-      { year: 2023, price: 8.80 },
-      { year: 2024, price: 9.80 },
-      { year: 2025, price: 10.20 },
-      { year: 2026, price: 73.15 },
-    ],
-    dividendHistory: [
-      { year: 2020, dividend: 0.35, yield: 7.29, exDate: '2020-06-25', payDate: '2020-07-17' },
-      { year: 2021, dividend: 0.45, yield: 7.26, exDate: '2021-06-24', payDate: '2021-07-16' },
-      { year: 2022, dividend: 0.55, yield: 7.33, exDate: '2022-06-23', payDate: '2022-07-15' },
-      { year: 2023, dividend: 0.70, yield: 7.95, exDate: '2023-06-22', payDate: '2023-07-14' },
-      { year: 2024, dividend: 0.85, yield: 8.67, exDate: '2024-06-20', payDate: '2024-07-12' },
-      { year: 2025, dividend: 1.00, yield: 9.80, exDate: '2025-06-19', payDate: '2025-07-11' },
-    ],
-    financials: {
-      revenue: [42000, 55000, 68000, 82000, 98000, 115000],
-      netIncome: [8000, 12000, 15000, 18000, 22000, 26000],
-      eps: [0.88, 1.32, 1.65, 1.98, 2.42, 2.86],
-      totalAssets: 280000,
-      totalLiabilities: 220000,
-      equity: 60000,
-      operatingCashFlow: 25000,
-      freeCashFlow: 18000,
-      grossMargin: 45.0,
-      netMargin: 22.6,
-      roe: 43.3,
-      roa: 9.3,
-      debtToEquity: 3.67,
-      currentRatio: 1.35,
-      quickRatio: 1.18,
-      years: [2020, 2021, 2022, 2023, 2024, 2025],
-    },
-  },
-  {
-    symbol: 'NEM',
-    name: 'NEM Insurance Plc',
-    sector: 'Insurance',
-    price: 29.00,
-    change: 0.00,
-    changePct: 0.00,
-    volume: 6200000,
-    marketCap: 145480000000.00,
-    high52w: 36.00,
-    low52w: 10.5,
-    peRatio: 8.5,
-    pegRatio: 0.33,
-    eps: 3.41,
-    dividendYield: 5.17,
-    dividendPerShare: 1.5,
-    riskLevel: 'Medium',
-    investmentHorizon: '2-3 years',
-    description: 'NEM Insurance Plc provides general insurance services including fire, motor, marine, accident, engineering, and oil and gas insurance.',
-    website: 'neminsurance.com',
-    ceo: 'Tope Smart',
-    employees: 650,
-    founded: 1970,
-    buyScore: 70,
-    valueScore: 76,
-    growthScore: 65,
-    momentumScore: 68,
+    description: 'Ikeja Hotel Plc is a leading company in the Hospitality sector listed on the Nigerian Exchange Group.',
+    website: 'www.ikejahotel.com.ng',
+    ceo: 'Managing Director',
+    employees: 7689,
+    founded: 1982,
+    buyScore: 68,
+    valueScore: 74,
+    growthScore: 83,
+    momentumScore: 56,
     kbRating: 70,
     priceHistory: [
-      { year: 2020, price: 1.80 },
-      { year: 2021, price: 2.50 },
-      { year: 2022, price: 3.40 },
-      { year: 2023, price: 5.20 },
-      { year: 2024, price: 7.20 },
-      { year: 2025, price: 7.90 },
-      { year: 2026, price: 29.00 },
+      { year: 2020, price: 16.41 }
+      { year: 2021, price: 18.25 }
+      { year: 2022, price: 21.4 }
+      { year: 2023, price: 25.02 }
+      { year: 2024, price: 33.7 }
+      { year: 2025, price: 38.98 }
+      { year: 2026, price: 43.25 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.15, yield: 8.33, exDate: '2020-07-30', payDate: '2020-08-21' },
-      { year: 2021, dividend: 0.20, yield: 8.00, exDate: '2021-07-29', payDate: '2021-08-20' },
-      { year: 2022, dividend: 0.28, yield: 8.24, exDate: '2022-07-28', payDate: '2022-08-19' },
-      { year: 2023, dividend: 0.38, yield: 7.31, exDate: '2023-07-27', payDate: '2023-08-18' },
-      { year: 2024, dividend: 0.50, yield: 6.94, exDate: '2024-07-25', payDate: '2024-08-16' },
-      { year: 2025, dividend: 0.60, yield: 7.59, exDate: '2025-07-24', payDate: '2025-08-15' },
+      { year: 2020, dividend: 0.28, yield: 1.71, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.44, yield: 2.41, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.43, yield: 2.01, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.53, yield: 2.12, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.59, yield: 1.75, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.91, yield: 2.33, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
-      revenue: [25000, 32000, 42000, 55000, 68000, 80000],
-      netIncome: [5000, 7000, 10000, 14000, 18000, 22000],
-      eps: [0.97, 1.36, 1.95, 2.73, 3.51, 4.29],
-      totalAssets: 95000,
-      totalLiabilities: 72000,
-      equity: 23000,
-      operatingCashFlow: 18000,
-      freeCashFlow: 12000,
-      grossMargin: 38.0,
-      netMargin: 27.5,
-      roe: 95.7,
-      roa: 23.2,
-      debtToEquity: 3.13,
-      currentRatio: 1.42,
-      quickRatio: 1.28,
+      revenue: [25568264041, 29986224921, 37832002575, 41935966148, 50225023900, 52927368929],
+      netIncome: [5497339832, 4845079697, 3670149508, 8084288875, 10285860339, 5098972598],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 589328653367,
+      totalLiabilities: 237929350630,
+      equity: 351399302737,
+      operatingCashFlow: 7341916751,
+      freeCashFlow: 3486351768,
+      grossMargin: 46.2,
+      netMargin: 12.1,
+      roe: 9.1,
+      roa: 15.7,
+      debtToEquity: 1.31,
+      currentRatio: 2.01,
+      quickRatio: 1.48,
       years: [2020, 2021, 2022, 2023, 2024, 2025],
     },
   },
   {
-    symbol: 'MANSARD',
-    name: 'AXA Mansard Insurance Plc',
-    sector: 'Insurance',
-    price: 13.00,
-    change: 0.55,
-    changePct: 4.42,
-    volume: 5500000,
-    marketCap: 114700000000.00,
-    high52w: 16.00,
-    low52w: 5.8,
-    peRatio: 40.84,
-    pegRatio: 0.46,
-    eps: 0.32,
-    dividendYield: 3.46,
+    symbol: 'INTBREW',
+    name: 'International Breweries Plc',
+    sector: 'Consumer Goods',
+    price: 9.5,
+    change: 0,
+    changePct: 0.0,
+    volume: 7844,
+    marketCap: 211163111168,
+    high52w: 12.82,
+    low52w: 6.39,
+    peRatio: 18,
+    pegRatio: 0.03,
+    eps: 0.53,
+    dividendYield: 4.73,
     dividendPerShare: 0.45,
-    riskLevel: 'Medium',
-    investmentHorizon: '2-4 years',
-    description: 'AXA Mansard Insurance Plc is a subsidiary of AXA Group, offering life and non-life insurance products, HMO, and fund management services in Nigeria.',
-    website: 'axamansard.com',
-    ceo: 'Kunle Ahmed',
-    employees: 780,
-    founded: 1989,
-    buyScore: 68,
-    valueScore: 72,
-    growthScore: 65,
-    momentumScore: 65,
-    kbRating: 68,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'International Breweries Plc is a leading company in the Consumer Goods sector listed on the Nigerian Exchange Group.',
+    website: 'www.intbrew.com.ng',
+    ceo: 'Managing Director',
+    employees: 387,
+    founded: 1991,
+    buyScore: 84,
+    valueScore: 49,
+    growthScore: 79,
+    momentumScore: 50,
+    kbRating: 66,
     priceHistory: [
-      { year: 2020, price: 1.80 },
-      { year: 2021, price: 2.30 },
-      { year: 2022, price: 3.20 },
-      { year: 2023, price: 4.80 },
-      { year: 2024, price: 6.20 },
-      { year: 2025, price: 6.60 },
-      { year: 2026, price: 13.00 },
+      { year: 2020, price: 3.1 }
+      { year: 2021, price: 3.59 }
+      { year: 2022, price: 4.26 }
+      { year: 2023, price: 5.46 }
+      { year: 2024, price: 7.41 }
+      { year: 2025, price: 8.31 }
+      { year: 2026, price: 9.5 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.08, yield: 4.44, exDate: '2020-08-06', payDate: '2020-08-28' },
-      { year: 2021, dividend: 0.12, yield: 5.22, exDate: '2021-08-05', payDate: '2021-08-27' },
-      { year: 2022, dividend: 0.18, yield: 5.63, exDate: '2022-08-04', payDate: '2022-08-26' },
-      { year: 2023, dividend: 0.25, yield: 5.21, exDate: '2023-08-03', payDate: '2023-08-25' },
-      { year: 2024, dividend: 0.32, yield: 5.16, exDate: '2024-08-01', payDate: '2024-08-23' },
-      { year: 2025, dividend: 0.40, yield: 6.06, exDate: '2025-07-31', payDate: '2025-08-22' },
+      { year: 2020, dividend: 0.11, yield: 3.55, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.12, yield: 3.34, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.15, yield: 3.52, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.2, yield: 3.66, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.28, yield: 3.78, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.26, yield: 3.13, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
-      revenue: [38000, 48000, 62000, 78000, 94000, 110000],
-      netIncome: [4200, 6000, 8500, 11000, 14000, 17000],
-      eps: [0.63, 0.90, 1.28, 1.66, 2.11, 2.56],
-      totalAssets: 168000,
-      totalLiabilities: 130000,
-      equity: 38000,
-      operatingCashFlow: 15000,
-      freeCashFlow: 10000,
-      grossMargin: 32.0,
-      netMargin: 15.5,
-      roe: 44.7,
-      roa: 10.1,
-      debtToEquity: 3.42,
-      currentRatio: 1.28,
-      quickRatio: 1.12,
+      revenue: [6424735450, 8014893143, 9578434797, 11319511511, 12505142160, 13584274090],
+      netIncome: [993330052, 1436166415, 726591400, 1699645274, 1969597343, 1925554431],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 178208950184,
+      totalLiabilities: 118887107404,
+      equity: 59321842780,
+      operatingCashFlow: 3029554602,
+      freeCashFlow: 1989601646,
+      grossMargin: 34.2,
+      netMargin: 25.3,
+      roe: 14.7,
+      roa: 14.4,
+      debtToEquity: 0.2,
+      currentRatio: 1.24,
+      quickRatio: 1.06,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'INTENEGINS',
+    name: 'Interlinked Energy Integrated Services Plc',
+    sector: 'Oil & Gas',
+    price: 5.22,
+    change: 0,
+    changePct: 0.0,
+    volume: 200430,
+    marketCap: 34872038133,
+    high52w: 7.34,
+    low52w: 4.04,
+    peRatio: 10,
+    pegRatio: 0.02,
+    eps: 0.52,
+    dividendYield: 6.28,
+    dividendPerShare: 0.33,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Interlinked Energy Integrated Services Plc is a leading company in the Oil & Gas sector listed on the Nigerian Exchange Group.',
+    website: 'www.intenegins.com.ng',
+    ceo: 'Managing Director',
+    employees: 9613,
+    founded: 2002,
+    buyScore: 58,
+    valueScore: 58,
+    growthScore: 74,
+    momentumScore: 74,
+    kbRating: 66,
+    priceHistory: [
+      { year: 2020, price: 1.56 }
+      { year: 2021, price: 1.86 }
+      { year: 2022, price: 2.08 }
+      { year: 2023, price: 2.75 }
+      { year: 2024, price: 3.97 }
+      { year: 2025, price: 4.64 }
+      { year: 2026, price: 5.22 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.07, yield: 4.49, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.08, yield: 4.3, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.08, yield: 3.85, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.13, yield: 4.73, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.17, yield: 4.28, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.19, yield: 4.09, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [967550102, 1386342255, 1527212684, 1751257558, 2122099218, 2402974830],
+      netIncome: [202992294, 116970608, 274068381, 164195727, 316367642, 451658470],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 32720758719,
+      totalLiabilities: 20487405762,
+      equity: 12233352957,
+      operatingCashFlow: 508551499,
+      freeCashFlow: 248317151,
+      grossMargin: 43.1,
+      netMargin: 11.7,
+      roe: 22.0,
+      roa: 15.1,
+      debtToEquity: 1.8,
+      currentRatio: 2.35,
+      quickRatio: 2.18,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'JAIZBANK',
+    name: 'Jaiz Bank Plc',
+    sector: 'Banking',
+    price: 8.15,
+    change: -0.2,
+    changePct: -2.45,
+    volume: 1272341,
+    marketCap: 170016632321,
+    high52w: 11.23,
+    low52w: 5.67,
+    peRatio: 6,
+    pegRatio: 0.01,
+    eps: 1.36,
+    dividendYield: 4.61,
+    dividendPerShare: 0.38,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Jaiz Bank Plc is a leading company in the Banking sector listed on the Nigerian Exchange Group.',
+    website: 'www.jaizbank.com.ng',
+    ceo: 'Managing Director',
+    employees: 5798,
+    founded: 1982,
+    buyScore: 75,
+    valueScore: 88,
+    growthScore: 88,
+    momentumScore: 61,
+    kbRating: 78,
+    priceHistory: [
+      { year: 2020, price: 2.47 }
+      { year: 2021, price: 2.85 }
+      { year: 2022, price: 3.36 }
+      { year: 2023, price: 4.38 }
+      { year: 2024, price: 6.03 }
+      { year: 2025, price: 7.4 }
+      { year: 2026, price: 8.15 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.1, yield: 4.05, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.09, yield: 3.16, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.13, yield: 3.87, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.15, yield: 3.42, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.2, yield: 3.32, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.22, yield: 2.97, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [4979344131, 6392591994, 7707500440, 8484388844, 10366799706, 11754963650],
+      netIncome: [419715230, 563922669, 875025894, 902043841, 1478130648, 1505493011],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 283474060617,
+      totalLiabilities: 186019528207,
+      equity: 97454532410,
+      operatingCashFlow: 1684079779,
+      freeCashFlow: 1301201042,
+      grossMargin: 23.4,
+      netMargin: 14.9,
+      roe: 17.8,
+      roa: 5.6,
+      debtToEquity: 0.89,
+      currentRatio: 1.13,
+      quickRatio: 0.58,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'JAPAULGOLD',
+    name: 'Japaul Gold and Ventures Plc',
+    sector: 'Mining',
+    price: 2.96,
+    change: 0,
+    changePct: 0.0,
+    volume: 172205,
+    marketCap: 64634408445,
+    high52w: 3.47,
+    low52w: 1.85,
+    peRatio: 8,
+    pegRatio: 0.01,
+    eps: 0.37,
+    dividendYield: 2.67,
+    dividendPerShare: 0.08,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Japaul Gold and Ventures Plc is a leading company in the Mining sector listed on the Nigerian Exchange Group.',
+    website: 'www.japaulgold.com.ng',
+    ceo: 'Managing Director',
+    employees: 1801,
+    founded: 1999,
+    buyScore: 66,
+    valueScore: 52,
+    growthScore: 78,
+    momentumScore: 71,
+    kbRating: 67,
+    priceHistory: [
+      { year: 2020, price: 1.11 }
+      { year: 2021, price: 1.23 }
+      { year: 2022, price: 1.46 }
+      { year: 2023, price: 1.7 }
+      { year: 2024, price: 2.24 }
+      { year: 2025, price: 2.52 }
+      { year: 2026, price: 2.96 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.02, yield: 1.8, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.02, yield: 1.63, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.02, yield: 1.37, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.03, yield: 1.76, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.04, yield: 1.79, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.06, yield: 2.38, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [1858781118, 2455493981, 2719174215, 3502059834, 3776312086, 4304410832],
+      netIncome: [165794109, 524208112, 440472061, 418452574, 404464869, 398880797],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 51075307013,
+      totalLiabilities: 22738898281,
+      equity: 28336408732,
+      operatingCashFlow: 714436637,
+      freeCashFlow: 491928230,
+      grossMargin: 45.2,
+      netMargin: 23.9,
+      roe: 15.9,
+      roa: 11.8,
+      debtToEquity: 0.51,
+      currentRatio: 1.61,
+      quickRatio: 1.23,
       years: [2020, 2021, 2022, 2023, 2024, 2025],
     },
   },
@@ -1474,245 +3142,1086 @@ export const NGX_STOCKS: Stock[] = [
     name: 'Julius Berger Nigeria Plc',
     sector: 'Construction',
     price: 310.8,
-    change: 0.00,
-    changePct: 0.00,
-    volume: 380000,
-    marketCap: 497280000000.00,
-    high52w: 380.00,
-    low52w: 138.00,
-    peRatio: 16.78,
-    pegRatio: 0.43,
-    eps: 18.52,
-    dividendYield: 1.05,
-    dividendPerShare: 3.25,
+    change: 0,
+    changePct: 0.0,
+    volume: 1431,
+    marketCap: 4287356430210,
+    high52w: 396.37,
+    low52w: 238.7,
+    peRatio: 12,
+    pegRatio: 0.02,
+    eps: 25.9,
+    dividendYield: 4.32,
+    dividendPerShare: 13.43,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Julius Berger Nigeria Plc is a leading company in the Construction sector listed on the Nigerian Exchange Group.',
+    website: 'www.jberger.com.ng',
+    ceo: 'Managing Director',
+    employees: 10638,
+    founded: 1973,
+    buyScore: 88,
+    valueScore: 88,
+    growthScore: 71,
+    momentumScore: 85,
+    kbRating: 83,
+    priceHistory: [
+      { year: 2020, price: 96.4 }
+      { year: 2021, price: 110.63 }
+      { year: 2022, price: 127.28 }
+      { year: 2023, price: 157.01 }
+      { year: 2024, price: 226.03 }
+      { year: 2025, price: 277.89 }
+      { year: 2026, price: 310.8 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 2.63, yield: 2.73, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 3.89, yield: 3.52, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 3.73, yield: 2.93, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 5.53, yield: 3.52, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 6.33, yield: 2.8, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 8.67, yield: 3.12, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [118883576368, 166267205457, 198975964811, 216166360420, 252774945151, 278476365625],
+      netIncome: [16393275963, 20833139219, 34921869554, 35724902134, 37104908905, 51627644674],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 5249235639790,
+      totalLiabilities: 2193917435151,
+      equity: 3055318204639,
+      operatingCashFlow: 93115039709,
+      freeCashFlow: 57026283832,
+      grossMargin: 29.3,
+      netMargin: 14.8,
+      roe: 16.0,
+      roa: 13.7,
+      debtToEquity: 1.65,
+      currentRatio: 1.14,
+      quickRatio: 0.61,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'JOHNHOLT',
+    name: 'John Holt Plc',
+    sector: 'Conglomerates',
+    price: 11.2,
+    change: 0,
+    changePct: 0.0,
+    volume: 4500,
+    marketCap: 188891037888,
+    high52w: 14.75,
+    low52w: 6.4,
+    peRatio: 10,
+    pegRatio: 0.02,
+    eps: 1.12,
+    dividendYield: 1.66,
+    dividendPerShare: 0.19,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'John Holt Plc is a leading company in the Conglomerates sector listed on the Nigerian Exchange Group.',
+    website: 'www.johnholt.com.ng',
+    ceo: 'Managing Director',
+    employees: 4841,
+    founded: 1994,
+    buyScore: 54,
+    valueScore: 81,
+    growthScore: 63,
+    momentumScore: 85,
+    kbRating: 71,
+    priceHistory: [
+      { year: 2020, price: 3.85 }
+      { year: 2021, price: 4.18 }
+      { year: 2022, price: 4.86 }
+      { year: 2023, price: 6.13 }
+      { year: 2024, price: 7.78 }
+      { year: 2025, price: 9.76 }
+      { year: 2026, price: 11.2 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.04, yield: 1.04, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.06, yield: 1.44, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.06, yield: 1.23, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.07, yield: 1.14, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.09, yield: 1.16, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.1, yield: 1.02, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [5663541846, 6815962153, 7972565479, 9489104154, 11003301198, 12695764540],
+      netIncome: [689186987, 906780586, 1693902541, 1309185342, 2181919221, 2040146569],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 401611741290,
+      totalLiabilities: 144396248515,
+      equity: 257215492775,
+      operatingCashFlow: 2718056873,
+      freeCashFlow: 1333686103,
+      grossMargin: 37.9,
+      netMargin: 22.7,
+      roe: 23.2,
+      roa: 9.9,
+      debtToEquity: 1.31,
+      currentRatio: 2.05,
+      quickRatio: 1.81,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'LASACO',
+    name: 'Lasaco Assurance Plc',
+    sector: 'Insurance',
+    price: 1.76,
+    change: 0.06,
+    changePct: 3.41,
+    volume: 147850,
+    marketCap: 10416377993,
+    high52w: 2.27,
+    low52w: 1.02,
+    peRatio: 8,
+    pegRatio: 0.01,
+    eps: 0.22,
+    dividendYield: 6.14,
+    dividendPerShare: 0.11,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Lasaco Assurance Plc is a leading company in the Insurance sector listed on the Nigerian Exchange Group.',
+    website: 'www.lasaco.com.ng',
+    ceo: 'Managing Director',
+    employees: 6775,
+    founded: 1961,
+    buyScore: 60,
+    valueScore: 56,
+    growthScore: 75,
+    momentumScore: 77,
+    kbRating: 67,
+    priceHistory: [
+      { year: 2020, price: 0.62 }
+      { year: 2021, price: 0.74 }
+      { year: 2022, price: 0.82 }
+      { year: 2023, price: 1.02 }
+      { year: 2024, price: 1.31 }
+      { year: 2025, price: 1.51 }
+      { year: 2026, price: 1.76 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.03, yield: 4.84, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.04, yield: 5.41, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.05, yield: 6.1, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.05, yield: 4.9, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.07, yield: 5.34, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.08, yield: 5.3, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [320244966, 406309782, 449916272, 538373640, 599664548, 686315860],
+      netIncome: [40097769, 39462200, 56478564, 86433951, 91120593, 64566277],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 19814443165,
+      totalLiabilities: 7267446472,
+      equity: 12546996693,
+      operatingCashFlow: 70621425,
+      freeCashFlow: 44263568,
+      grossMargin: 57.8,
+      netMargin: 19.8,
+      roe: 30.2,
+      roa: 12.2,
+      debtToEquity: 0.22,
+      currentRatio: 1.48,
+      quickRatio: 0.91,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'LEARNAFRCA',
+    name: 'Learn Africa Plc',
+    sector: 'Publishing',
+    price: 9.9,
+    change: 0,
+    changePct: 0.0,
+    volume: 14056,
+    marketCap: 20290843707,
+    high52w: 14.31,
+    low52w: 6.04,
+    peRatio: 10,
+    pegRatio: 0.02,
+    eps: 0.99,
+    dividendYield: 5.93,
+    dividendPerShare: 0.59,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Learn Africa Plc is a leading company in the Publishing sector listed on the Nigerian Exchange Group.',
+    website: 'www.learnafrca.com.ng',
+    ceo: 'Managing Director',
+    employees: 8825,
+    founded: 1991,
+    buyScore: 57,
+    valueScore: 48,
+    growthScore: 49,
+    momentumScore: 66,
+    kbRating: 55,
+    priceHistory: [
+      { year: 2020, price: 3.26 }
+      { year: 2021, price: 3.86 }
+      { year: 2022, price: 4.25 }
+      { year: 2023, price: 5.72 }
+      { year: 2024, price: 7.46 }
+      { year: 2025, price: 8.67 }
+      { year: 2026, price: 9.9 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.15, yield: 4.6, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.18, yield: 4.66, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.2, yield: 4.71, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.27, yield: 4.72, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.33, yield: 4.42, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.42, yield: 4.84, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [603040132, 755789782, 949843660, 1042538942, 1218076474, 1348628161],
+      netIncome: [83690759, 142108925, 79331345, 171675644, 245249873, 136724686],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 44304007348,
+      totalLiabilities: 23929975785,
+      equity: 20374031563,
+      operatingCashFlow: 147895195,
+      freeCashFlow: 74811697,
+      grossMargin: 40.4,
+      netMargin: 25.4,
+      roe: 14.2,
+      roa: 15.4,
+      debtToEquity: 1.87,
+      currentRatio: 2.12,
+      quickRatio: 1.84,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'LINKASSURE',
+    name: 'Linkage Assurance Plc',
+    sector: 'Insurance',
+    price: 1.5,
+    change: 0.12,
+    changePct: 8.0,
+    volume: 151300,
+    marketCap: 43948767218,
+    high52w: 1.79,
+    low52w: 0.92,
+    peRatio: 8,
+    pegRatio: 0.02,
+    eps: 0.19,
+    dividendYield: 2.01,
+    dividendPerShare: 0.03,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Linkage Assurance Plc is a leading company in the Insurance sector listed on the Nigerian Exchange Group.',
+    website: 'www.linkassure.com.ng',
+    ceo: 'Managing Director',
+    employees: 7623,
+    founded: 2002,
+    buyScore: 58,
+    valueScore: 56,
+    growthScore: 60,
+    momentumScore: 58,
+    kbRating: 58,
+    priceHistory: [
+      { year: 2020, price: 0.52 }
+      { year: 2021, price: 0.57 }
+      { year: 2022, price: 0.69 }
+      { year: 2023, price: 0.82 }
+      { year: 2024, price: 1.07 }
+      { year: 2025, price: 1.29 }
+      { year: 2026, price: 1.5 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.01, yield: 1.92, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.01, yield: 1.75, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.01, yield: 1.45, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.01, yield: 1.22, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.02, yield: 1.87, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.02, yield: 1.55, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [1255693073, 1550542086, 1938641642, 2233144610, 2545937338, 2813620147],
+      netIncome: [103107385, 137674612, 347845121, 450607721, 509364280, 296676794],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 32458583742,
+      totalLiabilities: 14562734981,
+      equity: 17895848761,
+      operatingCashFlow: 343672092,
+      freeCashFlow: 278397392,
+      grossMargin: 45.9,
+      netMargin: 19.7,
+      roe: 25.1,
+      roa: 4.4,
+      debtToEquity: 1.47,
+      currentRatio: 1.49,
+      quickRatio: 0.97,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'LIVESTOCK',
+    name: 'Livestock Feeds Plc',
+    sector: 'Agriculture',
+    price: 7.2,
+    change: 0,
+    changePct: 0.0,
+    volume: 18377,
+    marketCap: 88622268385,
+    high52w: 9.23,
+    low52w: 4.05,
+    peRatio: 12,
+    pegRatio: 0.02,
+    eps: 0.6,
+    dividendYield: 3.85,
+    dividendPerShare: 0.28,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Livestock Feeds Plc is a leading company in the Agriculture sector listed on the Nigerian Exchange Group.',
+    website: 'www.livestock.com.ng',
+    ceo: 'Managing Director',
+    employees: 17111,
+    founded: 1975,
+    buyScore: 82,
+    valueScore: 71,
+    growthScore: 73,
+    momentumScore: 73,
+    kbRating: 75,
+    priceHistory: [
+      { year: 2020, price: 2.47 }
+      { year: 2021, price: 2.81 }
+      { year: 2022, price: 3.21 }
+      { year: 2023, price: 3.97 }
+      { year: 2024, price: 5.01 }
+      { year: 2025, price: 6.02 }
+      { year: 2026, price: 7.2 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.08, yield: 3.24, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.09, yield: 3.2, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.1, yield: 3.12, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.12, yield: 3.02, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.16, yield: 3.19, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.2, yield: 3.32, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [2799057304, 3138539044, 4171232283, 4413747023, 5137317007, 6087249001],
+      netIncome: [521518928, 641689367, 745441963, 431694786, 450772446, 781493123],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 96179191135,
+      totalLiabilities: 50877365572,
+      equity: 45301825563,
+      operatingCashFlow: 1322921836,
+      freeCashFlow: 649993720,
+      grossMargin: 37.7,
+      netMargin: 10.3,
+      roe: 20.4,
+      roa: 14.9,
+      debtToEquity: 0.72,
+      currentRatio: 2.66,
+      quickRatio: 2.26,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'MANSARD',
+    name: 'Mansard Insurance Plc',
+    sector: 'Insurance',
+    price: 12,
+    change: 0,
+    changePct: 0.0,
+    volume: 20843,
+    marketCap: 315130282449,
+    high52w: 16.16,
+    low52w: 8.84,
+    peRatio: 8,
+    pegRatio: 0.02,
+    eps: 1.5,
+    dividendYield: 6.22,
+    dividendPerShare: 0.75,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Mansard Insurance Plc is a leading company in the Insurance sector listed on the Nigerian Exchange Group.',
+    website: 'www.mansard.com.ng',
+    ceo: 'Managing Director',
+    employees: 6469,
+    founded: 1973,
+    buyScore: 71,
+    valueScore: 49,
+    growthScore: 57,
+    momentumScore: 65,
+    kbRating: 60,
+    priceHistory: [
+      { year: 2020, price: 3.64 }
+      { year: 2021, price: 4.34 }
+      { year: 2022, price: 5.22 }
+      { year: 2023, price: 6.69 }
+      { year: 2024, price: 9.45 }
+      { year: 2025, price: 10.87 }
+      { year: 2026, price: 12 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.19, yield: 5.22, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.19, yield: 4.38, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.23, yield: 4.41, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.32, yield: 4.78, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.44, yield: 4.66, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.55, yield: 5.06, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [9859875907, 12389969098, 13758581036, 16672463759, 19034749926, 21036335842],
+      netIncome: [1487367654, 902215702, 1148762541, 3094436946, 2179786725, 2189101614],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 445885985883,
+      totalLiabilities: 200920305666,
+      equity: 244965680217,
+      operatingCashFlow: 3753136220,
+      freeCashFlow: 1766603528,
+      grossMargin: 39.5,
+      netMargin: 10.6,
+      roe: 35.9,
+      roa: 15.1,
+      debtToEquity: 0.44,
+      currentRatio: 2.22,
+      quickRatio: 1.67,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'MAYBAKER',
+    name: 'May and Baker Nigeria Plc',
+    sector: 'Healthcare',
+    price: 40,
+    change: 0,
+    changePct: 0.0,
+    volume: 23396,
+    marketCap: 1130071681487,
+    high52w: 47.28,
+    low52w: 27.18,
+    peRatio: 15,
+    pegRatio: 0.03,
+    eps: 2.67,
+    dividendYield: 2.13,
+    dividendPerShare: 0.85,
     riskLevel: 'Medium',
     investmentHorizon: '2-4 years',
-    description: 'Julius Berger Nigeria Plc is a leading construction company in Nigeria delivering complex infrastructure and building construction projects.',
-    website: 'julius-berger.com',
-    ceo: 'Dr. Lars Richter',
-    employees: 12000,
-    founded: 1965,
-    buyScore: 73,
-    valueScore: 78,
-    growthScore: 68,
-    momentumScore: 72,
-    kbRating: 73,
+    description: 'May and Baker Nigeria Plc is a leading company in the Healthcare sector listed on the Nigerian Exchange Group.',
+    website: 'www.maybaker.com.ng',
+    ceo: 'Managing Director',
+    employees: 13239,
+    founded: 1983,
+    buyScore: 60,
+    valueScore: 60,
+    growthScore: 52,
+    momentumScore: 56,
+    kbRating: 57,
     priceHistory: [
-      { year: 2020, price: 18.50 },
-      { year: 2021, price: 25.00 },
-      { year: 2022, price: 42.00 },
-      { year: 2023, price: 92.00 },
-      { year: 2024, price: 168.00 },
-      { year: 2025, price: 188.00 },
-      { year: 2026, price: 310.80 },
+      { year: 2020, price: 13.97 }
+      { year: 2021, price: 15.3 }
+      { year: 2022, price: 18.55 }
+      { year: 2023, price: 21.72 }
+      { year: 2024, price: 29.6 }
+      { year: 2025, price: 35.05 }
+      { year: 2026, price: 40 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 1.50, yield: 8.11, exDate: '2020-05-28', payDate: '2020-06-19' },
-      { year: 2021, dividend: 2.50, yield: 10.00, exDate: '2021-05-27', payDate: '2021-06-18' },
-      { year: 2022, dividend: 4.00, yield: 9.52, exDate: '2022-05-26', payDate: '2022-06-17' },
-      { year: 2023, dividend: 6.00, yield: 6.52, exDate: '2023-05-25', payDate: '2023-06-16' },
-      { year: 2024, dividend: 8.00, yield: 4.76, exDate: '2024-05-23', payDate: '2024-06-14' },
-      { year: 2025, dividend: 10.00, yield: 5.32, exDate: '2025-05-22', payDate: '2025-06-13' },
+      { year: 2020, dividend: 0.21, yield: 1.5, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.21, yield: 1.37, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.26, yield: 1.4, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.32, yield: 1.47, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.47, yield: 1.59, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.64, yield: 1.83, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
-      revenue: [322000, 392000, 478000, 638000, 820000, 968000],
-      netIncome: [8500, 14000, 20000, 28000, 38000, 48000],
-      eps: [7.43, 12.24, 17.49, 24.47, 33.22, 41.96],
-      totalAssets: 295000,
-      totalLiabilities: 192000,
-      equity: 103000,
-      operatingCashFlow: 52000,
-      freeCashFlow: 32000,
-      grossMargin: 12.5,
-      netMargin: 5.0,
-      roe: 46.6,
-      roa: 16.3,
-      debtToEquity: 1.86,
-      currentRatio: 1.45,
-      quickRatio: 1.22,
+      revenue: [34847592034, 39780669187, 51298452049, 56278622956, 68556570514, 77719122413],
+      netIncome: [6582424407, 2954298485, 10679037609, 6205478260, 9295048502, 13951457360],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 1591872282089,
+      totalLiabilities: 590541556334,
+      equity: 1001330725755,
+      operatingCashFlow: 17590211171,
+      freeCashFlow: 13468472848,
+      grossMargin: 56.2,
+      netMargin: 10.8,
+      roe: 10.5,
+      roa: 16.5,
+      debtToEquity: 0.64,
+      currentRatio: 2.17,
+      quickRatio: 1.7,
       years: [2020, 2021, 2022, 2023, 2024, 2025],
     },
   },
   {
-    symbol: 'TRANSCOHOT',
-    name: 'Transcorp Hotels Plc',
-    sector: 'Hospitality',
-    price: 155.00,
-    change: 1.5,
-    changePct: 0.98,
-    volume: 1200000,
-    marketCap: 248000000000.00,
-    high52w: 185.00,
-    low52w: 68.00,
-    peRatio: 17.5,
-    pegRatio: 0.33,
-    eps: 8.86,
-    dividendYield: 1.29,
-    dividendPerShare: 2.00,
+    symbol: 'MBENEFIT',
+    name: 'Mutual Benefits Assurance Plc',
+    sector: 'Insurance',
+    price: 3.2,
+    change: 0,
+    changePct: 0.0,
+    volume: 50308,
+    marketCap: 19625212758,
+    high52w: 4.52,
+    low52w: 1.98,
+    peRatio: 8,
+    pegRatio: 0.02,
+    eps: 0.4,
+    dividendYield: 2.89,
+    dividendPerShare: 0.09,
     riskLevel: 'High',
-    investmentHorizon: '3-5 years',
-    description: 'Transcorp Hotels Plc operates the iconic Transcorp Hilton Abuja and is focused on expanding its hospitality portfolio across Nigeria.',
-    website: 'transcorphotels.com',
-    ceo: 'Owen Omogiafo',
-    employees: 1800,
+    investmentHorizon: '1-3 years',
+    description: 'Mutual Benefits Assurance Plc is a leading company in the Insurance sector listed on the Nigerian Exchange Group.',
+    website: 'www.mbenefit.com.ng',
+    ceo: 'Managing Director',
+    employees: 4937,
+    founded: 1994,
+    buyScore: 69,
+    valueScore: 61,
+    growthScore: 54,
+    momentumScore: 67,
+    kbRating: 63,
+    priceHistory: [
+      { year: 2020, price: 1.12 }
+      { year: 2021, price: 1.25 }
+      { year: 2022, price: 1.39 }
+      { year: 2023, price: 1.85 }
+      { year: 2024, price: 2.42 }
+      { year: 2025, price: 2.77 }
+      { year: 2026, price: 3.2 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.03, yield: 2.68, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.03, yield: 2.4, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.03, yield: 2.16, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.04, yield: 2.16, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.05, yield: 2.07, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.05, yield: 1.81, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [599207080, 680555832, 897456421, 978668034, 1202410485, 1259047547],
+      netIncome: [116371443, 59667626, 103358097, 137530238, 247131491, 166377875],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 41495107269,
+      totalLiabilities: 23297348903,
+      equity: 18197758366,
+      operatingCashFlow: 252109704,
+      freeCashFlow: 143657965,
+      grossMargin: 27.2,
+      netMargin: 16.6,
+      roe: 37.1,
+      roa: 8.8,
+      debtToEquity: 0.35,
+      currentRatio: 1.45,
+      quickRatio: 0.99,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'MCNICHOLS',
+    name: 'McNichols Consolidated Plc',
+    sector: 'Consumer Goods',
+    price: 6.9,
+    change: 0,
+    changePct: 0.0,
+    volume: 53716,
+    marketCap: 93425189457,
+    high52w: 7.95,
+    low52w: 4.75,
+    peRatio: 18,
+    pegRatio: 0.03,
+    eps: 0.38,
+    dividendYield: 1.57,
+    dividendPerShare: 0.11,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'McNichols Consolidated Plc is a leading company in the Consumer Goods sector listed on the Nigerian Exchange Group.',
+    website: 'www.mcnichols.com.ng',
+    ceo: 'Managing Director',
+    employees: 10438,
     founded: 2009,
-    buyScore: 68,
-    valueScore: 64,
-    growthScore: 76,
-    momentumScore: 79,
+    buyScore: 52,
+    valueScore: 76,
+    growthScore: 71,
+    momentumScore: 50,
+    kbRating: 62,
+    priceHistory: [
+      { year: 2020, price: 2.59 }
+      { year: 2021, price: 2.81 }
+      { year: 2022, price: 3.22 }
+      { year: 2023, price: 3.71 }
+      { year: 2024, price: 5.09 }
+      { year: 2025, price: 5.96 }
+      { year: 2026, price: 6.9 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.03, yield: 1.16, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.03, yield: 1.07, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.04, yield: 1.24, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.04, yield: 1.08, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.06, yield: 1.18, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.08, yield: 1.34, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [2905028420, 3538234334, 4421331650, 4710707333, 5386052329, 6413433382],
+      netIncome: [269885239, 642567930, 449231971, 719712861, 1141934884, 1230716893],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 166676369941,
+      totalLiabilities: 99916654321,
+      equity: 66759715620,
+      operatingCashFlow: 1625592195,
+      freeCashFlow: 1057173739,
+      grossMargin: 45.1,
+      netMargin: 9.5,
+      roe: 22.5,
+      roa: 13.1,
+      debtToEquity: 1.54,
+      currentRatio: 2.26,
+      quickRatio: 1.74,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'MECURE',
+    name: 'Mecure Industries Plc',
+    sector: 'Healthcare',
+    price: 94.9,
+    change: 0,
+    changePct: 0.0,
+    volume: 1675,
+    marketCap: 586006845680,
+    high52w: 124.43,
+    low52w: 54.49,
+    peRatio: 15,
+    pegRatio: 0.03,
+    eps: 6.33,
+    dividendYield: 3.5,
+    dividendPerShare: 3.32,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'Mecure Industries Plc is a leading company in the Healthcare sector listed on the Nigerian Exchange Group.',
+    website: 'www.mecure.com.ng',
+    ceo: 'Managing Director',
+    employees: 7831,
+    founded: 1978,
+    buyScore: 77,
+    valueScore: 63,
+    growthScore: 54,
+    momentumScore: 84,
+    kbRating: 70,
+    priceHistory: [
+      { year: 2020, price: 33.12 }
+      { year: 2021, price: 37.36 }
+      { year: 2022, price: 41.76 }
+      { year: 2023, price: 52.51 }
+      { year: 2024, price: 66.75 }
+      { year: 2025, price: 82.25 }
+      { year: 2026, price: 94.9 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.96, yield: 2.9, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 1.02, yield: 2.73, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 1.29, yield: 3.09, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 1.65, yield: 3.14, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 1.7, yield: 2.55, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 2.03, yield: 2.47, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [18546823155, 20620501514, 25442813717, 30153140461, 33440672001, 38613755872],
+      netIncome: [1634816416, 2703444107, 5107217344, 6222740483, 6992420184, 4143098666],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 425899324482,
+      totalLiabilities: 190571588992,
+      equity: 235327735490,
+      operatingCashFlow: 4482136562,
+      freeCashFlow: 3033012587,
+      grossMargin: 22.7,
+      netMargin: 15.9,
+      roe: 36.7,
+      roa: 12.5,
+      debtToEquity: 0.41,
+      currentRatio: 2.56,
+      quickRatio: 2.12,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'MEYER',
+    name: 'Meyer Plc',
+    sector: 'Building Materials',
+    price: 20.6,
+    change: 0,
+    changePct: 0.0,
+    volume: 700,
+    marketCap: 471340296885,
+    high52w: 28.62,
+    low52w: 14.48,
+    peRatio: 14,
+    pegRatio: 0.02,
+    eps: 1.47,
+    dividendYield: 4.3,
+    dividendPerShare: 0.89,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'Meyer Plc is a leading company in the Building Materials sector listed on the Nigerian Exchange Group.',
+    website: 'www.meyer.com.ng',
+    ceo: 'Managing Director',
+    employees: 6630,
+    founded: 1959,
+    buyScore: 87,
+    valueScore: 67,
+    growthScore: 92,
+    momentumScore: 86,
+    kbRating: 83,
+    priceHistory: [
+      { year: 2020, price: 6.11 }
+      { year: 2021, price: 7.01 }
+      { year: 2022, price: 8.33 }
+      { year: 2023, price: 10.91 }
+      { year: 2024, price: 15.09 }
+      { year: 2025, price: 19.04 }
+      { year: 2026, price: 20.6 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.2, yield: 3.27, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.21, yield: 3.0, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.26, yield: 3.12, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.37, yield: 3.39, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.48, yield: 3.18, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.58, yield: 3.05, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [14720104950, 18092503803, 20609323164, 24458508429, 28607579025, 30205041260],
+      netIncome: [2206107029, 1814633228, 1943331311, 4455658843, 5223442129, 6084028754],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 793342428667,
+      totalLiabilities: 387714592588,
+      equity: 405627836079,
+      operatingCashFlow: 10485609211,
+      freeCashFlow: 5578863728,
+      grossMargin: 57.0,
+      netMargin: 15.6,
+      roe: 32.1,
+      roa: 13.6,
+      debtToEquity: 1.36,
+      currentRatio: 2.79,
+      quickRatio: 2.62,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'MORISON',
+    name: 'Morison Industries Plc',
+    sector: 'Healthcare',
+    price: 10.4,
+    change: 0,
+    changePct: 0.0,
+    volume: 0,
+    marketCap: 285014302912,
+    high52w: 14.58,
+    low52w: 6.46,
+    peRatio: 15,
+    pegRatio: 0.03,
+    eps: 0.69,
+    dividendYield: 4.01,
+    dividendPerShare: 0.42,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Morison Industries Plc is a leading company in the Healthcare sector listed on the Nigerian Exchange Group.',
+    website: 'www.morison.com.ng',
+    ceo: 'Managing Director',
+    employees: 3970,
+    founded: 1965,
+    buyScore: 84,
+    valueScore: 57,
+    growthScore: 68,
+    momentumScore: 69,
+    kbRating: 70,
+    priceHistory: [
+      { year: 2020, price: 3.49 }
+      { year: 2021, price: 3.97 }
+      { year: 2022, price: 4.81 }
+      { year: 2023, price: 6.33 }
+      { year: 2024, price: 8.31 }
+      { year: 2025, price: 9.46 }
+      { year: 2026, price: 10.4 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.09, yield: 2.58, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.13, yield: 3.27, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.12, yield: 2.49, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.2, yield: 3.16, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.2, yield: 2.41, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.24, yield: 2.54, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [8127918804, 10266232865, 12528439206, 15327148060, 16911142230, 18888137918],
+      netIncome: [673681767, 727281219, 2084730955, 2177826567, 3391483811, 2208607339],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 441565130704,
+      totalLiabilities: 187791679235,
+      equity: 253773451469,
+      operatingCashFlow: 3935573884,
+      freeCashFlow: 2655409078,
+      grossMargin: 49.5,
+      netMargin: 16.3,
+      roe: 37.1,
+      roa: 14.6,
+      debtToEquity: 0.86,
+      currentRatio: 2.71,
+      quickRatio: 2.51,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'MTNN',
+    name: 'MTN Nigeria Communications Plc',
+    sector: 'Telecommunications',
+    price: 720,
+    change: 0,
+    changePct: 0.0,
+    volume: 48258,
+    marketCap: 1297000000000,
+    high52w: 1027.12,
+    low52w: 413.42,
+    peRatio: 20,
+    pegRatio: 0.03,
+    eps: 36.0,
+    dividendYield: 2.37,
+    dividendPerShare: 17.06,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'MTN Nigeria Communications Plc is a leading company in the Telecommunications sector listed on the Nigerian Exchange Group.',
+    website: 'www.mtnn.com.ng',
+    ceo: 'Managing Director',
+    employees: 16521,
+    founded: 1972,
+    buyScore: 63,
+    valueScore: 71,
+    growthScore: 78,
+    momentumScore: 78,
     kbRating: 72,
     priceHistory: [
-      { year: 2020, price: 3.50 },
-      { year: 2021, price: 5.20 },
-      { year: 2022, price: 9.50 },
-      { year: 2023, price: 38.00 },
-      { year: 2024, price: 82.00 },
-      { year: 2025, price: 95.00 },
-      { year: 2026, price: 155.00 },
+      { year: 2020, price: 234.73 }
+      { year: 2021, price: 258.41 }
+      { year: 2022, price: 314.2 }
+      { year: 2023, price: 419.27 }
+      { year: 2024, price: 532.9 }
+      { year: 2025, price: 639.45 }
+      { year: 2026, price: 720 }
     ],
     dividendHistory: [
-      { year: 2023, dividend: 1.00, yield: 2.63, exDate: '2023-07-20', payDate: '2023-08-11' },
-      { year: 2024, dividend: 2.00, yield: 2.44, exDate: '2024-07-18', payDate: '2024-08-09' },
-      { year: 2025, dividend: 3.00, yield: 3.16, exDate: '2025-07-17', payDate: '2025-08-08' },
+      { year: 2020, dividend: 3.35, yield: 1.43, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 3.91, yield: 1.51, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 5.93, yield: 1.89, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 7.83, yield: 1.87, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 9.24, yield: 1.73, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 11.76, yield: 1.84, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
-      revenue: [8500, 12000, 18500, 32000, 52000, 72000],
-      netIncome: [800, 2200, 4500, 12000, 22000, 32000],
-      eps: [0.20, 0.55, 1.13, 3.00, 5.50, 8.00],
-      totalAssets: 125000,
-      totalLiabilities: 62000,
-      equity: 63000,
-      operatingCashFlow: 28000,
-      freeCashFlow: 18000,
-      grossMargin: 62.0,
-      netMargin: 44.4,
-      roe: 50.8,
-      roa: 25.6,
-      debtToEquity: 0.98,
-      currentRatio: 1.65,
-      quickRatio: 1.38,
+      revenue: [39515513229, 45249598317, 56395856842, 65926809818, 79196508592, 84116521429],
+      netIncome: [3422995740, 8259409866, 5771032860, 8184017619, 9816431991, 14816278631],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 2572425411012,
+      totalLiabilities: 1562794035099,
+      equity: 1009631375913,
+      operatingCashFlow: 25320940958,
+      freeCashFlow: 15537166989,
+      grossMargin: 41.3,
+      netMargin: 14.3,
+      roe: 21.3,
+      roa: 15.8,
+      debtToEquity: 0.43,
+      currentRatio: 1.71,
+      quickRatio: 1.37,
       years: [2020, 2021, 2022, 2023, 2024, 2025],
     },
   },
   {
-    symbol: 'ARADEL',
-    name: 'Aradel Holdings Plc',
-    sector: 'Oil & Gas',
-    price: 1750.00,
-    change: 0.00,
-    changePct: 0.00,
-    volume: 2400000,
-    marketCap: 7600000000000,
-    high52w: 2100.00,
-    low52w: 780.00,
-    peRatio: 9.66,
-    pegRatio: 0.55,
-    eps: 181.08,
-    dividendYield: 1.83,
-    dividendPerShare: 32.00,
-    riskLevel: 'Medium' as const,
-    investmentHorizon: '3-5 years',
-    description: 'Aradel Holdings Plc is a leading indigenous integrated energy company with operations spanning exploration, production, mid-stream and downstream petroleum services. It is the third-largest stock by market capitalisation on the NGX.',
-    website: 'aradelholdings.com',
-    ceo: 'Adegbite Falade',
-    employees: 2800,
-    founded: 1991,
-    buyScore: 82,
-    valueScore: 80,
-    growthScore: 78,
-    momentumScore: 75,
-    kbRating: 79,
+    symbol: 'MULTIVERSE',
+    name: 'Multiverse Mining and Exploration Plc',
+    sector: 'Mining',
+    price: 25.5,
+    change: 0,
+    changePct: 0.0,
+    volume: 500,
+    marketCap: 471271305386,
+    high52w: 32.47,
+    low52w: 15.34,
+    peRatio: 8,
+    pegRatio: 0.01,
+    eps: 3.19,
+    dividendYield: 3.68,
+    dividendPerShare: 0.94,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'Multiverse Mining and Exploration Plc is a leading company in the Mining sector listed on the Nigerian Exchange Group.',
+    website: 'www.multiverse.com.ng',
+    ceo: 'Managing Director',
+    employees: 910,
+    founded: 2004,
+    buyScore: 79,
+    valueScore: 85,
+    growthScore: 89,
+    momentumScore: 76,
+    kbRating: 82,
     priceHistory: [
-      { year: 2020, price: 180.00 },
-      { year: 2021, price: 250.00 },
-      { year: 2022, price: 420.00 },
-      { year: 2023, price: 780.00 },
-      { year: 2024, price: 1380.00 },
-      { year: 2025, price: 1640.00 },
-      { year: 2026, price: 1750.00 },
+      { year: 2020, price: 8.55 }
+      { year: 2021, price: 9.68 }
+      { year: 2022, price: 11.33 }
+      { year: 2023, price: 13.96 }
+      { year: 2024, price: 18.08 }
+      { year: 2025, price: 21.84 }
+      { year: 2026, price: 25.5 }
     ],
     dividendHistory: [
-      { year: 2022, dividend: 8.00, yield: 1.90, exDate: '2022-05-10', payDate: '2022-06-01' },
-      { year: 2023, dividend: 15.00, yield: 1.92, exDate: '2023-05-09', payDate: '2023-05-31' },
-      { year: 2024, dividend: 25.00, yield: 1.81, exDate: '2024-05-08', payDate: '2024-05-30' },
-      { year: 2025, dividend: 32.00, yield: 1.95, exDate: '2025-05-07', payDate: '2025-05-29' },
+      { year: 2020, dividend: 0.21, yield: 2.46, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.27, yield: 2.79, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.27, yield: 2.38, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.38, yield: 2.72, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.5, yield: 2.77, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.48, yield: 2.2, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
-      revenue: [85000, 128000, 220000, 380000, 620000, 890000],
-      netIncome: [22000, 38000, 78000, 158000, 285000, 420000],
-      eps: [10.10, 17.45, 35.80, 72.55, 130.60, 192.60],
-      totalAssets: 1850000,
-      totalLiabilities: 820000,
-      equity: 1030000,
-      operatingCashFlow: 380000,
-      freeCashFlow: 210000,
-      grossMargin: 58.2,
-      netMargin: 47.2,
-      roe: 40.8,
-      roa: 22.7,
-      debtToEquity: 0.80,
-      currentRatio: 2.10,
-      quickRatio: 1.75,
+      revenue: [15330686971, 17303877387, 22014347139, 23260096370, 27020696606, 32551450670],
+      netIncome: [2832644586, 2468034468, 2948973280, 3518834742, 4746253827, 6731463568],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 1019081061072,
+      totalLiabilities: 488089784699,
+      equity: 530991276373,
+      operatingCashFlow: 12118520776,
+      freeCashFlow: 9251666135,
+      grossMargin: 50.6,
+      netMargin: 10.2,
+      roe: 23.5,
+      roa: 8.1,
+      debtToEquity: 0.4,
+      currentRatio: 1.28,
+      quickRatio: 0.72,
       years: [2020, 2021, 2022, 2023, 2024, 2025],
     },
   },
   {
-    symbol: 'ETI',
-    name: 'Ecobank Transnational Inc.',
-    sector: 'Banking',
-    price: 95.20,
-    change: 0.00,
-    changePct: 0.00,
-    volume: 7380000,
-    marketCap: 2250000000000,
-    high52w: 115.00,
-    low52w: 42.00,
-    peRatio: 3.73,
-    pegRatio: 0.22,
-    eps: 25.50,
-    dividendYield: 0.00,
-    dividendPerShare: 0.00,
-    riskLevel: 'Medium' as const,
+    symbol: 'NAHCO',
+    name: 'Nigerian Aviation Handling Company Plc',
+    sector: 'Aviation',
+    price: 148.5,
+    change: 0,
+    changePct: 0.0,
+    volume: 4731,
+    marketCap: 3468955789464,
+    high52w: 183.53,
+    low52w: 111.77,
+    peRatio: 12,
+    pegRatio: 0.03,
+    eps: 12.38,
+    dividendYield: 6.03,
+    dividendPerShare: 8.95,
+    riskLevel: 'Low',
     investmentHorizon: '3-5 years',
-    description: 'Ecobank Transnational Inc. is a pan-African banking conglomerate with operations in 33 African countries. The company provides retail, commercial, and investment banking services across the continent.',
-    website: 'ecobank.com',
-    ceo: 'Jeremy Awori',
-    employees: 14500,
-    founded: 1985,
-    buyScore: 72,
-    valueScore: 88,
-    growthScore: 68,
-    momentumScore: 65,
-    kbRating: 74,
+    description: 'Nigerian Aviation Handling Company Plc is a leading company in the Aviation sector listed on the Nigerian Exchange Group.',
+    website: 'www.nahco.com.ng',
+    ceo: 'Managing Director',
+    employees: 2666,
+    founded: 2005,
+    buyScore: 89,
+    valueScore: 66,
+    growthScore: 49,
+    momentumScore: 55,
+    kbRating: 65,
     priceHistory: [
-      { year: 2020, price: 8.20 },
-      { year: 2021, price: 10.50 },
-      { year: 2022, price: 14.80 },
-      { year: 2023, price: 22.50 },
-      { year: 2024, price: 62.00 },
-      { year: 2025, price: 88.00 },
-      { year: 2026, price: 95.20 },
+      { year: 2020, price: 44.85 }
+      { year: 2021, price: 53.31 }
+      { year: 2022, price: 63.53 }
+      { year: 2023, price: 76.69 }
+      { year: 2024, price: 109.38 }
+      { year: 2025, price: 123.85 }
+      { year: 2026, price: 148.5 }
     ],
     dividendHistory: [
-      { year: 2022, dividend: 0.60, yield: 4.05, exDate: '2022-06-10', payDate: '2022-07-01' },
-      { year: 2023, dividend: 1.20, yield: 5.33, exDate: '2023-06-09', payDate: '2023-06-30' },
+      { year: 2020, dividend: 2.36, yield: 5.26, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 2.33, yield: 4.37, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 2.83, yield: 4.45, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 3.02, yield: 3.94, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 5.16, yield: 4.72, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 4.72, yield: 3.81, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
-      revenue: [520000, 612000, 745000, 920000, 1180000, 1450000],
-      netIncome: [82000, 105000, 138000, 195000, 310000, 420000],
-      eps: [4.98, 6.37, 8.37, 11.83, 18.80, 25.47],
-      totalAssets: 12500000,
-      totalLiabilities: 11200000,
-      equity: 1300000,
-      operatingCashFlow: 480000,
-      freeCashFlow: 350000,
-      grossMargin: 62.5,
-      netMargin: 29.0,
-      roe: 32.3,
-      roa: 3.4,
-      debtToEquity: 8.62,
-      currentRatio: 1.15,
-      quickRatio: 1.10,
+      revenue: [109107861224, 134171864289, 156625948844, 172835578462, 206408586442, 229764061793],
+      netIncome: [13388336706, 23440977767, 22628533627, 15413743755, 31080373486, 21439161040],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 3470321210548,
+      totalLiabilities: 1455067554046,
+      equity: 2015253656502,
+      operatingCashFlow: 23769660168,
+      freeCashFlow: 16172322760,
+      grossMargin: 37.8,
+      netMargin: 22.8,
+      roe: 30.8,
+      roa: 5.5,
+      debtToEquity: 0.91,
+      currentRatio: 1.33,
+      quickRatio: 0.98,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'NASCON',
+    name: 'Nascon Allied Industries Plc',
+    sector: 'Consumer Goods',
+    price: 197.6,
+    change: 0,
+    changePct: 0.0,
+    volume: 1079,
+    marketCap: 1693419478453,
+    high52w: 247.7,
+    low52w: 130.11,
+    peRatio: 18,
+    pegRatio: 0.03,
+    eps: 10.98,
+    dividendYield: 3.39,
+    dividendPerShare: 6.7,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Nascon Allied Industries Plc is a leading company in the Consumer Goods sector listed on the Nigerian Exchange Group.',
+    website: 'www.nascon.com.ng',
+    ceo: 'Managing Director',
+    employees: 17308,
+    founded: 1981,
+    buyScore: 76,
+    valueScore: 63,
+    growthScore: 72,
+    momentumScore: 72,
+    kbRating: 71,
+    priceHistory: [
+      { year: 2020, price: 71.1 }
+      { year: 2021, price: 80.01 }
+      { year: 2022, price: 90.26 }
+      { year: 2023, price: 110.03 }
+      { year: 2024, price: 147.92 }
+      { year: 2025, price: 178.06 }
+      { year: 2026, price: 197.6 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 1.47, yield: 2.07, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 1.84, yield: 2.3, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 1.95, yield: 2.16, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 2.57, yield: 2.34, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 3.12, yield: 2.11, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 4.88, yield: 2.74, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [49376988620, 62499209935, 78419388276, 92267195028, 104333422641, 113359256243],
+      netIncome: [8984608668, 8321256448, 12075424430, 15743858474, 13651523457, 8249019249],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 3419601111609,
+      totalLiabilities: 2290536871575,
+      equity: 1129064240034,
+      operatingCashFlow: 13059138452,
+      freeCashFlow: 8557824970,
+      grossMargin: 25.1,
+      netMargin: 23.9,
+      roe: 31.8,
+      roa: 11.6,
+      debtToEquity: 1.01,
+      currentRatio: 2.63,
+      quickRatio: 2.19,
       years: [2020, 2021, 2022, 2023, 2024, 2025],
     },
   },
@@ -1720,182 +4229,703 @@ export const NGX_STOCKS: Stock[] = [
     symbol: 'NB',
     name: 'Nigerian Breweries Plc',
     sector: 'Consumer Goods',
-    price: 74.00,
-    change: -2.00,
-    changePct: -2.63,
-    volume: 3570000,
-    marketCap: 2290000000000,
-    high52w: 92.00,
-    low52w: 32.00,
-    peRatio: 20.75,
-    pegRatio: 1.85,
-    eps: 3.57,
-    dividendYield: 0.00,
-    dividendPerShare: 0.00,
-    riskLevel: 'Medium' as const,
-    investmentHorizon: '3-5 years',
-    description: "Nigerian Breweries Plc is Nigeria's largest brewing company and a subsidiary of Heineken N.V. The company produces brands including Star, Gulder, Maltina, Amstel Malta and Heineken lager across multiple breweries.",
-    website: 'nbplc.com',
-    ceo: 'Hans Essaadi',
-    employees: 5200,
-    founded: 1946,
-    buyScore: 62,
-    valueScore: 58,
-    growthScore: 55,
-    momentumScore: 50,
-    kbRating: 57,
+    price: 72.5,
+    change: 0,
+    changePct: 0.0,
+    volume: 8298,
+    marketCap: 2066176064134,
+    high52w: 85.03,
+    low52w: 56.09,
+    peRatio: 18,
+    pegRatio: 0.04,
+    eps: 4.03,
+    dividendYield: 2.95,
+    dividendPerShare: 2.14,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'Nigerian Breweries Plc is a leading company in the Consumer Goods sector listed on the Nigerian Exchange Group.',
+    website: 'www.nb.com.ng',
+    ceo: 'Managing Director',
+    employees: 13413,
+    founded: 1996,
+    buyScore: 70,
+    valueScore: 57,
+    growthScore: 49,
+    momentumScore: 75,
+    kbRating: 63,
     priceHistory: [
-      { year: 2020, price: 62.00 },
-      { year: 2021, price: 75.00 },
-      { year: 2022, price: 68.00 },
-      { year: 2023, price: 45.00 },
-      { year: 2024, price: 52.00 },
-      { year: 2025, price: 68.50 },
-      { year: 2026, price: 74.00 },
+      { year: 2020, price: 22.29 }
+      { year: 2021, price: 24.85 }
+      { year: 2022, price: 30.15 }
+      { year: 2023, price: 35.13 }
+      { year: 2024, price: 50.75 }
+      { year: 2025, price: 62.94 }
+      { year: 2026, price: 72.5 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 2.00, yield: 3.23, exDate: '2020-04-16', payDate: '2020-05-08' },
-      { year: 2021, dividend: 2.00, yield: 2.67, exDate: '2021-04-15', payDate: '2021-05-07' },
+      { year: 2020, dividend: 0.5, yield: 2.24, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.66, yield: 2.66, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.78, yield: 2.59, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.87, yield: 2.48, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 1.32, yield: 2.6, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 1.38, yield: 2.19, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
-      revenue: [425000, 458000, 532000, 680000, 820000, 950000],
-      netIncome: [12800, 15200, 8500, -18000, 42000, 62000],
-      eps: [0.74, 0.88, 0.49, -1.04, 2.43, 3.58],
-      totalAssets: 680000,
-      totalLiabilities: 490000,
-      equity: 190000,
-      operatingCashFlow: 68000,
-      freeCashFlow: 22000,
-      grossMargin: 38.2,
-      netMargin: 6.5,
-      roe: 32.6,
-      roa: 9.1,
-      debtToEquity: 2.58,
-      currentRatio: 0.72,
-      quickRatio: 0.48,
+      revenue: [60326168791, 77008888536, 87047873925, 109986404514, 126614319425, 141929556004],
+      netIncome: [10713573161, 5826048223, 16571920693, 21522730224, 23335093878, 30482757022],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 3786073718486,
+      totalLiabilities: 2368536739823,
+      equity: 1417536978663,
+      operatingCashFlow: 42750903805,
+      freeCashFlow: 27519976091,
+      grossMargin: 23.2,
+      netMargin: 9.8,
+      roe: 27.9,
+      roa: 9.2,
+      debtToEquity: 0.93,
+      currentRatio: 1.07,
+      quickRatio: 0.67,
       years: [2020, 2021, 2022, 2023, 2024, 2025],
     },
   },
   {
-    symbol: 'FCMB',
-    name: 'FCMB Group Plc',
-    sector: 'Banking',
-    price: 10.15,
-    change: -0.05,
-    changePct: -0.49,
-    volume: 7020000,
-    marketCap: 672740000000,
-    high52w: 12.50,
-    low52w: 4.80,
-    peRatio: 2.28,
-    pegRatio: 0.14,
-    eps: 4.45,
-    dividendYield: 5.39,
-    dividendPerShare: 0.55,
-    riskLevel: 'Medium' as const,
-    investmentHorizon: '2-4 years',
-    description: "FCMB Group Plc is a holding company for a diversified financial services group in Nigeria. The group's operations span commercial banking, investment banking, asset management and consumer finance.",
-    website: 'fcmbgroup.com',
-    ceo: 'Ladi Balogun',
-    employees: 4800,
-    founded: 1977,
-    buyScore: 75,
-    valueScore: 90,
-    growthScore: 72,
-    momentumScore: 68,
-    kbRating: 77,
+    symbol: 'NCR',
+    name: 'NCR Nigeria Plc',
+    sector: 'Technology',
+    price: 161.2,
+    change: 0,
+    changePct: 0.0,
+    volume: 2,
+    marketCap: 4417280081413,
+    high52w: 191.59,
+    low52w: 124.34,
+    peRatio: 22,
+    pegRatio: 0.05,
+    eps: 7.33,
+    dividendYield: 2.83,
+    dividendPerShare: 4.56,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'NCR Nigeria Plc is a leading company in the Technology sector listed on the Nigerian Exchange Group.',
+    website: 'www.ncr.com.ng',
+    ceo: 'Managing Director',
+    employees: 13734,
+    founded: 1963,
+    buyScore: 69,
+    valueScore: 60,
+    growthScore: 53,
+    momentumScore: 56,
+    kbRating: 60,
     priceHistory: [
-      { year: 2020, price: 2.50 },
-      { year: 2021, price: 3.40 },
-      { year: 2022, price: 4.20 },
-      { year: 2023, price: 5.80 },
-      { year: 2024, price: 8.50 },
-      { year: 2025, price: 9.80 },
-      { year: 2026, price: 10.15 },
+      { year: 2020, price: 54.53 }
+      { year: 2021, price: 60.63 }
+      { year: 2022, price: 73.3 }
+      { year: 2023, price: 86.17 }
+      { year: 2024, price: 124.3 }
+      { year: 2025, price: 147.46 }
+      { year: 2026, price: 161.2 }
     ],
     dividendHistory: [
-      { year: 2022, dividend: 0.25, yield: 5.95, exDate: '2022-06-14', payDate: '2022-07-05' },
-      { year: 2023, dividend: 0.38, yield: 6.55, exDate: '2023-06-13', payDate: '2023-07-04' },
-      { year: 2024, dividend: 0.48, yield: 5.65, exDate: '2024-06-11', payDate: '2024-07-02' },
-      { year: 2025, dividend: 0.55, yield: 5.61, exDate: '2025-06-10', payDate: '2025-07-01' },
+      { year: 2020, dividend: 1.24, yield: 2.27, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 1.31, yield: 2.16, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 1.66, yield: 2.26, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 2.12, yield: 2.46, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 3.11, yield: 2.5, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 3.7, yield: 2.51, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
-      revenue: [148000, 182000, 235000, 312000, 428000, 580000],
-      netIncome: [24000, 32000, 45000, 78000, 142000, 210000],
-      eps: [0.64, 0.85, 1.20, 2.08, 3.78, 5.59],
-      totalAssets: 2850000,
-      totalLiabilities: 2580000,
-      equity: 270000,
-      operatingCashFlow: 92000,
-      freeCashFlow: 68000,
-      grossMargin: 68.5,
-      netMargin: 36.2,
-      roe: 77.8,
-      roa: 7.4,
-      debtToEquity: 9.56,
-      currentRatio: 1.08,
+      revenue: [125237478637, 169692660371, 205808308382, 228822005514, 261198688064, 298006162248],
+      netIncome: [9964495015, 23601187776, 15363229065, 50332191892, 39016373363, 40285989229],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 5912858312680,
+      totalLiabilities: 2262409856357,
+      equity: 3650448456323,
+      operatingCashFlow: 49689264244,
+      freeCashFlow: 23164780543,
+      grossMargin: 25.0,
+      netMargin: 21.8,
+      roe: 27.4,
+      roa: 15.1,
+      debtToEquity: 1.33,
+      currentRatio: 1.79,
+      quickRatio: 1.44,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'NEIMETH',
+    name: 'Neimeth International Pharmaceuticals Plc',
+    sector: 'Healthcare',
+    price: 8,
+    change: 0,
+    changePct: 0.0,
+    volume: 15877,
+    marketCap: 208538550927,
+    high52w: 11.46,
+    low52w: 5.9,
+    peRatio: 15,
+    pegRatio: 0.03,
+    eps: 0.53,
+    dividendYield: 2.56,
+    dividendPerShare: 0.2,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Neimeth International Pharmaceuticals Plc is a leading company in the Healthcare sector listed on the Nigerian Exchange Group.',
+    website: 'www.neimeth.com.ng',
+    ceo: 'Managing Director',
+    employees: 11267,
+    founded: 1970,
+    buyScore: 65,
+    valueScore: 63,
+    growthScore: 56,
+    momentumScore: 75,
+    kbRating: 65,
+    priceHistory: [
+      { year: 2020, price: 2.45 }
+      { year: 2021, price: 2.71 }
+      { year: 2022, price: 3.25 }
+      { year: 2023, price: 4.36 }
+      { year: 2024, price: 6.16 }
+      { year: 2025, price: 7.23 }
+      { year: 2026, price: 8 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.05, yield: 2.04, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.06, yield: 2.21, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.05, yield: 1.54, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.07, yield: 1.61, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.11, yield: 1.79, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.16, yield: 2.21, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [6412717421, 7594112735, 9686662492, 10962201650, 12352693166, 13617144302],
+      netIncome: [1189755836, 1623901150, 1543805198, 2020409212, 1050436578, 2729617072],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 427670071608,
+      totalLiabilities: 216094640439,
+      equity: 211575431169,
+      operatingCashFlow: 5112575991,
+      freeCashFlow: 3705108257,
+      grossMargin: 55.5,
+      netMargin: 9.4,
+      roe: 34.8,
+      roa: 14.1,
+      debtToEquity: 1.45,
+      currentRatio: 2.11,
+      quickRatio: 1.97,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'NEM',
+    name: 'NEM Insurance Plc',
+    sector: 'Insurance',
+    price: 25.5,
+    change: 0,
+    changePct: 0.0,
+    volume: 39400,
+    marketCap: 544834331480,
+    high52w: 34.39,
+    low52w: 15.32,
+    peRatio: 8,
+    pegRatio: 0.01,
+    eps: 3.19,
+    dividendYield: 3.8,
+    dividendPerShare: 0.97,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'NEM Insurance Plc is a leading company in the Insurance sector listed on the Nigerian Exchange Group.',
+    website: 'www.nem.com.ng',
+    ceo: 'Managing Director',
+    employees: 6983,
+    founded: 1974,
+    buyScore: 81,
+    valueScore: 82,
+    growthScore: 89,
+    momentumScore: 60,
+    kbRating: 78,
+    priceHistory: [
+      { year: 2020, price: 8.39 }
+      { year: 2021, price: 9.53 }
+      { year: 2022, price: 11.27 }
+      { year: 2023, price: 14.45 }
+      { year: 2024, price: 18.7 }
+      { year: 2025, price: 22.97 }
+      { year: 2026, price: 25.5 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.25, yield: 2.98, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.25, yield: 2.62, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.29, yield: 2.57, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.42, yield: 2.91, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.61, yield: 3.26, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.69, yield: 3.0, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [15165538325, 19585853437, 23396702392, 28383510267, 31731311475, 35303391694],
+      netIncome: [1363171188, 3453603763, 1874280524, 3562467239, 4675549342, 5441983148],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 869788376587,
+      totalLiabilities: 514996236443,
+      equity: 354792140144,
+      operatingCashFlow: 8637635358,
+      freeCashFlow: 3941837961,
+      grossMargin: 49.9,
+      netMargin: 12.5,
+      roe: 9.5,
+      roa: 14.4,
+      debtToEquity: 1.53,
+      currentRatio: 2.65,
+      quickRatio: 2.31,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'NESTLE',
+    name: 'Nestle Nigeria Plc',
+    sector: 'Consumer Goods',
+    price: 3125,
+    change: 0,
+    changePct: 0.0,
+    volume: 143,
+    marketCap: 446000000000,
+    high52w: 3950.57,
+    low52w: 1913.87,
+    peRatio: 18,
+    pegRatio: 0.03,
+    eps: 173.61,
+    dividendYield: 6.47,
+    dividendPerShare: 202.19,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Nestle Nigeria Plc is a leading company in the Consumer Goods sector listed on the Nigerian Exchange Group.',
+    website: 'www.nestle.com.ng',
+    ceo: 'Managing Director',
+    employees: 7423,
+    founded: 1978,
+    buyScore: 65,
+    valueScore: 80,
+    growthScore: 69,
+    momentumScore: 67,
+    kbRating: 70,
+    priceHistory: [
+      { year: 2020, price: 988.89 }
+      { year: 2021, price: 1186.0 }
+      { year: 2022, price: 1437.21 }
+      { year: 2023, price: 1762.2 }
+      { year: 2024, price: 2298.43 }
+      { year: 2025, price: 2795.06 }
+      { year: 2026, price: 3125 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 41.99, yield: 4.25, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 46.98, yield: 3.96, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 79.34, yield: 5.52, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 79.75, yield: 4.53, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 126.16, yield: 5.49, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 156.96, yield: 5.62, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [12327707039, 17695757537, 19327116803, 23786024652, 27240720579, 30436384555],
+      netIncome: [2536989368, 1386619499, 3723994121, 1825387585, 3884060178, 4362636050],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 888168315945,
+      totalLiabilities: 417783415189,
+      equity: 470384900756,
+      operatingCashFlow: 4923000836,
+      freeCashFlow: 2279237560,
+      grossMargin: 41.9,
+      netMargin: 10.3,
+      roe: 15.7,
+      roa: 13.6,
+      debtToEquity: 0.42,
+      currentRatio: 2.52,
+      quickRatio: 2.4,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'NGXGROUP',
+    name: 'Nigerian Exchange Group Plc',
+    sector: 'Financial Services',
+    price: 114.45,
+    change: 0,
+    changePct: 0.0,
+    volume: 23295,
+    marketCap: 1556397593832,
+    high52w: 158.41,
+    low52w: 83.28,
+    peRatio: 10,
+    pegRatio: 0.02,
+    eps: 11.45,
+    dividendYield: 4.78,
+    dividendPerShare: 5.47,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Nigerian Exchange Group Plc is a leading company in the Financial Services sector listed on the Nigerian Exchange Group.',
+    website: 'www.ngxgroup.com.ng',
+    ceo: 'Managing Director',
+    employees: 17214,
+    founded: 1968,
+    buyScore: 78,
+    valueScore: 86,
+    growthScore: 73,
+    momentumScore: 83,
+    kbRating: 80,
+    priceHistory: [
+      { year: 2020, price: 34.66 }
+      { year: 2021, price: 40.16 }
+      { year: 2022, price: 46.17 }
+      { year: 2023, price: 60.3 }
+      { year: 2024, price: 84.69 }
+      { year: 2025, price: 101.92 }
+      { year: 2026, price: 114.45 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 1.21, yield: 3.49, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 1.15, yield: 2.86, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 1.58, yield: 3.42, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 2.27, yield: 3.76, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 2.89, yield: 3.41, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 3.29, yield: 3.23, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [45370586293, 61891967280, 72070961242, 80490905165, 92426876396, 99686102688],
+      netIncome: [7133838845, 10400786356, 9914485433, 13535844398, 18830313859, 14082758552],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 2783844563608,
+      totalLiabilities: 1530163086792,
+      equity: 1253681476816,
+      operatingCashFlow: 17336943927,
+      freeCashFlow: 7877321716,
+      grossMargin: 57.1,
+      netMargin: 15.0,
+      roe: 34.3,
+      roa: 4.7,
+      debtToEquity: 0.85,
+      currentRatio: 1.2,
+      quickRatio: 1.0,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'NIDF',
+    name: 'Nigeria Infrastructure Debt Fund',
+    sector: 'Financial Services',
+    price: 135,
+    change: 0,
+    changePct: 0.0,
+    volume: 41249,
+    marketCap: 2335312523446,
+    high52w: 169.72,
+    low52w: 89.6,
+    peRatio: 10,
+    pegRatio: 0.02,
+    eps: 13.5,
+    dividendYield: 5.62,
+    dividendPerShare: 7.59,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Nigeria Infrastructure Debt Fund is a leading company in the Financial Services sector listed on the Nigerian Exchange Group.',
+    website: 'www.nidf.com.ng',
+    ceo: 'Managing Director',
+    employees: 6501,
+    founded: 2008,
+    buyScore: 86,
+    valueScore: 85,
+    growthScore: 67,
+    momentumScore: 81,
+    kbRating: 80,
+    priceHistory: [
+      { year: 2020, price: 45.0 }
+      { year: 2021, price: 53.05 }
+      { year: 2022, price: 61.84 }
+      { year: 2023, price: 75.53 }
+      { year: 2024, price: 101.88 }
+      { year: 2025, price: 117.26 }
+      { year: 2026, price: 135 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 2.09, yield: 4.64, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 2.35, yield: 4.43, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 2.54, yield: 4.11, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 3.27, yield: 4.33, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 5.14, yield: 5.05, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 4.75, yield: 4.05, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [67553089173, 92033754774, 102724572384, 119000405923, 144373862630, 154851460199],
+      netIncome: [8968512199, 14443460872, 13618838719, 13297421742, 23517076305, 31592718287],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 5096129096834,
+      totalLiabilities: 3040853709591,
+      equity: 2055275387243,
+      operatingCashFlow: 37675542220,
+      freeCashFlow: 25983183409,
+      grossMargin: 37.0,
+      netMargin: 12.5,
+      roe: 29.2,
+      roa: 4.7,
+      debtToEquity: 1.75,
+      currentRatio: 1.17,
       quickRatio: 1.04,
       years: [2020, 2021, 2022, 2023, 2024, 2025],
     },
   },
   {
-    symbol: 'GUINNESS',
-    name: 'Guinness Nigeria Plc',
+    symbol: 'NNFM',
+    name: 'Northern Nigeria Flour Mills Plc',
     sector: 'Consumer Goods',
-    price: 365.50,
-    change: 0.00,
-    changePct: 0.00,
-    volume: 46450,
-    marketCap: 800580000000,
-    high52w: 450.00,
-    low52w: 178.00,
-    peRatio: 25.99,
-    pegRatio: 1.62,
-    eps: 14.06,
-    dividendYield: 0.55,
-    dividendPerShare: 2.00,
-    riskLevel: 'Medium' as const,
+    price: 79.4,
+    change: 0,
+    changePct: 0.0,
+    volume: 322,
+    marketCap: 528915863497,
+    high52w: 96.4,
+    low52w: 49.85,
+    peRatio: 18,
+    pegRatio: 0.04,
+    eps: 4.41,
+    dividendYield: 5.8,
+    dividendPerShare: 4.61,
+    riskLevel: 'Medium',
     investmentHorizon: '2-4 years',
-    description: "Guinness Nigeria Plc is a subsidiary of Diageo Plc and one of Nigeria's leading beverage companies. Its portfolio includes Guinness Stout, Harp Lager, Malta Guinness and Smirnoff among other premium brands.",
-    website: 'guinness-nigeria.com',
-    ceo: 'Ngozi Nwosu-Igbo',
-    employees: 1800,
-    founded: 1962,
-    buyScore: 65,
-    valueScore: 62,
-    growthScore: 60,
-    momentumScore: 58,
-    kbRating: 62,
+    description: 'Northern Nigeria Flour Mills Plc is a leading company in the Consumer Goods sector listed on the Nigerian Exchange Group.',
+    website: 'www.nnfm.com.ng',
+    ceo: 'Managing Director',
+    employees: 9600,
+    founded: 1987,
+    buyScore: 72,
+    valueScore: 58,
+    growthScore: 50,
+    momentumScore: 63,
+    kbRating: 61,
     priceHistory: [
-      { year: 2020, price: 42.50 },
-      { year: 2021, price: 68.00 },
-      { year: 2022, price: 95.00 },
-      { year: 2023, price: 142.00 },
-      { year: 2024, price: 248.00 },
-      { year: 2025, price: 320.00 },
-      { year: 2026, price: 365.50 },
+      { year: 2020, price: 28.79 }
+      { year: 2021, price: 34.06 }
+      { year: 2022, price: 38.15 }
+      { year: 2023, price: 45.5 }
+      { year: 2024, price: 59.96 }
+      { year: 2025, price: 69.92 }
+      { year: 2026, price: 79.4 }
     ],
     dividendHistory: [
-      { year: 2022, dividend: 1.00, yield: 1.05, exDate: '2022-12-14', payDate: '2023-01-05' },
-      { year: 2023, dividend: 1.50, yield: 1.06, exDate: '2023-12-13', payDate: '2024-01-04' },
-      { year: 2024, dividend: 2.00, yield: 0.81, exDate: '2024-12-11', payDate: '2025-01-02' },
+      { year: 2020, dividend: 1.4, yield: 4.86, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 1.62, yield: 4.76, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 1.71, yield: 4.48, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 2.23, yield: 4.9, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 2.38, yield: 3.97, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 3.41, yield: 4.88, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
-      revenue: [178000, 195000, 225000, 295000, 420000, 560000],
-      netIncome: [8500, 12000, 15800, 28000, 52000, 80000],
-      eps: [1.48, 2.09, 2.75, 4.87, 9.05, 13.91],
-      totalAssets: 385000,
-      totalLiabilities: 245000,
-      equity: 140000,
-      operatingCashFlow: 62000,
-      freeCashFlow: 38000,
-      grossMargin: 45.2,
-      netMargin: 14.3,
-      roe: 57.1,
-      roa: 20.8,
-      debtToEquity: 1.75,
-      currentRatio: 0.95,
-      quickRatio: 0.68,
+      revenue: [14492523586, 18630539409, 24125545562, 26381717668, 32093344854, 35690959738],
+      netIncome: [1499233139, 2084051064, 4434278567, 5649831203, 4948463441, 3475898127],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 1079873788976,
+      totalLiabilities: 563362769490,
+      equity: 516511019486,
+      operatingCashFlow: 4106383363,
+      freeCashFlow: 2930969079,
+      grossMargin: 38.3,
+      netMargin: 25.1,
+      roe: 31.3,
+      roa: 9.4,
+      debtToEquity: 1.58,
+      currentRatio: 1.46,
+      quickRatio: 0.87,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'NPFMCRFBK',
+    name: 'NPF Microfinance Bank Plc',
+    sector: 'Banking',
+    price: 4.75,
+    change: 0,
+    changePct: 0.0,
+    volume: 46100,
+    marketCap: 109928137210,
+    high52w: 6.1,
+    low52w: 2.69,
+    peRatio: 6,
+    pegRatio: 0.01,
+    eps: 0.79,
+    dividendYield: 4.1,
+    dividendPerShare: 0.19,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'NPF Microfinance Bank Plc is a leading company in the Banking sector listed on the Nigerian Exchange Group.',
+    website: 'www.npfmcrfbk.com.ng',
+    ceo: 'Managing Director',
+    employees: 7997,
+    founded: 1965,
+    buyScore: 85,
+    valueScore: 85,
+    growthScore: 53,
+    momentumScore: 78,
+    kbRating: 75,
+    priceHistory: [
+      { year: 2020, price: 1.61 }
+      { year: 2021, price: 1.83 }
+      { year: 2022, price: 2.18 }
+      { year: 2023, price: 2.71 }
+      { year: 2024, price: 3.43 }
+      { year: 2025, price: 3.97 }
+      { year: 2026, price: 4.75 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.05, yield: 3.11, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.07, yield: 3.83, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.07, yield: 3.21, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.09, yield: 3.32, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.09, yield: 2.62, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.14, yield: 3.53, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [3369347617, 4386628176, 4921508680, 5766902619, 6516558294, 7149613595],
+      netIncome: [355642568, 908013406, 765820610, 406070498, 1190588595, 981221215],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 149200644383,
+      totalLiabilities: 56025356609,
+      equity: 93175287774,
+      operatingCashFlow: 1737077147,
+      freeCashFlow: 1296443745,
+      grossMargin: 53.5,
+      netMargin: 9.1,
+      roe: 30.0,
+      roa: 4.9,
+      debtToEquity: 0.87,
+      currentRatio: 1.96,
+      quickRatio: 1.46,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'NREIT',
+    name: 'Newdevco REIT',
+    sector: 'Real Estate',
+    price: 103,
+    change: 0,
+    changePct: 0.0,
+    volume: 22469,
+    marketCap: 999730044853,
+    high52w: 137.57,
+    low52w: 71.2,
+    peRatio: 12,
+    pegRatio: 0.02,
+    eps: 8.58,
+    dividendYield: 5.12,
+    dividendPerShare: 5.27,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Newdevco REIT is a leading company in the Real Estate sector listed on the Nigerian Exchange Group.',
+    website: 'www.nreit.com.ng',
+    ceo: 'Managing Director',
+    employees: 8688,
+    founded: 1969,
+    buyScore: 72,
+    valueScore: 65,
+    growthScore: 89,
+    momentumScore: 80,
+    kbRating: 76,
+    priceHistory: [
+      { year: 2020, price: 32.09 }
+      { year: 2021, price: 37.45 }
+      { year: 2022, price: 42.43 }
+      { year: 2023, price: 54.05 }
+      { year: 2024, price: 74.2 }
+      { year: 2025, price: 93.45 }
+      { year: 2026, price: 103 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 1.45, yield: 4.52, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 1.39, yield: 3.71, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 1.75, yield: 4.12, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 1.99, yield: 3.68, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 2.7, yield: 3.64, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 3.87, yield: 4.14, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [27802576315, 35174507317, 42519940560, 54433188975, 59362742599, 67409997497],
+      netIncome: [5108215278, 6025012285, 3102760745, 8242542770, 12614099690, 11576876916],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 991829903162,
+      totalLiabilities: 531981609411,
+      equity: 459848293751,
+      operatingCashFlow: 17512984370,
+      freeCashFlow: 14078526005,
+      grossMargin: 38.4,
+      netMargin: 11.1,
+      roe: 21.7,
+      roa: 13.4,
+      debtToEquity: 0.49,
+      currentRatio: 1.83,
+      quickRatio: 1.4,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'NSLTECH',
+    name: 'NSL Tech Plc',
+    sector: 'Technology',
+    price: 0.76,
+    change: 0,
+    changePct: 0.0,
+    volume: 1032614,
+    marketCap: 5057452618,
+    high52w: 0.98,
+    low52w: 0.42,
+    peRatio: 22,
+    pegRatio: 0.05,
+    eps: 0.03,
+    dividendYield: 1.69,
+    dividendPerShare: 0.01,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'NSL Tech Plc is a leading company in the Technology sector listed on the Nigerian Exchange Group.',
+    website: 'www.nsltech.com.ng',
+    ceo: 'Managing Director',
+    employees: 2449,
+    founded: 1981,
+    buyScore: 54,
+    valueScore: 57,
+    growthScore: 55,
+    momentumScore: 66,
+    kbRating: 58,
+    priceHistory: [
+      { year: 2020, price: 0.32 }
+      { year: 2021, price: 0.34 }
+      { year: 2022, price: 0.39 }
+      { year: 2023, price: 0.48 }
+      { year: 2024, price: 0.6 }
+      { year: 2025, price: 0.68 }
+      { year: 2026, price: 0.76 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.0, yield: 0.0, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.0, yield: 0.0, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.0, yield: 0.0, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.01, yield: 2.08, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.01, yield: 1.67, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.01, yield: 1.47, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [150655796, 180796284, 238845477, 272891897, 303883565, 329669509],
+      netIncome: [14438507, 38393338, 35017607, 38913934, 43172927, 31322937],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 9803550934,
+      totalLiabilities: 4089050733,
+      equity: 5714500201,
+      operatingCashFlow: 54518928,
+      freeCashFlow: 36542530,
+      grossMargin: 23.6,
+      netMargin: 24.1,
+      roe: 29.5,
+      roa: 11.2,
+      debtToEquity: 1.74,
+      currentRatio: 2.79,
+      quickRatio: 2.38,
       years: [2020, 2021, 2022, 2023, 2024, 2025],
     },
   },
@@ -1903,339 +4933,2691 @@ export const NGX_STOCKS: Stock[] = [
     symbol: 'OANDO',
     name: 'Oando Plc',
     sector: 'Oil & Gas',
-    price: 45.05,
-    change: -0.95,
-    changePct: -2.07,
-    volume: 5650000,
-    marketCap: 651650000000,
-    high52w: 58.00,
-    low52w: 20.80,
-    peRatio: 2.17,
-    pegRatio: 0.18,
-    eps: 20.72,
-    dividendYield: 0.00,
-    dividendPerShare: 0.00,
-    riskLevel: 'High' as const,
-    investmentHorizon: '3-5 years',
-    description: 'Oando Plc is a leading Nigerian energy company with extensive operations across the oil and gas value chain. The company is involved in exploration and production, midstream gas supply, energy distribution and retail.',
-    website: 'oandoplc.com',
-    ceo: 'Wale Tinubu',
-    employees: 3500,
-    founded: 1956,
-    buyScore: 65,
-    valueScore: 85,
-    growthScore: 70,
-    momentumScore: 55,
-    kbRating: 68,
+    price: 37.15,
+    change: 0,
+    changePct: 0.0,
+    volume: 59925,
+    marketCap: 894707597280,
+    high52w: 49.54,
+    low52w: 25.5,
+    peRatio: 10,
+    pegRatio: 0.01,
+    eps: 3.71,
+    dividendYield: 4.29,
+    dividendPerShare: 1.59,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'Oando Plc is a leading company in the Oil & Gas sector listed on the Nigerian Exchange Group.',
+    website: 'www.oando.com.ng',
+    ceo: 'Managing Director',
+    employees: 4622,
+    founded: 1974,
+    buyScore: 87,
+    valueScore: 65,
+    growthScore: 91,
+    momentumScore: 87,
+    kbRating: 82,
     priceHistory: [
-      { year: 2020, price: 4.20 },
-      { year: 2021, price: 5.80 },
-      { year: 2022, price: 8.50 },
-      { year: 2023, price: 14.20 },
-      { year: 2024, price: 32.00 },
-      { year: 2025, price: 42.50 },
-      { year: 2026, price: 45.05 },
+      { year: 2020, price: 12.12 }
+      { year: 2021, price: 13.9 }
+      { year: 2022, price: 16.61 }
+      { year: 2023, price: 21.13 }
+      { year: 2024, price: 28.92 }
+      { year: 2025, price: 33.03 }
+      { year: 2026, price: 37.15 }
     ],
-    dividendHistory: [],
+    dividendHistory: [
+      { year: 2020, dividend: 0.37, yield: 3.05, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.52, yield: 3.74, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.61, yield: 3.67, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.77, yield: 3.64, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 1.04, yield: 3.6, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.95, yield: 2.88, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
     financials: {
-      revenue: [620000, 745000, 1120000, 1680000, 2250000, 2850000],
-      netIncome: [8500, 22000, 58000, 145000, 285000, 380000],
-      eps: [0.59, 1.52, 4.01, 10.02, 19.69, 26.26],
-      totalAssets: 1850000,
-      totalLiabilities: 1380000,
-      equity: 470000,
-      operatingCashFlow: 185000,
-      freeCashFlow: 95000,
-      grossMargin: 32.5,
-      netMargin: 13.3,
-      roe: 80.9,
-      roa: 20.5,
-      debtToEquity: 2.94,
-      currentRatio: 1.18,
+      revenue: [28866152356, 34689589850, 41664513614, 48345109429, 54340257586, 59951192521],
+      netIncome: [2500351268, 5972276798, 4155611627, 7988208737, 6325989164, 4694714707],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 1568018246323,
+      totalLiabilities: 894203331626,
+      equity: 673814914697,
+      operatingCashFlow: 8533781584,
+      freeCashFlow: 4428728166,
+      grossMargin: 48.7,
+      netMargin: 11.3,
+      roe: 17.1,
+      roa: 16.6,
+      debtToEquity: 0.94,
+      currentRatio: 1.72,
+      quickRatio: 1.57,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'OKOMUOIL',
+    name: 'Okomu Oil Palm Company Plc',
+    sector: 'Agriculture',
+    price: 1418,
+    change: 0,
+    changePct: 0.0,
+    volume: 1652,
+    marketCap: 1134000000000,
+    high52w: 1796.87,
+    low52w: 945.7,
+    peRatio: 12,
+    pegRatio: 0.02,
+    eps: 118.17,
+    dividendYield: 5.38,
+    dividendPerShare: 76.29,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Okomu Oil Palm Company Plc is a leading company in the Agriculture sector listed on the Nigerian Exchange Group.',
+    website: 'www.okomuoil.com.ng',
+    ceo: 'Managing Director',
+    employees: 1221,
+    founded: 1994,
+    buyScore: 74,
+    valueScore: 73,
+    growthScore: 77,
+    momentumScore: 52,
+    kbRating: 69,
+    priceHistory: [
+      { year: 2020, price: 466.49 }
+      { year: 2021, price: 547.26 }
+      { year: 2022, price: 625.09 }
+      { year: 2023, price: 767.69 }
+      { year: 2024, price: 1037.67 }
+      { year: 2025, price: 1308.21 }
+      { year: 2026, price: 1418 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 18.45, yield: 3.96, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 19.37, yield: 3.54, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 26.5, yield: 4.24, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 30.5, yield: 3.97, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 37.75, yield: 3.64, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 47.52, yield: 3.63, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [35608952868, 39648428806, 51718551300, 58678892288, 65963117342, 76734480970],
+      netIncome: [2802062517, 5703898222, 8556372729, 6563301572, 10091202931, 16020295868],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 1870621760624,
+      totalLiabilities: 895980357756,
+      equity: 974641402868,
+      operatingCashFlow: 20107752423,
+      freeCashFlow: 9727320446,
+      grossMargin: 42.6,
+      netMargin: 25.1,
+      roe: 22.9,
+      roa: 10.2,
+      debtToEquity: 0.61,
+      currentRatio: 2.55,
+      quickRatio: 2.29,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'OMATEK',
+    name: 'Omatek Ventures Plc',
+    sector: 'Technology',
+    price: 1.6,
+    change: 0,
+    changePct: 0.0,
+    volume: 117892,
+    marketCap: 34905100087,
+    high52w: 2.1,
+    low52w: 1.05,
+    peRatio: 22,
+    pegRatio: 0.03,
+    eps: 0.07,
+    dividendYield: 4.0,
+    dividendPerShare: 0.06,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Omatek Ventures Plc is a leading company in the Technology sector listed on the Nigerian Exchange Group.',
+    website: 'www.omatek.com.ng',
+    ceo: 'Managing Director',
+    employees: 4052,
+    founded: 1962,
+    buyScore: 83,
+    valueScore: 83,
+    growthScore: 92,
+    momentumScore: 79,
+    kbRating: 84,
+    priceHistory: [
+      { year: 2020, price: 0.56 }
+      { year: 2021, price: 0.64 }
+      { year: 2022, price: 0.76 }
+      { year: 2023, price: 0.96 }
+      { year: 2024, price: 1.29 }
+      { year: 2025, price: 1.47 }
+      { year: 2026, price: 1.6 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.01, yield: 1.79, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.02, yield: 3.12, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.02, yield: 2.63, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.03, yield: 3.12, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.04, yield: 3.1, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.04, yield: 2.72, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [1059070184, 1342792319, 1517672964, 1850766616, 2122267852, 2295551791],
+      netIncome: [224028774, 95835222, 183720418, 373300589, 165909501, 435165763],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 38600392550,
+      totalLiabilities: 23091821133,
+      equity: 15508571417,
+      operatingCashFlow: 774154156,
+      freeCashFlow: 412793093,
+      grossMargin: 25.4,
+      netMargin: 14.7,
+      roe: 30.7,
+      roa: 15.2,
+      debtToEquity: 1.51,
+      currentRatio: 2.52,
+      quickRatio: 1.98,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'PHARMDEKO',
+    name: 'Pharma Deko Plc',
+    sector: 'Healthcare',
+    price: 1.83,
+    change: 0,
+    changePct: 0.0,
+    volume: 0,
+    marketCap: 15927036626,
+    high52w: 2.43,
+    low52w: 1.02,
+    peRatio: 15,
+    pegRatio: 0.03,
+    eps: 0.12,
+    dividendYield: 1.87,
+    dividendPerShare: 0.03,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Pharma Deko Plc is a leading company in the Healthcare sector listed on the Nigerian Exchange Group.',
+    website: 'www.pharmdeko.com.ng',
+    ceo: 'Managing Director',
+    employees: 8992,
+    founded: 2010,
+    buyScore: 56,
+    valueScore: 56,
+    growthScore: 60,
+    momentumScore: 63,
+    kbRating: 59,
+    priceHistory: [
+      { year: 2020, price: 0.63 }
+      { year: 2021, price: 0.69 }
+      { year: 2022, price: 0.78 }
+      { year: 2023, price: 0.98 }
+      { year: 2024, price: 1.24 }
+      { year: 2025, price: 1.55 }
+      { year: 2026, price: 1.83 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.01, yield: 1.59, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.01, yield: 1.45, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.01, yield: 1.28, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.02, yield: 2.04, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.01, yield: 0.81, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.02, yield: 1.29, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [472475908, 608334925, 674102583, 813970540, 938328365, 1057404778],
+      netIncome: [43784875, 100368608, 53072466, 168969975, 146712776, 150325941],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 21194215596,
+      totalLiabilities: 9056691413,
+      equity: 12137524183,
+      operatingCashFlow: 232746411,
+      freeCashFlow: 181262346,
+      grossMargin: 55.8,
+      netMargin: 25.0,
+      roe: 25.6,
+      roa: 8.3,
+      debtToEquity: 0.91,
+      currentRatio: 2.74,
+      quickRatio: 2.24,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'PREMPAINTS',
+    name: 'Premier Paints Plc',
+    sector: 'Building Materials',
+    price: 30.4,
+    change: 0,
+    changePct: 0.0,
+    volume: 1530,
+    marketCap: 509400223788,
+    high52w: 37.36,
+    low52w: 19.17,
+    peRatio: 14,
+    pegRatio: 0.02,
+    eps: 2.17,
+    dividendYield: 2.45,
+    dividendPerShare: 0.74,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'Premier Paints Plc is a leading company in the Building Materials sector listed on the Nigerian Exchange Group.',
+    website: 'www.prempaints.com.ng',
+    ceo: 'Managing Director',
+    employees: 4933,
+    founded: 1977,
+    buyScore: 64,
+    valueScore: 59,
+    growthScore: 78,
+    momentumScore: 57,
+    kbRating: 64,
+    priceHistory: [
+      { year: 2020, price: 11.12 }
+      { year: 2021, price: 12.27 }
+      { year: 2022, price: 14.27 }
+      { year: 2023, price: 17.16 }
+      { year: 2024, price: 22.66 }
+      { year: 2025, price: 25.9 }
+      { year: 2026, price: 30.4 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.23, yield: 2.07, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.22, yield: 1.79, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.3, yield: 2.1, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.35, yield: 2.04, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.47, yield: 2.07, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.41, yield: 1.58, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [15953762078, 18633007457, 23880429291, 26397953403, 30039827702, 33778935801],
+      netIncome: [1808557184, 1531980864, 3546048786, 5581104860, 6488157365, 2384127702],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 786736735917,
+      totalLiabilities: 455583303810,
+      equity: 331153432107,
+      operatingCashFlow: 3206289733,
+      freeCashFlow: 2605406174,
+      grossMargin: 44.5,
+      netMargin: 18.7,
+      roe: 21.8,
+      roa: 12.7,
+      debtToEquity: 0.62,
+      currentRatio: 1.8,
+      quickRatio: 1.3,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'PRESCO',
+    name: 'Presco Plc',
+    sector: 'Agriculture',
+    price: 2300,
+    change: 0,
+    changePct: 0.0,
+    volume: 960,
+    marketCap: 921000000000,
+    high52w: 3002.92,
+    low52w: 1599.51,
+    peRatio: 12,
+    pegRatio: 0.02,
+    eps: 191.67,
+    dividendYield: 4.96,
+    dividendPerShare: 114.08,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Presco Plc is a leading company in the Agriculture sector listed on the Nigerian Exchange Group.',
+    website: 'www.presco.com.ng',
+    ceo: 'Managing Director',
+    employees: 14257,
+    founded: 2001,
+    buyScore: 86,
+    valueScore: 72,
+    growthScore: 89,
+    momentumScore: 83,
+    kbRating: 82,
+    priceHistory: [
+      { year: 2020, price: 702.96 }
+      { year: 2021, price: 817.56 }
+      { year: 2022, price: 937.6 }
+      { year: 2023, price: 1175.52 }
+      { year: 2024, price: 1618.06 }
+      { year: 2025, price: 1923.69 }
+      { year: 2026, price: 2300 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 21.18, yield: 3.01, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 28.02, yield: 3.43, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 38.72, yield: 4.13, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 47.43, yield: 4.03, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 62.0, yield: 3.83, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 79.64, yield: 4.14, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [28569552104, 35003638844, 42289583346, 46016878818, 53356720253, 62881842953],
+      netIncome: [4833721911, 4418155130, 8164168901, 6786135149, 5911018606, 5040446043],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 1608231750513,
+      totalLiabilities: 944490221514,
+      equity: 663741528999,
+      operatingCashFlow: 7056777121,
+      freeCashFlow: 5611252094,
+      grossMargin: 35.1,
+      netMargin: 25.3,
+      roe: 27.9,
+      roa: 17.6,
+      debtToEquity: 1.53,
+      currentRatio: 2.35,
+      quickRatio: 2.1,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'PZ',
+    name: 'PZ Cussons Nigeria Plc',
+    sector: 'Consumer Goods',
+    price: 90,
+    change: 0,
+    changePct: 0.0,
+    volume: 20338,
+    marketCap: 979089632801,
+    high52w: 128.61,
+    low52w: 57.25,
+    peRatio: 18,
+    pegRatio: 0.03,
+    eps: 5.0,
+    dividendYield: 3.94,
+    dividendPerShare: 3.55,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'PZ Cussons Nigeria Plc is a leading company in the Consumer Goods sector listed on the Nigerian Exchange Group.',
+    website: 'www.pz.com.ng',
+    ceo: 'Managing Director',
+    employees: 12910,
+    founded: 1998,
+    buyScore: 83,
+    valueScore: 68,
+    growthScore: 75,
+    momentumScore: 73,
+    kbRating: 75,
+    priceHistory: [
+      { year: 2020, price: 29.96 }
+      { year: 2021, price: 34.11 }
+      { year: 2022, price: 38.82 }
+      { year: 2023, price: 51.87 }
+      { year: 2024, price: 68.71 }
+      { year: 2025, price: 81.24 }
+      { year: 2026, price: 90 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.85, yield: 2.84, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 1.02, yield: 2.99, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 1.17, yield: 3.01, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 1.73, yield: 3.34, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 2.26, yield: 3.29, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 2.26, yield: 2.78, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [28527524707, 35470782694, 42451163856, 52315176192, 55969714507, 64802771408],
+      netIncome: [4030969126, 7776678155, 6177916834, 6180281313, 9077431237, 8508918417],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 1961239993176,
+      totalLiabilities: 1170745814673,
+      equity: 790494178503,
+      operatingCashFlow: 14765005534,
+      freeCashFlow: 7480743953,
+      grossMargin: 45.6,
+      netMargin: 25.0,
+      roe: 23.3,
+      roa: 9.9,
+      debtToEquity: 1.58,
+      currentRatio: 1.85,
+      quickRatio: 1.41,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'REDSTAREX',
+    name: 'Red Star Express Plc',
+    sector: 'Logistics',
+    price: 24.55,
+    change: 0,
+    changePct: 0.0,
+    volume: 1300,
+    marketCap: 259054513985,
+    high52w: 34.49,
+    low52w: 14.09,
+    peRatio: 10,
+    pegRatio: 0.02,
+    eps: 2.46,
+    dividendYield: 1.51,
+    dividendPerShare: 0.37,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'Red Star Express Plc is a leading company in the Logistics sector listed on the Nigerian Exchange Group.',
+    website: 'www.redstarex.com.ng',
+    ceo: 'Managing Director',
+    employees: 3568,
+    founded: 2012,
+    buyScore: 52,
+    valueScore: 67,
+    growthScore: 51,
+    momentumScore: 86,
+    kbRating: 64,
+    priceHistory: [
+      { year: 2020, price: 8.25 }
+      { year: 2021, price: 8.91 }
+      { year: 2022, price: 10.13 }
+      { year: 2023, price: 13.37 }
+      { year: 2024, price: 17.0 }
+      { year: 2025, price: 20.78 }
+      { year: 2026, price: 24.55 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.08, yield: 0.97, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.1, yield: 1.12, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.12, yield: 1.18, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.14, yield: 1.05, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.16, yield: 0.94, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.21, yield: 1.01, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [8354551619, 9537816682, 12196776709, 13134656912, 15478304949, 17845809070],
+      netIncome: [1169151738, 712381073, 2377315310, 1960860370, 2129912130, 1804517756],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 236639601765,
+      totalLiabilities: 111126857676,
+      equity: 125512744089,
+      operatingCashFlow: 3278581434,
+      freeCashFlow: 2189063223,
+      grossMargin: 34.7,
+      netMargin: 10.1,
+      roe: 32.1,
+      roa: 14.3,
+      debtToEquity: 0.35,
+      currentRatio: 2.67,
+      quickRatio: 2.44,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'REGALINS',
+    name: 'Regency Alliance Insurance Plc',
+    sector: 'Insurance',
+    price: 0.92,
+    change: 0,
+    changePct: 0.0,
+    volume: 63796,
+    marketCap: 24247749319,
+    high52w: 1.16,
+    low52w: 0.64,
+    peRatio: 8,
+    pegRatio: 0.02,
+    eps: 0.12,
+    dividendYield: 3.33,
+    dividendPerShare: 0.03,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Regency Alliance Insurance Plc is a leading company in the Insurance sector listed on the Nigerian Exchange Group.',
+    website: 'www.regalins.com.ng',
+    ceo: 'Managing Director',
+    employees: 16017,
+    founded: 1962,
+    buyScore: 75,
+    valueScore: 71,
+    growthScore: 59,
+    momentumScore: 73,
+    kbRating: 70,
+    priceHistory: [
+      { year: 2020, price: 0.31 }
+      { year: 2021, price: 0.35 }
+      { year: 2022, price: 0.42 }
+      { year: 2023, price: 0.51 }
+      { year: 2024, price: 0.71 }
+      { year: 2025, price: 0.85 }
+      { year: 2026, price: 0.92 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.01, yield: 3.23, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.01, yield: 2.86, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.01, yield: 2.38, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.01, yield: 1.96, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.02, yield: 2.82, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.02, yield: 2.35, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [683562209, 850127462, 1135042411, 1239336598, 1432251107, 1582577652],
+      netIncome: [84391587, 168044910, 228429810, 260629987, 309243217, 189053350],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 26105160074,
+      totalLiabilities: 13966472991,
+      equity: 12138687083,
+      operatingCashFlow: 296379105,
+      freeCashFlow: 165547621,
+      grossMargin: 39.0,
+      netMargin: 18.9,
+      roe: 35.6,
+      roa: 7.9,
+      debtToEquity: 0.65,
+      currentRatio: 1.79,
+      quickRatio: 1.21,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'RTBRISCOE',
+    name: 'RT Briscoe Nigeria Plc',
+    sector: 'Conglomerates',
+    price: 9.25,
+    change: 0,
+    changePct: 0.0,
+    volume: 852,
+    marketCap: 47315558499,
+    high52w: 12.8,
+    low52w: 5.69,
+    peRatio: 10,
+    pegRatio: 0.01,
+    eps: 0.93,
+    dividendYield: 4.71,
+    dividendPerShare: 0.44,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'RT Briscoe Nigeria Plc is a leading company in the Conglomerates sector listed on the Nigerian Exchange Group.',
+    website: 'www.rtbriscoe.com.ng',
+    ceo: 'Managing Director',
+    employees: 3384,
+    founded: 1986,
+    buyScore: 59,
+    valueScore: 75,
+    growthScore: 88,
+    momentumScore: 68,
+    kbRating: 72,
+    priceHistory: [
+      { year: 2020, price: 2.92 }
+      { year: 2021, price: 3.38 }
+      { year: 2022, price: 3.77 }
+      { year: 2023, price: 4.92 }
+      { year: 2024, price: 6.43 }
+      { year: 2025, price: 8.17 }
+      { year: 2026, price: 9.25 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.1, yield: 3.42, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.1, yield: 2.96, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.15, yield: 3.98, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.17, yield: 3.46, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.26, yield: 4.04, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.23, yield: 2.82, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [1430696002, 1723698232, 2055551523, 2423556719, 2731679011, 3198122128],
+      netIncome: [219819257, 233292709, 169066540, 487615856, 322911832, 426514001],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 101173459023,
+      totalLiabilities: 54101197088,
+      equity: 47072261935,
+      operatingCashFlow: 712848457,
+      freeCashFlow: 485971572,
+      grossMargin: 38.9,
+      netMargin: 16.6,
+      roe: 33.4,
+      roa: 9.2,
+      debtToEquity: 0.22,
+      currentRatio: 1.06,
       quickRatio: 0.92,
       years: [2020, 2021, 2022, 2023, 2024, 2025],
     },
   },
   {
-    symbol: 'DANGSUGAR',
-    name: 'Dangote Sugar Refinery Plc',
-    sector: 'Consumer Goods',
-    price: 72.00,
-    change: 0.85,
-    changePct: 1.19,
-    volume: 2590000,
-    marketCap: 864250000000,
-    high52w: 89.00,
-    low52w: 32.00,
-    peRatio: 0.00,
-    pegRatio: 0.00,
-    eps: -1.69,
-    dividendYield: 0.00,
-    dividendPerShare: 0.00,
-    riskLevel: 'High' as const,
+    symbol: 'SCOA',
+    name: 'SCOA Nigeria Plc',
+    sector: 'Conglomerates',
+    price: 33.05,
+    change: 0,
+    changePct: 0.0,
+    volume: 1502,
+    marketCap: 405334700766,
+    high52w: 42.09,
+    low52w: 19.76,
+    peRatio: 10,
+    pegRatio: 0.02,
+    eps: 3.3,
+    dividendYield: 5.02,
+    dividendPerShare: 1.66,
+    riskLevel: 'Medium',
     investmentHorizon: '2-4 years',
-    description: 'Dangote Sugar Refinery Plc is one of the largest sugar producers in sub-Saharan Africa. The company operates the largest sugar refinery in Africa with a capacity of 1.44 million metric tonnes per annum, supplying the food and beverage industry.',
-    website: 'dangotesugar.com',
-    ceo: 'Ravindra Singhvi',
-    employees: 3200,
-    founded: 2000,
-    buyScore: 55,
-    valueScore: 60,
-    growthScore: 48,
-    momentumScore: 52,
-    kbRating: 54,
+    description: 'SCOA Nigeria Plc is a leading company in the Conglomerates sector listed on the Nigerian Exchange Group.',
+    website: 'www.scoa.com.ng',
+    ceo: 'Managing Director',
+    employees: 574,
+    founded: 1980,
+    buyScore: 75,
+    valueScore: 64,
+    growthScore: 71,
+    momentumScore: 63,
+    kbRating: 68,
     priceHistory: [
-      { year: 2020, price: 18.50 },
-      { year: 2021, price: 22.00 },
-      { year: 2022, price: 28.00 },
-      { year: 2023, price: 38.00 },
-      { year: 2024, price: 55.00 },
-      { year: 2025, price: 65.00 },
-      { year: 2026, price: 72.00 },
+      { year: 2020, price: 11.41 }
+      { year: 2021, price: 13.29 }
+      { year: 2022, price: 15.2 }
+      { year: 2023, price: 18.74 }
+      { year: 2024, price: 24.2 }
+      { year: 2025, price: 29.47 }
+      { year: 2026, price: 33.05 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 1.50, yield: 8.11, exDate: '2020-05-21', payDate: '2020-06-12' },
-      { year: 2021, dividend: 1.50, yield: 6.82, exDate: '2021-05-20', payDate: '2021-06-11' },
-      { year: 2022, dividend: 1.00, yield: 3.57, exDate: '2022-05-19', payDate: '2022-06-10' },
+      { year: 2020, dividend: 0.4, yield: 3.51, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.58, yield: 4.36, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.49, yield: 3.22, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.61, yield: 3.26, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.78, yield: 3.22, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.98, yield: 3.33, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
-      revenue: [285000, 312000, 395000, 520000, 680000, 820000],
-      netIncome: [32000, 28000, 22000, -12000, 18000, -20000],
-      eps: [2.67, 2.34, 1.84, -1.00, 1.50, -1.67],
-      totalAssets: 580000,
-      totalLiabilities: 380000,
-      equity: 200000,
-      operatingCashFlow: 42000,
-      freeCashFlow: 18000,
-      grossMargin: 28.5,
-      netMargin: -2.4,
-      roe: -10.0,
-      roa: -3.4,
-      debtToEquity: 1.90,
-      currentRatio: 1.22,
-      quickRatio: 0.88,
+      revenue: [12638776604, 15825234265, 19051927997, 21970512456, 23303139902, 26633436321],
+      netIncome: [2146436233, 1140609988, 3897117359, 3086008672, 2346402904, 5611567998],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 559072005994,
+      totalLiabilities: 371329956780,
+      equity: 187742049214,
+      operatingCashFlow: 6330803798,
+      freeCashFlow: 3635266911,
+      grossMargin: 40.2,
+      netMargin: 6.2,
+      roe: 27.0,
+      roa: 5.6,
+      debtToEquity: 1.22,
+      currentRatio: 1.44,
+      quickRatio: 0.99,
       years: [2020, 2021, 2022, 2023, 2024, 2025],
     },
   },
   {
-    symbol: 'NASCON',
-    name: 'NASCON Allied Industries Plc',
-    sector: 'Consumer Goods',
-    price: 219.50,
-    change: 0.00,
-    changePct: 0.00,
-    volume: 577360,
-    marketCap: 593180000000,
-    high52w: 265.00,
-    low52w: 92.00,
-    peRatio: 16.55,
-    pegRatio: 0.78,
-    eps: 13.26,
-    dividendYield: 2.73,
-    dividendPerShare: 6.00,
-    riskLevel: 'Low' as const,
-    investmentHorizon: '2-4 years',
-    description: 'NASCON Allied Industries Plc is a Dangote Group company and leading salt producer and seasoning manufacturer in Nigeria. The company distributes Dangote Salt and other value-added products including seasoning cubes.',
-    website: 'nasconallied.com',
-    ceo: 'Thabo Mabe',
-    employees: 620,
-    founded: 1973,
-    buyScore: 76,
-    valueScore: 74,
-    growthScore: 72,
-    momentumScore: 70,
-    kbRating: 73,
-    priceHistory: [
-      { year: 2020, price: 14.50 },
-      { year: 2021, price: 18.80 },
-      { year: 2022, price: 28.50 },
-      { year: 2023, price: 58.00 },
-      { year: 2024, price: 145.00 },
-      { year: 2025, price: 195.00 },
-      { year: 2026, price: 219.50 },
-    ],
-    dividendHistory: [
-      { year: 2022, dividend: 1.50, yield: 5.26, exDate: '2022-05-05', payDate: '2022-05-27' },
-      { year: 2023, dividend: 3.00, yield: 5.17, exDate: '2023-05-04', payDate: '2023-05-26' },
-      { year: 2024, dividend: 5.00, yield: 3.45, exDate: '2024-05-02', payDate: '2024-05-24' },
-      { year: 2025, dividend: 6.00, yield: 3.08, exDate: '2025-05-01', payDate: '2025-05-23' },
-    ],
-    financials: {
-      revenue: [32000, 42000, 58000, 85000, 135000, 185000],
-      netIncome: [4500, 6800, 10200, 18500, 32000, 48000],
-      eps: [1.67, 2.52, 3.78, 6.85, 11.85, 17.78],
-      totalAssets: 125000,
-      totalLiabilities: 68000,
-      equity: 57000,
-      operatingCashFlow: 38000,
-      freeCashFlow: 26000,
-      grossMargin: 42.5,
-      netMargin: 25.9,
-      roe: 84.2,
-      roa: 38.4,
-      debtToEquity: 1.19,
-      currentRatio: 1.45,
-      quickRatio: 1.12,
-      years: [2020, 2021, 2022, 2023, 2024, 2025],
-    },
-  },
-  {
-    symbol: 'JAIZBANK',
-    name: 'Jaiz Bank Plc',
-    sector: 'Banking',
-    price: 8.55,
-    change: -0.10,
-    changePct: -1.16,
-    volume: 3130000,
-    marketCap: 402760000000,
-    high52w: 10.50,
-    low52w: 3.40,
-    peRatio: 11.94,
-    pegRatio: 0.42,
-    eps: 0.72,
-    dividendYield: 1.62,
-    dividendPerShare: 0.14,
-    riskLevel: 'Medium' as const,
+    symbol: 'SEPLAT',
+    name: 'Seplat Energy Plc',
+    sector: 'Oil & Gas',
+    price: 11363.9,
+    change: 0,
+    changePct: 0.0,
+    volume: 610,
+    marketCap: 13700000000000,
+    high52w: 13175.57,
+    low52w: 8230.17,
+    peRatio: 10,
+    pegRatio: 0.02,
+    eps: 1136.39,
+    dividendYield: 2.71,
+    dividendPerShare: 307.96,
+    riskLevel: 'Low',
     investmentHorizon: '3-5 years',
-    description: "Jaiz Bank Plc is Nigeria's first and largest fully non-interest (Islamic) bank, providing Sharia-compliant financial products and services. The bank offers profit-sharing deposits, Murabaha financing, and ethical investment alternatives.",
-    website: 'jaizbank.com',
-    ceo: 'Hassan Usman',
-    employees: 1800,
-    founded: 2012,
-    buyScore: 70,
-    valueScore: 76,
-    growthScore: 74,
-    momentumScore: 68,
-    kbRating: 72,
+    description: 'Seplat Energy Plc is a leading company in the Oil & Gas sector listed on the Nigerian Exchange Group.',
+    website: 'www.seplat.com.ng',
+    ceo: 'Managing Director',
+    employees: 9247,
+    founded: 1993,
+    buyScore: 67,
+    valueScore: 75,
+    growthScore: 57,
+    momentumScore: 52,
+    kbRating: 63,
     priceHistory: [
-      { year: 2020, price: 0.95 },
-      { year: 2021, price: 1.40 },
-      { year: 2022, price: 1.85 },
-      { year: 2023, price: 2.90 },
-      { year: 2024, price: 5.80 },
-      { year: 2025, price: 7.80 },
-      { year: 2026, price: 8.55 },
+      { year: 2020, price: 4283.37 }
+      { year: 2021, price: 4750.09 }
+      { year: 2022, price: 5332.17 }
+      { year: 2023, price: 6165.49 }
+      { year: 2024, price: 8641.01 }
+      { year: 2025, price: 10061.76 }
+      { year: 2026, price: 11363.9 }
     ],
     dividendHistory: [
-      { year: 2023, dividend: 0.08, yield: 2.76, exDate: '2023-05-18', payDate: '2023-06-09' },
-      { year: 2024, dividend: 0.11, yield: 1.90, exDate: '2024-05-16', payDate: '2024-06-07' },
-      { year: 2025, dividend: 0.14, yield: 1.79, exDate: '2025-05-15', payDate: '2025-06-06' },
+      { year: 2020, dividend: 89.55, yield: 2.09, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 106.16, yield: 2.23, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 108.55, yield: 2.04, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 119.7, yield: 1.94, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 159.29, yield: 1.84, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 219.1, yield: 2.18, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
-      revenue: [12000, 16500, 24000, 38000, 65000, 98000],
-      netIncome: [2200, 3500, 5800, 10500, 22000, 34000],
-      eps: [0.05, 0.07, 0.12, 0.22, 0.47, 0.72],
-      totalAssets: 650000,
-      totalLiabilities: 590000,
-      equity: 60000,
-      operatingCashFlow: 28000,
-      freeCashFlow: 20000,
-      grossMargin: 72.5,
-      netMargin: 34.7,
-      roe: 56.7,
-      roa: 5.2,
-      debtToEquity: 9.83,
-      currentRatio: 1.05,
+      revenue: [404188808298, 479844749435, 617651922727, 699445128833, 828100083724, 915602063845],
+      netIncome: [43945311449, 85346188959, 105545243655, 92865512768, 115013546825, 93101324176],
+      eps: [0.0, 0.0001, 0.0001, 0.0001, 0.0001, 0.0001],
+      totalAssets: 22804371289237,
+      totalLiabilities: 9210593191604,
+      equity: 13593778097633,
+      operatingCashFlow: 148924023453,
+      freeCashFlow: 71990225577,
+      grossMargin: 35.6,
+      netMargin: 17.5,
+      roe: 26.4,
+      roa: 16.8,
+      debtToEquity: 1.63,
+      currentRatio: 1.91,
+      quickRatio: 1.55,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'SFSREIT',
+    name: 'SFS Real Estate Investment Trust',
+    sector: 'Real Estate',
+    price: 418.75,
+    change: 0,
+    changePct: 0.0,
+    volume: 253,
+    marketCap: 9595982609261,
+    high52w: 577.9,
+    low52w: 251.89,
+    peRatio: 12,
+    pegRatio: 0.02,
+    eps: 34.9,
+    dividendYield: 3.89,
+    dividendPerShare: 16.29,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'SFS Real Estate Investment Trust is a leading company in the Real Estate sector listed on the Nigerian Exchange Group.',
+    website: 'www.sfsreit.com.ng',
+    ceo: 'Managing Director',
+    employees: 9781,
+    founded: 1995,
+    buyScore: 82,
+    valueScore: 72,
+    growthScore: 92,
+    momentumScore: 63,
+    kbRating: 77,
+    priceHistory: [
+      { year: 2020, price: 133.6 }
+      { year: 2021, price: 151.94 }
+      { year: 2022, price: 180.76 }
+      { year: 2023, price: 235.6 }
+      { year: 2024, price: 305.05 }
+      { year: 2025, price: 356.0 }
+      { year: 2026, price: 418.75 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 3.3, yield: 2.47, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 4.31, yield: 2.84, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 4.44, yield: 2.46, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 5.82, yield: 2.47, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 8.8, yield: 2.88, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 11.1, yield: 3.12, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [284677037840, 340085860805, 443729327714, 481207294698, 557913630421, 638368510112],
+      netIncome: [27309443365, 49658666267, 84598631200, 104868747204, 81065537604, 55389645089],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 13647267959621,
+      totalLiabilities: 9207356878026,
+      equity: 4439911081595,
+      operatingCashFlow: 66548835636,
+      freeCashFlow: 31945485708,
+      grossMargin: 24.8,
+      netMargin: 14.9,
+      roe: 31.1,
+      roa: 16.4,
+      debtToEquity: 1.65,
+      currentRatio: 2.73,
+      quickRatio: 2.25,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'SKYAVN',
+    name: 'Sky Aviation Handling Company Plc',
+    sector: 'Aviation',
+    price: 171.2,
+    change: 0,
+    changePct: 0.0,
+    volume: 155,
+    marketCap: 3330550211291,
+    high52w: 205.85,
+    low52w: 116.23,
+    peRatio: 12,
+    pegRatio: 0.02,
+    eps: 14.27,
+    dividendYield: 2.82,
+    dividendPerShare: 4.83,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Sky Aviation Handling Company Plc is a leading company in the Aviation sector listed on the Nigerian Exchange Group.',
+    website: 'www.skyavn.com.ng',
+    ceo: 'Managing Director',
+    employees: 12151,
+    founded: 1970,
+    buyScore: 68,
+    valueScore: 68,
+    growthScore: 84,
+    momentumScore: 61,
+    kbRating: 70,
+    priceHistory: [
+      { year: 2020, price: 54.49 }
+      { year: 2021, price: 60.57 }
+      { year: 2022, price: 71.16 }
+      { year: 2023, price: 84.32 }
+      { year: 2024, price: 114.85 }
+      { year: 2025, price: 144.88 }
+      { year: 2026, price: 171.2 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 1.15, yield: 2.11, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 1.03, yield: 1.7, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 1.5, yield: 2.11, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 1.56, yield: 1.85, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 2.65, yield: 2.31, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 2.64, yield: 1.82, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [96995238686, 129472935664, 147179949398, 172976021115, 190301548914, 216156381425],
+      netIncome: [15916688190, 26955979053, 29091364489, 21262860940, 22096401544, 29787777670],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 6746155579244,
+      totalLiabilities: 3653231627251,
+      equity: 3092923951993,
+      operatingCashFlow: 35567615263,
+      freeCashFlow: 20875762507,
+      grossMargin: 33.8,
+      netMargin: 22.2,
+      roe: 16.1,
+      roa: 6.2,
+      debtToEquity: 1.1,
+      currentRatio: 2.27,
+      quickRatio: 2.02,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'SOVRENINS',
+    name: 'Sovereign Trust Insurance Plc',
+    sector: 'Insurance',
+    price: 2.06,
+    change: 0,
+    changePct: 0.0,
+    volume: 32899,
+    marketCap: 50653485267,
+    high52w: 2.6,
+    low52w: 1.19,
+    peRatio: 8,
+    pegRatio: 0.01,
+    eps: 0.26,
+    dividendYield: 4.58,
+    dividendPerShare: 0.09,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Sovereign Trust Insurance Plc is a leading company in the Insurance sector listed on the Nigerian Exchange Group.',
+    website: 'www.sovrenins.com.ng',
+    ceo: 'Managing Director',
+    employees: 11517,
+    founded: 2012,
+    buyScore: 76,
+    valueScore: 53,
+    growthScore: 69,
+    momentumScore: 70,
+    kbRating: 67,
+    priceHistory: [
+      { year: 2020, price: 0.75 }
+      { year: 2021, price: 0.87 }
+      { year: 2022, price: 1.04 }
+      { year: 2023, price: 1.27 }
+      { year: 2024, price: 1.62 }
+      { year: 2025, price: 1.9 }
+      { year: 2026, price: 2.06 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.03, yield: 4.0, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.03, yield: 3.45, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.04, yield: 3.85, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.05, yield: 3.94, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.07, yield: 4.32, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.06, yield: 3.16, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [1616731674, 1777048483, 2361491342, 2514437239, 3102855173, 3427301592],
+      netIncome: [169232752, 152182398, 503811614, 446075128, 596117135, 494467245],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 103660649548,
+      totalLiabilities: 39275581081,
+      equity: 64385068467,
+      operatingCashFlow: 537874959,
+      freeCashFlow: 293282212,
+      grossMargin: 52.7,
+      netMargin: 22.2,
+      roe: 11.7,
+      roa: 4.3,
+      debtToEquity: 1.24,
+      currentRatio: 2.47,
+      quickRatio: 2.24,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'STANBIC',
+    name: 'Stanbic IBTC Holdings Plc',
+    sector: 'Banking',
+    price: 163,
+    change: 0,
+    changePct: 0.0,
+    volume: 8303,
+    marketCap: 1920000000000,
+    high52w: 200.2,
+    low52w: 122.83,
+    peRatio: 6,
+    pegRatio: 0.02,
+    eps: 27.17,
+    dividendYield: 3.71,
+    dividendPerShare: 6.05,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Stanbic IBTC Holdings Plc is a leading company in the Banking sector listed on the Nigerian Exchange Group.',
+    website: 'www.stanbic.com.ng',
+    ceo: 'Managing Director',
+    employees: 14001,
+    founded: 1993,
+    buyScore: 80,
+    valueScore: 48,
+    growthScore: 45,
+    momentumScore: 80,
+    kbRating: 63,
+    priceHistory: [
+      { year: 2020, price: 54.07 }
+      { year: 2021, price: 61.27 }
+      { year: 2022, price: 67.41 }
+      { year: 2023, price: 81.03 }
+      { year: 2024, price: 115.63 }
+      { year: 2025, price: 137.33 }
+      { year: 2026, price: 163 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 1.76, yield: 3.26, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 1.78, yield: 2.91, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 2.0, yield: 2.97, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 2.19, yield: 2.7, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 3.51, yield: 3.04, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 3.88, yield: 2.83, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [61084282321, 76569950498, 88859237364, 96711067535, 112984019926, 126090012350],
+      netIncome: [4412761789, 14032013305, 11031206280, 12426746390, 15167774690, 17126872162],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 1455526578082,
+      totalLiabilities: 967270707866,
+      equity: 488255870216,
+      operatingCashFlow: 21665275765,
+      freeCashFlow: 13910026607,
+      grossMargin: 47.2,
+      netMargin: 21.4,
+      roe: 37.7,
+      roa: 12.3,
+      debtToEquity: 1.79,
+      currentRatio: 2.34,
+      quickRatio: 2.21,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'STERLINGNG',
+    name: 'Sterling Financial Holdings Company Plc',
+    sector: 'Banking',
+    price: 7.45,
+    change: 0,
+    changePct: 0.0,
+    volume: 154745,
+    marketCap: 86195495218,
+    high52w: 8.94,
+    low52w: 5.54,
+    peRatio: 6,
+    pegRatio: 0.01,
+    eps: 1.24,
+    dividendYield: 5.79,
+    dividendPerShare: 0.43,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Sterling Financial Holdings Company Plc is a leading company in the Banking sector listed on the Nigerian Exchange Group.',
+    website: 'www.sterlingng.com.ng',
+    ceo: 'Managing Director',
+    employees: 12438,
+    founded: 1967,
+    buyScore: 56,
+    valueScore: 69,
+    growthScore: 79,
+    momentumScore: 60,
+    kbRating: 66,
+    priceHistory: [
+      { year: 2020, price: 2.48 }
+      { year: 2021, price: 2.93 }
+      { year: 2022, price: 3.34 }
+      { year: 2023, price: 3.96 }
+      { year: 2024, price: 5.61 }
+      { year: 2025, price: 6.62 }
+      { year: 2026, price: 7.45 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.11, yield: 4.44, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.13, yield: 4.44, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.12, yield: 3.59, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.19, yield: 4.8, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.26, yield: 4.63, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.33, yield: 4.98, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [2677849446, 3085738302, 3857817353, 4613513555, 5091992336, 5967696227],
+      netIncome: [355564499, 508936072, 555188925, 1011272516, 950884151, 1233348344],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 156366873567,
+      totalLiabilities: 72735778140,
+      equity: 83631095427,
+      operatingCashFlow: 1670536499,
+      freeCashFlow: 1207617711,
+      grossMargin: 37.9,
+      netMargin: 18.1,
+      roe: 31.0,
+      roa: 14.7,
+      debtToEquity: 0.21,
+      currentRatio: 2.66,
+      quickRatio: 2.38,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'TANTALIZER',
+    name: 'Tantalizers Plc',
+    sector: 'Consumer Goods',
+    price: 3.61,
+    change: 0,
+    changePct: 0.0,
+    volume: 147812,
+    marketCap: 24425461886,
+    high52w: 5.09,
+    low52w: 2.49,
+    peRatio: 18,
+    pegRatio: 0.04,
+    eps: 0.2,
+    dividendYield: 2.11,
+    dividendPerShare: 0.08,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Tantalizers Plc is a leading company in the Consumer Goods sector listed on the Nigerian Exchange Group.',
+    website: 'www.tantalizer.com.ng',
+    ceo: 'Managing Director',
+    employees: 13441,
+    founded: 1979,
+    buyScore: 59,
+    valueScore: 78,
+    growthScore: 55,
+    momentumScore: 59,
+    kbRating: 63,
+    priceHistory: [
+      { year: 2020, price: 1.11 }
+      { year: 2021, price: 1.21 }
+      { year: 2022, price: 1.36 }
+      { year: 2023, price: 1.79 }
+      { year: 2024, price: 2.46 }
+      { year: 2025, price: 3.12 }
+      { year: 2026, price: 3.61 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.02, yield: 1.8, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.02, yield: 1.65, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.02, yield: 1.47, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.03, yield: 1.68, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.04, yield: 1.63, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.04, yield: 1.28, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [700283964, 926373206, 1032350524, 1280666240, 1512308388, 1657091370],
+      netIncome: [97791023, 87993102, 189112239, 237695547, 216312210, 273974375],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 39331038847,
+      totalLiabilities: 23382432970,
+      equity: 15948605877,
+      operatingCashFlow: 443939016,
+      freeCashFlow: 344769564,
+      grossMargin: 24.7,
+      netMargin: 23.7,
+      roe: 23.2,
+      roa: 17.2,
+      debtToEquity: 0.49,
+      currentRatio: 1.16,
+      quickRatio: 0.84,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'TIP',
+    name: 'Trans Inland Nigeria Plc',
+    sector: 'Transportation',
+    price: 23.5,
+    change: 0,
+    changePct: 0.0,
+    volume: 347071,
+    marketCap: 704044382370,
+    high52w: 31.67,
+    low52w: 16.87,
+    peRatio: 10,
+    pegRatio: 0.01,
+    eps: 2.35,
+    dividendYield: 6.05,
+    dividendPerShare: 1.42,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'Trans Inland Nigeria Plc is a leading company in the Transportation sector listed on the Nigerian Exchange Group.',
+    website: 'www.tip.com.ng',
+    ceo: 'Managing Director',
+    employees: 2064,
+    founded: 1995,
+    buyScore: 64,
+    valueScore: 65,
+    growthScore: 91,
+    momentumScore: 54,
+    kbRating: 68,
+    priceHistory: [
+      { year: 2020, price: 6.47 }
+      { year: 2021, price: 7.69 }
+      { year: 2022, price: 9.38 }
+      { year: 2023, price: 12.02 }
+      { year: 2024, price: 16.79 }
+      { year: 2025, price: 20.43 }
+      { year: 2026, price: 23.5 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.26, yield: 4.02, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.4, yield: 5.2, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.43, yield: 4.58, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.65, yield: 5.41, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.63, yield: 3.75, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.93, yield: 4.55, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [21904212668, 26640110025, 30011510135, 34880658992, 43367018883, 46199314944],
+      netIncome: [1820720112, 4640437574, 5865813278, 3030982612, 8483759653, 6315982221],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 1120348684239,
+      totalLiabilities: 603450582660,
+      equity: 516898101579,
+      operatingCashFlow: 10215560914,
+      freeCashFlow: 5356208218,
+      grossMargin: 42.0,
+      netMargin: 20.7,
+      roe: 20.9,
+      roa: 4.9,
+      debtToEquity: 0.26,
+      currentRatio: 1.24,
       quickRatio: 1.02,
       years: [2020, 2021, 2022, 2023, 2024, 2025],
     },
   },
   {
-    symbol: 'NGXGROUP',
-    name: 'Nigerian Exchange Group Plc',
-    sector: 'Services',
-    price: 118.10,
-    change: -1.95,
-    changePct: -1.63,
-    volume: 2860000,
-    marketCap: 347010000000,
-    high52w: 148.00,
-    low52w: 48.00,
-    peRatio: 25.87,
-    pegRatio: 1.10,
-    eps: 4.56,
-    dividendYield: 1.91,
-    dividendPerShare: 2.25,
-    riskLevel: 'Low' as const,
+    symbol: 'TOTAL',
+    name: 'TotalEnergies Marketing Nigeria Plc',
+    sector: 'Oil & Gas',
+    price: 640,
+    change: 0,
+    changePct: 0.0,
+    volume: 268,
+    marketCap: 18230641309646,
+    high52w: 817.81,
+    low52w: 361.62,
+    peRatio: 10,
+    pegRatio: 0.01,
+    eps: 64.0,
+    dividendYield: 3.43,
+    dividendPerShare: 21.95,
+    riskLevel: 'Low',
     investmentHorizon: '3-5 years',
-    description: 'Nigerian Exchange Group Plc operates the Nigerian Exchange (NGX), the premier securities exchange in Nigeria. The group provides listing, trading, clearing, market data and ancillary services to investors, brokers and listed companies.',
-    website: 'ngxgroup.com',
-    ceo: 'Felix Onyema',
-    employees: 450,
-    founded: 1961,
-    buyScore: 72,
-    valueScore: 68,
-    growthScore: 76,
-    momentumScore: 65,
-    kbRating: 70,
+    description: 'TotalEnergies Marketing Nigeria Plc is a leading company in the Oil & Gas sector listed on the Nigerian Exchange Group.',
+    website: 'www.total.com.ng',
+    ceo: 'Managing Director',
+    employees: 16748,
+    founded: 1989,
+    buyScore: 76,
+    valueScore: 78,
+    growthScore: 82,
+    momentumScore: 77,
+    kbRating: 78,
     priceHistory: [
-      { year: 2020, price: 0.00 },
-      { year: 2021, price: 22.00 },
-      { year: 2022, price: 28.50 },
-      { year: 2023, price: 45.00 },
-      { year: 2024, price: 82.00 },
-      { year: 2025, price: 105.00 },
-      { year: 2026, price: 118.10 },
+      { year: 2020, price: 230.21 }
+      { year: 2021, price: 259.28 }
+      { year: 2022, price: 314.64 }
+      { year: 2023, price: 388.65 }
+      { year: 2024, price: 490.89 }
+      { year: 2025, price: 589.58 }
+      { year: 2026, price: 640 }
     ],
     dividendHistory: [
-      { year: 2022, dividend: 1.00, yield: 3.51, exDate: '2022-06-16', payDate: '2022-07-08' },
-      { year: 2023, dividend: 1.50, yield: 3.33, exDate: '2023-06-15', payDate: '2023-07-07' },
-      { year: 2024, dividend: 2.00, yield: 2.44, exDate: '2024-06-13', payDate: '2024-07-05' },
-      { year: 2025, dividend: 2.25, yield: 2.14, exDate: '2025-06-12', payDate: '2025-07-04' },
+      { year: 2020, dividend: 6.22, yield: 2.7, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 5.54, yield: 2.14, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 9.18, yield: 2.92, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 11.21, yield: 2.88, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 10.5, yield: 2.14, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 16.62, yield: 2.82, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
-      revenue: [0, 12000, 15800, 22000, 32000, 48000],
-      netIncome: [0, 3200, 4500, 7200, 12500, 19200],
-      eps: [0.00, 1.09, 1.53, 2.45, 4.25, 6.53],
-      totalAssets: 185000,
-      totalLiabilities: 82000,
-      equity: 103000,
-      operatingCashFlow: 15000,
-      freeCashFlow: 12000,
-      grossMargin: 68.5,
-      netMargin: 40.0,
-      roe: 18.6,
-      roa: 10.4,
-      debtToEquity: 0.80,
-      currentRatio: 2.85,
-      quickRatio: 2.72,
+      revenue: [560532489614, 713379088017, 790155998430, 923112975111, 1077502135590, 1236377284663],
+      netIncome: [57364632602, 139780816352, 118103807304, 77309461378, 79376844538, 117189203408],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 13081665770600,
+      totalLiabilities: 6504732104324,
+      equity: 6576933666276,
+      operatingCashFlow: 213259292888,
+      freeCashFlow: 136555787868,
+      grossMargin: 38.4,
+      netMargin: 18.3,
+      roe: 32.1,
+      roa: 17.5,
+      debtToEquity: 0.65,
+      currentRatio: 2.39,
+      quickRatio: 1.88,
       years: [2020, 2021, 2022, 2023, 2024, 2025],
     },
   },
-
+  {
+    symbol: 'TRANSCOHOT',
+    name: 'Transcorp Hotels Plc',
+    sector: 'Hospitality',
+    price: 223.3,
+    change: 0,
+    changePct: 0.0,
+    volume: 1136,
+    marketCap: 4630278473536,
+    high52w: 314.55,
+    low52w: 134.22,
+    peRatio: 14,
+    pegRatio: 0.02,
+    eps: 15.95,
+    dividendYield: 3.79,
+    dividendPerShare: 8.46,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Transcorp Hotels Plc is a leading company in the Hospitality sector listed on the Nigerian Exchange Group.',
+    website: 'www.transcohot.com.ng',
+    ceo: 'Managing Director',
+    employees: 7011,
+    founded: 1999,
+    buyScore: 81,
+    valueScore: 69,
+    growthScore: 87,
+    momentumScore: 70,
+    kbRating: 77,
+    priceHistory: [
+      { year: 2020, price: 72.95 }
+      { year: 2021, price: 82.79 }
+      { year: 2022, price: 97.72 }
+      { year: 2023, price: 129.23 }
+      { year: 2024, price: 167.28 }
+      { year: 2025, price: 192.96 }
+      { year: 2026, price: 223.3 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 2.24, yield: 3.07, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 2.21, yield: 2.67, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 2.8, yield: 2.87, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 4.39, yield: 3.4, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 5.56, yield: 3.32, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 5.21, yield: 2.7, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [143621529223, 163573591999, 212252769260, 252730006343, 278700030977, 316806780463],
+      netIncome: [30199491988, 14862661701, 38295799081, 28135178935, 36113592516, 67249692730],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 9153452086454,
+      totalLiabilities: 5308342367599,
+      equity: 3845109718855,
+      operatingCashFlow: 112889881478,
+      freeCashFlow: 66503022085,
+      grossMargin: 45.3,
+      netMargin: 24.8,
+      roe: 19.6,
+      roa: 17.2,
+      debtToEquity: 1.09,
+      currentRatio: 2.79,
+      quickRatio: 2.53,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'TRANSCORP',
+    name: 'Transcorp Plc',
+    sector: 'Conglomerates',
+    price: 37.95,
+    change: 0,
+    changePct: 0.0,
+    volume: 33600,
+    marketCap: 835031067092,
+    high52w: 45.51,
+    low52w: 20.9,
+    peRatio: 10,
+    pegRatio: 0.03,
+    eps: 3.8,
+    dividendYield: 1.66,
+    dividendPerShare: 0.63,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'Transcorp Plc is a leading company in the Conglomerates sector listed on the Nigerian Exchange Group.',
+    website: 'www.transcorp.com.ng',
+    ceo: 'Managing Director',
+    employees: 4509,
+    founded: 2000,
+    buyScore: 54,
+    valueScore: 58,
+    growthScore: 45,
+    momentumScore: 66,
+    kbRating: 56,
+    priceHistory: [
+      { year: 2020, price: 13.87 }
+      { year: 2021, price: 15.03 }
+      { year: 2022, price: 17.83 }
+      { year: 2023, price: 21.09 }
+      { year: 2024, price: 26.37 }
+      { year: 2025, price: 32.71 }
+      { year: 2026, price: 37.95 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.15, yield: 1.08, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.17, yield: 1.13, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.2, yield: 1.12, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.3, yield: 1.42, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.35, yield: 1.33, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.42, yield: 1.28, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [24872388187, 31313195331, 39328524447, 44133631097, 51039772524, 54354747845],
+      netIncome: [4706634105, 3033815952, 3861359356, 7243908495, 7606067225, 6336378707],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 1257721755019,
+      totalLiabilities: 532034295703,
+      equity: 725687459316,
+      operatingCashFlow: 9062549437,
+      freeCashFlow: 5346792095,
+      grossMargin: 57.5,
+      netMargin: 8.8,
+      roe: 34.2,
+      roa: 9.5,
+      debtToEquity: 0.39,
+      currentRatio: 1.27,
+      quickRatio: 0.68,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'TRANSEXPR',
+    name: 'Trans Express Ltd Plc',
+    sector: 'Logistics',
+    price: 2.96,
+    change: 0,
+    changePct: 0.0,
+    volume: 12216,
+    marketCap: 26264725571,
+    high52w: 4.07,
+    low52w: 1.84,
+    peRatio: 10,
+    pegRatio: 0.02,
+    eps: 0.3,
+    dividendYield: 6.34,
+    dividendPerShare: 0.19,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Trans Express Ltd Plc is a leading company in the Logistics sector listed on the Nigerian Exchange Group.',
+    website: 'www.transexpr.com.ng',
+    ceo: 'Managing Director',
+    employees: 427,
+    founded: 2000,
+    buyScore: 58,
+    valueScore: 63,
+    growthScore: 56,
+    momentumScore: 70,
+    kbRating: 62,
+    priceHistory: [
+      { year: 2020, price: 1.04 }
+      { year: 2021, price: 1.25 }
+      { year: 2022, price: 1.41 }
+      { year: 2023, price: 1.83 }
+      { year: 2024, price: 2.4 }
+      { year: 2025, price: 2.7 }
+      { year: 2026, price: 2.96 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.04, yield: 3.85, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.06, yield: 4.8, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.08, yield: 5.67, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.08, yield: 4.37, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.13, yield: 5.42, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.13, yield: 4.81, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [857105362, 927474434, 1206599548, 1372876703, 1533780018, 1780572617],
+      netIncome: [151580288, 171192022, 251654352, 230213839, 200427700, 164745376],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 27299318833,
+      totalLiabilities: 15585563345,
+      equity: 11713755488,
+      operatingCashFlow: 261709452,
+      freeCashFlow: 185336387,
+      grossMargin: 37.1,
+      netMargin: 15.2,
+      roe: 35.8,
+      roa: 9.8,
+      debtToEquity: 0.71,
+      currentRatio: 2.18,
+      quickRatio: 2.03,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'TRANSPOWER',
+    name: 'Transmission Company of Nigeria Plc',
+    sector: 'Power & Utilities',
+    price: 245.5,
+    change: 0,
+    changePct: 0.0,
+    volume: 348,
+    marketCap: 3105345214179,
+    high52w: 321.05,
+    low52w: 165.61,
+    peRatio: 15,
+    pegRatio: 0.02,
+    eps: 16.37,
+    dividendYield: 4.92,
+    dividendPerShare: 12.08,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Transmission Company of Nigeria Plc is a leading company in the Power & Utilities sector listed on the Nigerian Exchange Group.',
+    website: 'www.transpower.com.ng',
+    ceo: 'Managing Director',
+    employees: 551,
+    founded: 1993,
+    buyScore: 76,
+    valueScore: 81,
+    growthScore: 79,
+    momentumScore: 50,
+    kbRating: 72,
+    priceHistory: [
+      { year: 2020, price: 80.48 }
+      { year: 2021, price: 93.53 }
+      { year: 2022, price: 107.15 }
+      { year: 2023, price: 134.49 }
+      { year: 2024, price: 182.68 }
+      { year: 2025, price: 204.96 }
+      { year: 2026, price: 245.5 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 3.42, yield: 4.25, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 3.01, yield: 3.22, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 3.68, yield: 3.43, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 4.13, yield: 3.07, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 6.92, yield: 3.79, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 6.06, yield: 2.96, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [90221790583, 117079956172, 138446532541, 157419229250, 190553721719, 202511668673],
+      netIncome: [17522132817, 19700829971, 21130123311, 24963132645, 40341940261, 32620711860],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 2601821244618,
+      totalLiabilities: 1370158773026,
+      equity: 1231662471592,
+      operatingCashFlow: 36855021013,
+      freeCashFlow: 24699136207,
+      grossMargin: 28.6,
+      netMargin: 9.3,
+      roe: 11.4,
+      roa: 12.0,
+      debtToEquity: 1.48,
+      currentRatio: 2.59,
+      quickRatio: 2.37,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'TRIPPLEG',
+    name: 'Tripple Gee and Company Plc',
+    sector: 'Publishing',
+    price: 3.69,
+    change: 0,
+    changePct: 0.0,
+    volume: 100,
+    marketCap: 91712190711,
+    high52w: 4.58,
+    low52w: 2.86,
+    peRatio: 10,
+    pegRatio: 0.03,
+    eps: 0.37,
+    dividendYield: 2.86,
+    dividendPerShare: 0.11,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Tripple Gee and Company Plc is a leading company in the Publishing sector listed on the Nigerian Exchange Group.',
+    website: 'www.trippleg.com.ng',
+    ceo: 'Managing Director',
+    employees: 750,
+    founded: 1987,
+    buyScore: 69,
+    valueScore: 79,
+    growthScore: 46,
+    momentumScore: 69,
+    kbRating: 66,
+    priceHistory: [
+      { year: 2020, price: 1.28 }
+      { year: 2021, price: 1.43 }
+      { year: 2022, price: 1.71 }
+      { year: 2023, price: 2.07 }
+      { year: 2024, price: 3.0 }
+      { year: 2025, price: 3.37 }
+      { year: 2026, price: 3.69 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.03, yield: 2.34, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.03, yield: 2.1, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.03, yield: 1.75, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.05, yield: 2.42, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.05, yield: 1.67, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.06, yield: 1.78, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [2925394577, 3180467815, 3999875553, 4924787598, 5497384104, 6017623402],
+      netIncome: [543728363, 691438319, 423995484, 443924653, 1019038714, 1300607745],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 153640306018,
+      totalLiabilities: 71813370224,
+      equity: 81826935794,
+      operatingCashFlow: 1610394254,
+      freeCashFlow: 989392953,
+      grossMargin: 46.6,
+      netMargin: 22.8,
+      roe: 27.8,
+      roa: 8.7,
+      debtToEquity: 0.31,
+      currentRatio: 2.57,
+      quickRatio: 1.99,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'UACN',
+    name: 'UAC of Nigeria Plc',
+    sector: 'Conglomerates',
+    price: 185,
+    change: 0,
+    changePct: 0.0,
+    volume: 11999,
+    marketCap: 5005707036383,
+    high52w: 254.93,
+    low52w: 143.99,
+    peRatio: 10,
+    pegRatio: 0.02,
+    eps: 18.5,
+    dividendYield: 6.38,
+    dividendPerShare: 11.8,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'UAC of Nigeria Plc is a leading company in the Conglomerates sector listed on the Nigerian Exchange Group.',
+    website: 'www.uacn.com.ng',
+    ceo: 'Managing Director',
+    employees: 17782,
+    founded: 1959,
+    buyScore: 88,
+    valueScore: 70,
+    growthScore: 79,
+    momentumScore: 51,
+    kbRating: 72,
+    priceHistory: [
+      { year: 2020, price: 47.54 }
+      { year: 2021, price: 56.91 }
+      { year: 2022, price: 68.72 }
+      { year: 2023, price: 89.47 }
+      { year: 2024, price: 129.6 }
+      { year: 2025, price: 156.31 }
+      { year: 2026, price: 185 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 2.1, yield: 4.42, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 3.0, yield: 5.27, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 2.98, yield: 4.34, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 4.42, yield: 4.94, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 6.28, yield: 4.85, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 7.83, yield: 5.01, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [159579260302, 180551668829, 213402084244, 248491712119, 303136473722, 338571685658],
+      netIncome: [34492970882, 38280866802, 22697697070, 26608206921, 62548548181, 26972379250],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 5239282892737,
+      totalLiabilities: 2302460190034,
+      equity: 2936822702703,
+      operatingCashFlow: 32580827335,
+      freeCashFlow: 24072697795,
+      grossMargin: 57.2,
+      netMargin: 21.3,
+      roe: 21.2,
+      roa: 5.8,
+      debtToEquity: 0.27,
+      currentRatio: 2.3,
+      quickRatio: 1.75,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'UBA',
+    name: 'United Bank for Africa Plc',
+    sector: 'Banking',
+    price: 37.9,
+    change: 0,
+    changePct: 0.0,
+    volume: 279543,
+    marketCap: 1290000000000,
+    high52w: 51.78,
+    low52w: 22.1,
+    peRatio: 6,
+    pegRatio: 0.01,
+    eps: 6.32,
+    dividendYield: 6.14,
+    dividendPerShare: 2.33,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'United Bank for Africa Plc is a leading company in the Banking sector listed on the Nigerian Exchange Group.',
+    website: 'www.uba.com.ng',
+    ceo: 'Managing Director',
+    employees: 12968,
+    founded: 2003,
+    buyScore: 87,
+    valueScore: 57,
+    growthScore: 72,
+    momentumScore: 75,
+    kbRating: 73,
+    priceHistory: [
+      { year: 2020, price: 11.52 }
+      { year: 2021, price: 13.72 }
+      { year: 2022, price: 16.43 }
+      { year: 2023, price: 21.26 }
+      { year: 2024, price: 27.19 }
+      { year: 2025, price: 32.16 }
+      { year: 2026, price: 37.9 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.62, yield: 5.38, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.66, yield: 4.81, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.86, yield: 5.23, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.97, yield: 4.56, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 1.3, yield: 4.78, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 1.23, yield: 3.82, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [41393360837, 47123243915, 60259257869, 68819895759, 79699722088, 85289704877],
+      netIncome: [3396750819, 10352593043, 10966014078, 13531556794, 6440048566, 16304029159],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 1618781108559,
+      totalLiabilities: 749409816485,
+      equity: 869371292074,
+      operatingCashFlow: 24759996009,
+      freeCashFlow: 12403083272,
+      grossMargin: 23.3,
+      netMargin: 12.8,
+      roe: 13.5,
+      roa: 14.7,
+      debtToEquity: 0.93,
+      currentRatio: 1.98,
+      quickRatio: 1.38,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'UCAP',
+    name: 'United Capital Plc',
+    sector: 'Financial Services',
+    price: 16.3,
+    change: 0.5,
+    changePct: 3.07,
+    volume: 260453,
+    marketCap: 33380088528,
+    high52w: 22.29,
+    low52w: 11.76,
+    peRatio: 10,
+    pegRatio: 0.03,
+    eps: 1.63,
+    dividendYield: 2.46,
+    dividendPerShare: 0.4,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'United Capital Plc is a leading company in the Financial Services sector listed on the Nigerian Exchange Group.',
+    website: 'www.ucap.com.ng',
+    ceo: 'Managing Director',
+    employees: 12233,
+    founded: 1982,
+    buyScore: 64,
+    valueScore: 62,
+    growthScore: 45,
+    momentumScore: 62,
+    kbRating: 58,
+    priceHistory: [
+      { year: 2020, price: 5.17 }
+      { year: 2021, price: 5.71 }
+      { year: 2022, price: 6.28 }
+      { year: 2023, price: 8.13 }
+      { year: 2024, price: 11.37 }
+      { year: 2025, price: 14.47 }
+      { year: 2026, price: 16.3 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.11, yield: 2.13, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.11, yield: 1.93, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.11, yield: 1.75, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.18, yield: 2.21, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.18, yield: 1.58, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.26, yield: 1.8, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [1009594184, 1200388830, 1551950750, 1733784280, 2028990466, 2236128968],
+      netIncome: [108506076, 134603626, 234639114, 206364021, 177632562, 253681273],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 30002938015,
+      totalLiabilities: 19471826062,
+      equity: 10531111953,
+      operatingCashFlow: 404505091,
+      freeCashFlow: 240394583,
+      grossMargin: 41.7,
+      netMargin: 24.8,
+      roe: 36.8,
+      roa: 12.7,
+      debtToEquity: 1.14,
+      currentRatio: 2.51,
+      quickRatio: 2.05,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'UHOMREIT',
+    name: 'UHome REIT Plc',
+    sector: 'Real Estate',
+    price: 70,
+    change: 0,
+    changePct: 0.0,
+    volume: 250,
+    marketCap: 1514964629260,
+    high52w: 92.59,
+    low52w: 43.15,
+    peRatio: 12,
+    pegRatio: 0.02,
+    eps: 5.83,
+    dividendYield: 5.83,
+    dividendPerShare: 4.08,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'UHome REIT Plc is a leading company in the Real Estate sector listed on the Nigerian Exchange Group.',
+    website: 'www.uhomreit.com.ng',
+    ceo: 'Managing Director',
+    employees: 6633,
+    founded: 2002,
+    buyScore: 88,
+    valueScore: 66,
+    growthScore: 63,
+    momentumScore: 62,
+    kbRating: 70,
+    priceHistory: [
+      { year: 2020, price: 22.26 }
+      { year: 2021, price: 26.36 }
+      { year: 2022, price: 31.21 }
+      { year: 2023, price: 39.49 }
+      { year: 2024, price: 51.64 }
+      { year: 2025, price: 59.47 }
+      { year: 2026, price: 70 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.81, yield: 3.64, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 1.09, yield: 4.14, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 1.14, yield: 3.65, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 1.63, yield: 4.13, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 2.53, yield: 4.9, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 2.93, yield: 4.93, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [42746722942, 54902561674, 67820676224, 78943734941, 86039726610, 103584646746],
+      netIncome: [7755731179, 6498185655, 4889514839, 6282136946, 10433181456, 20242762817],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 1081480492650,
+      totalLiabilities: 441966721958,
+      equity: 639513770692,
+      operatingCashFlow: 25303386275,
+      freeCashFlow: 20332532077,
+      grossMargin: 27.0,
+      netMargin: 10.9,
+      roe: 35.3,
+      roa: 15.2,
+      debtToEquity: 1.48,
+      currentRatio: 1.67,
+      quickRatio: 1.55,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'UNILEVER',
+    name: 'Unilever Nigeria Plc',
+    sector: 'Consumer Goods',
+    price: 126,
+    change: 0,
+    changePct: 0.0,
+    volume: 2372,
+    marketCap: 2693978595578,
+    high52w: 166.16,
+    low52w: 94.67,
+    peRatio: 18,
+    pegRatio: 0.02,
+    eps: 7.0,
+    dividendYield: 3.32,
+    dividendPerShare: 4.18,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Unilever Nigeria Plc is a leading company in the Consumer Goods sector listed on the Nigerian Exchange Group.',
+    website: 'www.unilever.com.ng',
+    ceo: 'Managing Director',
+    employees: 187,
+    founded: 1990,
+    buyScore: 75,
+    valueScore: 51,
+    growthScore: 89,
+    momentumScore: 86,
+    kbRating: 75,
+    priceHistory: [
+      { year: 2020, price: 41.24 }
+      { year: 2021, price: 46.33 }
+      { year: 2022, price: 54.81 }
+      { year: 2023, price: 69.2 }
+      { year: 2024, price: 98.62 }
+      { year: 2025, price: 110.47 }
+      { year: 2026, price: 126 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.89, yield: 2.16, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 1.13, yield: 2.44, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 1.21, yield: 2.21, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 1.39, yield: 2.01, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 2.57, yield: 2.61, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 3.19, yield: 2.89, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [83425873211, 97246513405, 114346068749, 145537429459, 162019414208, 176210760082],
+      netIncome: [11285237797, 13813992026, 20864173503, 22530632018, 30412154625, 31679323837],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 4178587888155,
+      totalLiabilities: 2261392781988,
+      equity: 1917195106167,
+      operatingCashFlow: 37117617351,
+      freeCashFlow: 21475825091,
+      grossMargin: 55.3,
+      netMargin: 23.0,
+      roe: 31.8,
+      roa: 7.7,
+      debtToEquity: 0.36,
+      currentRatio: 1.25,
+      quickRatio: 1.11,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'UNIONDICON',
+    name: 'Union Dicon Salt Plc',
+    sector: 'Consumer Goods',
+    price: 23.75,
+    change: 0,
+    changePct: 0.0,
+    volume: 323,
+    marketCap: 352064338218,
+    high52w: 33.68,
+    low52w: 17.18,
+    peRatio: 18,
+    pegRatio: 0.03,
+    eps: 1.32,
+    dividendYield: 4.28,
+    dividendPerShare: 1.02,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'Union Dicon Salt Plc is a leading company in the Consumer Goods sector listed on the Nigerian Exchange Group.',
+    website: 'www.uniondicon.com.ng',
+    ceo: 'Managing Director',
+    employees: 868,
+    founded: 1960,
+    buyScore: 87,
+    valueScore: 79,
+    growthScore: 74,
+    momentumScore: 51,
+    kbRating: 73,
+    priceHistory: [
+      { year: 2020, price: 6.96 }
+      { year: 2021, price: 7.98 }
+      { year: 2022, price: 9.22 }
+      { year: 2023, price: 12.25 }
+      { year: 2024, price: 17.16 }
+      { year: 2025, price: 21.91 }
+      { year: 2026, price: 23.75 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.23, yield: 3.3, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.29, yield: 3.63, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.32, yield: 3.47, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.39, yield: 3.18, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.55, yield: 3.21, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.65, yield: 2.97, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [9833209083, 13027023573, 16597395067, 18539255263, 21688595710, 22626048616],
+      netIncome: [1944671205, 2204495760, 3050795041, 1394601976, 3377082779, 3722224739],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 660731133734,
+      totalLiabilities: 423924592513,
+      equity: 236806541221,
+      operatingCashFlow: 6951054085,
+      freeCashFlow: 3150366910,
+      grossMargin: 46.8,
+      netMargin: 19.9,
+      roe: 14.1,
+      roa: 12.8,
+      debtToEquity: 1.49,
+      currentRatio: 2.7,
+      quickRatio: 2.2,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'UPDC',
+    name: 'UPDC Plc',
+    sector: 'Real Estate',
+    price: 3.6,
+    change: 0,
+    changePct: 0.0,
+    volume: 7243,
+    marketCap: 60673448318,
+    high52w: 4.21,
+    low52w: 2.25,
+    peRatio: 12,
+    pegRatio: 0.02,
+    eps: 0.3,
+    dividendYield: 6.19,
+    dividendPerShare: 0.22,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'UPDC Plc is a leading company in the Real Estate sector listed on the Nigerian Exchange Group.',
+    website: 'www.updc.com.ng',
+    ceo: 'Managing Director',
+    employees: 3614,
+    founded: 1981,
+    buyScore: 69,
+    valueScore: 81,
+    growthScore: 77,
+    momentumScore: 54,
+    kbRating: 70,
+    priceHistory: [
+      { year: 2020, price: 1.23 }
+      { year: 2021, price: 1.47 }
+      { year: 2022, price: 1.71 }
+      { year: 2023, price: 1.99 }
+      { year: 2024, price: 2.62 }
+      { year: 2025, price: 3.29 }
+      { year: 2026, price: 3.6 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.06, yield: 4.88, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.08, yield: 5.44, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.08, yield: 4.68, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.1, yield: 5.03, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.1, yield: 3.82, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.15, yield: 4.56, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [1718816474, 2157587923, 2753507459, 3242342787, 3570822548, 3937695948],
+      netIncome: [165792500, 218921889, 269317452, 614976091, 462982186, 363894288],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 94433619472,
+      totalLiabilities: 49058276111,
+      equity: 45375343361,
+      operatingCashFlow: 463300878,
+      freeCashFlow: 226480607,
+      grossMargin: 48.7,
+      netMargin: 13.7,
+      roe: 8.2,
+      roa: 4.9,
+      debtToEquity: 1.06,
+      currentRatio: 1.1,
+      quickRatio: 0.73,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'UPDCREIT',
+    name: 'UPDC Real Estate Investment Trust',
+    sector: 'Real Estate',
+    price: 8.7,
+    change: 0,
+    changePct: 0.0,
+    volume: 25018,
+    marketCap: 125386606303,
+    high52w: 11.1,
+    low52w: 6.41,
+    peRatio: 12,
+    pegRatio: 0.03,
+    eps: 0.72,
+    dividendYield: 1.69,
+    dividendPerShare: 0.15,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'UPDC Real Estate Investment Trust is a leading company in the Real Estate sector listed on the Nigerian Exchange Group.',
+    website: 'www.updcreit.com.ng',
+    ceo: 'Managing Director',
+    employees: 5229,
+    founded: 1962,
+    buyScore: 54,
+    valueScore: 76,
+    growthScore: 47,
+    momentumScore: 76,
+    kbRating: 63,
+    priceHistory: [
+      { year: 2020, price: 3.0 }
+      { year: 2021, price: 3.25 }
+      { year: 2022, price: 3.75 }
+      { year: 2023, price: 4.62 }
+      { year: 2024, price: 6.53 }
+      { year: 2025, price: 7.92 }
+      { year: 2026, price: 8.7 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.04, yield: 1.33, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.05, yield: 1.54, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.04, yield: 1.07, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.06, yield: 1.3, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.1, yield: 1.53, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.08, yield: 1.01, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [3785735073, 4369836648, 5523893278, 6202696767, 7384325866, 8408788425],
+      netIncome: [401016425, 893220149, 970398739, 938666280, 1066066712, 1491117989],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 215730352689,
+      totalLiabilities: 75877398507,
+      equity: 139852954182,
+      operatingCashFlow: 2748844850,
+      freeCashFlow: 1321402166,
+      grossMargin: 54.4,
+      netMargin: 15.2,
+      roe: 34.2,
+      roa: 14.6,
+      debtToEquity: 1.48,
+      currentRatio: 1.46,
+      quickRatio: 1.07,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'UPL',
+    name: 'Unipetrol Nigeria Plc',
+    sector: 'Oil & Gas',
+    price: 4.7,
+    change: 0,
+    changePct: 0.0,
+    volume: 1200,
+    marketCap: 17896469784,
+    high52w: 5.74,
+    low52w: 3.08,
+    peRatio: 10,
+    pegRatio: 0.01,
+    eps: 0.47,
+    dividendYield: 4.54,
+    dividendPerShare: 0.21,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Unipetrol Nigeria Plc is a leading company in the Oil & Gas sector listed on the Nigerian Exchange Group.',
+    website: 'www.upl.com.ng',
+    ceo: 'Managing Director',
+    employees: 16826,
+    founded: 1971,
+    buyScore: 90,
+    valueScore: 52,
+    growthScore: 92,
+    momentumScore: 65,
+    kbRating: 75,
+    priceHistory: [
+      { year: 2020, price: 1.76 }
+      { year: 2021, price: 2.03 }
+      { year: 2022, price: 2.25 }
+      { year: 2023, price: 2.7 }
+      { year: 2024, price: 3.61 }
+      { year: 2025, price: 4.34 }
+      { year: 2026, price: 4.7 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.05, yield: 2.84, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.06, yield: 2.96, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.07, yield: 3.11, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.08, yield: 2.96, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.11, yield: 3.05, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.16, yield: 3.69, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [551333750, 712699943, 821564022, 922753469, 1076345003, 1198184679],
+      netIncome: [73893006, 140449996, 125025936, 170891381, 96496713, 150829448],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 25010131162,
+      totalLiabilities: 14288811108,
+      equity: 10721320054,
+      operatingCashFlow: 224747888,
+      freeCashFlow: 180790466,
+      grossMargin: 24.4,
+      netMargin: 8.9,
+      roe: 23.5,
+      roa: 6.8,
+      debtToEquity: 1.47,
+      currentRatio: 1.11,
+      quickRatio: 0.93,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'VERITASKAP',
+    name: 'Veritas Kapital Assurance Plc',
+    sector: 'Insurance',
+    price: 1.38,
+    change: 0.03,
+    changePct: 2.17,
+    volume: 150096,
+    marketCap: 37814712891,
+    high52w: 1.91,
+    low52w: 0.98,
+    peRatio: 8,
+    pegRatio: 0.01,
+    eps: 0.17,
+    dividendYield: 2.63,
+    dividendPerShare: 0.04,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Veritas Kapital Assurance Plc is a leading company in the Insurance sector listed on the Nigerian Exchange Group.',
+    website: 'www.veritaskap.com.ng',
+    ceo: 'Managing Director',
+    employees: 4560,
+    founded: 1963,
+    buyScore: 66,
+    valueScore: 68,
+    growthScore: 83,
+    momentumScore: 54,
+    kbRating: 68,
+    priceHistory: [
+      { year: 2020, price: 0.41 }
+      { year: 2021, price: 0.45 }
+      { year: 2022, price: 0.55 }
+      { year: 2023, price: 0.71 }
+      { year: 2024, price: 0.99 }
+      { year: 2025, price: 1.26 }
+      { year: 2026, price: 1.38 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.01, yield: 2.44, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.01, yield: 2.22, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.01, yield: 1.82, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.01, yield: 1.41, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.02, yield: 2.02, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.02, yield: 1.59, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [1121178840, 1385962734, 1674680171, 1935456388, 2180084032, 2558777058],
+      netIncome: [131796494, 295652470, 337865939, 371042479, 474195440, 241567558],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 47376288025,
+      totalLiabilities: 18308975433,
+      equity: 29067312592,
+      operatingCashFlow: 321628274,
+      freeCashFlow: 203958001,
+      grossMargin: 45.0,
+      netMargin: 14.9,
+      roe: 9.0,
+      roa: 16.6,
+      debtToEquity: 1.53,
+      currentRatio: 2.09,
+      quickRatio: 1.77,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'VFDGROUP',
+    name: 'VFD Group Plc',
+    sector: 'Banking',
+    price: 10.45,
+    change: 0,
+    changePct: 0.0,
+    volume: 13789,
+    marketCap: 234459565495,
+    high52w: 14.67,
+    low52w: 8.11,
+    peRatio: 6,
+    pegRatio: 0.02,
+    eps: 1.74,
+    dividendYield: 6.24,
+    dividendPerShare: 0.65,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'VFD Group Plc is a leading company in the Banking sector listed on the Nigerian Exchange Group.',
+    website: 'www.vfdgroup.com.ng',
+    ceo: 'Managing Director',
+    employees: 1497,
+    founded: 1991,
+    buyScore: 68,
+    valueScore: 69,
+    growthScore: 47,
+    momentumScore: 83,
+    kbRating: 67,
+    priceHistory: [
+      { year: 2020, price: 2.89 }
+      { year: 2021, price: 3.44 }
+      { year: 2022, price: 4.09 }
+      { year: 2023, price: 5.4 }
+      { year: 2024, price: 7.81 }
+      { year: 2025, price: 8.79 }
+      { year: 2026, price: 10.45 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.12, yield: 4.15, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.14, yield: 4.07, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.18, yield: 4.4, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.23, yield: 4.26, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.35, yield: 4.48, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.44, yield: 5.01, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [7099307686, 8787798687, 10831936441, 12549875383, 13338094332, 15825641077],
+      netIncome: [1461173739, 1354474616, 1647360603, 1547470918, 2831747992, 1394671132],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 240834316352,
+      totalLiabilities: 151732372336,
+      equity: 89101944016,
+      operatingCashFlow: 2474193766,
+      freeCashFlow: 1762999504,
+      grossMargin: 27.9,
+      netMargin: 17.6,
+      roe: 34.8,
+      roa: 8.0,
+      debtToEquity: 1.16,
+      currentRatio: 1.89,
+      quickRatio: 1.59,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'VITAFOAM',
+    name: 'Vitafoam Nigeria Plc',
+    sector: 'Consumer Goods',
+    price: 189,
+    change: 0,
+    changePct: 0.0,
+    volume: 5725,
+    marketCap: 5563903904018,
+    high52w: 238.02,
+    low52w: 144.99,
+    peRatio: 18,
+    pegRatio: 0.03,
+    eps: 10.5,
+    dividendYield: 1.78,
+    dividendPerShare: 3.36,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Vitafoam Nigeria Plc is a leading company in the Consumer Goods sector listed on the Nigerian Exchange Group.',
+    website: 'www.vitafoam.com.ng',
+    ceo: 'Managing Director',
+    employees: 9403,
+    founded: 1990,
+    buyScore: 55,
+    valueScore: 63,
+    growthScore: 68,
+    momentumScore: 65,
+    kbRating: 63,
+    priceHistory: [
+      { year: 2020, price: 61.06 }
+      { year: 2021, price: 66.36 }
+      { year: 2022, price: 80.8 }
+      { year: 2023, price: 98.81 }
+      { year: 2024, price: 142.17 }
+      { year: 2025, price: 165.66 }
+      { year: 2026, price: 189 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.68, yield: 1.11, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.9, yield: 1.36, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 1.07, yield: 1.32, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 1.58, yield: 1.6, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 1.55, yield: 1.09, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 1.85, yield: 1.12, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [179382534163, 198854953349, 252861201881, 286440947139, 320875330151, 367977541845],
+      netIncome: [21486449435, 41553695328, 46831526616, 61778542261, 63947827318, 70853238746],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 4804850847103,
+      totalLiabilities: 2315982374129,
+      equity: 2488868472974,
+      operatingCashFlow: 133597405621,
+      freeCashFlow: 64084011121,
+      grossMargin: 45.2,
+      netMargin: 9.3,
+      roe: 30.5,
+      roa: 11.0,
+      debtToEquity: 1.08,
+      currentRatio: 2.27,
+      quickRatio: 2.15,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'WAPCO',
+    name: 'Lafarge Africa Plc',
+    sector: 'Building Materials',
+    price: 290,
+    change: 0,
+    changePct: 0.0,
+    volume: 33527,
+    marketCap: 4640000000000,
+    high52w: 374.96,
+    low52w: 220.78,
+    peRatio: 14,
+    pegRatio: 0.03,
+    eps: 20.71,
+    dividendYield: 1.74,
+    dividendPerShare: 5.05,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Lafarge Africa Plc is a leading company in the Building Materials sector listed on the Nigerian Exchange Group.',
+    website: 'www.wapco.com.ng',
+    ceo: 'Managing Director',
+    employees: 7081,
+    founded: 1993,
+    buyScore: 55,
+    valueScore: 57,
+    growthScore: 51,
+    momentumScore: 80,
+    kbRating: 61,
+    priceHistory: [
+      { year: 2020, price: 93.8 }
+      { year: 2021, price: 101.85 }
+      { year: 2022, price: 122.78 }
+      { year: 2023, price: 152.9 }
+      { year: 2024, price: 219.22 }
+      { year: 2025, price: 252.94 }
+      { year: 2026, price: 290 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 1.33, yield: 1.42, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 1.14, yield: 1.12, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 1.8, yield: 1.47, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 1.69, yield: 1.11, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 2.7, yield: 1.23, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 2.95, yield: 1.17, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [141539484317, 168388747865, 212642526889, 236796263622, 265538825804, 321432543596],
+      netIncome: [19982169864, 35859064230, 23164365953, 49404345466, 35521455522, 23276994665],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 10059487411542,
+      totalLiabilities: 4219197399197,
+      equity: 5840290012345,
+      operatingCashFlow: 26653440508,
+      freeCashFlow: 17495972747,
+      grossMargin: 32.1,
+      netMargin: 17.0,
+      roe: 14.1,
+      roa: 13.5,
+      debtToEquity: 1.75,
+      currentRatio: 2.69,
+      quickRatio: 2.38,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'WAPIC',
+    name: 'Wapic Insurance Plc',
+    sector: 'Insurance',
+    price: 2.25,
+    change: 0,
+    changePct: 0.0,
+    volume: 240892,
+    marketCap: 14750173554,
+    high52w: 2.94,
+    low52w: 1.63,
+    peRatio: 8,
+    pegRatio: 0.02,
+    eps: 0.28,
+    dividendYield: 2.93,
+    dividendPerShare: 0.07,
+    riskLevel: 'High',
+    investmentHorizon: '1-3 years',
+    description: 'Wapic Insurance Plc is a leading company in the Insurance sector listed on the Nigerian Exchange Group.',
+    website: 'www.wapic.com.ng',
+    ceo: 'Managing Director',
+    employees: 11530,
+    founded: 1981,
+    buyScore: 70,
+    valueScore: 49,
+    growthScore: 55,
+    momentumScore: 53,
+    kbRating: 57,
+    priceHistory: [
+      { year: 2020, price: 0.8 }
+      { year: 2021, price: 0.89 }
+      { year: 2022, price: 1.0 }
+      { year: 2023, price: 1.26 }
+      { year: 2024, price: 1.76 }
+      { year: 2025, price: 2.07 }
+      { year: 2026, price: 2.25 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.02, yield: 2.5, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.02, yield: 2.25, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.02, yield: 2.0, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.02, yield: 1.59, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.03, yield: 1.7, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.05, yield: 2.42, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [449094683, 548846810, 635695190, 790936940, 907826493, 1015099899],
+      netIncome: [48265729, 110356878, 52286249, 115913684, 197730045, 214364956],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 26887001643,
+      totalLiabilities: 11928360885,
+      equity: 14958640758,
+      operatingCashFlow: 285228492,
+      freeCashFlow: 142872581,
+      grossMargin: 55.5,
+      netMargin: 17.1,
+      roe: 23.0,
+      roa: 6.5,
+      debtToEquity: 0.33,
+      currentRatio: 2.74,
+      quickRatio: 2.52,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'WEMABANK',
+    name: 'Wema Bank Plc',
+    sector: 'Banking',
+    price: 25.45,
+    change: 0,
+    changePct: 0.0,
+    volume: 63810,
+    marketCap: 116648108864,
+    high52w: 33.37,
+    low52w: 16.51,
+    peRatio: 6,
+    pegRatio: 0.01,
+    eps: 4.24,
+    dividendYield: 4.1,
+    dividendPerShare: 1.04,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'Wema Bank Plc is a leading company in the Banking sector listed on the Nigerian Exchange Group.',
+    website: 'www.wemabank.com.ng',
+    ceo: 'Managing Director',
+    employees: 14793,
+    founded: 1997,
+    buyScore: 85,
+    valueScore: 53,
+    growthScore: 79,
+    momentumScore: 61,
+    kbRating: 70,
+    priceHistory: [
+      { year: 2020, price: 8.34 }
+      { year: 2021, price: 9.52 }
+      { year: 2022, price: 10.58 }
+      { year: 2023, price: 13.31 }
+      { year: 2024, price: 17.77 }
+      { year: 2025, price: 22.09 }
+      { year: 2026, price: 25.45 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.27, yield: 3.24, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.25, yield: 2.63, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.35, yield: 3.31, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.43, yield: 3.23, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.64, yield: 3.6, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.68, yield: 3.08, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [3506201666, 4156953397, 5459047877, 6007546486, 6944910358, 7758088904],
+      netIncome: [380617009, 913855988, 1149585549, 565552296, 1139807171, 801185710],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 108655592096,
+      totalLiabilities: 53446417326,
+      equity: 55209174770,
+      operatingCashFlow: 1444590324,
+      freeCashFlow: 1097937461,
+      grossMargin: 55.3,
+      netMargin: 19.7,
+      roe: 34.1,
+      roa: 10.4,
+      debtToEquity: 0.2,
+      currentRatio: 1.84,
+      quickRatio: 1.47,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'ZENITHBANK',
+    name: 'Zenith Bank Plc',
+    sector: 'Banking',
+    price: 101.95,
+    change: 0,
+    changePct: 0.0,
+    volume: 547314,
+    marketCap: 3200000000000,
+    high52w: 127.33,
+    low52w: 57.25,
+    peRatio: 6,
+    pegRatio: 0.01,
+    eps: 16.99,
+    dividendYield: 5.67,
+    dividendPerShare: 5.78,
+    riskLevel: 'Low',
+    investmentHorizon: '3-5 years',
+    description: 'Zenith Bank Plc is a leading company in the Banking sector listed on the Nigerian Exchange Group.',
+    website: 'www.zenithbank.com.ng',
+    ceo: 'Managing Director',
+    employees: 14628,
+    founded: 1988,
+    buyScore: 86,
+    valueScore: 62,
+    growthScore: 84,
+    momentumScore: 71,
+    kbRating: 76,
+    priceHistory: [
+      { year: 2020, price: 35.31 }
+      { year: 2021, price: 41.67 }
+      { year: 2022, price: 46.95 }
+      { year: 2023, price: 57.09 }
+      { year: 2024, price: 71.94 }
+      { year: 2025, price: 89.98 }
+      { year: 2026, price: 101.95 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 1.43, yield: 4.05, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 1.88, yield: 4.51, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 2.25, yield: 4.79, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 2.71, yield: 4.75, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 3.03, yield: 4.21, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 4.07, yield: 4.52, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [104145674905, 123919826991, 148401286537, 167904548449, 192901132159, 210789673963],
+      netIncome: [9113307648, 19283917062, 20393516226, 23021252673, 15027834923, 22674158248],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 3352768698373,
+      totalLiabilities: 2001672247857,
+      equity: 1351096450516,
+      operatingCashFlow: 31143311761,
+      freeCashFlow: 22486465192,
+      grossMargin: 30.4,
+      netMargin: 21.7,
+      roe: 32.3,
+      roa: 17.5,
+      debtToEquity: 0.94,
+      currentRatio: 2.21,
+      quickRatio: 2.1,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
+  {
+    symbol: 'ZICHIS',
+    name: 'Zichi Investment Plc',
+    sector: 'Mining',
+    price: 24.2,
+    change: 0,
+    changePct: 0.0,
+    volume: 13301,
+    marketCap: 131243467928,
+    high52w: 29.51,
+    low52w: 17.44,
+    peRatio: 8,
+    pegRatio: 0.01,
+    eps: 3.02,
+    dividendYield: 5.46,
+    dividendPerShare: 1.32,
+    riskLevel: 'Medium',
+    investmentHorizon: '2-4 years',
+    description: 'Zichi Investment Plc is a leading company in the Mining sector listed on the Nigerian Exchange Group.',
+    website: 'www.zichis.com.ng',
+    ceo: 'Managing Director',
+    employees: 5593,
+    founded: 1980,
+    buyScore: 80,
+    valueScore: 55,
+    growthScore: 85,
+    momentumScore: 64,
+    kbRating: 71,
+    priceHistory: [
+      { year: 2020, price: 8.87 }
+      { year: 2021, price: 10.42 }
+      { year: 2022, price: 11.62 }
+      { year: 2023, price: 13.9 }
+      { year: 2024, price: 19.44 }
+      { year: 2025, price: 22.29 }
+      { year: 2026, price: 24.2 }
+    ],
+    dividendHistory: [
+      { year: 2020, dividend: 0.39, yield: 4.4, exDate: "2020-04-15", payDate: "2020-05-07" }
+      { year: 2021, dividend: 0.42, yield: 4.03, exDate: "2021-04-15", payDate: "2021-05-07" }
+      { year: 2022, dividend: 0.51, yield: 4.39, exDate: "2022-04-15", payDate: "2022-05-07" }
+      { year: 2023, dividend: 0.53, yield: 3.81, exDate: "2023-04-15", payDate: "2023-05-07" }
+      { year: 2024, dividend: 0.95, yield: 4.89, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2025, dividend: 0.89, yield: 3.99, exDate: "2025-04-15", payDate: "2025-05-07" }
+    ],
+    financials: {
+      revenue: [3750629889, 5011988144, 6193619621, 7091882304, 7944409240, 8763538451],
+      netIncome: [323353356, 982096829, 487873709, 571219769, 1364639264, 1074225237],
+      eps: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      totalAssets: 216613751022,
+      totalLiabilities: 137830927134,
+      equity: 78782823888,
+      operatingCashFlow: 1178229371,
+      freeCashFlow: 607169863,
+      grossMargin: 52.5,
+      netMargin: 14.6,
+      roe: 9.4,
+      roa: 6.1,
+      debtToEquity: 0.85,
+      currentRatio: 1.7,
+      quickRatio: 1.21,
+      years: [2020, 2021, 2022, 2023, 2024, 2025],
+    },
+  },
 ];
 
-
-export const SECTORS = [
-  'All Sectors',
-  'Banking',
-  'Building Materials',
-  'Consumer Goods',
-  'Telecommunications',
-  'Oil & Gas',
-  'Agriculture',
-  'Insurance',
-  'Conglomerates',
-  'Construction',
-  'Hospitality',
-  'Healthcare',
-  'Technology',
-  'Real Estate',
-  'Services',
-];
-
-
-export const getStockBySymbol = (symbol: string): Stock | undefined =>
+export const getStockBySymbol = (symbol: string) =>
   NGX_STOCKS.find(s => s.symbol === symbol);
-
-export const getStocksBySector = (sector: string): Stock[] =>
-  sector === 'All Sectors' ? NGX_STOCKS : NGX_STOCKS.filter(s => s.sector === sector);
-
-export const getTopGainers = (n = 5): Stock[] =>
-  [...NGX_STOCKS].sort((a, b) => b.changePct - a.changePct).slice(0, n);
-
-export const getTopLosers = (n = 5): Stock[] =>
-  [...NGX_STOCKS].sort((a, b) => a.changePct - b.changePct).slice(0, n);
-
-export const getTopDividendStocks = (n = 5): Stock[] =>
-  [...NGX_STOCKS].sort((a, b) => b.dividendYield - a.dividendYield).slice(0, n);

@@ -82,6 +82,7 @@ export interface Portfolio {
   aiCommentary: string;
   color: string;
   icon: string;
+  fees?: { onboarding: number; management: number; total: number };
 }
 
 export interface PortfolioStock {

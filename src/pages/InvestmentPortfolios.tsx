@@ -219,7 +219,7 @@ function PortfolioDetail({ portfolio, onClose }: { portfolio: Portfolio; onClose
                   {[
                     { label: 'Total Return', value: `+${portfolio.totalReturn.toFixed(1)}%`, color: '#22c55e' },
                     { label: 'Annual Return', value: `${portfolio.annualReturn.toFixed(1)}%`, color: '#D4AF37' },
-                    { label: 'Min Investment', value: formatLargeNumber(portfolio.minInvestment), color: '#3b82f6' },
+                    { label: 'Min Investment', value: `₦${formatLargeNumber(portfolio.minInvestment)}`, color: '#3b82f6' },
                     { label: 'No. of Stocks', value: portfolio.stocks.length.toString(), color: '#a855f7' },
                   ].map((stat, i) => (
                     <div key={i} className="p-3 rounded-xl" style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.06)' }}>
@@ -227,6 +227,19 @@ function PortfolioDetail({ portfolio, onClose }: { portfolio: Portfolio; onClose
                       <div className="text-[10px] text-gray-500 mt-0.5">{stat.label}</div>
                     </div>
                   ))}
+                </div>
+                {/* Fee disclosure */}
+                <div className="mt-3 p-3 rounded-xl" style={{ background: 'rgba(212,175,55,0.06)', border: '1px solid rgba(212,175,55,0.18)' }}>
+                  <div className="text-[10px] font-semibold text-yellow-400 uppercase tracking-wide mb-1.5">Fee Structure</div>
+                  <div className="flex justify-between text-[11px] text-gray-400">
+                    <span>Onboarding Fee</span><span className="text-yellow-300 font-semibold">2%</span>
+                  </div>
+                  <div className="flex justify-between text-[11px] text-gray-400 mt-0.5">
+                    <span>Annual Management Fee</span><span className="text-yellow-300 font-semibold">5%</span>
+                  </div>
+                  <div className="flex justify-between text-[11px] font-bold text-yellow-400 mt-1.5 pt-1.5 border-t" style={{ borderColor: 'rgba(212,175,55,0.2)' }}>
+                    <span>Total Fees</span><span>7%</span>
+                  </div>
                 </div>
               </div>
               <div>
