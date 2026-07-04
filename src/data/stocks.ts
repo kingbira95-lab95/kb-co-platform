@@ -1,4 +1,4 @@
-import type { Stock } from "../types";
+﻿import type { Stock } from "../types";
 
 export const NGX_STOCKS: Stock[] = [
   {
@@ -30,20 +30,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 88,
     kbRating: 76,
     priceHistory: [
-      { year: 2020, price: 2.23 }
-      { year: 2021, price: 2.64 }
-      { year: 2022, price: 3.1 }
-      { year: 2023, price: 4.08 }
-      { year: 2024, price: 5.59 }
-      { year: 2025, price: 6.53 }
+      { year: 2020, price: 2.23 },
+      { year: 2021, price: 2.64 },
+      { year: 2022, price: 3.1 },
+      { year: 2023, price: 4.08 },
+      { year: 2024, price: 5.59 },
+      { year: 2025, price: 6.53 },
       { year: 2026, price: 7.4 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.08, yield: 3.59, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.11, yield: 4.17, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.11, yield: 3.55, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.18, yield: 4.41, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.28, yield: 5.01, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.08, yield: 3.59, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.11, yield: 4.17, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.11, yield: 3.55, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.18, yield: 4.41, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.28, yield: 5.01, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.32, yield: 4.9, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -94,20 +94,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 81,
     kbRating: 78,
     priceHistory: [
-      { year: 2020, price: 2.75 }
-      { year: 2021, price: 3.05 }
-      { year: 2022, price: 3.6 }
-      { year: 2023, price: 4.49 }
-      { year: 2024, price: 6.16 }
-      { year: 2025, price: 6.97 }
+      { year: 2020, price: 2.75 },
+      { year: 2021, price: 3.05 },
+      { year: 2022, price: 3.6 },
+      { year: 2023, price: 4.49 },
+      { year: 2024, price: 6.16 },
+      { year: 2025, price: 6.97 },
       { year: 2026, price: 7.8 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.06, yield: 2.18, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.07, yield: 2.3, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.06, yield: 1.67, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.09, yield: 2.0, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.15, yield: 2.44, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.06, yield: 2.18, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.07, yield: 2.3, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.06, yield: 1.67, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.09, yield: 2.0, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.15, yield: 2.44, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.15, yield: 2.15, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -158,20 +158,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 51,
     kbRating: 70,
     priceHistory: [
-      { year: 2020, price: 2.05 }
-      { year: 2021, price: 2.26 }
-      { year: 2022, price: 2.63 }
-      { year: 2023, price: 3.36 }
-      { year: 2024, price: 4.82 }
-      { year: 2025, price: 5.91 }
+      { year: 2020, price: 2.05 },
+      { year: 2021, price: 2.26 },
+      { year: 2022, price: 2.63 },
+      { year: 2023, price: 3.36 },
+      { year: 2024, price: 4.82 },
+      { year: 2025, price: 5.91 },
       { year: 2026, price: 6.4 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.04, yield: 1.95, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.04, yield: 1.77, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.05, yield: 1.9, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.06, yield: 1.79, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.07, yield: 1.45, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.04, yield: 1.95, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.04, yield: 1.77, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.05, yield: 1.9, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.06, yield: 1.79, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.07, yield: 1.45, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.11, yield: 1.86, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -222,20 +222,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 83,
     kbRating: 72,
     priceHistory: [
-      { year: 2020, price: 6.68 }
-      { year: 2021, price: 7.41 }
-      { year: 2022, price: 8.53 }
-      { year: 2023, price: 11.17 }
-      { year: 2024, price: 15.13 }
-      { year: 2025, price: 19.13 }
+      { year: 2020, price: 6.68 },
+      { year: 2021, price: 7.41 },
+      { year: 2022, price: 8.53 },
+      { year: 2023, price: 11.17 },
+      { year: 2024, price: 15.13 },
+      { year: 2025, price: 19.13 },
       { year: 2026, price: 22 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.16, yield: 2.4, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.17, yield: 2.29, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.16, yield: 1.88, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.25, yield: 2.24, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.3, yield: 1.98, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.16, yield: 2.4, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.17, yield: 2.29, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.16, yield: 1.88, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.25, yield: 2.24, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.3, yield: 1.98, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.39, yield: 2.04, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -286,20 +286,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 53,
     kbRating: 64,
     priceHistory: [
-      { year: 2020, price: 3.77 }
-      { year: 2021, price: 4.1 }
-      { year: 2022, price: 4.65 }
-      { year: 2023, price: 5.44 }
-      { year: 2024, price: 7.74 }
-      { year: 2025, price: 9.88 }
+      { year: 2020, price: 3.77 },
+      { year: 2021, price: 4.1 },
+      { year: 2022, price: 4.65 },
+      { year: 2023, price: 5.44 },
+      { year: 2024, price: 7.74 },
+      { year: 2025, price: 9.88 },
       { year: 2026, price: 11.7 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.05, yield: 1.33, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.06, yield: 1.46, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.06, yield: 1.29, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.08, yield: 1.47, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.11, yield: 1.42, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.05, yield: 1.33, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.06, yield: 1.46, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.06, yield: 1.29, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.08, yield: 1.47, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.11, yield: 1.42, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.14, yield: 1.42, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -350,20 +350,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 75,
     kbRating: 72,
     priceHistory: [
-      { year: 2020, price: 1.42 }
-      { year: 2021, price: 1.55 }
-      { year: 2022, price: 1.83 }
-      { year: 2023, price: 2.25 }
-      { year: 2024, price: 2.89 }
-      { year: 2025, price: 3.37 }
+      { year: 2020, price: 1.42 },
+      { year: 2021, price: 1.55 },
+      { year: 2022, price: 1.83 },
+      { year: 2023, price: 2.25 },
+      { year: 2024, price: 2.89 },
+      { year: 2025, price: 3.37 },
       { year: 2026, price: 4.01 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.02, yield: 1.41, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.02, yield: 1.29, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.03, yield: 1.64, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.03, yield: 1.33, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.04, yield: 1.38, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.02, yield: 1.41, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.02, yield: 1.29, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.03, yield: 1.64, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.03, yield: 1.33, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.04, yield: 1.38, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.06, yield: 1.78, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -414,20 +414,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 80,
     kbRating: 68,
     priceHistory: [
-      { year: 2020, price: 1555.51 }
-      { year: 2021, price: 1822.21 }
-      { year: 2022, price: 2059.36 }
-      { year: 2023, price: 2566.21 }
-      { year: 2024, price: 3580.67 }
-      { year: 2025, price: 4151.35 }
+      { year: 2020, price: 1555.51 },
+      { year: 2021, price: 1822.21 },
+      { year: 2022, price: 2059.36 },
+      { year: 2023, price: 2566.21 },
+      { year: 2024, price: 3580.67 },
+      { year: 2025, price: 4151.35 },
       { year: 2026, price: 4794.6 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 51.44, yield: 3.31, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 86.94, yield: 4.77, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 88.09, yield: 4.28, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 113.78, yield: 4.43, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 142.27, yield: 3.97, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 51.44, yield: 3.31, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 86.94, yield: 4.77, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 88.09, yield: 4.28, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 113.78, yield: 4.43, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 142.27, yield: 3.97, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 193.33, yield: 4.66, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -478,20 +478,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 84,
     kbRating: 61,
     priceHistory: [
-      { year: 2020, price: 441.78 }
-      { year: 2021, price: 485.67 }
-      { year: 2022, price: 573.23 }
-      { year: 2023, price: 660.52 }
-      { year: 2024, price: 948.74 }
-      { year: 2025, price: 1157.15 }
+      { year: 2020, price: 441.78 },
+      { year: 2021, price: 485.67 },
+      { year: 2022, price: 573.23 },
+      { year: 2023, price: 660.52 },
+      { year: 2024, price: 948.74 },
+      { year: 2025, price: 1157.15 },
       { year: 2026, price: 1275.8 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 6.16, yield: 1.39, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 7.79, yield: 1.6, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 8.78, yield: 1.53, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 12.98, yield: 1.97, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 16.81, yield: 1.77, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 6.16, yield: 1.39, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 7.79, yield: 1.6, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 8.78, yield: 1.53, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 12.98, yield: 1.97, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 16.81, yield: 1.77, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 23.17, yield: 2.0, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -542,20 +542,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 55,
     kbRating: 60,
     priceHistory: [
-      { year: 2020, price: 49.56 }
-      { year: 2021, price: 57.74 }
-      { year: 2022, price: 65.94 }
-      { year: 2023, price: 87.78 }
-      { year: 2024, price: 111.26 }
-      { year: 2025, price: 131.08 }
+      { year: 2020, price: 49.56 },
+      { year: 2021, price: 57.74 },
+      { year: 2022, price: 65.94 },
+      { year: 2023, price: 87.78 },
+      { year: 2024, price: 111.26 },
+      { year: 2025, price: 131.08 },
       { year: 2026, price: 147.6 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 2.16, yield: 4.36, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 2.3, yield: 3.98, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 2.19, yield: 3.32, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 3.86, yield: 4.4, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 3.41, yield: 3.06, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 2.16, yield: 4.36, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 2.3, yield: 3.98, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 2.19, yield: 3.32, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 3.86, yield: 4.4, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 3.41, yield: 3.06, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 4.81, yield: 3.67, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -606,20 +606,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 88,
     kbRating: 74,
     priceHistory: [
-      { year: 2020, price: 166.35 }
-      { year: 2021, price: 182.01 }
-      { year: 2022, price: 219.63 }
-      { year: 2023, price: 286.98 }
-      { year: 2024, price: 387.56 }
-      { year: 2025, price: 481.79 }
+      { year: 2020, price: 166.35 },
+      { year: 2021, price: 182.01 },
+      { year: 2022, price: 219.63 },
+      { year: 2023, price: 286.98 },
+      { year: 2024, price: 387.56 },
+      { year: 2025, price: 481.79 },
       { year: 2026, price: 562.8 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 2.61, yield: 1.57, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 3.09, yield: 1.7, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 2.94, yield: 1.34, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 5.35, yield: 1.86, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 7.19, yield: 1.86, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 2.61, yield: 1.57, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 3.09, yield: 1.7, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 2.94, yield: 1.34, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 5.35, yield: 1.86, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 7.19, yield: 1.86, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 7.97, yield: 1.65, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -670,20 +670,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 68,
     kbRating: 70,
     priceHistory: [
-      { year: 2020, price: 97.17 }
-      { year: 2021, price: 115.66 }
-      { year: 2022, price: 141.07 }
-      { year: 2023, price: 174.14 }
-      { year: 2024, price: 227.7 }
-      { year: 2025, price: 288.73 }
+      { year: 2020, price: 97.17 },
+      { year: 2021, price: 115.66 },
+      { year: 2022, price: 141.07 },
+      { year: 2023, price: 174.14 },
+      { year: 2024, price: 227.7 },
+      { year: 2025, price: 288.73 },
       { year: 2026, price: 340.2 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 5.14, yield: 5.29, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 4.6, yield: 3.98, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 7.43, yield: 5.27, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 9.19, yield: 5.28, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 9.18, yield: 4.03, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 5.14, yield: 5.29, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 4.6, yield: 3.98, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 7.43, yield: 5.27, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 9.19, yield: 5.28, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 9.18, yield: 4.03, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 12.69, yield: 4.4, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -734,20 +734,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 70,
     kbRating: 70,
     priceHistory: [
-      { year: 2020, price: 290.44 }
-      { year: 2021, price: 348.27 }
-      { year: 2022, price: 397.67 }
-      { year: 2023, price: 523.62 }
-      { year: 2024, price: 688.87 }
-      { year: 2025, price: 839.51 }
+      { year: 2020, price: 290.44 },
+      { year: 2021, price: 348.27 },
+      { year: 2022, price: 397.67 },
+      { year: 2023, price: 523.62 },
+      { year: 2024, price: 688.87 },
+      { year: 2025, price: 839.51 },
       { year: 2026, price: 939 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 12.94, yield: 4.46, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 19.26, yield: 5.53, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 22.62, yield: 5.69, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 20.9, yield: 3.99, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 26.9, yield: 3.9, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 12.94, yield: 4.46, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 19.26, yield: 5.53, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 22.62, yield: 5.69, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 20.9, yield: 3.99, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 26.9, yield: 3.9, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 39.94, yield: 4.76, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -798,20 +798,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 57,
     kbRating: 60,
     priceHistory: [
-      { year: 2020, price: 17.81 }
-      { year: 2021, price: 20.67 }
-      { year: 2022, price: 24.9 }
-      { year: 2023, price: 28.99 }
-      { year: 2024, price: 40.63 }
-      { year: 2025, price: 48.2 }
+      { year: 2020, price: 17.81 },
+      { year: 2021, price: 20.67 },
+      { year: 2022, price: 24.9 },
+      { year: 2023, price: 28.99 },
+      { year: 2024, price: 40.63 },
+      { year: 2025, price: 48.2 },
       { year: 2026, price: 56 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.67, yield: 3.76, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.79, yield: 3.82, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 1.0, yield: 4.02, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 1.08, yield: 3.73, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 1.54, yield: 3.79, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.67, yield: 3.76, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.79, yield: 3.82, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 1.0, yield: 4.02, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 1.08, yield: 3.73, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 1.54, yield: 3.79, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 2.1, yield: 4.36, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -862,20 +862,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 77,
     kbRating: 61,
     priceHistory: [
-      { year: 2020, price: 65.58 }
-      { year: 2021, price: 72.73 }
-      { year: 2022, price: 87.91 }
-      { year: 2023, price: 102.69 }
-      { year: 2024, price: 137.05 }
-      { year: 2025, price: 155.14 }
+      { year: 2020, price: 65.58 },
+      { year: 2021, price: 72.73 },
+      { year: 2022, price: 87.91 },
+      { year: 2023, price: 102.69 },
+      { year: 2024, price: 137.05 },
+      { year: 2025, price: 155.14 },
       { year: 2026, price: 175.1 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 1.33, yield: 2.03, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 1.36, yield: 1.87, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 1.53, yield: 1.74, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 1.88, yield: 1.83, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 2.59, yield: 1.89, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 1.33, yield: 2.03, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 1.36, yield: 1.87, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 1.53, yield: 1.74, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 1.88, yield: 1.83, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 2.59, yield: 1.89, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 2.84, yield: 1.83, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -926,20 +926,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 68,
     kbRating: 62,
     priceHistory: [
-      { year: 2020, price: 1.51 }
-      { year: 2021, price: 1.67 }
-      { year: 2022, price: 1.87 }
-      { year: 2023, price: 2.43 }
-      { year: 2024, price: 3.43 }
-      { year: 2025, price: 4.3 }
+      { year: 2020, price: 1.51 },
+      { year: 2021, price: 1.67 },
+      { year: 2022, price: 1.87 },
+      { year: 2023, price: 2.43 },
+      { year: 2024, price: 3.43 },
+      { year: 2025, price: 4.3 },
       { year: 2026, price: 5.1 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.03, yield: 1.99, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.03, yield: 1.8, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.03, yield: 1.6, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.04, yield: 1.65, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.06, yield: 1.75, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.03, yield: 1.99, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.03, yield: 1.8, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.03, yield: 1.6, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.04, yield: 1.65, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.06, yield: 1.75, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.1, yield: 2.33, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -990,20 +990,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 50,
     kbRating: 64,
     priceHistory: [
-      { year: 2020, price: 3.81 }
-      { year: 2021, price: 4.26 }
-      { year: 2022, price: 5.09 }
-      { year: 2023, price: 6.59 }
-      { year: 2024, price: 8.32 }
-      { year: 2025, price: 10.46 }
+      { year: 2020, price: 3.81 },
+      { year: 2021, price: 4.26 },
+      { year: 2022, price: 5.09 },
+      { year: 2023, price: 6.59 },
+      { year: 2024, price: 8.32 },
+      { year: 2025, price: 10.46 },
       { year: 2026, price: 12.35 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.09, yield: 2.36, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.1, yield: 2.35, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.11, yield: 2.16, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.15, yield: 2.28, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.18, yield: 2.16, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.09, yield: 2.36, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.1, yield: 2.35, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.11, yield: 2.16, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.15, yield: 2.28, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.18, yield: 2.16, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.2, yield: 1.91, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -1054,20 +1054,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 55,
     kbRating: 59,
     priceHistory: [
-      { year: 2020, price: 1.29 }
-      { year: 2021, price: 1.42 }
-      { year: 2022, price: 1.62 }
-      { year: 2023, price: 2.16 }
-      { year: 2024, price: 2.95 }
-      { year: 2025, price: 3.75 }
+      { year: 2020, price: 1.29 },
+      { year: 2021, price: 1.42 },
+      { year: 2022, price: 1.62 },
+      { year: 2023, price: 2.16 },
+      { year: 2024, price: 2.95 },
+      { year: 2025, price: 3.75 },
       { year: 2026, price: 4.1 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.02, yield: 1.55, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.02, yield: 1.41, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.03, yield: 1.85, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.04, yield: 1.85, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.05, yield: 1.69, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.02, yield: 1.55, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.02, yield: 1.41, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.03, yield: 1.85, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.04, yield: 1.85, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.05, yield: 1.69, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.07, yield: 1.87, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -1118,20 +1118,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 63,
     kbRating: 60,
     priceHistory: [
-      { year: 2020, price: 4.57 }
-      { year: 2021, price: 4.94 }
-      { year: 2022, price: 5.59 }
-      { year: 2023, price: 7.19 }
-      { year: 2024, price: 9.92 }
-      { year: 2025, price: 11.37 }
+      { year: 2020, price: 4.57 },
+      { year: 2021, price: 4.94 },
+      { year: 2022, price: 5.59 },
+      { year: 2023, price: 7.19 },
+      { year: 2024, price: 9.92 },
+      { year: 2025, price: 11.37 },
       { year: 2026, price: 13.2 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.05, yield: 1.09, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.05, yield: 1.01, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.07, yield: 1.25, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.08, yield: 1.11, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.13, yield: 1.31, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.05, yield: 1.09, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.05, yield: 1.01, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.07, yield: 1.25, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.08, yield: 1.11, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.13, yield: 1.31, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.14, yield: 1.23, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -1182,20 +1182,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 61,
     kbRating: 78,
     priceHistory: [
-      { year: 2020, price: 1.82 }
-      { year: 2021, price: 2.08 }
-      { year: 2022, price: 2.42 }
-      { year: 2023, price: 2.87 }
-      { year: 2024, price: 4.04 }
-      { year: 2025, price: 4.67 }
+      { year: 2020, price: 1.82 },
+      { year: 2021, price: 2.08 },
+      { year: 2022, price: 2.42 },
+      { year: 2023, price: 2.87 },
+      { year: 2024, price: 4.04 },
+      { year: 2025, price: 4.67 },
       { year: 2026, price: 5.35 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.05, yield: 2.75, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.07, yield: 3.37, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.08, yield: 3.31, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.09, yield: 3.14, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.1, yield: 2.48, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.05, yield: 2.75, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.07, yield: 3.37, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.08, yield: 3.31, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.09, yield: 3.14, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.1, yield: 2.48, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.13, yield: 2.78, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -1246,20 +1246,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 57,
     kbRating: 67,
     priceHistory: [
-      { year: 2020, price: 1.93 }
-      { year: 2021, price: 2.29 }
-      { year: 2022, price: 2.68 }
-      { year: 2023, price: 3.48 }
-      { year: 2024, price: 4.42 }
-      { year: 2025, price: 5.25 }
+      { year: 2020, price: 1.93 },
+      { year: 2021, price: 2.29 },
+      { year: 2022, price: 2.68 },
+      { year: 2023, price: 3.48 },
+      { year: 2024, price: 4.42 },
+      { year: 2025, price: 5.25 },
       { year: 2026, price: 5.9 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.08, yield: 4.15, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.09, yield: 3.93, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.13, yield: 4.85, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.16, yield: 4.6, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.24, yield: 5.43, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.08, yield: 4.15, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.09, yield: 3.93, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.13, yield: 4.85, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.16, yield: 4.6, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.24, yield: 5.43, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.26, yield: 4.95, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -1310,20 +1310,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 79,
     kbRating: 70,
     priceHistory: [
-      { year: 2020, price: 70.13 }
-      { year: 2021, price: 83.04 }
-      { year: 2022, price: 94.85 }
-      { year: 2023, price: 114.13 }
-      { year: 2024, price: 153.31 }
-      { year: 2025, price: 175.24 }
+      { year: 2020, price: 70.13 },
+      { year: 2021, price: 83.04 },
+      { year: 2022, price: 94.85 },
+      { year: 2023, price: 114.13 },
+      { year: 2024, price: 153.31 },
+      { year: 2025, price: 175.24 },
       { year: 2026, price: 210 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 3.08, yield: 4.39, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 3.52, yield: 4.24, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 4.01, yield: 4.23, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 4.86, yield: 4.26, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 6.96, yield: 4.54, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 3.08, yield: 4.39, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 3.52, yield: 4.24, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 4.01, yield: 4.23, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 4.86, yield: 4.26, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 6.96, yield: 4.54, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 7.54, yield: 4.3, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -1374,20 +1374,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 81,
     kbRating: 68,
     priceHistory: [
-      { year: 2020, price: 1.91 }
-      { year: 2021, price: 2.21 }
-      { year: 2022, price: 2.47 }
-      { year: 2023, price: 3.08 }
-      { year: 2024, price: 4.36 }
-      { year: 2025, price: 4.91 }
+      { year: 2020, price: 1.91 },
+      { year: 2021, price: 2.21 },
+      { year: 2022, price: 2.47 },
+      { year: 2023, price: 3.08 },
+      { year: 2024, price: 4.36 },
+      { year: 2025, price: 4.91 },
       { year: 2026, price: 5.35 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.05, yield: 2.62, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.09, yield: 4.07, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.1, yield: 4.05, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.09, yield: 2.92, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.13, yield: 2.98, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.05, yield: 2.62, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.09, yield: 4.07, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.1, yield: 4.05, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.09, yield: 2.92, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.13, yield: 2.98, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.15, yield: 3.05, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -1438,20 +1438,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 64,
     kbRating: 76,
     priceHistory: [
-      { year: 2020, price: 20.07 }
-      { year: 2021, price: 23.8 }
-      { year: 2022, price: 28.59 }
-      { year: 2023, price: 36.37 }
-      { year: 2024, price: 47.06 }
-      { year: 2025, price: 54.96 }
+      { year: 2020, price: 20.07 },
+      { year: 2021, price: 23.8 },
+      { year: 2022, price: 28.59 },
+      { year: 2023, price: 36.37 },
+      { year: 2024, price: 47.06 },
+      { year: 2025, price: 54.96 },
       { year: 2026, price: 65.9 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.84, yield: 4.19, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 1.23, yield: 5.17, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 1.06, yield: 3.71, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 1.47, yield: 4.04, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 2.18, yield: 4.63, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.84, yield: 4.19, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 1.23, yield: 5.17, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 1.06, yield: 3.71, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 1.47, yield: 4.04, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 2.18, yield: 4.63, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 2.15, yield: 3.91, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -1502,20 +1502,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 71,
     kbRating: 77,
     priceHistory: [
-      { year: 2020, price: 0.84 }
-      { year: 2021, price: 0.99 }
-      { year: 2022, price: 1.12 }
-      { year: 2023, price: 1.37 }
-      { year: 2024, price: 1.94 }
-      { year: 2025, price: 2.48 }
+      { year: 2020, price: 0.84 },
+      { year: 2021, price: 0.99 },
+      { year: 2022, price: 1.12 },
+      { year: 2023, price: 1.37 },
+      { year: 2024, price: 1.94 },
+      { year: 2025, price: 2.48 },
       { year: 2026, price: 2.85 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.04, yield: 4.76, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.05, yield: 5.05, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.05, yield: 4.46, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.05, yield: 3.65, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.08, yield: 4.12, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.04, yield: 4.76, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.05, yield: 5.05, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.05, yield: 4.46, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.05, yield: 3.65, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.08, yield: 4.12, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.11, yield: 4.44, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -1566,20 +1566,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 64,
     kbRating: 69,
     priceHistory: [
-      { year: 2020, price: 6.39 }
-      { year: 2021, price: 7.26 }
-      { year: 2022, price: 8.47 }
-      { year: 2023, price: 11.23 }
-      { year: 2024, price: 16.13 }
-      { year: 2025, price: 18.1 }
+      { year: 2020, price: 6.39 },
+      { year: 2021, price: 7.26 },
+      { year: 2022, price: 8.47 },
+      { year: 2023, price: 11.23 },
+      { year: 2024, price: 16.13 },
+      { year: 2025, price: 18.1 },
       { year: 2026, price: 20 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.2, yield: 3.13, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.22, yield: 3.03, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.2, yield: 2.36, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.36, yield: 3.21, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.41, yield: 2.54, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.2, yield: 3.13, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.22, yield: 3.03, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.2, yield: 2.36, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.36, yield: 3.21, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.41, yield: 2.54, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.46, yield: 2.54, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -1630,20 +1630,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 67,
     kbRating: 59,
     priceHistory: [
-      { year: 2020, price: 0.46 }
-      { year: 2021, price: 0.5 }
-      { year: 2022, price: 0.6 }
-      { year: 2023, price: 0.72 }
-      { year: 2024, price: 1.03 }
-      { year: 2025, price: 1.28 }
+      { year: 2020, price: 0.46 },
+      { year: 2021, price: 0.5 },
+      { year: 2022, price: 0.6 },
+      { year: 2023, price: 0.72 },
+      { year: 2024, price: 1.03 },
+      { year: 2025, price: 1.28 },
       { year: 2026, price: 1.5 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.01, yield: 2.17, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.01, yield: 2.0, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.01, yield: 1.67, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.01, yield: 1.39, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.01, yield: 0.97, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.01, yield: 2.17, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.01, yield: 2.0, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.01, yield: 1.67, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.01, yield: 1.39, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.01, yield: 0.97, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.02, yield: 1.56, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -1694,20 +1694,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 76,
     kbRating: 71,
     priceHistory: [
-      { year: 2020, price: 279.64 }
-      { year: 2021, price: 323.73 }
-      { year: 2022, price: 370.57 }
-      { year: 2023, price: 495.36 }
-      { year: 2024, price: 629.31 }
-      { year: 2025, price: 781.28 }
+      { year: 2020, price: 279.64 },
+      { year: 2021, price: 323.73 },
+      { year: 2022, price: 370.57 },
+      { year: 2023, price: 495.36 },
+      { year: 2024, price: 629.31 },
+      { year: 2025, price: 781.28 },
       { year: 2026, price: 891 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 9.35, yield: 3.34, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 10.74, yield: 3.32, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 13.17, yield: 3.55, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 15.72, yield: 3.17, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 22.23, yield: 3.53, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 9.35, yield: 3.34, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 10.74, yield: 3.32, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 13.17, yield: 3.55, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 15.72, yield: 3.17, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 22.23, yield: 3.53, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 31.09, yield: 3.98, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -1758,20 +1758,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 80,
     kbRating: 69,
     priceHistory: [
-      { year: 2020, price: 20.84 }
-      { year: 2021, price: 24.27 }
-      { year: 2022, price: 26.95 }
-      { year: 2023, price: 35.23 }
-      { year: 2024, price: 50.81 }
-      { year: 2025, price: 60.77 }
+      { year: 2020, price: 20.84 },
+      { year: 2021, price: 24.27 },
+      { year: 2022, price: 26.95 },
+      { year: 2023, price: 35.23 },
+      { year: 2024, price: 50.81 },
+      { year: 2025, price: 60.77 },
       { year: 2026, price: 69 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.63, yield: 3.02, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 1.05, yield: 4.33, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 1.1, yield: 4.08, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 1.5, yield: 4.26, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 2.02, yield: 3.98, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.63, yield: 3.02, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 1.05, yield: 4.33, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 1.1, yield: 4.08, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 1.5, yield: 4.26, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 2.02, yield: 3.98, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 2.25, yield: 3.7, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -1822,20 +1822,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 84,
     kbRating: 78,
     priceHistory: [
-      { year: 2020, price: 2.87 }
-      { year: 2021, price: 3.18 }
-      { year: 2022, price: 3.79 }
-      { year: 2023, price: 4.78 }
-      { year: 2024, price: 6.48 }
-      { year: 2025, price: 7.49 }
+      { year: 2020, price: 2.87 },
+      { year: 2021, price: 3.18 },
+      { year: 2022, price: 3.79 },
+      { year: 2023, price: 4.78 },
+      { year: 2024, price: 6.48 },
+      { year: 2025, price: 7.49 },
       { year: 2026, price: 8.5 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.05, yield: 1.74, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.07, yield: 2.2, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.08, yield: 2.11, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.11, yield: 2.3, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.12, yield: 1.85, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.05, yield: 1.74, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.07, yield: 2.2, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.08, yield: 2.11, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.11, yield: 2.3, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.12, yield: 1.85, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.17, yield: 2.27, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -1886,20 +1886,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 54,
     kbRating: 60,
     priceHistory: [
-      { year: 2020, price: 12.55 }
-      { year: 2021, price: 13.89 }
-      { year: 2022, price: 15.79 }
-      { year: 2023, price: 20.79 }
-      { year: 2024, price: 29.64 }
-      { year: 2025, price: 36.41 }
+      { year: 2020, price: 12.55 },
+      { year: 2021, price: 13.89 },
+      { year: 2022, price: 15.79 },
+      { year: 2023, price: 20.79 },
+      { year: 2024, price: 29.64 },
+      { year: 2025, price: 36.41 },
       { year: 2026, price: 40.7 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.24, yield: 1.91, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.27, yield: 1.94, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.34, yield: 2.15, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.43, yield: 2.07, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.56, yield: 1.89, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.24, yield: 1.91, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.27, yield: 1.94, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.34, yield: 2.15, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.43, yield: 2.07, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.56, yield: 1.89, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.58, yield: 1.59, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -1950,20 +1950,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 83,
     kbRating: 70,
     priceHistory: [
-      { year: 2020, price: 11.1 }
-      { year: 2021, price: 12.97 }
-      { year: 2022, price: 14.37 }
-      { year: 2023, price: 18.03 }
-      { year: 2024, price: 23.35 }
-      { year: 2025, price: 26.41 }
+      { year: 2020, price: 11.1 },
+      { year: 2021, price: 12.97 },
+      { year: 2022, price: 14.37 },
+      { year: 2023, price: 18.03 },
+      { year: 2024, price: 23.35 },
+      { year: 2025, price: 26.41 },
       { year: 2026, price: 28.6 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.42, yield: 3.78, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.41, yield: 3.16, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.46, yield: 3.2, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.67, yield: 3.72, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 1.03, yield: 4.41, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.42, yield: 3.78, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.41, yield: 3.16, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.46, yield: 3.2, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.67, yield: 3.72, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 1.03, yield: 4.41, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.88, yield: 3.33, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -2014,20 +2014,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 76,
     kbRating: 80,
     priceHistory: [
-      { year: 2020, price: 25.77 }
-      { year: 2021, price: 29.29 }
-      { year: 2022, price: 34.13 }
-      { year: 2023, price: 44.78 }
-      { year: 2024, price: 62.91 }
-      { year: 2025, price: 79.72 }
+      { year: 2020, price: 25.77 },
+      { year: 2021, price: 29.29 },
+      { year: 2022, price: 34.13 },
+      { year: 2023, price: 44.78 },
+      { year: 2024, price: 62.91 },
+      { year: 2025, price: 79.72 },
       { year: 2026, price: 95.2 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.86, yield: 3.34, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.71, yield: 2.42, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.95, yield: 2.78, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 1.44, yield: 3.22, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 1.56, yield: 2.48, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.86, yield: 3.34, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.71, yield: 2.42, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.95, yield: 2.78, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 1.44, yield: 3.22, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 1.56, yield: 2.48, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 2.45, yield: 3.07, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -2078,20 +2078,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 72,
     kbRating: 57,
     priceHistory: [
-      { year: 2020, price: 3.9 }
-      { year: 2021, price: 4.58 }
-      { year: 2022, price: 5.48 }
-      { year: 2023, price: 7.09 }
-      { year: 2024, price: 9.89 }
-      { year: 2025, price: 11.11 }
+      { year: 2020, price: 3.9 },
+      { year: 2021, price: 4.58 },
+      { year: 2022, price: 5.48 },
+      { year: 2023, price: 7.09 },
+      { year: 2024, price: 9.89 },
+      { year: 2025, price: 11.11 },
       { year: 2026, price: 13.3 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.14, yield: 3.59, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.17, yield: 3.71, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.23, yield: 4.2, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.3, yield: 4.23, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.4, yield: 4.04, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.14, yield: 3.59, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.17, yield: 3.71, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.23, yield: 4.2, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.3, yield: 4.23, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.4, yield: 4.04, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.39, yield: 3.51, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -2142,20 +2142,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 78,
     kbRating: 70,
     priceHistory: [
-      { year: 2020, price: 66.44 }
-      { year: 2021, price: 78.74 }
-      { year: 2022, price: 95.27 }
-      { year: 2023, price: 114.92 }
-      { year: 2024, price: 149.06 }
-      { year: 2025, price: 179.37 }
+      { year: 2020, price: 66.44 },
+      { year: 2021, price: 78.74 },
+      { year: 2022, price: 95.27 },
+      { year: 2023, price: 114.92 },
+      { year: 2024, price: 149.06 },
+      { year: 2025, price: 179.37 },
       { year: 2026, price: 210 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 2.93, yield: 4.41, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 3.49, yield: 4.43, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 3.52, yield: 3.69, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 6.08, yield: 5.29, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 7.16, yield: 4.8, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 2.93, yield: 4.41, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 3.49, yield: 4.43, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 3.52, yield: 3.69, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 6.08, yield: 5.29, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 7.16, yield: 4.8, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 8.84, yield: 4.93, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -2206,20 +2206,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 58,
     kbRating: 66,
     priceHistory: [
-      { year: 2020, price: 2.58 }
-      { year: 2021, price: 2.86 }
-      { year: 2022, price: 3.39 }
-      { year: 2023, price: 4.52 }
-      { year: 2024, price: 6.3 }
-      { year: 2025, price: 7.82 }
+      { year: 2020, price: 2.58 },
+      { year: 2021, price: 2.86 },
+      { year: 2022, price: 3.39 },
+      { year: 2023, price: 4.52 },
+      { year: 2024, price: 6.3 },
+      { year: 2025, price: 7.82 },
       { year: 2026, price: 9.05 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.06, yield: 2.33, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.06, yield: 2.1, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.08, yield: 2.36, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.1, yield: 2.21, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.12, yield: 1.9, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.06, yield: 2.33, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.06, yield: 2.1, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.08, yield: 2.36, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.1, yield: 2.21, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.12, yield: 1.9, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.18, yield: 2.3, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -2270,20 +2270,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 87,
     kbRating: 64,
     priceHistory: [
-      { year: 2020, price: 5.24 }
-      { year: 2021, price: 5.69 }
-      { year: 2022, price: 6.93 }
-      { year: 2023, price: 9.06 }
-      { year: 2024, price: 12.77 }
-      { year: 2025, price: 15.63 }
+      { year: 2020, price: 5.24 },
+      { year: 2021, price: 5.69 },
+      { year: 2022, price: 6.93 },
+      { year: 2023, price: 9.06 },
+      { year: 2024, price: 12.77 },
+      { year: 2025, price: 15.63 },
       { year: 2026, price: 18.4 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.07, yield: 1.34, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.09, yield: 1.58, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.11, yield: 1.59, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.12, yield: 1.32, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.19, yield: 1.49, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.07, yield: 1.34, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.09, yield: 1.58, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.11, yield: 1.59, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.12, yield: 1.32, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.19, yield: 1.49, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.19, yield: 1.22, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -2334,20 +2334,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 65,
     kbRating: 76,
     priceHistory: [
-      { year: 2020, price: 32.49 }
-      { year: 2021, price: 37.17 }
-      { year: 2022, price: 43.7 }
-      { year: 2023, price: 52.34 }
-      { year: 2024, price: 69.19 }
-      { year: 2025, price: 88.06 }
+      { year: 2020, price: 32.49 },
+      { year: 2021, price: 37.17 },
+      { year: 2022, price: 43.7 },
+      { year: 2023, price: 52.34 },
+      { year: 2024, price: 69.19 },
+      { year: 2025, price: 88.06 },
       { year: 2026, price: 101.2 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 1.14, yield: 3.51, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 1.38, yield: 3.71, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 1.12, yield: 2.56, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 1.33, yield: 2.54, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 2.43, yield: 3.51, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 1.14, yield: 3.51, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 1.38, yield: 3.71, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 1.12, yield: 2.56, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 1.33, yield: 2.54, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 2.43, yield: 3.51, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 2.39, yield: 2.71, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -2398,20 +2398,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 78,
     kbRating: 74,
     priceHistory: [
-      { year: 2020, price: 16.57 }
-      { year: 2021, price: 19.15 }
-      { year: 2022, price: 22.22 }
-      { year: 2023, price: 27.66 }
-      { year: 2024, price: 38.29 }
-      { year: 2025, price: 45.22 }
+      { year: 2020, price: 16.57 },
+      { year: 2021, price: 19.15 },
+      { year: 2022, price: 22.22 },
+      { year: 2023, price: 27.66 },
+      { year: 2024, price: 38.29 },
+      { year: 2025, price: 45.22 },
       { year: 2026, price: 52.5 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.6, yield: 3.62, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.61, yield: 3.19, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.79, yield: 3.56, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.96, yield: 3.47, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 1.11, yield: 2.9, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.6, yield: 3.62, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.61, yield: 3.19, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.79, yield: 3.56, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.96, yield: 3.47, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 1.11, yield: 2.9, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 1.68, yield: 3.72, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -2462,20 +2462,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 69,
     kbRating: 75,
     priceHistory: [
-      { year: 2020, price: 2.04 }
-      { year: 2021, price: 2.42 }
-      { year: 2022, price: 2.79 }
-      { year: 2023, price: 3.37 }
-      { year: 2024, price: 4.81 }
-      { year: 2025, price: 5.77 }
+      { year: 2020, price: 2.04 },
+      { year: 2021, price: 2.42 },
+      { year: 2022, price: 2.79 },
+      { year: 2023, price: 3.37 },
+      { year: 2024, price: 4.81 },
+      { year: 2025, price: 5.77 },
       { year: 2026, price: 6.9 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.09, yield: 4.41, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.09, yield: 3.72, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.14, yield: 5.02, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.16, yield: 4.75, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.21, yield: 4.37, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.09, yield: 4.41, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.09, yield: 3.72, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.14, yield: 5.02, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.16, yield: 4.75, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.21, yield: 4.37, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.29, yield: 5.03, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -2526,20 +2526,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 79,
     kbRating: 73,
     priceHistory: [
-      { year: 2020, price: 267.55 }
-      { year: 2021, price: 313.32 }
-      { year: 2022, price: 369.14 }
-      { year: 2023, price: 495.19 }
-      { year: 2024, price: 671.16 }
-      { year: 2025, price: 800.4 }
+      { year: 2020, price: 267.55 },
+      { year: 2021, price: 313.32 },
+      { year: 2022, price: 369.14 },
+      { year: 2023, price: 495.19 },
+      { year: 2024, price: 671.16 },
+      { year: 2025, price: 800.4 },
       { year: 2026, price: 917.4 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 11.96, yield: 4.47, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 10.38, yield: 3.31, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 15.18, yield: 4.11, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 20.29, yield: 4.1, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 27.43, yield: 4.09, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 11.96, yield: 4.47, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 10.38, yield: 3.31, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 15.18, yield: 4.11, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 20.29, yield: 4.1, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 27.43, yield: 4.09, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 26.88, yield: 3.36, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -2590,20 +2590,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 51,
     kbRating: 64,
     priceHistory: [
-      { year: 2020, price: 35.39 }
-      { year: 2021, price: 40.68 }
-      { year: 2022, price: 45.94 }
-      { year: 2023, price: 56.39 }
-      { year: 2024, price: 80.73 }
-      { year: 2025, price: 102.31 }
+      { year: 2020, price: 35.39 },
+      { year: 2021, price: 40.68 },
+      { year: 2022, price: 45.94 },
+      { year: 2023, price: 56.39 },
+      { year: 2024, price: 80.73 },
+      { year: 2025, price: 102.31 },
       { year: 2026, price: 120.5 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 1.38, yield: 3.9, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 1.3, yield: 3.2, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 1.41, yield: 3.07, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 2.13, yield: 3.78, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 2.48, yield: 3.07, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 1.38, yield: 3.9, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 1.3, yield: 3.2, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 1.41, yield: 3.07, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 2.13, yield: 3.78, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 2.48, yield: 3.07, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 3.02, yield: 2.95, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -2654,20 +2654,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 83,
     kbRating: 77,
     priceHistory: [
-      { year: 2020, price: 0.24 }
-      { year: 2021, price: 0.29 }
-      { year: 2022, price: 0.33 }
-      { year: 2023, price: 0.43 }
-      { year: 2024, price: 0.6 }
-      { year: 2025, price: 0.75 }
+      { year: 2020, price: 0.24 },
+      { year: 2021, price: 0.29 },
+      { year: 2022, price: 0.33 },
+      { year: 2023, price: 0.43 },
+      { year: 2024, price: 0.6 },
+      { year: 2025, price: 0.75 },
       { year: 2026, price: 0.9 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.01, yield: 4.17, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.01, yield: 3.45, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.02, yield: 6.06, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.02, yield: 4.65, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.02, yield: 3.33, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.01, yield: 4.17, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.01, yield: 3.45, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.02, yield: 6.06, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.02, yield: 4.65, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.02, yield: 3.33, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.03, yield: 4.0, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -2718,20 +2718,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 66,
     kbRating: 60,
     priceHistory: [
-      { year: 2020, price: 113.26 }
-      { year: 2021, price: 122.49 }
-      { year: 2022, price: 148.9 }
-      { year: 2023, price: 192.42 }
-      { year: 2024, price: 273.01 }
-      { year: 2025, price: 334.67 }
+      { year: 2020, price: 113.26 },
+      { year: 2021, price: 122.49 },
+      { year: 2022, price: 148.9 },
+      { year: 2023, price: 192.42 },
+      { year: 2024, price: 273.01 },
+      { year: 2025, price: 334.67 },
       { year: 2026, price: 365.5 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 1.27, yield: 1.12, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 1.61, yield: 1.31, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 1.82, yield: 1.22, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 2.64, yield: 1.37, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 3.32, yield: 1.22, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 1.27, yield: 1.12, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 1.61, yield: 1.31, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 1.82, yield: 1.22, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 2.64, yield: 1.37, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 3.32, yield: 1.22, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 4.42, yield: 1.32, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -2782,20 +2782,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 81,
     kbRating: 77,
     priceHistory: [
-      { year: 2020, price: 4.23 }
-      { year: 2021, price: 4.84 }
-      { year: 2022, price: 5.89 }
-      { year: 2023, price: 7.53 }
-      { year: 2024, price: 10.14 }
-      { year: 2025, price: 12.22 }
+      { year: 2020, price: 4.23 },
+      { year: 2021, price: 4.84 },
+      { year: 2022, price: 5.89 },
+      { year: 2023, price: 7.53 },
+      { year: 2024, price: 10.14 },
+      { year: 2025, price: 12.22 },
       { year: 2026, price: 14 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.14, yield: 3.31, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.18, yield: 3.72, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.17, yield: 2.89, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.22, yield: 2.92, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.35, yield: 3.45, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.14, yield: 3.31, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.18, yield: 3.72, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.17, yield: 2.89, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.22, yield: 2.92, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.35, yield: 3.45, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.37, yield: 3.03, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -2846,20 +2846,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 56,
     kbRating: 70,
     priceHistory: [
-      { year: 2020, price: 16.41 }
-      { year: 2021, price: 18.25 }
-      { year: 2022, price: 21.4 }
-      { year: 2023, price: 25.02 }
-      { year: 2024, price: 33.7 }
-      { year: 2025, price: 38.98 }
+      { year: 2020, price: 16.41 },
+      { year: 2021, price: 18.25 },
+      { year: 2022, price: 21.4 },
+      { year: 2023, price: 25.02 },
+      { year: 2024, price: 33.7 },
+      { year: 2025, price: 38.98 },
       { year: 2026, price: 43.25 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.28, yield: 1.71, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.44, yield: 2.41, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.43, yield: 2.01, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.53, yield: 2.12, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.59, yield: 1.75, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.28, yield: 1.71, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.44, yield: 2.41, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.43, yield: 2.01, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.53, yield: 2.12, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.59, yield: 1.75, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.91, yield: 2.33, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -2910,20 +2910,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 50,
     kbRating: 66,
     priceHistory: [
-      { year: 2020, price: 3.1 }
-      { year: 2021, price: 3.59 }
-      { year: 2022, price: 4.26 }
-      { year: 2023, price: 5.46 }
-      { year: 2024, price: 7.41 }
-      { year: 2025, price: 8.31 }
+      { year: 2020, price: 3.1 },
+      { year: 2021, price: 3.59 },
+      { year: 2022, price: 4.26 },
+      { year: 2023, price: 5.46 },
+      { year: 2024, price: 7.41 },
+      { year: 2025, price: 8.31 },
       { year: 2026, price: 9.5 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.11, yield: 3.55, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.12, yield: 3.34, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.15, yield: 3.52, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.2, yield: 3.66, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.28, yield: 3.78, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.11, yield: 3.55, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.12, yield: 3.34, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.15, yield: 3.52, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.2, yield: 3.66, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.28, yield: 3.78, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.26, yield: 3.13, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -2974,20 +2974,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 74,
     kbRating: 66,
     priceHistory: [
-      { year: 2020, price: 1.56 }
-      { year: 2021, price: 1.86 }
-      { year: 2022, price: 2.08 }
-      { year: 2023, price: 2.75 }
-      { year: 2024, price: 3.97 }
-      { year: 2025, price: 4.64 }
+      { year: 2020, price: 1.56 },
+      { year: 2021, price: 1.86 },
+      { year: 2022, price: 2.08 },
+      { year: 2023, price: 2.75 },
+      { year: 2024, price: 3.97 },
+      { year: 2025, price: 4.64 },
       { year: 2026, price: 5.22 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.07, yield: 4.49, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.08, yield: 4.3, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.08, yield: 3.85, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.13, yield: 4.73, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.17, yield: 4.28, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.07, yield: 4.49, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.08, yield: 4.3, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.08, yield: 3.85, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.13, yield: 4.73, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.17, yield: 4.28, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.19, yield: 4.09, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -3038,20 +3038,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 61,
     kbRating: 78,
     priceHistory: [
-      { year: 2020, price: 2.47 }
-      { year: 2021, price: 2.85 }
-      { year: 2022, price: 3.36 }
-      { year: 2023, price: 4.38 }
-      { year: 2024, price: 6.03 }
-      { year: 2025, price: 7.4 }
+      { year: 2020, price: 2.47 },
+      { year: 2021, price: 2.85 },
+      { year: 2022, price: 3.36 },
+      { year: 2023, price: 4.38 },
+      { year: 2024, price: 6.03 },
+      { year: 2025, price: 7.4 },
       { year: 2026, price: 8.15 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.1, yield: 4.05, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.09, yield: 3.16, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.13, yield: 3.87, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.15, yield: 3.42, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.2, yield: 3.32, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.1, yield: 4.05, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.09, yield: 3.16, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.13, yield: 3.87, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.15, yield: 3.42, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.2, yield: 3.32, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.22, yield: 2.97, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -3102,20 +3102,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 71,
     kbRating: 67,
     priceHistory: [
-      { year: 2020, price: 1.11 }
-      { year: 2021, price: 1.23 }
-      { year: 2022, price: 1.46 }
-      { year: 2023, price: 1.7 }
-      { year: 2024, price: 2.24 }
-      { year: 2025, price: 2.52 }
+      { year: 2020, price: 1.11 },
+      { year: 2021, price: 1.23 },
+      { year: 2022, price: 1.46 },
+      { year: 2023, price: 1.7 },
+      { year: 2024, price: 2.24 },
+      { year: 2025, price: 2.52 },
       { year: 2026, price: 2.96 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.02, yield: 1.8, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.02, yield: 1.63, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.02, yield: 1.37, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.03, yield: 1.76, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.04, yield: 1.79, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.02, yield: 1.8, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.02, yield: 1.63, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.02, yield: 1.37, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.03, yield: 1.76, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.04, yield: 1.79, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.06, yield: 2.38, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -3166,20 +3166,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 85,
     kbRating: 83,
     priceHistory: [
-      { year: 2020, price: 96.4 }
-      { year: 2021, price: 110.63 }
-      { year: 2022, price: 127.28 }
-      { year: 2023, price: 157.01 }
-      { year: 2024, price: 226.03 }
-      { year: 2025, price: 277.89 }
+      { year: 2020, price: 96.4 },
+      { year: 2021, price: 110.63 },
+      { year: 2022, price: 127.28 },
+      { year: 2023, price: 157.01 },
+      { year: 2024, price: 226.03 },
+      { year: 2025, price: 277.89 },
       { year: 2026, price: 310.8 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 2.63, yield: 2.73, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 3.89, yield: 3.52, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 3.73, yield: 2.93, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 5.53, yield: 3.52, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 6.33, yield: 2.8, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 2.63, yield: 2.73, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 3.89, yield: 3.52, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 3.73, yield: 2.93, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 5.53, yield: 3.52, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 6.33, yield: 2.8, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 8.67, yield: 3.12, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -3230,20 +3230,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 85,
     kbRating: 71,
     priceHistory: [
-      { year: 2020, price: 3.85 }
-      { year: 2021, price: 4.18 }
-      { year: 2022, price: 4.86 }
-      { year: 2023, price: 6.13 }
-      { year: 2024, price: 7.78 }
-      { year: 2025, price: 9.76 }
+      { year: 2020, price: 3.85 },
+      { year: 2021, price: 4.18 },
+      { year: 2022, price: 4.86 },
+      { year: 2023, price: 6.13 },
+      { year: 2024, price: 7.78 },
+      { year: 2025, price: 9.76 },
       { year: 2026, price: 11.2 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.04, yield: 1.04, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.06, yield: 1.44, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.06, yield: 1.23, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.07, yield: 1.14, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.09, yield: 1.16, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.04, yield: 1.04, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.06, yield: 1.44, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.06, yield: 1.23, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.07, yield: 1.14, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.09, yield: 1.16, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.1, yield: 1.02, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -3294,20 +3294,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 77,
     kbRating: 67,
     priceHistory: [
-      { year: 2020, price: 0.62 }
-      { year: 2021, price: 0.74 }
-      { year: 2022, price: 0.82 }
-      { year: 2023, price: 1.02 }
-      { year: 2024, price: 1.31 }
-      { year: 2025, price: 1.51 }
+      { year: 2020, price: 0.62 },
+      { year: 2021, price: 0.74 },
+      { year: 2022, price: 0.82 },
+      { year: 2023, price: 1.02 },
+      { year: 2024, price: 1.31 },
+      { year: 2025, price: 1.51 },
       { year: 2026, price: 1.76 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.03, yield: 4.84, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.04, yield: 5.41, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.05, yield: 6.1, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.05, yield: 4.9, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.07, yield: 5.34, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.03, yield: 4.84, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.04, yield: 5.41, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.05, yield: 6.1, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.05, yield: 4.9, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.07, yield: 5.34, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.08, yield: 5.3, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -3358,20 +3358,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 66,
     kbRating: 55,
     priceHistory: [
-      { year: 2020, price: 3.26 }
-      { year: 2021, price: 3.86 }
-      { year: 2022, price: 4.25 }
-      { year: 2023, price: 5.72 }
-      { year: 2024, price: 7.46 }
-      { year: 2025, price: 8.67 }
+      { year: 2020, price: 3.26 },
+      { year: 2021, price: 3.86 },
+      { year: 2022, price: 4.25 },
+      { year: 2023, price: 5.72 },
+      { year: 2024, price: 7.46 },
+      { year: 2025, price: 8.67 },
       { year: 2026, price: 9.9 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.15, yield: 4.6, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.18, yield: 4.66, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.2, yield: 4.71, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.27, yield: 4.72, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.33, yield: 4.42, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.15, yield: 4.6, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.18, yield: 4.66, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.2, yield: 4.71, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.27, yield: 4.72, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.33, yield: 4.42, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.42, yield: 4.84, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -3422,20 +3422,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 58,
     kbRating: 58,
     priceHistory: [
-      { year: 2020, price: 0.52 }
-      { year: 2021, price: 0.57 }
-      { year: 2022, price: 0.69 }
-      { year: 2023, price: 0.82 }
-      { year: 2024, price: 1.07 }
-      { year: 2025, price: 1.29 }
+      { year: 2020, price: 0.52 },
+      { year: 2021, price: 0.57 },
+      { year: 2022, price: 0.69 },
+      { year: 2023, price: 0.82 },
+      { year: 2024, price: 1.07 },
+      { year: 2025, price: 1.29 },
       { year: 2026, price: 1.5 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.01, yield: 1.92, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.01, yield: 1.75, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.01, yield: 1.45, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.01, yield: 1.22, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.02, yield: 1.87, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.01, yield: 1.92, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.01, yield: 1.75, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.01, yield: 1.45, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.01, yield: 1.22, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.02, yield: 1.87, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.02, yield: 1.55, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -3486,20 +3486,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 73,
     kbRating: 75,
     priceHistory: [
-      { year: 2020, price: 2.47 }
-      { year: 2021, price: 2.81 }
-      { year: 2022, price: 3.21 }
-      { year: 2023, price: 3.97 }
-      { year: 2024, price: 5.01 }
-      { year: 2025, price: 6.02 }
+      { year: 2020, price: 2.47 },
+      { year: 2021, price: 2.81 },
+      { year: 2022, price: 3.21 },
+      { year: 2023, price: 3.97 },
+      { year: 2024, price: 5.01 },
+      { year: 2025, price: 6.02 },
       { year: 2026, price: 7.2 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.08, yield: 3.24, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.09, yield: 3.2, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.1, yield: 3.12, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.12, yield: 3.02, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.16, yield: 3.19, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.08, yield: 3.24, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.09, yield: 3.2, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.1, yield: 3.12, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.12, yield: 3.02, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.16, yield: 3.19, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.2, yield: 3.32, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -3550,20 +3550,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 65,
     kbRating: 60,
     priceHistory: [
-      { year: 2020, price: 3.64 }
-      { year: 2021, price: 4.34 }
-      { year: 2022, price: 5.22 }
-      { year: 2023, price: 6.69 }
-      { year: 2024, price: 9.45 }
-      { year: 2025, price: 10.87 }
+      { year: 2020, price: 3.64 },
+      { year: 2021, price: 4.34 },
+      { year: 2022, price: 5.22 },
+      { year: 2023, price: 6.69 },
+      { year: 2024, price: 9.45 },
+      { year: 2025, price: 10.87 },
       { year: 2026, price: 12 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.19, yield: 5.22, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.19, yield: 4.38, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.23, yield: 4.41, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.32, yield: 4.78, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.44, yield: 4.66, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.19, yield: 5.22, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.19, yield: 4.38, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.23, yield: 4.41, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.32, yield: 4.78, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.44, yield: 4.66, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.55, yield: 5.06, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -3614,20 +3614,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 56,
     kbRating: 57,
     priceHistory: [
-      { year: 2020, price: 13.97 }
-      { year: 2021, price: 15.3 }
-      { year: 2022, price: 18.55 }
-      { year: 2023, price: 21.72 }
-      { year: 2024, price: 29.6 }
-      { year: 2025, price: 35.05 }
+      { year: 2020, price: 13.97 },
+      { year: 2021, price: 15.3 },
+      { year: 2022, price: 18.55 },
+      { year: 2023, price: 21.72 },
+      { year: 2024, price: 29.6 },
+      { year: 2025, price: 35.05 },
       { year: 2026, price: 40 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.21, yield: 1.5, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.21, yield: 1.37, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.26, yield: 1.4, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.32, yield: 1.47, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.47, yield: 1.59, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.21, yield: 1.5, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.21, yield: 1.37, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.26, yield: 1.4, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.32, yield: 1.47, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.47, yield: 1.59, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.64, yield: 1.83, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -3678,20 +3678,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 67,
     kbRating: 63,
     priceHistory: [
-      { year: 2020, price: 1.12 }
-      { year: 2021, price: 1.25 }
-      { year: 2022, price: 1.39 }
-      { year: 2023, price: 1.85 }
-      { year: 2024, price: 2.42 }
-      { year: 2025, price: 2.77 }
+      { year: 2020, price: 1.12 },
+      { year: 2021, price: 1.25 },
+      { year: 2022, price: 1.39 },
+      { year: 2023, price: 1.85 },
+      { year: 2024, price: 2.42 },
+      { year: 2025, price: 2.77 },
       { year: 2026, price: 3.2 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.03, yield: 2.68, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.03, yield: 2.4, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.03, yield: 2.16, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.04, yield: 2.16, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.05, yield: 2.07, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.03, yield: 2.68, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.03, yield: 2.4, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.03, yield: 2.16, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.04, yield: 2.16, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.05, yield: 2.07, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.05, yield: 1.81, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -3742,20 +3742,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 50,
     kbRating: 62,
     priceHistory: [
-      { year: 2020, price: 2.59 }
-      { year: 2021, price: 2.81 }
-      { year: 2022, price: 3.22 }
-      { year: 2023, price: 3.71 }
-      { year: 2024, price: 5.09 }
-      { year: 2025, price: 5.96 }
+      { year: 2020, price: 2.59 },
+      { year: 2021, price: 2.81 },
+      { year: 2022, price: 3.22 },
+      { year: 2023, price: 3.71 },
+      { year: 2024, price: 5.09 },
+      { year: 2025, price: 5.96 },
       { year: 2026, price: 6.9 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.03, yield: 1.16, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.03, yield: 1.07, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.04, yield: 1.24, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.04, yield: 1.08, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.06, yield: 1.18, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.03, yield: 1.16, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.03, yield: 1.07, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.04, yield: 1.24, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.04, yield: 1.08, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.06, yield: 1.18, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.08, yield: 1.34, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -3806,20 +3806,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 84,
     kbRating: 70,
     priceHistory: [
-      { year: 2020, price: 33.12 }
-      { year: 2021, price: 37.36 }
-      { year: 2022, price: 41.76 }
-      { year: 2023, price: 52.51 }
-      { year: 2024, price: 66.75 }
-      { year: 2025, price: 82.25 }
+      { year: 2020, price: 33.12 },
+      { year: 2021, price: 37.36 },
+      { year: 2022, price: 41.76 },
+      { year: 2023, price: 52.51 },
+      { year: 2024, price: 66.75 },
+      { year: 2025, price: 82.25 },
       { year: 2026, price: 94.9 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.96, yield: 2.9, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 1.02, yield: 2.73, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 1.29, yield: 3.09, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 1.65, yield: 3.14, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 1.7, yield: 2.55, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.96, yield: 2.9, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 1.02, yield: 2.73, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 1.29, yield: 3.09, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 1.65, yield: 3.14, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 1.7, yield: 2.55, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 2.03, yield: 2.47, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -3870,20 +3870,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 86,
     kbRating: 83,
     priceHistory: [
-      { year: 2020, price: 6.11 }
-      { year: 2021, price: 7.01 }
-      { year: 2022, price: 8.33 }
-      { year: 2023, price: 10.91 }
-      { year: 2024, price: 15.09 }
-      { year: 2025, price: 19.04 }
+      { year: 2020, price: 6.11 },
+      { year: 2021, price: 7.01 },
+      { year: 2022, price: 8.33 },
+      { year: 2023, price: 10.91 },
+      { year: 2024, price: 15.09 },
+      { year: 2025, price: 19.04 },
       { year: 2026, price: 20.6 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.2, yield: 3.27, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.21, yield: 3.0, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.26, yield: 3.12, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.37, yield: 3.39, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.48, yield: 3.18, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.2, yield: 3.27, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.21, yield: 3.0, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.26, yield: 3.12, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.37, yield: 3.39, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.48, yield: 3.18, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.58, yield: 3.05, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -3934,20 +3934,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 69,
     kbRating: 70,
     priceHistory: [
-      { year: 2020, price: 3.49 }
-      { year: 2021, price: 3.97 }
-      { year: 2022, price: 4.81 }
-      { year: 2023, price: 6.33 }
-      { year: 2024, price: 8.31 }
-      { year: 2025, price: 9.46 }
+      { year: 2020, price: 3.49 },
+      { year: 2021, price: 3.97 },
+      { year: 2022, price: 4.81 },
+      { year: 2023, price: 6.33 },
+      { year: 2024, price: 8.31 },
+      { year: 2025, price: 9.46 },
       { year: 2026, price: 10.4 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.09, yield: 2.58, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.13, yield: 3.27, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.12, yield: 2.49, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.2, yield: 3.16, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.2, yield: 2.41, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.09, yield: 2.58, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.13, yield: 3.27, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.12, yield: 2.49, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.2, yield: 3.16, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.2, yield: 2.41, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.24, yield: 2.54, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -3998,20 +3998,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 78,
     kbRating: 72,
     priceHistory: [
-      { year: 2020, price: 234.73 }
-      { year: 2021, price: 258.41 }
-      { year: 2022, price: 314.2 }
-      { year: 2023, price: 419.27 }
-      { year: 2024, price: 532.9 }
-      { year: 2025, price: 639.45 }
+      { year: 2020, price: 234.73 },
+      { year: 2021, price: 258.41 },
+      { year: 2022, price: 314.2 },
+      { year: 2023, price: 419.27 },
+      { year: 2024, price: 532.9 },
+      { year: 2025, price: 639.45 },
       { year: 2026, price: 720 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 3.35, yield: 1.43, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 3.91, yield: 1.51, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 5.93, yield: 1.89, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 7.83, yield: 1.87, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 9.24, yield: 1.73, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 3.35, yield: 1.43, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 3.91, yield: 1.51, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 5.93, yield: 1.89, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 7.83, yield: 1.87, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 9.24, yield: 1.73, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 11.76, yield: 1.84, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -4062,20 +4062,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 76,
     kbRating: 82,
     priceHistory: [
-      { year: 2020, price: 8.55 }
-      { year: 2021, price: 9.68 }
-      { year: 2022, price: 11.33 }
-      { year: 2023, price: 13.96 }
-      { year: 2024, price: 18.08 }
-      { year: 2025, price: 21.84 }
+      { year: 2020, price: 8.55 },
+      { year: 2021, price: 9.68 },
+      { year: 2022, price: 11.33 },
+      { year: 2023, price: 13.96 },
+      { year: 2024, price: 18.08 },
+      { year: 2025, price: 21.84 },
       { year: 2026, price: 25.5 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.21, yield: 2.46, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.27, yield: 2.79, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.27, yield: 2.38, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.38, yield: 2.72, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.5, yield: 2.77, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.21, yield: 2.46, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.27, yield: 2.79, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.27, yield: 2.38, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.38, yield: 2.72, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.5, yield: 2.77, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.48, yield: 2.2, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -4126,20 +4126,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 55,
     kbRating: 65,
     priceHistory: [
-      { year: 2020, price: 44.85 }
-      { year: 2021, price: 53.31 }
-      { year: 2022, price: 63.53 }
-      { year: 2023, price: 76.69 }
-      { year: 2024, price: 109.38 }
-      { year: 2025, price: 123.85 }
+      { year: 2020, price: 44.85 },
+      { year: 2021, price: 53.31 },
+      { year: 2022, price: 63.53 },
+      { year: 2023, price: 76.69 },
+      { year: 2024, price: 109.38 },
+      { year: 2025, price: 123.85 },
       { year: 2026, price: 148.5 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 2.36, yield: 5.26, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 2.33, yield: 4.37, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 2.83, yield: 4.45, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 3.02, yield: 3.94, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 5.16, yield: 4.72, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 2.36, yield: 5.26, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 2.33, yield: 4.37, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 2.83, yield: 4.45, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 3.02, yield: 3.94, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 5.16, yield: 4.72, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 4.72, yield: 3.81, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -4190,20 +4190,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 72,
     kbRating: 71,
     priceHistory: [
-      { year: 2020, price: 71.1 }
-      { year: 2021, price: 80.01 }
-      { year: 2022, price: 90.26 }
-      { year: 2023, price: 110.03 }
-      { year: 2024, price: 147.92 }
-      { year: 2025, price: 178.06 }
+      { year: 2020, price: 71.1 },
+      { year: 2021, price: 80.01 },
+      { year: 2022, price: 90.26 },
+      { year: 2023, price: 110.03 },
+      { year: 2024, price: 147.92 },
+      { year: 2025, price: 178.06 },
       { year: 2026, price: 197.6 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 1.47, yield: 2.07, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 1.84, yield: 2.3, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 1.95, yield: 2.16, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 2.57, yield: 2.34, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 3.12, yield: 2.11, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 1.47, yield: 2.07, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 1.84, yield: 2.3, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 1.95, yield: 2.16, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 2.57, yield: 2.34, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 3.12, yield: 2.11, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 4.88, yield: 2.74, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -4254,20 +4254,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 75,
     kbRating: 63,
     priceHistory: [
-      { year: 2020, price: 22.29 }
-      { year: 2021, price: 24.85 }
-      { year: 2022, price: 30.15 }
-      { year: 2023, price: 35.13 }
-      { year: 2024, price: 50.75 }
-      { year: 2025, price: 62.94 }
+      { year: 2020, price: 22.29 },
+      { year: 2021, price: 24.85 },
+      { year: 2022, price: 30.15 },
+      { year: 2023, price: 35.13 },
+      { year: 2024, price: 50.75 },
+      { year: 2025, price: 62.94 },
       { year: 2026, price: 72.5 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.5, yield: 2.24, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.66, yield: 2.66, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.78, yield: 2.59, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.87, yield: 2.48, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 1.32, yield: 2.6, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.5, yield: 2.24, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.66, yield: 2.66, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.78, yield: 2.59, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.87, yield: 2.48, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 1.32, yield: 2.6, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 1.38, yield: 2.19, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -4318,20 +4318,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 56,
     kbRating: 60,
     priceHistory: [
-      { year: 2020, price: 54.53 }
-      { year: 2021, price: 60.63 }
-      { year: 2022, price: 73.3 }
-      { year: 2023, price: 86.17 }
-      { year: 2024, price: 124.3 }
-      { year: 2025, price: 147.46 }
+      { year: 2020, price: 54.53 },
+      { year: 2021, price: 60.63 },
+      { year: 2022, price: 73.3 },
+      { year: 2023, price: 86.17 },
+      { year: 2024, price: 124.3 },
+      { year: 2025, price: 147.46 },
       { year: 2026, price: 161.2 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 1.24, yield: 2.27, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 1.31, yield: 2.16, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 1.66, yield: 2.26, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 2.12, yield: 2.46, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 3.11, yield: 2.5, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 1.24, yield: 2.27, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 1.31, yield: 2.16, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 1.66, yield: 2.26, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 2.12, yield: 2.46, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 3.11, yield: 2.5, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 3.7, yield: 2.51, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -4382,20 +4382,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 75,
     kbRating: 65,
     priceHistory: [
-      { year: 2020, price: 2.45 }
-      { year: 2021, price: 2.71 }
-      { year: 2022, price: 3.25 }
-      { year: 2023, price: 4.36 }
-      { year: 2024, price: 6.16 }
-      { year: 2025, price: 7.23 }
+      { year: 2020, price: 2.45 },
+      { year: 2021, price: 2.71 },
+      { year: 2022, price: 3.25 },
+      { year: 2023, price: 4.36 },
+      { year: 2024, price: 6.16 },
+      { year: 2025, price: 7.23 },
       { year: 2026, price: 8 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.05, yield: 2.04, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.06, yield: 2.21, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.05, yield: 1.54, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.07, yield: 1.61, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.11, yield: 1.79, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.05, yield: 2.04, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.06, yield: 2.21, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.05, yield: 1.54, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.07, yield: 1.61, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.11, yield: 1.79, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.16, yield: 2.21, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -4446,20 +4446,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 60,
     kbRating: 78,
     priceHistory: [
-      { year: 2020, price: 8.39 }
-      { year: 2021, price: 9.53 }
-      { year: 2022, price: 11.27 }
-      { year: 2023, price: 14.45 }
-      { year: 2024, price: 18.7 }
-      { year: 2025, price: 22.97 }
+      { year: 2020, price: 8.39 },
+      { year: 2021, price: 9.53 },
+      { year: 2022, price: 11.27 },
+      { year: 2023, price: 14.45 },
+      { year: 2024, price: 18.7 },
+      { year: 2025, price: 22.97 },
       { year: 2026, price: 25.5 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.25, yield: 2.98, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.25, yield: 2.62, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.29, yield: 2.57, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.42, yield: 2.91, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.61, yield: 3.26, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.25, yield: 2.98, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.25, yield: 2.62, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.29, yield: 2.57, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.42, yield: 2.91, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.61, yield: 3.26, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.69, yield: 3.0, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -4510,20 +4510,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 67,
     kbRating: 70,
     priceHistory: [
-      { year: 2020, price: 988.89 }
-      { year: 2021, price: 1186.0 }
-      { year: 2022, price: 1437.21 }
-      { year: 2023, price: 1762.2 }
-      { year: 2024, price: 2298.43 }
-      { year: 2025, price: 2795.06 }
+      { year: 2020, price: 988.89 },
+      { year: 2021, price: 1186.0 },
+      { year: 2022, price: 1437.21 },
+      { year: 2023, price: 1762.2 },
+      { year: 2024, price: 2298.43 },
+      { year: 2025, price: 2795.06 },
       { year: 2026, price: 3125 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 41.99, yield: 4.25, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 46.98, yield: 3.96, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 79.34, yield: 5.52, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 79.75, yield: 4.53, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 126.16, yield: 5.49, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 41.99, yield: 4.25, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 46.98, yield: 3.96, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 79.34, yield: 5.52, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 79.75, yield: 4.53, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 126.16, yield: 5.49, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 156.96, yield: 5.62, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -4574,20 +4574,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 83,
     kbRating: 80,
     priceHistory: [
-      { year: 2020, price: 34.66 }
-      { year: 2021, price: 40.16 }
-      { year: 2022, price: 46.17 }
-      { year: 2023, price: 60.3 }
-      { year: 2024, price: 84.69 }
-      { year: 2025, price: 101.92 }
+      { year: 2020, price: 34.66 },
+      { year: 2021, price: 40.16 },
+      { year: 2022, price: 46.17 },
+      { year: 2023, price: 60.3 },
+      { year: 2024, price: 84.69 },
+      { year: 2025, price: 101.92 },
       { year: 2026, price: 114.45 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 1.21, yield: 3.49, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 1.15, yield: 2.86, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 1.58, yield: 3.42, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 2.27, yield: 3.76, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 2.89, yield: 3.41, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 1.21, yield: 3.49, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 1.15, yield: 2.86, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 1.58, yield: 3.42, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 2.27, yield: 3.76, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 2.89, yield: 3.41, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 3.29, yield: 3.23, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -4638,20 +4638,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 81,
     kbRating: 80,
     priceHistory: [
-      { year: 2020, price: 45.0 }
-      { year: 2021, price: 53.05 }
-      { year: 2022, price: 61.84 }
-      { year: 2023, price: 75.53 }
-      { year: 2024, price: 101.88 }
-      { year: 2025, price: 117.26 }
+      { year: 2020, price: 45.0 },
+      { year: 2021, price: 53.05 },
+      { year: 2022, price: 61.84 },
+      { year: 2023, price: 75.53 },
+      { year: 2024, price: 101.88 },
+      { year: 2025, price: 117.26 },
       { year: 2026, price: 135 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 2.09, yield: 4.64, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 2.35, yield: 4.43, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 2.54, yield: 4.11, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 3.27, yield: 4.33, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 5.14, yield: 5.05, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 2.09, yield: 4.64, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 2.35, yield: 4.43, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 2.54, yield: 4.11, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 3.27, yield: 4.33, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 5.14, yield: 5.05, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 4.75, yield: 4.05, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -4702,20 +4702,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 63,
     kbRating: 61,
     priceHistory: [
-      { year: 2020, price: 28.79 }
-      { year: 2021, price: 34.06 }
-      { year: 2022, price: 38.15 }
-      { year: 2023, price: 45.5 }
-      { year: 2024, price: 59.96 }
-      { year: 2025, price: 69.92 }
+      { year: 2020, price: 28.79 },
+      { year: 2021, price: 34.06 },
+      { year: 2022, price: 38.15 },
+      { year: 2023, price: 45.5 },
+      { year: 2024, price: 59.96 },
+      { year: 2025, price: 69.92 },
       { year: 2026, price: 79.4 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 1.4, yield: 4.86, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 1.62, yield: 4.76, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 1.71, yield: 4.48, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 2.23, yield: 4.9, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 2.38, yield: 3.97, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 1.4, yield: 4.86, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 1.62, yield: 4.76, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 1.71, yield: 4.48, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 2.23, yield: 4.9, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 2.38, yield: 3.97, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 3.41, yield: 4.88, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -4766,20 +4766,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 78,
     kbRating: 75,
     priceHistory: [
-      { year: 2020, price: 1.61 }
-      { year: 2021, price: 1.83 }
-      { year: 2022, price: 2.18 }
-      { year: 2023, price: 2.71 }
-      { year: 2024, price: 3.43 }
-      { year: 2025, price: 3.97 }
+      { year: 2020, price: 1.61 },
+      { year: 2021, price: 1.83 },
+      { year: 2022, price: 2.18 },
+      { year: 2023, price: 2.71 },
+      { year: 2024, price: 3.43 },
+      { year: 2025, price: 3.97 },
       { year: 2026, price: 4.75 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.05, yield: 3.11, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.07, yield: 3.83, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.07, yield: 3.21, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.09, yield: 3.32, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.09, yield: 2.62, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.05, yield: 3.11, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.07, yield: 3.83, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.07, yield: 3.21, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.09, yield: 3.32, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.09, yield: 2.62, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.14, yield: 3.53, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -4830,20 +4830,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 80,
     kbRating: 76,
     priceHistory: [
-      { year: 2020, price: 32.09 }
-      { year: 2021, price: 37.45 }
-      { year: 2022, price: 42.43 }
-      { year: 2023, price: 54.05 }
-      { year: 2024, price: 74.2 }
-      { year: 2025, price: 93.45 }
+      { year: 2020, price: 32.09 },
+      { year: 2021, price: 37.45 },
+      { year: 2022, price: 42.43 },
+      { year: 2023, price: 54.05 },
+      { year: 2024, price: 74.2 },
+      { year: 2025, price: 93.45 },
       { year: 2026, price: 103 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 1.45, yield: 4.52, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 1.39, yield: 3.71, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 1.75, yield: 4.12, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 1.99, yield: 3.68, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 2.7, yield: 3.64, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 1.45, yield: 4.52, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 1.39, yield: 3.71, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 1.75, yield: 4.12, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 1.99, yield: 3.68, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 2.7, yield: 3.64, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 3.87, yield: 4.14, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -4894,20 +4894,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 66,
     kbRating: 58,
     priceHistory: [
-      { year: 2020, price: 0.32 }
-      { year: 2021, price: 0.34 }
-      { year: 2022, price: 0.39 }
-      { year: 2023, price: 0.48 }
-      { year: 2024, price: 0.6 }
-      { year: 2025, price: 0.68 }
+      { year: 2020, price: 0.32 },
+      { year: 2021, price: 0.34 },
+      { year: 2022, price: 0.39 },
+      { year: 2023, price: 0.48 },
+      { year: 2024, price: 0.6 },
+      { year: 2025, price: 0.68 },
       { year: 2026, price: 0.76 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.0, yield: 0.0, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.0, yield: 0.0, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.0, yield: 0.0, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.01, yield: 2.08, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.01, yield: 1.67, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.0, yield: 0.0, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.0, yield: 0.0, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.0, yield: 0.0, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.01, yield: 2.08, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.01, yield: 1.67, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.01, yield: 1.47, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -4958,20 +4958,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 87,
     kbRating: 82,
     priceHistory: [
-      { year: 2020, price: 12.12 }
-      { year: 2021, price: 13.9 }
-      { year: 2022, price: 16.61 }
-      { year: 2023, price: 21.13 }
-      { year: 2024, price: 28.92 }
-      { year: 2025, price: 33.03 }
+      { year: 2020, price: 12.12 },
+      { year: 2021, price: 13.9 },
+      { year: 2022, price: 16.61 },
+      { year: 2023, price: 21.13 },
+      { year: 2024, price: 28.92 },
+      { year: 2025, price: 33.03 },
       { year: 2026, price: 37.15 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.37, yield: 3.05, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.52, yield: 3.74, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.61, yield: 3.67, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.77, yield: 3.64, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 1.04, yield: 3.6, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.37, yield: 3.05, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.52, yield: 3.74, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.61, yield: 3.67, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.77, yield: 3.64, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 1.04, yield: 3.6, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.95, yield: 2.88, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -5022,20 +5022,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 52,
     kbRating: 69,
     priceHistory: [
-      { year: 2020, price: 466.49 }
-      { year: 2021, price: 547.26 }
-      { year: 2022, price: 625.09 }
-      { year: 2023, price: 767.69 }
-      { year: 2024, price: 1037.67 }
-      { year: 2025, price: 1308.21 }
+      { year: 2020, price: 466.49 },
+      { year: 2021, price: 547.26 },
+      { year: 2022, price: 625.09 },
+      { year: 2023, price: 767.69 },
+      { year: 2024, price: 1037.67 },
+      { year: 2025, price: 1308.21 },
       { year: 2026, price: 1418 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 18.45, yield: 3.96, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 19.37, yield: 3.54, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 26.5, yield: 4.24, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 30.5, yield: 3.97, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 37.75, yield: 3.64, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 18.45, yield: 3.96, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 19.37, yield: 3.54, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 26.5, yield: 4.24, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 30.5, yield: 3.97, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 37.75, yield: 3.64, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 47.52, yield: 3.63, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -5086,20 +5086,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 79,
     kbRating: 84,
     priceHistory: [
-      { year: 2020, price: 0.56 }
-      { year: 2021, price: 0.64 }
-      { year: 2022, price: 0.76 }
-      { year: 2023, price: 0.96 }
-      { year: 2024, price: 1.29 }
-      { year: 2025, price: 1.47 }
+      { year: 2020, price: 0.56 },
+      { year: 2021, price: 0.64 },
+      { year: 2022, price: 0.76 },
+      { year: 2023, price: 0.96 },
+      { year: 2024, price: 1.29 },
+      { year: 2025, price: 1.47 },
       { year: 2026, price: 1.6 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.01, yield: 1.79, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.02, yield: 3.12, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.02, yield: 2.63, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.03, yield: 3.12, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.04, yield: 3.1, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.01, yield: 1.79, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.02, yield: 3.12, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.02, yield: 2.63, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.03, yield: 3.12, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.04, yield: 3.1, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.04, yield: 2.72, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -5150,20 +5150,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 63,
     kbRating: 59,
     priceHistory: [
-      { year: 2020, price: 0.63 }
-      { year: 2021, price: 0.69 }
-      { year: 2022, price: 0.78 }
-      { year: 2023, price: 0.98 }
-      { year: 2024, price: 1.24 }
-      { year: 2025, price: 1.55 }
+      { year: 2020, price: 0.63 },
+      { year: 2021, price: 0.69 },
+      { year: 2022, price: 0.78 },
+      { year: 2023, price: 0.98 },
+      { year: 2024, price: 1.24 },
+      { year: 2025, price: 1.55 },
       { year: 2026, price: 1.83 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.01, yield: 1.59, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.01, yield: 1.45, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.01, yield: 1.28, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.02, yield: 2.04, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.01, yield: 0.81, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.01, yield: 1.59, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.01, yield: 1.45, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.01, yield: 1.28, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.02, yield: 2.04, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.01, yield: 0.81, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.02, yield: 1.29, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -5214,20 +5214,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 57,
     kbRating: 64,
     priceHistory: [
-      { year: 2020, price: 11.12 }
-      { year: 2021, price: 12.27 }
-      { year: 2022, price: 14.27 }
-      { year: 2023, price: 17.16 }
-      { year: 2024, price: 22.66 }
-      { year: 2025, price: 25.9 }
+      { year: 2020, price: 11.12 },
+      { year: 2021, price: 12.27 },
+      { year: 2022, price: 14.27 },
+      { year: 2023, price: 17.16 },
+      { year: 2024, price: 22.66 },
+      { year: 2025, price: 25.9 },
       { year: 2026, price: 30.4 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.23, yield: 2.07, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.22, yield: 1.79, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.3, yield: 2.1, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.35, yield: 2.04, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.47, yield: 2.07, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.23, yield: 2.07, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.22, yield: 1.79, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.3, yield: 2.1, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.35, yield: 2.04, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.47, yield: 2.07, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.41, yield: 1.58, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -5278,20 +5278,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 83,
     kbRating: 82,
     priceHistory: [
-      { year: 2020, price: 702.96 }
-      { year: 2021, price: 817.56 }
-      { year: 2022, price: 937.6 }
-      { year: 2023, price: 1175.52 }
-      { year: 2024, price: 1618.06 }
-      { year: 2025, price: 1923.69 }
+      { year: 2020, price: 702.96 },
+      { year: 2021, price: 817.56 },
+      { year: 2022, price: 937.6 },
+      { year: 2023, price: 1175.52 },
+      { year: 2024, price: 1618.06 },
+      { year: 2025, price: 1923.69 },
       { year: 2026, price: 2300 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 21.18, yield: 3.01, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 28.02, yield: 3.43, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 38.72, yield: 4.13, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 47.43, yield: 4.03, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 62.0, yield: 3.83, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 21.18, yield: 3.01, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 28.02, yield: 3.43, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 38.72, yield: 4.13, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 47.43, yield: 4.03, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 62.0, yield: 3.83, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 79.64, yield: 4.14, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -5342,20 +5342,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 73,
     kbRating: 75,
     priceHistory: [
-      { year: 2020, price: 29.96 }
-      { year: 2021, price: 34.11 }
-      { year: 2022, price: 38.82 }
-      { year: 2023, price: 51.87 }
-      { year: 2024, price: 68.71 }
-      { year: 2025, price: 81.24 }
+      { year: 2020, price: 29.96 },
+      { year: 2021, price: 34.11 },
+      { year: 2022, price: 38.82 },
+      { year: 2023, price: 51.87 },
+      { year: 2024, price: 68.71 },
+      { year: 2025, price: 81.24 },
       { year: 2026, price: 90 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.85, yield: 2.84, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 1.02, yield: 2.99, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 1.17, yield: 3.01, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 1.73, yield: 3.34, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 2.26, yield: 3.29, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.85, yield: 2.84, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 1.02, yield: 2.99, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 1.17, yield: 3.01, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 1.73, yield: 3.34, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 2.26, yield: 3.29, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 2.26, yield: 2.78, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -5406,20 +5406,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 86,
     kbRating: 64,
     priceHistory: [
-      { year: 2020, price: 8.25 }
-      { year: 2021, price: 8.91 }
-      { year: 2022, price: 10.13 }
-      { year: 2023, price: 13.37 }
-      { year: 2024, price: 17.0 }
-      { year: 2025, price: 20.78 }
+      { year: 2020, price: 8.25 },
+      { year: 2021, price: 8.91 },
+      { year: 2022, price: 10.13 },
+      { year: 2023, price: 13.37 },
+      { year: 2024, price: 17.0 },
+      { year: 2025, price: 20.78 },
       { year: 2026, price: 24.55 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.08, yield: 0.97, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.1, yield: 1.12, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.12, yield: 1.18, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.14, yield: 1.05, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.16, yield: 0.94, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.08, yield: 0.97, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.1, yield: 1.12, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.12, yield: 1.18, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.14, yield: 1.05, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.16, yield: 0.94, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.21, yield: 1.01, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -5470,20 +5470,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 73,
     kbRating: 70,
     priceHistory: [
-      { year: 2020, price: 0.31 }
-      { year: 2021, price: 0.35 }
-      { year: 2022, price: 0.42 }
-      { year: 2023, price: 0.51 }
-      { year: 2024, price: 0.71 }
-      { year: 2025, price: 0.85 }
+      { year: 2020, price: 0.31 },
+      { year: 2021, price: 0.35 },
+      { year: 2022, price: 0.42 },
+      { year: 2023, price: 0.51 },
+      { year: 2024, price: 0.71 },
+      { year: 2025, price: 0.85 },
       { year: 2026, price: 0.92 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.01, yield: 3.23, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.01, yield: 2.86, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.01, yield: 2.38, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.01, yield: 1.96, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.02, yield: 2.82, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.01, yield: 3.23, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.01, yield: 2.86, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.01, yield: 2.38, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.01, yield: 1.96, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.02, yield: 2.82, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.02, yield: 2.35, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -5534,20 +5534,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 68,
     kbRating: 72,
     priceHistory: [
-      { year: 2020, price: 2.92 }
-      { year: 2021, price: 3.38 }
-      { year: 2022, price: 3.77 }
-      { year: 2023, price: 4.92 }
-      { year: 2024, price: 6.43 }
-      { year: 2025, price: 8.17 }
+      { year: 2020, price: 2.92 },
+      { year: 2021, price: 3.38 },
+      { year: 2022, price: 3.77 },
+      { year: 2023, price: 4.92 },
+      { year: 2024, price: 6.43 },
+      { year: 2025, price: 8.17 },
       { year: 2026, price: 9.25 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.1, yield: 3.42, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.1, yield: 2.96, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.15, yield: 3.98, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.17, yield: 3.46, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.26, yield: 4.04, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.1, yield: 3.42, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.1, yield: 2.96, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.15, yield: 3.98, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.17, yield: 3.46, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.26, yield: 4.04, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.23, yield: 2.82, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -5598,20 +5598,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 63,
     kbRating: 68,
     priceHistory: [
-      { year: 2020, price: 11.41 }
-      { year: 2021, price: 13.29 }
-      { year: 2022, price: 15.2 }
-      { year: 2023, price: 18.74 }
-      { year: 2024, price: 24.2 }
-      { year: 2025, price: 29.47 }
+      { year: 2020, price: 11.41 },
+      { year: 2021, price: 13.29 },
+      { year: 2022, price: 15.2 },
+      { year: 2023, price: 18.74 },
+      { year: 2024, price: 24.2 },
+      { year: 2025, price: 29.47 },
       { year: 2026, price: 33.05 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.4, yield: 3.51, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.58, yield: 4.36, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.49, yield: 3.22, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.61, yield: 3.26, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.78, yield: 3.22, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.4, yield: 3.51, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.58, yield: 4.36, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.49, yield: 3.22, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.61, yield: 3.26, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.78, yield: 3.22, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.98, yield: 3.33, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -5662,20 +5662,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 52,
     kbRating: 63,
     priceHistory: [
-      { year: 2020, price: 4283.37 }
-      { year: 2021, price: 4750.09 }
-      { year: 2022, price: 5332.17 }
-      { year: 2023, price: 6165.49 }
-      { year: 2024, price: 8641.01 }
-      { year: 2025, price: 10061.76 }
+      { year: 2020, price: 4283.37 },
+      { year: 2021, price: 4750.09 },
+      { year: 2022, price: 5332.17 },
+      { year: 2023, price: 6165.49 },
+      { year: 2024, price: 8641.01 },
+      { year: 2025, price: 10061.76 },
       { year: 2026, price: 11363.9 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 89.55, yield: 2.09, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 106.16, yield: 2.23, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 108.55, yield: 2.04, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 119.7, yield: 1.94, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 159.29, yield: 1.84, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 89.55, yield: 2.09, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 106.16, yield: 2.23, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 108.55, yield: 2.04, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 119.7, yield: 1.94, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 159.29, yield: 1.84, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 219.1, yield: 2.18, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -5726,20 +5726,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 63,
     kbRating: 77,
     priceHistory: [
-      { year: 2020, price: 133.6 }
-      { year: 2021, price: 151.94 }
-      { year: 2022, price: 180.76 }
-      { year: 2023, price: 235.6 }
-      { year: 2024, price: 305.05 }
-      { year: 2025, price: 356.0 }
+      { year: 2020, price: 133.6 },
+      { year: 2021, price: 151.94 },
+      { year: 2022, price: 180.76 },
+      { year: 2023, price: 235.6 },
+      { year: 2024, price: 305.05 },
+      { year: 2025, price: 356.0 },
       { year: 2026, price: 418.75 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 3.3, yield: 2.47, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 4.31, yield: 2.84, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 4.44, yield: 2.46, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 5.82, yield: 2.47, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 8.8, yield: 2.88, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 3.3, yield: 2.47, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 4.31, yield: 2.84, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 4.44, yield: 2.46, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 5.82, yield: 2.47, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 8.8, yield: 2.88, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 11.1, yield: 3.12, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -5790,20 +5790,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 61,
     kbRating: 70,
     priceHistory: [
-      { year: 2020, price: 54.49 }
-      { year: 2021, price: 60.57 }
-      { year: 2022, price: 71.16 }
-      { year: 2023, price: 84.32 }
-      { year: 2024, price: 114.85 }
-      { year: 2025, price: 144.88 }
+      { year: 2020, price: 54.49 },
+      { year: 2021, price: 60.57 },
+      { year: 2022, price: 71.16 },
+      { year: 2023, price: 84.32 },
+      { year: 2024, price: 114.85 },
+      { year: 2025, price: 144.88 },
       { year: 2026, price: 171.2 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 1.15, yield: 2.11, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 1.03, yield: 1.7, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 1.5, yield: 2.11, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 1.56, yield: 1.85, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 2.65, yield: 2.31, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 1.15, yield: 2.11, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 1.03, yield: 1.7, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 1.5, yield: 2.11, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 1.56, yield: 1.85, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 2.65, yield: 2.31, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 2.64, yield: 1.82, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -5854,20 +5854,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 70,
     kbRating: 67,
     priceHistory: [
-      { year: 2020, price: 0.75 }
-      { year: 2021, price: 0.87 }
-      { year: 2022, price: 1.04 }
-      { year: 2023, price: 1.27 }
-      { year: 2024, price: 1.62 }
-      { year: 2025, price: 1.9 }
+      { year: 2020, price: 0.75 },
+      { year: 2021, price: 0.87 },
+      { year: 2022, price: 1.04 },
+      { year: 2023, price: 1.27 },
+      { year: 2024, price: 1.62 },
+      { year: 2025, price: 1.9 },
       { year: 2026, price: 2.06 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.03, yield: 4.0, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.03, yield: 3.45, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.04, yield: 3.85, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.05, yield: 3.94, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.07, yield: 4.32, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.03, yield: 4.0, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.03, yield: 3.45, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.04, yield: 3.85, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.05, yield: 3.94, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.07, yield: 4.32, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.06, yield: 3.16, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -5918,20 +5918,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 80,
     kbRating: 63,
     priceHistory: [
-      { year: 2020, price: 54.07 }
-      { year: 2021, price: 61.27 }
-      { year: 2022, price: 67.41 }
-      { year: 2023, price: 81.03 }
-      { year: 2024, price: 115.63 }
-      { year: 2025, price: 137.33 }
+      { year: 2020, price: 54.07 },
+      { year: 2021, price: 61.27 },
+      { year: 2022, price: 67.41 },
+      { year: 2023, price: 81.03 },
+      { year: 2024, price: 115.63 },
+      { year: 2025, price: 137.33 },
       { year: 2026, price: 163 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 1.76, yield: 3.26, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 1.78, yield: 2.91, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 2.0, yield: 2.97, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 2.19, yield: 2.7, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 3.51, yield: 3.04, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 1.76, yield: 3.26, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 1.78, yield: 2.91, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 2.0, yield: 2.97, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 2.19, yield: 2.7, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 3.51, yield: 3.04, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 3.88, yield: 2.83, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -5982,20 +5982,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 60,
     kbRating: 66,
     priceHistory: [
-      { year: 2020, price: 2.48 }
-      { year: 2021, price: 2.93 }
-      { year: 2022, price: 3.34 }
-      { year: 2023, price: 3.96 }
-      { year: 2024, price: 5.61 }
-      { year: 2025, price: 6.62 }
+      { year: 2020, price: 2.48 },
+      { year: 2021, price: 2.93 },
+      { year: 2022, price: 3.34 },
+      { year: 2023, price: 3.96 },
+      { year: 2024, price: 5.61 },
+      { year: 2025, price: 6.62 },
       { year: 2026, price: 7.45 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.11, yield: 4.44, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.13, yield: 4.44, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.12, yield: 3.59, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.19, yield: 4.8, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.26, yield: 4.63, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.11, yield: 4.44, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.13, yield: 4.44, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.12, yield: 3.59, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.19, yield: 4.8, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.26, yield: 4.63, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.33, yield: 4.98, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -6046,20 +6046,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 59,
     kbRating: 63,
     priceHistory: [
-      { year: 2020, price: 1.11 }
-      { year: 2021, price: 1.21 }
-      { year: 2022, price: 1.36 }
-      { year: 2023, price: 1.79 }
-      { year: 2024, price: 2.46 }
-      { year: 2025, price: 3.12 }
+      { year: 2020, price: 1.11 },
+      { year: 2021, price: 1.21 },
+      { year: 2022, price: 1.36 },
+      { year: 2023, price: 1.79 },
+      { year: 2024, price: 2.46 },
+      { year: 2025, price: 3.12 },
       { year: 2026, price: 3.61 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.02, yield: 1.8, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.02, yield: 1.65, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.02, yield: 1.47, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.03, yield: 1.68, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.04, yield: 1.63, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.02, yield: 1.8, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.02, yield: 1.65, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.02, yield: 1.47, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.03, yield: 1.68, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.04, yield: 1.63, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.04, yield: 1.28, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -6110,20 +6110,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 54,
     kbRating: 68,
     priceHistory: [
-      { year: 2020, price: 6.47 }
-      { year: 2021, price: 7.69 }
-      { year: 2022, price: 9.38 }
-      { year: 2023, price: 12.02 }
-      { year: 2024, price: 16.79 }
-      { year: 2025, price: 20.43 }
+      { year: 2020, price: 6.47 },
+      { year: 2021, price: 7.69 },
+      { year: 2022, price: 9.38 },
+      { year: 2023, price: 12.02 },
+      { year: 2024, price: 16.79 },
+      { year: 2025, price: 20.43 },
       { year: 2026, price: 23.5 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.26, yield: 4.02, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.4, yield: 5.2, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.43, yield: 4.58, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.65, yield: 5.41, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.63, yield: 3.75, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.26, yield: 4.02, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.4, yield: 5.2, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.43, yield: 4.58, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.65, yield: 5.41, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.63, yield: 3.75, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.93, yield: 4.55, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -6174,20 +6174,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 77,
     kbRating: 78,
     priceHistory: [
-      { year: 2020, price: 230.21 }
-      { year: 2021, price: 259.28 }
-      { year: 2022, price: 314.64 }
-      { year: 2023, price: 388.65 }
-      { year: 2024, price: 490.89 }
-      { year: 2025, price: 589.58 }
+      { year: 2020, price: 230.21 },
+      { year: 2021, price: 259.28 },
+      { year: 2022, price: 314.64 },
+      { year: 2023, price: 388.65 },
+      { year: 2024, price: 490.89 },
+      { year: 2025, price: 589.58 },
       { year: 2026, price: 640 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 6.22, yield: 2.7, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 5.54, yield: 2.14, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 9.18, yield: 2.92, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 11.21, yield: 2.88, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 10.5, yield: 2.14, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 6.22, yield: 2.7, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 5.54, yield: 2.14, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 9.18, yield: 2.92, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 11.21, yield: 2.88, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 10.5, yield: 2.14, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 16.62, yield: 2.82, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -6238,20 +6238,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 70,
     kbRating: 77,
     priceHistory: [
-      { year: 2020, price: 72.95 }
-      { year: 2021, price: 82.79 }
-      { year: 2022, price: 97.72 }
-      { year: 2023, price: 129.23 }
-      { year: 2024, price: 167.28 }
-      { year: 2025, price: 192.96 }
+      { year: 2020, price: 72.95 },
+      { year: 2021, price: 82.79 },
+      { year: 2022, price: 97.72 },
+      { year: 2023, price: 129.23 },
+      { year: 2024, price: 167.28 },
+      { year: 2025, price: 192.96 },
       { year: 2026, price: 223.3 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 2.24, yield: 3.07, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 2.21, yield: 2.67, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 2.8, yield: 2.87, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 4.39, yield: 3.4, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 5.56, yield: 3.32, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 2.24, yield: 3.07, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 2.21, yield: 2.67, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 2.8, yield: 2.87, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 4.39, yield: 3.4, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 5.56, yield: 3.32, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 5.21, yield: 2.7, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -6302,20 +6302,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 66,
     kbRating: 56,
     priceHistory: [
-      { year: 2020, price: 13.87 }
-      { year: 2021, price: 15.03 }
-      { year: 2022, price: 17.83 }
-      { year: 2023, price: 21.09 }
-      { year: 2024, price: 26.37 }
-      { year: 2025, price: 32.71 }
+      { year: 2020, price: 13.87 },
+      { year: 2021, price: 15.03 },
+      { year: 2022, price: 17.83 },
+      { year: 2023, price: 21.09 },
+      { year: 2024, price: 26.37 },
+      { year: 2025, price: 32.71 },
       { year: 2026, price: 37.95 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.15, yield: 1.08, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.17, yield: 1.13, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.2, yield: 1.12, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.3, yield: 1.42, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.35, yield: 1.33, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.15, yield: 1.08, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.17, yield: 1.13, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.2, yield: 1.12, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.3, yield: 1.42, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.35, yield: 1.33, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.42, yield: 1.28, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -6366,20 +6366,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 70,
     kbRating: 62,
     priceHistory: [
-      { year: 2020, price: 1.04 }
-      { year: 2021, price: 1.25 }
-      { year: 2022, price: 1.41 }
-      { year: 2023, price: 1.83 }
-      { year: 2024, price: 2.4 }
-      { year: 2025, price: 2.7 }
+      { year: 2020, price: 1.04 },
+      { year: 2021, price: 1.25 },
+      { year: 2022, price: 1.41 },
+      { year: 2023, price: 1.83 },
+      { year: 2024, price: 2.4 },
+      { year: 2025, price: 2.7 },
       { year: 2026, price: 2.96 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.04, yield: 3.85, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.06, yield: 4.8, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.08, yield: 5.67, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.08, yield: 4.37, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.13, yield: 5.42, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.04, yield: 3.85, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.06, yield: 4.8, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.08, yield: 5.67, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.08, yield: 4.37, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.13, yield: 5.42, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.13, yield: 4.81, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -6430,20 +6430,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 50,
     kbRating: 72,
     priceHistory: [
-      { year: 2020, price: 80.48 }
-      { year: 2021, price: 93.53 }
-      { year: 2022, price: 107.15 }
-      { year: 2023, price: 134.49 }
-      { year: 2024, price: 182.68 }
-      { year: 2025, price: 204.96 }
+      { year: 2020, price: 80.48 },
+      { year: 2021, price: 93.53 },
+      { year: 2022, price: 107.15 },
+      { year: 2023, price: 134.49 },
+      { year: 2024, price: 182.68 },
+      { year: 2025, price: 204.96 },
       { year: 2026, price: 245.5 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 3.42, yield: 4.25, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 3.01, yield: 3.22, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 3.68, yield: 3.43, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 4.13, yield: 3.07, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 6.92, yield: 3.79, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 3.42, yield: 4.25, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 3.01, yield: 3.22, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 3.68, yield: 3.43, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 4.13, yield: 3.07, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 6.92, yield: 3.79, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 6.06, yield: 2.96, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -6494,20 +6494,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 69,
     kbRating: 66,
     priceHistory: [
-      { year: 2020, price: 1.28 }
-      { year: 2021, price: 1.43 }
-      { year: 2022, price: 1.71 }
-      { year: 2023, price: 2.07 }
-      { year: 2024, price: 3.0 }
-      { year: 2025, price: 3.37 }
+      { year: 2020, price: 1.28 },
+      { year: 2021, price: 1.43 },
+      { year: 2022, price: 1.71 },
+      { year: 2023, price: 2.07 },
+      { year: 2024, price: 3.0 },
+      { year: 2025, price: 3.37 },
       { year: 2026, price: 3.69 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.03, yield: 2.34, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.03, yield: 2.1, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.03, yield: 1.75, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.05, yield: 2.42, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.05, yield: 1.67, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.03, yield: 2.34, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.03, yield: 2.1, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.03, yield: 1.75, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.05, yield: 2.42, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.05, yield: 1.67, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.06, yield: 1.78, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -6558,20 +6558,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 51,
     kbRating: 72,
     priceHistory: [
-      { year: 2020, price: 47.54 }
-      { year: 2021, price: 56.91 }
-      { year: 2022, price: 68.72 }
-      { year: 2023, price: 89.47 }
-      { year: 2024, price: 129.6 }
-      { year: 2025, price: 156.31 }
+      { year: 2020, price: 47.54 },
+      { year: 2021, price: 56.91 },
+      { year: 2022, price: 68.72 },
+      { year: 2023, price: 89.47 },
+      { year: 2024, price: 129.6 },
+      { year: 2025, price: 156.31 },
       { year: 2026, price: 185 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 2.1, yield: 4.42, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 3.0, yield: 5.27, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 2.98, yield: 4.34, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 4.42, yield: 4.94, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 6.28, yield: 4.85, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 2.1, yield: 4.42, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 3.0, yield: 5.27, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 2.98, yield: 4.34, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 4.42, yield: 4.94, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 6.28, yield: 4.85, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 7.83, yield: 5.01, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -6622,20 +6622,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 75,
     kbRating: 73,
     priceHistory: [
-      { year: 2020, price: 11.52 }
-      { year: 2021, price: 13.72 }
-      { year: 2022, price: 16.43 }
-      { year: 2023, price: 21.26 }
-      { year: 2024, price: 27.19 }
-      { year: 2025, price: 32.16 }
+      { year: 2020, price: 11.52 },
+      { year: 2021, price: 13.72 },
+      { year: 2022, price: 16.43 },
+      { year: 2023, price: 21.26 },
+      { year: 2024, price: 27.19 },
+      { year: 2025, price: 32.16 },
       { year: 2026, price: 37.9 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.62, yield: 5.38, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.66, yield: 4.81, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.86, yield: 5.23, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.97, yield: 4.56, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 1.3, yield: 4.78, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.62, yield: 5.38, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.66, yield: 4.81, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.86, yield: 5.23, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.97, yield: 4.56, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 1.3, yield: 4.78, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 1.23, yield: 3.82, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -6686,20 +6686,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 62,
     kbRating: 58,
     priceHistory: [
-      { year: 2020, price: 5.17 }
-      { year: 2021, price: 5.71 }
-      { year: 2022, price: 6.28 }
-      { year: 2023, price: 8.13 }
-      { year: 2024, price: 11.37 }
-      { year: 2025, price: 14.47 }
+      { year: 2020, price: 5.17 },
+      { year: 2021, price: 5.71 },
+      { year: 2022, price: 6.28 },
+      { year: 2023, price: 8.13 },
+      { year: 2024, price: 11.37 },
+      { year: 2025, price: 14.47 },
       { year: 2026, price: 16.3 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.11, yield: 2.13, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.11, yield: 1.93, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.11, yield: 1.75, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.18, yield: 2.21, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.18, yield: 1.58, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.11, yield: 2.13, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.11, yield: 1.93, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.11, yield: 1.75, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.18, yield: 2.21, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.18, yield: 1.58, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.26, yield: 1.8, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -6750,20 +6750,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 62,
     kbRating: 70,
     priceHistory: [
-      { year: 2020, price: 22.26 }
-      { year: 2021, price: 26.36 }
-      { year: 2022, price: 31.21 }
-      { year: 2023, price: 39.49 }
-      { year: 2024, price: 51.64 }
-      { year: 2025, price: 59.47 }
+      { year: 2020, price: 22.26 },
+      { year: 2021, price: 26.36 },
+      { year: 2022, price: 31.21 },
+      { year: 2023, price: 39.49 },
+      { year: 2024, price: 51.64 },
+      { year: 2025, price: 59.47 },
       { year: 2026, price: 70 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.81, yield: 3.64, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 1.09, yield: 4.14, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 1.14, yield: 3.65, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 1.63, yield: 4.13, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 2.53, yield: 4.9, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.81, yield: 3.64, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 1.09, yield: 4.14, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 1.14, yield: 3.65, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 1.63, yield: 4.13, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 2.53, yield: 4.9, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 2.93, yield: 4.93, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -6814,20 +6814,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 86,
     kbRating: 75,
     priceHistory: [
-      { year: 2020, price: 41.24 }
-      { year: 2021, price: 46.33 }
-      { year: 2022, price: 54.81 }
-      { year: 2023, price: 69.2 }
-      { year: 2024, price: 98.62 }
-      { year: 2025, price: 110.47 }
+      { year: 2020, price: 41.24 },
+      { year: 2021, price: 46.33 },
+      { year: 2022, price: 54.81 },
+      { year: 2023, price: 69.2 },
+      { year: 2024, price: 98.62 },
+      { year: 2025, price: 110.47 },
       { year: 2026, price: 126 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.89, yield: 2.16, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 1.13, yield: 2.44, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 1.21, yield: 2.21, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 1.39, yield: 2.01, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 2.57, yield: 2.61, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.89, yield: 2.16, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 1.13, yield: 2.44, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 1.21, yield: 2.21, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 1.39, yield: 2.01, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 2.57, yield: 2.61, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 3.19, yield: 2.89, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -6878,20 +6878,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 51,
     kbRating: 73,
     priceHistory: [
-      { year: 2020, price: 6.96 }
-      { year: 2021, price: 7.98 }
-      { year: 2022, price: 9.22 }
-      { year: 2023, price: 12.25 }
-      { year: 2024, price: 17.16 }
-      { year: 2025, price: 21.91 }
+      { year: 2020, price: 6.96 },
+      { year: 2021, price: 7.98 },
+      { year: 2022, price: 9.22 },
+      { year: 2023, price: 12.25 },
+      { year: 2024, price: 17.16 },
+      { year: 2025, price: 21.91 },
       { year: 2026, price: 23.75 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.23, yield: 3.3, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.29, yield: 3.63, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.32, yield: 3.47, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.39, yield: 3.18, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.55, yield: 3.21, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.23, yield: 3.3, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.29, yield: 3.63, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.32, yield: 3.47, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.39, yield: 3.18, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.55, yield: 3.21, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.65, yield: 2.97, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -6942,20 +6942,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 54,
     kbRating: 70,
     priceHistory: [
-      { year: 2020, price: 1.23 }
-      { year: 2021, price: 1.47 }
-      { year: 2022, price: 1.71 }
-      { year: 2023, price: 1.99 }
-      { year: 2024, price: 2.62 }
-      { year: 2025, price: 3.29 }
+      { year: 2020, price: 1.23 },
+      { year: 2021, price: 1.47 },
+      { year: 2022, price: 1.71 },
+      { year: 2023, price: 1.99 },
+      { year: 2024, price: 2.62 },
+      { year: 2025, price: 3.29 },
       { year: 2026, price: 3.6 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.06, yield: 4.88, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.08, yield: 5.44, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.08, yield: 4.68, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.1, yield: 5.03, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.1, yield: 3.82, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.06, yield: 4.88, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.08, yield: 5.44, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.08, yield: 4.68, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.1, yield: 5.03, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.1, yield: 3.82, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.15, yield: 4.56, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -7006,20 +7006,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 76,
     kbRating: 63,
     priceHistory: [
-      { year: 2020, price: 3.0 }
-      { year: 2021, price: 3.25 }
-      { year: 2022, price: 3.75 }
-      { year: 2023, price: 4.62 }
-      { year: 2024, price: 6.53 }
-      { year: 2025, price: 7.92 }
+      { year: 2020, price: 3.0 },
+      { year: 2021, price: 3.25 },
+      { year: 2022, price: 3.75 },
+      { year: 2023, price: 4.62 },
+      { year: 2024, price: 6.53 },
+      { year: 2025, price: 7.92 },
       { year: 2026, price: 8.7 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.04, yield: 1.33, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.05, yield: 1.54, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.04, yield: 1.07, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.06, yield: 1.3, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.1, yield: 1.53, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.04, yield: 1.33, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.05, yield: 1.54, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.04, yield: 1.07, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.06, yield: 1.3, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.1, yield: 1.53, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.08, yield: 1.01, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -7070,20 +7070,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 65,
     kbRating: 75,
     priceHistory: [
-      { year: 2020, price: 1.76 }
-      { year: 2021, price: 2.03 }
-      { year: 2022, price: 2.25 }
-      { year: 2023, price: 2.7 }
-      { year: 2024, price: 3.61 }
-      { year: 2025, price: 4.34 }
+      { year: 2020, price: 1.76 },
+      { year: 2021, price: 2.03 },
+      { year: 2022, price: 2.25 },
+      { year: 2023, price: 2.7 },
+      { year: 2024, price: 3.61 },
+      { year: 2025, price: 4.34 },
       { year: 2026, price: 4.7 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.05, yield: 2.84, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.06, yield: 2.96, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.07, yield: 3.11, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.08, yield: 2.96, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.11, yield: 3.05, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.05, yield: 2.84, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.06, yield: 2.96, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.07, yield: 3.11, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.08, yield: 2.96, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.11, yield: 3.05, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.16, yield: 3.69, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -7134,20 +7134,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 54,
     kbRating: 68,
     priceHistory: [
-      { year: 2020, price: 0.41 }
-      { year: 2021, price: 0.45 }
-      { year: 2022, price: 0.55 }
-      { year: 2023, price: 0.71 }
-      { year: 2024, price: 0.99 }
-      { year: 2025, price: 1.26 }
+      { year: 2020, price: 0.41 },
+      { year: 2021, price: 0.45 },
+      { year: 2022, price: 0.55 },
+      { year: 2023, price: 0.71 },
+      { year: 2024, price: 0.99 },
+      { year: 2025, price: 1.26 },
       { year: 2026, price: 1.38 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.01, yield: 2.44, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.01, yield: 2.22, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.01, yield: 1.82, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.01, yield: 1.41, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.02, yield: 2.02, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.01, yield: 2.44, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.01, yield: 2.22, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.01, yield: 1.82, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.01, yield: 1.41, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.02, yield: 2.02, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.02, yield: 1.59, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -7198,20 +7198,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 83,
     kbRating: 67,
     priceHistory: [
-      { year: 2020, price: 2.89 }
-      { year: 2021, price: 3.44 }
-      { year: 2022, price: 4.09 }
-      { year: 2023, price: 5.4 }
-      { year: 2024, price: 7.81 }
-      { year: 2025, price: 8.79 }
+      { year: 2020, price: 2.89 },
+      { year: 2021, price: 3.44 },
+      { year: 2022, price: 4.09 },
+      { year: 2023, price: 5.4 },
+      { year: 2024, price: 7.81 },
+      { year: 2025, price: 8.79 },
       { year: 2026, price: 10.45 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.12, yield: 4.15, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.14, yield: 4.07, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.18, yield: 4.4, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.23, yield: 4.26, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.35, yield: 4.48, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.12, yield: 4.15, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.14, yield: 4.07, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.18, yield: 4.4, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.23, yield: 4.26, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.35, yield: 4.48, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.44, yield: 5.01, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -7262,20 +7262,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 65,
     kbRating: 63,
     priceHistory: [
-      { year: 2020, price: 61.06 }
-      { year: 2021, price: 66.36 }
-      { year: 2022, price: 80.8 }
-      { year: 2023, price: 98.81 }
-      { year: 2024, price: 142.17 }
-      { year: 2025, price: 165.66 }
+      { year: 2020, price: 61.06 },
+      { year: 2021, price: 66.36 },
+      { year: 2022, price: 80.8 },
+      { year: 2023, price: 98.81 },
+      { year: 2024, price: 142.17 },
+      { year: 2025, price: 165.66 },
       { year: 2026, price: 189 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.68, yield: 1.11, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.9, yield: 1.36, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 1.07, yield: 1.32, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 1.58, yield: 1.6, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 1.55, yield: 1.09, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.68, yield: 1.11, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.9, yield: 1.36, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 1.07, yield: 1.32, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 1.58, yield: 1.6, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 1.55, yield: 1.09, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 1.85, yield: 1.12, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -7326,20 +7326,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 80,
     kbRating: 61,
     priceHistory: [
-      { year: 2020, price: 93.8 }
-      { year: 2021, price: 101.85 }
-      { year: 2022, price: 122.78 }
-      { year: 2023, price: 152.9 }
-      { year: 2024, price: 219.22 }
-      { year: 2025, price: 252.94 }
+      { year: 2020, price: 93.8 },
+      { year: 2021, price: 101.85 },
+      { year: 2022, price: 122.78 },
+      { year: 2023, price: 152.9 },
+      { year: 2024, price: 219.22 },
+      { year: 2025, price: 252.94 },
       { year: 2026, price: 290 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 1.33, yield: 1.42, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 1.14, yield: 1.12, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 1.8, yield: 1.47, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 1.69, yield: 1.11, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 2.7, yield: 1.23, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 1.33, yield: 1.42, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 1.14, yield: 1.12, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 1.8, yield: 1.47, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 1.69, yield: 1.11, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 2.7, yield: 1.23, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 2.95, yield: 1.17, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -7390,20 +7390,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 53,
     kbRating: 57,
     priceHistory: [
-      { year: 2020, price: 0.8 }
-      { year: 2021, price: 0.89 }
-      { year: 2022, price: 1.0 }
-      { year: 2023, price: 1.26 }
-      { year: 2024, price: 1.76 }
-      { year: 2025, price: 2.07 }
+      { year: 2020, price: 0.8 },
+      { year: 2021, price: 0.89 },
+      { year: 2022, price: 1.0 },
+      { year: 2023, price: 1.26 },
+      { year: 2024, price: 1.76 },
+      { year: 2025, price: 2.07 },
       { year: 2026, price: 2.25 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.02, yield: 2.5, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.02, yield: 2.25, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.02, yield: 2.0, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.02, yield: 1.59, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.03, yield: 1.7, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.02, yield: 2.5, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.02, yield: 2.25, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.02, yield: 2.0, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.02, yield: 1.59, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.03, yield: 1.7, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.05, yield: 2.42, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -7454,20 +7454,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 61,
     kbRating: 70,
     priceHistory: [
-      { year: 2020, price: 8.34 }
-      { year: 2021, price: 9.52 }
-      { year: 2022, price: 10.58 }
-      { year: 2023, price: 13.31 }
-      { year: 2024, price: 17.77 }
-      { year: 2025, price: 22.09 }
+      { year: 2020, price: 8.34 },
+      { year: 2021, price: 9.52 },
+      { year: 2022, price: 10.58 },
+      { year: 2023, price: 13.31 },
+      { year: 2024, price: 17.77 },
+      { year: 2025, price: 22.09 },
       { year: 2026, price: 25.45 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.27, yield: 3.24, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.25, yield: 2.63, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.35, yield: 3.31, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.43, yield: 3.23, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.64, yield: 3.6, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.27, yield: 3.24, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.25, yield: 2.63, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.35, yield: 3.31, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.43, yield: 3.23, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.64, yield: 3.6, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.68, yield: 3.08, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -7518,20 +7518,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 71,
     kbRating: 76,
     priceHistory: [
-      { year: 2020, price: 35.31 }
-      { year: 2021, price: 41.67 }
-      { year: 2022, price: 46.95 }
-      { year: 2023, price: 57.09 }
-      { year: 2024, price: 71.94 }
-      { year: 2025, price: 89.98 }
+      { year: 2020, price: 35.31 },
+      { year: 2021, price: 41.67 },
+      { year: 2022, price: 46.95 },
+      { year: 2023, price: 57.09 },
+      { year: 2024, price: 71.94 },
+      { year: 2025, price: 89.98 },
       { year: 2026, price: 101.95 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 1.43, yield: 4.05, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 1.88, yield: 4.51, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 2.25, yield: 4.79, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 2.71, yield: 4.75, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 3.03, yield: 4.21, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 1.43, yield: 4.05, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 1.88, yield: 4.51, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 2.25, yield: 4.79, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 2.71, yield: 4.75, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 3.03, yield: 4.21, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 4.07, yield: 4.52, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
@@ -7582,20 +7582,20 @@ export const NGX_STOCKS: Stock[] = [
     momentumScore: 64,
     kbRating: 71,
     priceHistory: [
-      { year: 2020, price: 8.87 }
-      { year: 2021, price: 10.42 }
-      { year: 2022, price: 11.62 }
-      { year: 2023, price: 13.9 }
-      { year: 2024, price: 19.44 }
-      { year: 2025, price: 22.29 }
+      { year: 2020, price: 8.87 },
+      { year: 2021, price: 10.42 },
+      { year: 2022, price: 11.62 },
+      { year: 2023, price: 13.9 },
+      { year: 2024, price: 19.44 },
+      { year: 2025, price: 22.29 },
       { year: 2026, price: 24.2 }
     ],
     dividendHistory: [
-      { year: 2020, dividend: 0.39, yield: 4.4, exDate: "2020-04-15", payDate: "2020-05-07" }
-      { year: 2021, dividend: 0.42, yield: 4.03, exDate: "2021-04-15", payDate: "2021-05-07" }
-      { year: 2022, dividend: 0.51, yield: 4.39, exDate: "2022-04-15", payDate: "2022-05-07" }
-      { year: 2023, dividend: 0.53, yield: 3.81, exDate: "2023-04-15", payDate: "2023-05-07" }
-      { year: 2024, dividend: 0.95, yield: 4.89, exDate: "2024-04-15", payDate: "2024-05-07" }
+      { year: 2020, dividend: 0.39, yield: 4.4, exDate: "2020-04-15", payDate: "2020-05-07" },
+      { year: 2021, dividend: 0.42, yield: 4.03, exDate: "2021-04-15", payDate: "2021-05-07" },
+      { year: 2022, dividend: 0.51, yield: 4.39, exDate: "2022-04-15", payDate: "2022-05-07" },
+      { year: 2023, dividend: 0.53, yield: 3.81, exDate: "2023-04-15", payDate: "2023-05-07" },
+      { year: 2024, dividend: 0.95, yield: 4.89, exDate: "2024-04-15", payDate: "2024-05-07" },
       { year: 2025, dividend: 0.89, yield: 3.99, exDate: "2025-04-15", payDate: "2025-05-07" }
     ],
     financials: {
