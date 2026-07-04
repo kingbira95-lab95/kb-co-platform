@@ -7621,3 +7621,12 @@ export const NGX_STOCKS: Stock[] = [
 
 export const getStockBySymbol = (symbol: string) =>
   NGX_STOCKS.find(s => s.symbol === symbol);
+
+export const getTopGainers = (n = 10) =>
+  [...NGX_STOCKS].sort((a, b) => b.changePct - a.changePct).slice(0, n);
+
+export const getTopLosers = (n = 10) =>
+  [...NGX_STOCKS].sort((a, b) => a.changePct - b.changePct).slice(0, n);
+
+export const getTopDividendStocks = (n = 10) =>
+  [...NGX_STOCKS].filter(s => s.dividendYield > 0).sort((a, b) => b.dividendYield - a.dividendYield).slice(0, n);
