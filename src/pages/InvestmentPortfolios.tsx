@@ -18,6 +18,35 @@ const PORTFOLIO_ICONS: Record<string, React.ElementType> = {
   highYield: Zap,
 };
 
+function StockLogo({ symbol, website, size = 32, fallbackColor = '#D4AF37' }: {
+  symbol: string;
+  website?: string;
+  size?: number;
+  fallbackColor?: string;
+}) {
+  const [failed, setFailed] = useState(false);
+  const domain = website ? website.replace(/^(https?:\/\/)?(www\.)?/, '') : null;
+  const logoUrl = domain && !failed ? `https://logo.clearbit.com/${domain}` : null;
+
+  if (logoUrl) {
+    return (
+      <img
+        src={logoUrl}
+        alt={symbol}
+        onError={() => setFailed(true)}
+        style={{ width: size, height: size, borderRadius: 10, objectFit: 'contain', background: '#fff', padding: 3 }}
+      />
+    );
+  }
+  return (
+    <div
+      style={{ width: size, height: size, borderRadius: 10, background: fallbackColor, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10, fontWeight: 700, color: '#000', flexShrink: 0 }}
+    >
+      {symbol.slice(0, 2)}
+    </div>
+  );
+}
+
 const PERF_DATA = [
   { year: '2021', premium: 42, safe: 28, balanced: 51, highYield: 108 },
   { year: '2022', premium: 18, safe: 12, balanced: 24, highYield: 38 },
@@ -122,12 +151,14 @@ function PortfolioDetail({ portfolio, onClose }: { portfolio: Portfolio; onClose
   }).filter(Boolean) as Array<{
     symbol: string; name: string; sector: string; weight: number;
     currentPrice: number; changePct: number; allocation: number;
-    shares: number; value: number; dividendYield: number;
+    shares: number; value: number; dividendYield: number; website: string;
   }>;
 
   // Live total portfolio value
   const totalValue = portfolioStocks.reduce((sum, s) => sum + s.value, 0);
   const totalChange = portfolioStocks.reduce((sum, s) => sum + (s.changePct * s.weight / 100), 0);
+  const feesAmount = totalValue * 0.07;
+  const totalWithFees = totalValue * 1.07;
 
   const handleBuyAll = () => {
     if (!user?.kycStatus || user.kycStatus !== 'verified') {
@@ -145,7 +176,7 @@ function PortfolioDetail({ portfolio, onClose }: { portfolio: Portfolio; onClose
           addHolding(activePortfolioId, { symbol: s.symbol, shares: s.shares, buyPrice: s.currentPrice, buyDate: new Date().toISOString() });
         }
       });
-      addNotification({ type: 'portfolio', title: `${portfolio.name} Purchased!`, message: `Bought ${portfolioStocks.length} stocks for ₦${totalValue.toLocaleString('en-NG', { minimumFractionDigits: 2 })}`, urgent: true });
+      addNotification({ type: 'portfolio', title: `${portfolio.name} Purchased!`, message: `Bought ${portfolioStocks.length} stocks for ₦${totalWithFees.toLocaleString('en-NG', { minimumFractionDigits: 2 })} (incl. 7% fees)`, urgent: true });
       setBuying(false);
       setBought(true);
     }, 1500);
@@ -280,9 +311,7 @@ function PortfolioDetail({ portfolio, onClose }: { portfolio: Portfolio; onClose
                   style={{ border: '1px solid rgba(255,255,255,0.06)' }}
                 >
                   <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-xl flex items-center justify-center text-[10px] font-bold text-black" style={{ background: '#D4AF37' }}>
-                      {stock.symbol.slice(0, 2)}
-                    </div>
+                    <StockLogo symbol={stock.symbol} website={stock.website} size={32} fallbackColor={portfolio.color} />
                     <div>
                       <div className="text-sm font-semibold text-white">{stock.symbol}</div>
                       <div className="text-[10px] text-gray-500">{stock.sector}</div>
@@ -365,9 +394,26 @@ function PortfolioDetail({ portfolio, onClose }: { portfolio: Portfolio; onClose
 
         {/* CTA */}
         <div className="px-6 py-4 border-t" style={{ borderColor: 'rgba(212,175,55,0.12)', background: '#0D1530' }}>
-          <div className="flex items-center justify-between mb-2">
-            <div className="text-xs text-gray-500">Total cost for {portfolio.stocks.length} stocks</div>
-            <div className="text-sm font-black text-yellow-400">₦{formatLargeNumber(totalValue)}</div>
+          {/* Fee breakdown */}
+          <div className="mb-3 p-3 rounded-xl space-y-1" style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}>
+            <div className="flex items-center justify-between">
+              <span className="text-[11px] text-gray-500">Stocks value ({portfolio.stocks.length} stocks)</span>
+              <span className="text-[11px] text-gray-300">₦{formatLargeNumber(totalValue)}</span>
+            </div>
+            <div className="flex items-center justify-between">
+              <span className="text-[11px] text-gray-500">Onboarding fee (2%)</span>
+              <span className="text-[11px] text-yellow-600">+₦{formatLargeNumber(totalValue * 0.02)}</span>
+            </div>
+            <div className="flex items-center justify-between">
+              <span className="text-[11px] text-gray-500">Annual management fee (5%)</span>
+              <span className="text-[11px] text-yellow-600">+₦{formatLargeNumber(totalValue * 0.05)}</span>
+            </div>
+            <div className="flex items-center justify-between pt-1.5 border-t" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
+              <span className="text-xs font-bold text-white">Total to Pay</span>
+              <motion.span key={totalWithFees} initial={{ scale: 0.9 }} animate={{ scale: 1 }} className="text-sm font-black text-yellow-400">
+                ₦{formatLargeNumber(totalWithFees)}
+              </motion.span>
+            </div>
           </div>
           <div className="flex gap-2">
             <motion.button
@@ -382,7 +428,7 @@ function PortfolioDetail({ portfolio, onClose }: { portfolio: Portfolio; onClose
               ) : bought ? (
                 <><Plus size={14} /> Portfolio Bought!</>
               ) : (
-                <><Plus size={14} /> Buy All Stocks · ₦{formatLargeNumber(totalValue)}</>
+                <><Plus size={14} /> Buy All Stocks · ₦{formatLargeNumber(totalWithFees)}</>
               )}
             </motion.button>
             <button onClick={onClose} className="px-4 py-3 rounded-xl text-sm text-gray-400 hover:text-white transition-all" style={{ border: '1px solid rgba(255,255,255,0.1)' }}>
