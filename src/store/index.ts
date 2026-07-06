@@ -34,6 +34,7 @@ interface WatchlistState {
   addToWatchlist: (symbol: string) => void;
   removeFromWatchlist: (symbol: string) => void;
   isInWatchlist: (symbol: string) => boolean;
+  setWatchlistAlert: (symbol: string, alertUp?: number, alertDown?: number) => void;
 }
 
 interface NotificationState {
@@ -70,7 +71,7 @@ export const useStore = create<AppStore>()(
           lastUpdated: new Date().toISOString(),
         })),
       simulateLiveUpdate: () => {
-        const { prices, addNotification } = get();
+        const { prices, addNotification, items } = get();
         const updated = { ...prices };
         const symbols = Object.keys(updated);
         const toUpdate = symbols.sort(() => Math.random() - 0.5).slice(0, 5);
@@ -92,6 +93,52 @@ export const useStore = create<AppStore>()(
           }
         });
         set({ prices: updated, lastUpdated: new Date().toISOString() });
+
+        // Check watchlist percentage alerts
+        const triggeredUp: string[] = [];
+        const triggeredDown: string[] = [];
+        for (const item of items) {
+          if (!item.alertBasePrice || (!item.alertUp && !item.alertDown)) continue;
+          const currentPrice = updated[item.symbol]?.price;
+          if (!currentPrice) continue;
+          const changePct = ((currentPrice - item.alertBasePrice) / item.alertBasePrice) * 100;
+          const stock = NGX_STOCKS.find(s => s.symbol === item.symbol);
+          if (item.alertUp && changePct >= item.alertUp) {
+            triggeredUp.push(item.symbol);
+            addNotification({
+              type: 'alert',
+              title: `${item.symbol} Alert: Up ${item.alertUp}%!`,
+              message: `${stock?.name ?? item.symbol} rose ${changePct.toFixed(1)}% to ₦${currentPrice.toFixed(2)}`,
+              symbol: item.symbol,
+              urgent: true,
+            });
+          }
+          if (item.alertDown && changePct <= -item.alertDown) {
+            triggeredDown.push(item.symbol);
+            addNotification({
+              type: 'alert',
+              title: `${item.symbol} Alert: Down ${item.alertDown}%!`,
+              message: `${stock?.name ?? item.symbol} fell ${Math.abs(changePct).toFixed(1)}% to ₦${currentPrice.toFixed(2)}`,
+              symbol: item.symbol,
+              urgent: true,
+            });
+          }
+        }
+        if (triggeredUp.length > 0 || triggeredDown.length > 0) {
+          set(state => ({
+            items: state.items.map(item => {
+              const up = triggeredUp.includes(item.symbol);
+              const down = triggeredDown.includes(item.symbol);
+              if (!up && !down) return item;
+              const next = { ...item };
+              if (up) next.alertUp = undefined;
+              if (down) next.alertDown = undefined;
+              if (!next.alertUp && !next.alertDown) next.alertBasePrice = undefined;
+              return next;
+            }),
+          }));
+        }
+
         if (bigMover && Math.abs(bigMovePct) > 1.5) {
           const stock = NGX_STOCKS.find(s => s.symbol === bigMover);
           if (stock) {
@@ -175,6 +222,16 @@ export const useStore = create<AppStore>()(
       removeFromWatchlist: (symbol) =>
         set(state => ({ items: state.items.filter(i => i.symbol !== symbol) })),
       isInWatchlist: (symbol) => get().items.some(i => i.symbol === symbol),
+      setWatchlistAlert: (symbol, alertUp, alertDown) => {
+        const basePrice = get().prices[symbol]?.price;
+        set(state => ({
+          items: state.items.map(item =>
+            item.symbol === symbol
+              ? { ...item, alertUp, alertDown, alertBasePrice: (alertUp || alertDown) ? basePrice : undefined }
+              : item
+          ),
+        }));
+      },
 
       // Notification State
       notifications: [

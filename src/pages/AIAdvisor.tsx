@@ -9,7 +9,7 @@ interface Message {
   timestamp: string;
 }
 
-const OPENROUTER_KEY = import.meta.env.VITE_OPENROUTER_API_KEY ?? '';
+const OPENROUTER_KEY: string = import.meta.env.VITE_OPENROUTER_API_KEY ?? '';
 
 const QUICK_PROMPTS = [
   'What are the best dividend stocks on NGX right now?',
@@ -58,7 +58,7 @@ export default function AIAdvisor() {
         headers: {
           'Authorization': `Bearer ${OPENROUTER_KEY}`,
           'Content-Type': 'application/json',
-          'HTTP-Referer': 'https://kbco-invest.vercel.app',
+          'HTTP-Referer': 'https://kb-co-platform-production.up.railway.app',
           'X-Title': 'KB & Co Investment Platform',
         },
         body: JSON.stringify({
@@ -72,18 +72,24 @@ export default function AIAdvisor() {
         }),
       });
 
-      if (!response.ok) throw new Error('API error');
+      if (!response.ok) {
+        const errData = await response.json().catch(() => ({}));
+        const errMsg = (errData as any)?.error?.message ?? response.statusText;
+        if (response.status === 401) throw new Error('Invalid API key. Please check your OpenRouter credentials.');
+        if (response.status === 402) throw new Error('OpenRouter account has insufficient credits. Please top up at openrouter.ai.');
+        if (response.status === 429) throw new Error('Rate limit reached. Please wait a moment before sending another message.');
+        throw new Error(`AI service error (${response.status}): ${errMsg}`);
+      }
       const data = await response.json();
       const aiContent = data.choices?.[0]?.message?.content ?? "I'm sorry, I couldn't generate a response. Please try again.";
       setMessages(prev => [...prev, { role: 'assistant', content: aiContent, timestamp: new Date().toISOString() }]);
-    } catch {
-      // Fallback response
-      const fallbacks: Record<string, string> = {
-        dividend: "**Top NGX Dividend Stocks (2026)**\n\n• **ZENITHBANK** - 9.52% yield, ₦5.00/share\n• **GTCO** - 8.62% yield, ₦5.00/share\n• **CUSTODIAN** - 9.52% yield, ₦1.00/share\n• **UBA** - 7.69% yield, ₦2.50/share\n• **OKOMUOIL** - 8.03% yield, ₦40.00/share\n\n*This is educational content only. Past performance does not guarantee future returns.*",
-        invest: "**Suggested ₦500K Portfolio Allocation (Medium Risk)**\n\n• 25% DANGCEM - Blue chip anchor\n• 20% GTCO - Strong banking dividend\n• 20% ZENITHBANK - Consistent earnings\n• 15% BUAFOODS - Consumer growth play\n• 10% OKOMUOIL - Agriculture exposure\n• 10% STANBIC - Diversified financials\n\nExpected annual return: 20-28%\n\n*This is educational content only.*",
-      };
-      const key = text.toLowerCase().includes('dividend') ? 'dividend' : 'invest';
-      setMessages(prev => [...prev, { role: 'assistant', content: fallbacks[key] || "I'm processing your request. For the best AI analysis, please ensure your API connection is active. In the meantime, I recommend reviewing the NGX top performers in the Stocks section.", timestamp: new Date().toISOString() }]);
+    } catch (err) {
+      const message = err instanceof Error ? err.message : 'Connection failed. Please check your network and try again.';
+      setMessages(prev => [...prev, {
+        role: 'assistant',
+        content: `⚠️ **AI Unavailable**\n\n${message}\n\n*You can still use the Portfolio Advisor form above for investment suggestions.*`,
+        timestamp: new Date().toISOString(),
+      }]);
     }
     setLoading(false);
   };
@@ -138,6 +144,16 @@ export default function AIAdvisor() {
           Portfolio Advisor
         </button>
       </div>
+
+      {/* Key-not-configured warning */}
+      {!OPENROUTER_KEY && (
+        <div className="mb-4 px-4 py-3 rounded-xl text-xs flex items-start gap-2" style={{ background: 'rgba(251,191,36,0.08)', border: '1px solid rgba(251,191,36,0.25)', color: '#fbbf24' }}>
+          <span className="mt-0.5 flex-shrink-0">⚠</span>
+          <span>
+            <strong>AI not configured.</strong> Set <code className="font-mono bg-black/30 px-1 rounded">VITE_OPENROUTER_API_KEY</code> in your Railway frontend service → Variables tab, then redeploy.
+          </span>
+        </div>
+      )}
 
       {/* Portfolio Form */}
       <AnimatePresence>

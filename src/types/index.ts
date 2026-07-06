@@ -116,6 +116,9 @@ export interface WatchlistItem {
   addedAt: string;
   priceAlert?: number;
   gainAlert?: number;
+  alertUp?: number;        // 1–10% gain threshold
+  alertDown?: number;      // 1–10% drop threshold
+  alertBasePrice?: number; // price at time alert was set
 }
 
 export interface Dividend {
