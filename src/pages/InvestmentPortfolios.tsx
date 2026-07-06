@@ -8,9 +8,9 @@ import { INVESTMENT_PORTFOLIOS } from '../data/portfolios';
 import { NGX_STOCKS } from '../data/stocks';
 import { useStore } from '../store';
 import { formatPrice, formatLargeNumber, getRiskColor } from '../utils';
-import { getStockLogoUrl } from '../utils/stockLogo';
 import type { Portfolio } from '../types';
 import { Shield, Zap, Crown, ChevronRight, X, Plus, Brain, BarChart3, RefreshCw } from 'lucide-react';
+import StockLogo from '../components/StockLogo';
 
 const PORTFOLIO_ICONS: Record<string, React.ElementType> = {
   premium: Crown,
@@ -18,30 +18,6 @@ const PORTFOLIO_ICONS: Record<string, React.ElementType> = {
   balanced: BarChart3,
   highYield: Zap,
 };
-
-function StockLogo({ symbol, website, size = 32, fallbackColor = '#D4AF37' }: {
-  symbol: string;
-  website?: string;
-  size?: number;
-  fallbackColor?: string;
-}) {
-  const [localFailed, setLocalFailed] = useState(false);
-  const [clearbitFailed, setClearbitFailed] = useState(false);
-  const clearbitUrl = getStockLogoUrl(symbol, website);
-  const logoStyle: React.CSSProperties = { width: size, height: size, borderRadius: 10, objectFit: 'contain', background: '#fff', padding: 3, flexShrink: 0 };
-
-  if (!localFailed) {
-    return <img src={`/logos/${symbol}.svg`} alt={symbol} onError={() => setLocalFailed(true)} style={logoStyle} />;
-  }
-  if (clearbitUrl && !clearbitFailed) {
-    return <img src={clearbitUrl} alt={symbol} onError={() => setClearbitFailed(true)} style={logoStyle} />;
-  }
-  return (
-    <div style={{ width: size, height: size, borderRadius: 10, background: fallbackColor, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10, fontWeight: 700, color: '#000', flexShrink: 0 }}>
-      {symbol.slice(0, 2)}
-    </div>
-  );
-}
 
 const PERF_DATA = [
   { year: '2021', premium: 42, safe: 28, balanced: 51, highYield: 108 },
@@ -306,7 +282,7 @@ function PortfolioDetail({ portfolio, onClose }: { portfolio: Portfolio; onClose
                   style={{ border: '1px solid rgba(255,255,255,0.06)' }}
                 >
                   <div className="flex items-center gap-3">
-                    <StockLogo symbol={stock.symbol} website={stock.website} size={32} fallbackColor={portfolio.color} />
+                    <StockLogo symbol={stock.symbol} sector={stock.sector} website={stock.website} size={32} />
                     <div>
                       <div className="text-sm font-semibold text-white">{stock.symbol}</div>
                       <div className="text-[10px] text-gray-500">{stock.sector}</div>

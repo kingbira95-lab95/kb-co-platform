@@ -8,6 +8,7 @@ import { NGX_STOCKS } from '../data/stocks';
 import { useStore } from '../store';
 import { formatPrice, formatLargeNumber, getRiskColor, getScoreColor } from '../utils';
 import type { Stock } from '../types';
+import StockLogo from '../components/StockLogo';
 import {
   TrendingUp, TrendingDown, Star, X, Brain,
   Building2, Globe, DollarSign, Target, Plus
@@ -505,9 +506,7 @@ export default function Stocks({ onNavigateToProfile }: StocksProps = {}) {
                   >
                     <td className="px-4 py-3">
                       <div className="flex items-center gap-2">
-                        <div className="w-7 h-7 rounded-lg flex items-center justify-center text-[9px] font-bold text-black" style={{ background: '#D4AF37' }}>
-                          {stock.symbol.slice(0, 2)}
-                        </div>
+                        <StockLogo symbol={stock.symbol} sector={stock.sector} website={stock.website} size={28} />
                         <div>
                           <div className="text-xs font-bold text-white">{stock.symbol}</div>
                           <div className="text-[10px] text-gray-500 truncate" style={{ maxWidth: 120 }}>{stock.name}</div>
