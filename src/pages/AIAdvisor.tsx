@@ -2,14 +2,13 @@ import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Brain, Send, User, Target } from 'lucide-react';
 import { formatLargeNumber } from '../utils';
+import { aiApi } from '../services/api';
 
 interface Message {
   role: 'user' | 'assistant';
   content: string;
   timestamp: string;
 }
-
-const OPENROUTER_KEY: string = import.meta.env.VITE_OPENROUTER_API_KEY ?? '';
 
 const QUICK_PROMPTS = [
   'What are the best dividend stocks on NGX right now?',
@@ -45,44 +44,9 @@ export default function AIAdvisor() {
     setLoading(true);
 
     try {
-      const systemPrompt = `You are KB & Co Corporate Investment Limited's AI Investment Advisor. You are an expert on Nigerian Exchange (NGX) stocks, wealth management, and investment strategy.
-
-      Key NGX stocks you know: DANGCEM (₦545), BUAFOODS (₦939), MTNN (₦265), ZENITHBANK (₦52.50), GTCO (₦58), ACCESSCORP (₦25.80), UBA (₦32.50), AIRTELAFRI (₦2150), SEPLAT (₦3880), BUACEMENT (₦118), FBNH (₦28.40), STANBIC (₦68), NESTLE (₦1020), OKOMUOIL (₦498), PRESCO (₦538).
-
-      Always provide specific, actionable Nigerian market insights. Include NGX stock symbols, current prices, and dividend yields when relevant. Format responses in clear markdown with bullet points and headers.
-
-      Legal disclaimer to always include: "This is educational content only. Past performance does not guarantee future returns. Always consult a financial advisor."`;
-
-      const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${OPENROUTER_KEY}`,
-          'Content-Type': 'application/json',
-          'HTTP-Referer': 'https://kb-co-platform-production.up.railway.app',
-          'X-Title': 'KB & Co Investment Platform',
-        },
-        body: JSON.stringify({
-          model: 'openai/gpt-4o-mini',
-          messages: [
-            { role: 'system', content: systemPrompt },
-            ...messages.slice(-8).map(m => ({ role: m.role, content: m.content })),
-            { role: 'user', content: text },
-          ],
-          max_tokens: 600,
-        }),
-      });
-
-      if (!response.ok) {
-        const errData = await response.json().catch(() => ({}));
-        const errMsg = (errData as any)?.error?.message ?? response.statusText;
-        if (response.status === 401) throw new Error('Invalid API key. Please check your OpenRouter credentials.');
-        if (response.status === 402) throw new Error('OpenRouter account has insufficient credits. Please top up at openrouter.ai.');
-        if (response.status === 429) throw new Error('Rate limit reached. Please wait a moment before sending another message.');
-        throw new Error(`AI service error (${response.status}): ${errMsg}`);
-      }
-      const data = await response.json();
-      const aiContent = data.choices?.[0]?.message?.content ?? "I'm sorry, I couldn't generate a response. Please try again.";
-      setMessages(prev => [...prev, { role: 'assistant', content: aiContent, timestamp: new Date().toISOString() }]);
+      const history = [...messages.slice(-9), userMsg].map(m => ({ role: m.role, content: m.content }));
+      const { content } = await aiApi.chat(history);
+      setMessages(prev => [...prev, { role: 'assistant', content, timestamp: new Date().toISOString() }]);
     } catch (err) {
       const message = err instanceof Error ? err.message : 'Connection failed. Please check your network and try again.';
       setMessages(prev => [...prev, {
@@ -144,16 +108,6 @@ export default function AIAdvisor() {
           Portfolio Advisor
         </button>
       </div>
-
-      {/* Key-not-configured warning */}
-      {!OPENROUTER_KEY && (
-        <div className="mb-4 px-4 py-3 rounded-xl text-xs flex items-start gap-2" style={{ background: 'rgba(251,191,36,0.08)', border: '1px solid rgba(251,191,36,0.25)', color: '#fbbf24' }}>
-          <span className="mt-0.5 flex-shrink-0">⚠</span>
-          <span>
-            <strong>AI not configured.</strong> Set <code className="font-mono bg-black/30 px-1 rounded">VITE_OPENROUTER_API_KEY</code> in your Railway frontend service → Variables tab, then redeploy.
-          </span>
-        </div>
-      )}
 
       {/* Portfolio Form */}
       <AnimatePresence>

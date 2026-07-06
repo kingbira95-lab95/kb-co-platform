@@ -297,6 +297,13 @@ export const bondsApi = {
     request<unknown[]>(`/bonds/my-portfolio${status ? `?status=${status}` : ''}`),
 };
 
+// ── AI Chat ───────────────────────────────────────────────────────────────────
+
+export const aiApi = {
+  chat: (messages: { role: string; content: string }[]) =>
+    request<{ content: string }>('/ai/chat', { method: 'POST', body: { messages }, auth: false }),
+};
+
 // ── SSE live price stream ─────────────────────────────────────────────────────
 
 export function subscribeToPriceStream(onUpdate: (prices: { symbol: string; price: number; change: number; change_pct: number }[]) => void): () => void {
