@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import * as XLSX from 'xlsx';
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
 import { useStore } from '../store';
 import { NGX_STOCKS } from '../data/stocks';
 import { formatPrice, formatLargeNumber } from '../utils';
-import { exportsApi } from '../services/api';
 import { Plus, Trash2, BarChart3, Wallet, TrendingUp, FileText, Sheet } from 'lucide-react';
 
 const COLORS = ['#D4AF37', '#22c55e', '#3b82f6', '#a855f7', '#f59e0b', '#ef4444', '#06b6d4', '#ec4899'];
@@ -21,16 +21,47 @@ export default function PortfolioTracker() {
     if (!activePortfolioId) return;
     setExporting(type);
     try {
-      const url = type === 'pdf'
-        ? exportsApi.portfolioPdf(activePortfolioId)
-        : exportsApi.portfolioExcel(activePortfolioId);
-      const filename = type === 'pdf'
-        ? `KB-Co-Portfolio-Report.pdf`
-        : `KB-Co-Portfolio.xlsx`;
-      await exportsApi.downloadWithAuth(url, filename);
+      if (type === 'excel') {
+        // Client-side Excel export — no backend needed
+        const wb = XLSX.utils.book_new();
+
+        const rows: (string | number)[][] = [
+          ['KB & Co Corporate Investment — Portfolio Report'],
+          [`Portfolio: ${activePortfolio?.name ?? 'My Portfolio'}`],
+          [`Generated: ${new Date().toLocaleDateString('en-NG', { dateStyle: 'long' })}`],
+          [],
+          ['Symbol', 'Company', 'Sector', 'Shares', 'Avg Cost (₦)', 'Current Price (₦)', 'Value (₦)', 'Gain/Loss (₦)', 'Gain/Loss %'],
+          ...holdings.map(h => [
+            h.symbol,
+            h.stock?.name ?? h.symbol,
+            h.stock?.sector ?? '',
+            h.shares,
+            h.buyPrice,
+            h.currentPrice,
+            +h.currentValue.toFixed(2),
+            +h.gainLoss.toFixed(2),
+            +(h.gainLossPct.toFixed(2)),
+          ]),
+          [],
+          ['', '', '', '', '', 'TOTAL', +totalValue.toFixed(2), +totalGain.toFixed(2), +(totalGainPct.toFixed(2))],
+        ];
+
+        const ws = XLSX.utils.aoa_to_sheet(rows);
+        ws['!cols'] = [14, 30, 20, 10, 16, 18, 16, 16, 12].map(w => ({ wch: w }));
+        XLSX.utils.book_append_sheet(wb, ws, 'Portfolio');
+        XLSX.writeFile(wb, `KB-Co-Portfolio-${new Date().toISOString().slice(0, 10)}.xlsx`);
+      } else {
+        // PDF — still requires authenticated backend session
+        const { exportsApi } = await import('../services/api');
+        await exportsApi.downloadWithAuth(
+          exportsApi.portfolioPdf(activePortfolioId),
+          'KB-Co-Portfolio-Report.pdf',
+        );
+      }
     } catch {
-      // Backend not connected — show a toast instead of crashing
-      alert('Export requires the backend server to be running. Start kb-co-backend and try again.');
+      if (type === 'pdf') {
+        alert('PDF export requires signing in to your KB & Co account.');
+      }
     } finally {
       setExporting(null);
     }

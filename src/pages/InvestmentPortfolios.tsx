@@ -8,6 +8,7 @@ import { INVESTMENT_PORTFOLIOS } from '../data/portfolios';
 import { NGX_STOCKS } from '../data/stocks';
 import { useStore } from '../store';
 import { formatPrice, formatLargeNumber, getRiskColor } from '../utils';
+import { getStockLogoUrl } from '../utils/stockLogo';
 import type { Portfolio } from '../types';
 import { Shield, Zap, Crown, ChevronRight, X, Plus, Brain, BarChart3, RefreshCw } from 'lucide-react';
 
@@ -24,24 +25,19 @@ function StockLogo({ symbol, website, size = 32, fallbackColor = '#D4AF37' }: {
   size?: number;
   fallbackColor?: string;
 }) {
-  const [failed, setFailed] = useState(false);
-  const domain = website ? website.replace(/^(https?:\/\/)?(www\.)?/, '') : null;
-  const logoUrl = domain && !failed ? `https://logo.clearbit.com/${domain}` : null;
+  const [localFailed, setLocalFailed] = useState(false);
+  const [clearbitFailed, setClearbitFailed] = useState(false);
+  const clearbitUrl = getStockLogoUrl(symbol, website);
+  const logoStyle: React.CSSProperties = { width: size, height: size, borderRadius: 10, objectFit: 'contain', background: '#fff', padding: 3, flexShrink: 0 };
 
-  if (logoUrl) {
-    return (
-      <img
-        src={logoUrl}
-        alt={symbol}
-        onError={() => setFailed(true)}
-        style={{ width: size, height: size, borderRadius: 10, objectFit: 'contain', background: '#fff', padding: 3 }}
-      />
-    );
+  if (!localFailed) {
+    return <img src={`/logos/${symbol}.svg`} alt={symbol} onError={() => setLocalFailed(true)} style={logoStyle} />;
+  }
+  if (clearbitUrl && !clearbitFailed) {
+    return <img src={clearbitUrl} alt={symbol} onError={() => setClearbitFailed(true)} style={logoStyle} />;
   }
   return (
-    <div
-      style={{ width: size, height: size, borderRadius: 10, background: fallbackColor, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10, fontWeight: 700, color: '#000', flexShrink: 0 }}
-    >
+    <div style={{ width: size, height: size, borderRadius: 10, background: fallbackColor, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10, fontWeight: 700, color: '#000', flexShrink: 0 }}>
       {symbol.slice(0, 2)}
     </div>
   );
@@ -157,7 +153,6 @@ function PortfolioDetail({ portfolio, onClose }: { portfolio: Portfolio; onClose
   // Live total portfolio value
   const totalValue = portfolioStocks.reduce((sum, s) => sum + s.value, 0);
   const totalChange = portfolioStocks.reduce((sum, s) => sum + (s.changePct * s.weight / 100), 0);
-  const feesAmount = totalValue * 0.07;
   const totalWithFees = totalValue * 1.07;
 
   const handleBuyAll = () => {

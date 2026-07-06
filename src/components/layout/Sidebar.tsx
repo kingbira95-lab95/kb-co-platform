@@ -64,19 +64,36 @@ export default function Sidebar({ currentPage, onNavigate }: SidebarProps) {
         }}
       >
         {/* Logo */}
-        <div className="flex items-center justify-between px-5 py-5 border-b" style={{ borderColor: 'rgba(212,175,55,0.12)' }}>
-          <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #D4AF37, #A08020)' }}>
+        <div className="flex items-center justify-between px-5 py-4 border-b" style={{ borderColor: 'rgba(212,175,55,0.12)' }}>
+          <div className="flex items-center gap-3 min-w-0">
+            {/* Real KB & Co logo — place the logo PNG at public/logo.png */}
+            <img
+              src="/logo.png"
+              alt="KB & Co"
+              className="h-10 w-auto flex-shrink-0"
+              style={{ filter: 'brightness(0) invert(1)' }}
+              onError={e => {
+                /* fallback: hide the img and show the Crown badge */
+                (e.currentTarget as HTMLImageElement).style.display = 'none';
+                const fallback = e.currentTarget.nextElementSibling as HTMLElement | null;
+                if (fallback) fallback.style.display = 'flex';
+              }}
+            />
+            {/* Crown fallback — hidden when logo loads */}
+            <div
+              className="w-9 h-9 rounded-xl items-center justify-center flex-shrink-0"
+              style={{ background: 'linear-gradient(135deg, #D4AF37, #A08020)', display: 'none' }}
+            >
               <Crown size={18} color="#0A0F1E" />
             </div>
-            <div>
-              <div className="text-xs font-bold tracking-wider" style={{ color: '#D4AF37' }}>KB & Co</div>
-              <div className="text-[9px] text-gray-400 tracking-widest uppercase">Corporate Investment</div>
+            <div className="min-w-0">
+              <div className="text-xs font-bold tracking-wider truncate" style={{ color: '#D4AF37' }}>KB & Co</div>
+              <div className="text-[9px] text-gray-400 tracking-widest uppercase truncate">Corporate Investment</div>
             </div>
           </div>
           <button
             onClick={() => setSidebarOpen(false)}
-            className="md:hidden text-gray-400 hover:text-white transition-colors"
+            className="md:hidden text-gray-400 hover:text-white transition-colors flex-shrink-0"
           >
             <X size={18} />
           </button>
