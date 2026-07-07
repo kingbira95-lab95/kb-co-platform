@@ -175,6 +175,13 @@ export interface TradingAccount {
   broker: string;
 }
 
+export interface TradingHolding {
+  symbol: string;
+  shares: number;
+  avgPrice: number;
+  buyDate: string;
+}
+
 export interface MarketSummary {
   index: string;
   value: number;

@@ -30,8 +30,12 @@ interface SidebarProps {
   onNavigate: (page: string) => void;
 }
 
+const ADMIN_EMAIL = 'admin@kbco.invest';
+
 export default function Sidebar({ currentPage, onNavigate }: SidebarProps) {
   const { sidebarOpen, setSidebarOpen, user, logout } = useStore();
+  const isAdmin = user?.email === ADMIN_EMAIL;
+  const visibleNavItems = NAV_ITEMS.filter(item => item.id !== 'admin' || isAdmin);
 
   const handleNav = (id: string) => {
     onNavigate(id);
@@ -117,7 +121,7 @@ export default function Sidebar({ currentPage, onNavigate }: SidebarProps) {
         {/* Navigation */}
         <nav className="flex-1 overflow-y-auto py-4 px-3">
           <div className="text-[10px] uppercase tracking-widest text-gray-500 px-2 mb-2">Main Navigation</div>
-          {NAV_ITEMS.slice(0, 9).map((item) => {
+          {visibleNavItems.slice(0, 9).map((item) => {
             const Icon = item.icon;
             const isActive = currentPage === item.id;
             return (
@@ -138,7 +142,7 @@ export default function Sidebar({ currentPage, onNavigate }: SidebarProps) {
           })}
 
           <div className="text-[10px] uppercase tracking-widest text-gray-500 px-2 mb-2 mt-4">Tools & More</div>
-          {NAV_ITEMS.slice(9).map((item) => {
+          {visibleNavItems.slice(9).map((item) => {
             const Icon = item.icon;
             const isActive = currentPage === item.id;
             return (

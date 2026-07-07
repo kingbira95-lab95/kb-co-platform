@@ -9,7 +9,7 @@ import {
   ChevronDown, User, Camera, FileText,
 } from 'lucide-react';
 import StockLogo from '../components/StockLogo';
-import { paymentsApi } from '../services/api';
+import { paymentsApi, usersApi, authApi } from '../services/api';
 import type { TradingHolding } from '../types';
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
@@ -25,34 +25,87 @@ function KYCGate({ onVerified }: { onVerified: () => void }) {
   const [step, setStep] = useState(0);
   const [form, setForm] = useState({ firstName: '', lastName: '', dob: '', bvn: '', nin: '', address: '', city: '', state: '', bankName: '', accountNumber: '', accountName: '' });
   const [uploads, setUploads] = useState({ idFront: false, idBack: false, selfie: false, address: false });
-  const [pending, setPending] = useState(user?.kycStatus === 'submitted');
+  const [submitting, setSubmitting] = useState(false);
+  const [checking, setChecking] = useState(false);
+  const [submitError, setSubmitError] = useState('');
+  const pending = user?.kycStatus === 'submitted';
+  const rejected = user?.kycStatus === 'rejected';
 
   const next = () => setStep(s => Math.min(s + 1, 4));
   const back = () => setStep(s => Math.max(s - 1, 0));
 
-  const submit = () => {
-    updateUser({ kycStatus: 'submitted' });
-    addNotification({ type: 'system', title: 'KYC Submitted', message: 'Documents received. Verification takes 1-2 business days.', urgent: true });
-    setPending(true);
+  const submit = async () => {
+    setSubmitting(true);
+    setSubmitError('');
+    try {
+      await usersApi.submitKYC({
+        bvn: form.bvn,
+        nin: form.nin,
+        address: form.address || `${form.firstName} ${form.lastName}`,
+        city: form.city || 'Lagos',
+        state: form.state || 'Lagos',
+        bank_name: form.bankName || 'GTBank',
+        account_number: form.accountNumber || '0000000000',
+        account_name: form.accountName || `${form.firstName} ${form.lastName}`,
+        id_type: 'NIN',
+        id_number: form.nin || '00000000000',
+      });
+      updateUser({ kycStatus: 'submitted' });
+      addNotification({ type: 'system', title: 'KYC Submitted', message: 'Documents received. An admin will review and approve your account within 1-2 business days.', urgent: true });
+    } catch (e) {
+      const msg = e instanceof Error ? e.message : 'Submission failed. Please try again.';
+      setSubmitError(msg);
+    }
+    setSubmitting(false);
   };
 
-  const simulateVerify = () => {
-    updateUser({ kycStatus: 'verified', tradingAccountId: 'KBC-' + new Date().getFullYear() + '-' + (Math.floor(Math.random() * 9000) + 1000) });
-    addNotification({ type: 'system', title: 'Account Verified!', message: 'Your real trading account is now active.', urgent: true });
-    onVerified();
+  const checkStatus = async () => {
+    setChecking(true);
+    try {
+      const me = await authApi.me();
+      updateUser({
+        kycStatus: me.kyc_status as 'pending' | 'submitted' | 'verified' | 'rejected',
+      });
+      if (me.kyc_status === 'verified') {
+        addNotification({ type: 'system', title: 'Account Verified!', message: 'Your real trading account is now active.', urgent: true });
+        onVerified();
+      }
+    } catch { /* ignore network errors */ }
+    setChecking(false);
   };
 
-  if (pending) {
+  if (pending || rejected) {
     return (
       <div className="glass-card p-10 text-center max-w-md mx-auto">
-        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={{ background: 'rgba(212,175,55,0.1)' }}>
-          <Clock size={28} color="#D4AF37" />
+        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+          style={{ background: rejected ? 'rgba(239,68,68,0.1)' : 'rgba(212,175,55,0.1)' }}>
+          <Clock size={28} color={rejected ? '#ef4444' : '#D4AF37'} />
         </div>
-        <h3 className="text-base font-bold text-white mb-2">KYC Under Review</h3>
-        <p className="text-sm text-gray-400 mb-6">Documents are being verified. This usually takes 1-2 business days. You'll receive a notification when complete.</p>
-        <button onClick={simulateVerify} className="px-5 py-2.5 rounded-xl text-sm font-bold text-black" style={{ background: 'linear-gradient(135deg, #22c55e, #16a34a)' }}>
-          Simulate Approval (Demo)
-        </button>
+        <h3 className="text-base font-bold text-white mb-2">
+          {rejected ? 'KYC Rejected' : 'Awaiting Admin Approval'}
+        </h3>
+        <p className="text-sm text-gray-400 mb-2">
+          {rejected
+            ? 'Your KYC was not approved. Please re-submit with correct information.'
+            : 'Your documents have been submitted and are pending review by our compliance team. Approval typically takes 1-2 business days.'}
+        </p>
+        {!rejected && (
+          <p className="text-xs text-gray-600 mb-6">You will receive a notification once your account is approved.</p>
+        )}
+        <div className="flex gap-3 justify-center mt-4">
+          <button onClick={checkStatus} disabled={checking}
+            className="px-5 py-2.5 rounded-xl text-sm font-semibold transition-all disabled:opacity-50"
+            style={{ background: 'rgba(212,175,55,0.12)', color: '#D4AF37', border: '1px solid rgba(212,175,55,0.2)' }}>
+            {checking ? 'Checking…' : 'Check Status'}
+          </button>
+          {rejected && (
+            <button onClick={() => updateUser({ kycStatus: 'pending' })}
+              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-white"
+              style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.12)' }}>
+              Re-submit KYC
+            </button>
+          )}
+        </div>
       </div>
     );
   }
@@ -152,12 +205,13 @@ function KYCGate({ onVerified }: { onVerified: () => void }) {
           </div>
         )}
 
+        {submitError && <p className="text-xs text-red-400 mt-3 text-center">{submitError}</p>}
         <div className="flex gap-3 mt-5">
           {step > 0 && <button onClick={back} className="px-4 py-2.5 rounded-xl text-sm text-gray-400 border border-white/10 hover:text-white transition-colors">Back</button>}
-          <motion.button whileTap={{ scale: 0.97 }} onClick={step === 4 ? submit : next}
-            className="flex-1 py-2.5 rounded-xl text-sm font-bold text-black"
+          <motion.button whileTap={{ scale: 0.97 }} onClick={step === 4 ? submit : next} disabled={submitting}
+            className="flex-1 py-2.5 rounded-xl text-sm font-bold text-black disabled:opacity-60"
             style={{ background: 'linear-gradient(135deg, #D4AF37, #A08020)' }}>
-            {step === 4 ? 'Submit KYC' : 'Continue →'}
+            {step === 4 ? (submitting ? 'Submitting…' : 'Submit for Admin Review') : 'Continue →'}
           </motion.button>
         </div>
       </div>
@@ -740,7 +794,7 @@ function StockMarketplace({ onBuy }: { onBuy: (symbol: string) => void }) {
 export default function Trading() {
   const {
     user, demoBalance, demoHoldings, realBalance, realHoldings,
-    buyStock, sellStock, topUpDemo, creditRealAccount, addNotification, prices,
+    buyStock, sellStock, topUpDemo, addNotification, prices, updateUser,
   } = useStore();
 
   const [mode, setMode] = useState<'demo' | 'real'>('demo');
@@ -748,11 +802,9 @@ export default function Trading() {
   const [sellHolding, setSellHolding] = useState<TradingHolding | null>(null);
   const [showTopUp, setShowTopUp] = useState(false);
   const [showDeposit, setShowDeposit] = useState(false);
-  const [kycVerified, setKycVerified] = useState(user?.kycStatus === 'verified');
-
-  const isVerified = kycVerified || user?.kycStatus === 'verified';
+  // kycVerified is derived from user.kycStatus — no local state needed
+  const isVerified = user?.kycStatus === 'verified';
   const balance = mode === 'demo' ? demoBalance : realBalance;
-  const holdings = mode === 'demo' ? demoHoldings : realHoldings;
 
   const handleBuy = (shares: number) => {
     if (!buySymbol) return;
@@ -871,7 +923,7 @@ export default function Trading() {
                   <p className="text-xs text-gray-400 mt-0.5">Complete identity verification to open your real trading account and deposit funds via Flutterwave.</p>
                 </div>
               </div>
-              <KYCGate onVerified={() => setKycVerified(true)} />
+              <KYCGate onVerified={() => updateUser({ kycStatus: 'verified' })} />
             </>
           ) : (
             <>

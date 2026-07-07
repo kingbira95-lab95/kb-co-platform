@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import type { User, Holding, WatchlistItem, Notification, UserPortfolio } from '../types';
+import type { User, Holding, WatchlistItem, Notification, UserPortfolio, TradingHolding } from '../types';
 import { NGX_STOCKS } from '../data/stocks';
 import { clearTokens } from '../services/api';
 
@@ -46,6 +46,17 @@ interface NotificationState {
   clearNotification: (id: string) => void;
 }
 
+interface TradingAccountState {
+  demoBalance: number;
+  demoHoldings: TradingHolding[];
+  realBalance: number;
+  realHoldings: TradingHolding[];
+  buyStock: (mode: 'demo' | 'real', symbol: string, shares: number, price: number) => boolean;
+  sellStock: (mode: 'demo' | 'real', symbol: string, shares: number, price: number) => void;
+  topUpDemo: (amount: number) => void;
+  creditRealAccount: (amount: number) => void;
+}
+
 interface UIState {
   sidebarOpen: boolean;
   activeTab: string;
@@ -55,7 +66,7 @@ interface UIState {
   toggleSidebar: () => void;
 }
 
-type AppStore = StockState & AuthState & PortfolioState & WatchlistState & NotificationState & UIState;
+type AppStore = StockState & AuthState & PortfolioState & WatchlistState & NotificationState & TradingAccountState & UIState;
 
 export const useStore = create<AppStore>()(
   persist(
@@ -233,6 +244,57 @@ export const useStore = create<AppStore>()(
         }));
       },
 
+      // Trading Account State
+      demoBalance: 1_000_000,
+      demoHoldings: [],
+      realBalance: 0,
+      realHoldings: [],
+      buyStock: (mode, symbol, shares, price) => {
+        const cost = shares * price;
+        const { demoBalance, realBalance } = get();
+        if (mode === 'demo' && demoBalance < cost) return false;
+        if (mode === 'real' && realBalance < cost) return false;
+        set(state => {
+          const key = mode === 'demo' ? 'demoHoldings' : 'realHoldings';
+          const balKey = mode === 'demo' ? 'demoBalance' : 'realBalance';
+          const holdings = state[key];
+          const existing = holdings.find(h => h.symbol === symbol);
+          let newHoldings: TradingHolding[];
+          if (existing) {
+            const totalShares = existing.shares + shares;
+            const avgPrice = (existing.avgPrice * existing.shares + price * shares) / totalShares;
+            newHoldings = holdings.map(h => h.symbol === symbol ? { ...h, shares: totalShares, avgPrice } : h);
+          } else {
+            newHoldings = [...holdings, { symbol, shares, avgPrice: price, buyDate: new Date().toISOString() }];
+          }
+          return { [key]: newHoldings, [balKey]: state[balKey] - cost };
+        });
+        return true;
+      },
+      sellStock: (mode, symbol, shares, price) => {
+        set(state => {
+          const key = mode === 'demo' ? 'demoHoldings' : 'realHoldings';
+          const balKey = mode === 'demo' ? 'demoBalance' : 'realBalance';
+          const holdings = state[key];
+          const existing = holdings.find(h => h.symbol === symbol);
+          if (!existing) return {};
+          const remaining = existing.shares - shares;
+          const proceeds = shares * price;
+          const newHoldings = remaining > 0
+            ? holdings.map(h => h.symbol === symbol ? { ...h, shares: remaining } : h)
+            : holdings.filter(h => h.symbol !== symbol);
+          return { [key]: newHoldings, [balKey]: state[balKey] + proceeds };
+        });
+      },
+      topUpDemo: (amount) => {
+        set(state => ({ demoBalance: state.demoBalance + amount }));
+        get().addNotification({ type: 'system', title: 'Demo Top-Up', message: `₦${amount.toLocaleString()} added to your demo account.`, urgent: false });
+      },
+      creditRealAccount: (amount) => {
+        set(state => ({ realBalance: state.realBalance + amount }));
+        get().addNotification({ type: 'system', title: 'Deposit Confirmed', message: `₦${amount.toLocaleString()} credited to your real trading account.`, urgent: true });
+      },
+
       // Notification State
       notifications: [
         {
@@ -309,6 +371,10 @@ export const useStore = create<AppStore>()(
         items: state.items,
         notifications: state.notifications,
         unreadCount: state.unreadCount,
+        demoBalance: state.demoBalance,
+        demoHoldings: state.demoHoldings,
+        realBalance: state.realBalance,
+        realHoldings: state.realHoldings,
       }),
     }
   )

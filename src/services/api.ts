@@ -100,6 +100,19 @@ export interface AuthResponse {
   name: string;
   plan: string;
   kyc_status: string;
+  trading_account_id?: string | null;
+  is_admin?: boolean;
+}
+
+export interface UserProfile {
+  id: string;
+  email: string;
+  name: string;
+  plan: string;
+  kyc_status: string;
+  is_admin: boolean;
+  avatar?: string | null;
+  phone?: string | null;
 }
 
 export const authApi = {
@@ -116,7 +129,35 @@ export const authApi = {
     request<AuthResponse>('/auth/google', { method: 'POST', body: { code }, auth: false }),
 
   me: () =>
-    request<AuthResponse>('/auth/me'),
+    request<UserProfile>('/auth/me'),
+};
+
+// ── Admin ─────────────────────────────────────────────────────────────────────
+
+export interface AdminUser {
+  id: string;
+  email: string;
+  name: string;
+  plan: string;
+  kyc_status: string;
+  is_admin: boolean;
+  created_at: string;
+}
+
+export const adminApi = {
+  stats: () =>
+    request<{ total_users: number; active_subscriptions: number; kyc_pending: number; total_stocks: number; total_revenue_ngn: number }>('/admin/stats'),
+  users: (params?: { search?: string; limit?: number }) => {
+    const qs = new URLSearchParams();
+    if (params?.search) qs.set('search', params.search);
+    if (params?.limit) qs.set('limit', String(params.limit));
+    return request<AdminUser[]>(`/admin/users?${qs}`);
+  },
+  kycDecision: (userId: string, status: 'verified' | 'rejected', reason?: string) =>
+    request<{ status: string; user_id: string; kyc_status: string }>(`/admin/users/${userId}/kyc`, {
+      method: 'PUT',
+      body: { status, reason },
+    }),
 };
 
 // ── Stocks ────────────────────────────────────────────────────────────────────

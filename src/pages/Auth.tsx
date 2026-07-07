@@ -71,6 +71,7 @@ export default function Auth() {
         name: res.name,
         plan: res.plan as 'free' | 'premium' | 'elite',
         kycStatus: res.kyc_status as 'pending' | 'submitted' | 'verified' | 'rejected',
+        tradingAccountId: res.trading_account_id ?? undefined,
         createdAt: new Date().toISOString(),
       });
     } catch (err: unknown) {
