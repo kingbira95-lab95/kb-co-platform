@@ -220,6 +220,8 @@ export const paymentsApi = {
     request<{ success: boolean; message: string; plan?: string }>('/payments/verify', { method: 'POST', body: { tx_ref, transaction_id } }),
   history: () => request<unknown[]>('/payments/history'),
   subscription: () => request<unknown>('/payments/subscription'),
+  fundAccount: (amount: number) =>
+    request<{ payment_link: string; tx_ref: string }>('/payments/fund-account', { method: 'POST', body: { amount } }),
 };
 
 // ── Alerts ────────────────────────────────────────────────────────────────────
@@ -300,8 +302,15 @@ export const bondsApi = {
 // ── AI Chat ───────────────────────────────────────────────────────────────────
 
 export const aiApi = {
-  chat: (messages: { role: string; content: string }[]) =>
-    request<{ content: string }>('/ai/chat', { method: 'POST', body: { messages }, auth: false }),
+  chat: (
+    messages: { role: string; content: string }[],
+    prices?: Record<string, { price: number; change: number; changePct: number }>,
+  ) =>
+    request<{ content: string }>('/ai/chat', {
+      method: 'POST',
+      body: { messages, prices: prices ?? {} },
+      auth: false,
+    }),
 };
 
 // ── SSE live price stream ─────────────────────────────────────────────────────

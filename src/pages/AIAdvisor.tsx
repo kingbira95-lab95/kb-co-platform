@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Brain, Send, User, Target } from 'lucide-react';
 import { formatLargeNumber } from '../utils';
 import { aiApi } from '../services/api';
+import { useStore } from '../store';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -19,6 +20,7 @@ const QUICK_PROMPTS = [
 ];
 
 export default function AIAdvisor() {
+  const { prices } = useStore();
   const [messages, setMessages] = useState<Message[]>([
     {
       role: 'assistant',
@@ -45,7 +47,7 @@ export default function AIAdvisor() {
 
     try {
       const history = [...messages.slice(-9), userMsg].map(m => ({ role: m.role, content: m.content }));
-      const { content } = await aiApi.chat(history);
+      const { content } = await aiApi.chat(history, prices);
       setMessages(prev => [...prev, { role: 'assistant', content, timestamp: new Date().toISOString() }]);
     } catch (err) {
       const message = err instanceof Error ? err.message : 'Connection failed. Please check your network and try again.';
