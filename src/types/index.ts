@@ -161,6 +161,7 @@ export interface User {
   plan: 'free' | 'premium' | 'elite';
   kycStatus: 'pending' | 'submitted' | 'verified' | 'rejected';
   tradingAccountId?: string;
+  isAdmin?: boolean;
   createdAt: string;
 }
 

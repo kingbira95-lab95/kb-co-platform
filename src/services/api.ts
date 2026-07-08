@@ -141,7 +141,41 @@ export interface AdminUser {
   plan: string;
   kyc_status: string;
   is_admin: boolean;
+  is_active: boolean;
+  phone?: string | null;
   created_at: string;
+}
+
+export interface AdminKYCDetail {
+  user_id: string;
+  bvn?: string | null;
+  nin?: string | null;
+  address?: string | null;
+  city?: string | null;
+  state?: string | null;
+  bank_name?: string | null;
+  account_number?: string | null;
+  account_name?: string | null;
+  id_type?: string | null;
+  id_number?: string | null;
+  status: string;
+  submitted_at?: string | null;
+  reviewed_at?: string | null;
+  rejection_reason?: string | null;
+}
+
+export interface AdminPayment {
+  id: string;
+  user_id: string;
+  amount: number;
+  currency: string;
+  status: string;
+  tx_ref: string;
+  payment_type?: string | null;
+  narration?: string | null;
+  customer_email?: string | null;
+  created_at: string;
+  verified_at?: string | null;
 }
 
 export const adminApi = {
@@ -158,6 +192,29 @@ export const adminApi = {
       method: 'PUT',
       body: { status, reason },
     }),
+  kycDetail: (userId: string) =>
+    request<AdminKYCDetail>(`/admin/users/${userId}/kyc`),
+  setPlan: (userId: string, plan: 'free' | 'premium' | 'elite') =>
+    request<{ status: string; user_id: string; plan: string }>(`/admin/users/${userId}/plan`, {
+      method: 'PUT',
+      body: { plan },
+    }),
+  toggleActive: (userId: string) =>
+    request<{ user_id: string; is_active: boolean }>(`/admin/users/${userId}/toggle-active`, { method: 'PUT' }),
+  payments: (statusFilter?: string) => {
+    const qs = new URLSearchParams();
+    if (statusFilter) qs.set('status_filter', statusFilter);
+    return request<AdminPayment[]>(`/admin/payments?${qs}`);
+  },
+  setPaymentStatus: (paymentId: string, status: 'successful' | 'failed' | 'refunded') =>
+    request<{ payment_id: string; status: string }>(`/admin/payments/${paymentId}/status`, {
+      method: 'PUT',
+      body: { status },
+    }),
+  refreshStocks: () =>
+    request<{ refreshed: number }>('/admin/stocks/refresh', { method: 'POST' }),
+  broadcast: (title: string, message: string, type = 'system') =>
+    request<{ sent: number }>('/admin/broadcast', { method: 'POST', body: { title, message, type } }),
 };
 
 // ── Stocks ────────────────────────────────────────────────────────────────────

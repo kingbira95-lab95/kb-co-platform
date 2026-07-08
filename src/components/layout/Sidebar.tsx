@@ -34,7 +34,8 @@ const ADMIN_EMAIL = 'admin@kbco.invest';
 
 export default function Sidebar({ currentPage, onNavigate }: SidebarProps) {
   const { sidebarOpen, setSidebarOpen, user, logout } = useStore();
-  const isAdmin = user?.email === ADMIN_EMAIL;
+  // Admin tab is hidden for everyone except the admin account
+  const isAdmin = user?.email === ADMIN_EMAIL || user?.isAdmin === true;
   const visibleNavItems = NAV_ITEMS.filter(item => item.id !== 'admin' || isAdmin);
 
   const handleNav = (id: string) => {
