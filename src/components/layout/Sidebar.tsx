@@ -174,7 +174,7 @@ export default function Sidebar({ currentPage, onNavigate }: SidebarProps) {
               <span className="relative inline-flex rounded-full h-2 w-2" style={{ background: '#22c55e' }} />
             </span>
             <span className="text-[9px] text-gray-400">
-              NGX live · updated daily via TradingView
+              NGX live · auto-updates every 30 min
             </span>
           </div>
           <p className="text-[9px] text-gray-600 leading-tight mb-3">

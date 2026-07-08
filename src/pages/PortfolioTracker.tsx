@@ -51,17 +51,62 @@ export default function PortfolioTracker() {
         XLSX.utils.book_append_sheet(wb, ws, 'Portfolio');
         XLSX.writeFile(wb, `KB-Co-Portfolio-${new Date().toISOString().slice(0, 10)}.xlsx`);
       } else {
-        // PDF — still requires authenticated backend session
-        const { exportsApi } = await import('../services/api');
-        await exportsApi.downloadWithAuth(
-          exportsApi.portfolioPdf(activePortfolioId),
-          'KB-Co-Portfolio-Report.pdf',
+        // Client-side PDF export — no backend needed
+        const { default: jsPDF } = await import('jspdf');
+        const { default: autoTable } = await import('jspdf-autotable');
+
+        const doc = new jsPDF({ orientation: 'landscape' });
+        const generated = new Date().toLocaleDateString('en-NG', { dateStyle: 'long' });
+
+        doc.setFontSize(18);
+        doc.setTextColor(160, 128, 32);
+        doc.text('KB & Co Corporate Investment', 14, 16);
+        doc.setFontSize(12);
+        doc.setTextColor(40, 40, 40);
+        doc.text(`Portfolio Report — ${activePortfolio?.name ?? 'My Portfolio'}`, 14, 24);
+        doc.setFontSize(9);
+        doc.setTextColor(110, 110, 110);
+        doc.text(`Generated: ${generated}  ·  ${holdings.length} holdings  ·  Prices: NGX live`, 14, 30);
+
+        autoTable(doc, {
+          startY: 36,
+          head: [['Symbol', 'Company', 'Sector', 'Shares', 'Avg Cost (₦)', 'Current (₦)', 'Value (₦)', 'Gain/Loss (₦)', 'Gain/Loss %']],
+          body: holdings.map(h => [
+            h.symbol,
+            h.stock?.name ?? h.symbol,
+            h.stock?.sector ?? '—',
+            h.shares.toLocaleString(),
+            h.buyPrice.toLocaleString('en-NG', { minimumFractionDigits: 2 }),
+            h.currentPrice.toLocaleString('en-NG', { minimumFractionDigits: 2 }),
+            h.currentValue.toLocaleString('en-NG', { minimumFractionDigits: 2 }),
+            h.gainLoss.toLocaleString('en-NG', { minimumFractionDigits: 2 }),
+            `${h.gainLossPct >= 0 ? '+' : ''}${h.gainLossPct.toFixed(2)}%`,
+          ]),
+          foot: [[
+            '', '', '', '', '', 'TOTAL',
+            totalValue.toLocaleString('en-NG', { minimumFractionDigits: 2 }),
+            totalGain.toLocaleString('en-NG', { minimumFractionDigits: 2 }),
+            `${totalGainPct >= 0 ? '+' : ''}${totalGainPct.toFixed(2)}%`,
+          ]],
+          styles: { fontSize: 8, cellPadding: 2 },
+          headStyles: { fillColor: [212, 175, 55], textColor: [10, 15, 30], fontStyle: 'bold' },
+          footStyles: { fillColor: [10, 15, 30], textColor: [212, 175, 55], fontStyle: 'bold' },
+          alternateRowStyles: { fillColor: [246, 244, 238] },
+        });
+
+        const pageH = doc.internal.pageSize.getHeight();
+        doc.setFontSize(7);
+        doc.setTextColor(130, 130, 130);
+        doc.text(
+          'KB & Co Corporate Investment Limited — investment research and educational information only. Past performance does not guarantee future returns.',
+          14, pageH - 8,
         );
+
+        doc.save(`KB-Co-Portfolio-${new Date().toISOString().slice(0, 10)}.pdf`);
       }
-    } catch {
-      if (type === 'pdf') {
-        alert('PDF export requires signing in to your KB & Co account.');
-      }
+    } catch (e) {
+      console.error('Export failed', e);
+      alert(`${type === 'pdf' ? 'PDF' : 'Excel'} export failed. Please try again.`);
     } finally {
       setExporting(null);
     }

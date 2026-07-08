@@ -752,7 +752,7 @@ function BroadcastTab({ showToast }: { showToast: (m: string) => void }) {
         <div className="p-3 rounded-xl" style={{ background: 'rgba(59,130,246,0.06)', border: '1px solid rgba(59,130,246,0.15)' }}>
           <p className="text-[11px] text-gray-400 leading-relaxed">
             <span className="text-blue-400 font-semibold">Note:</span> Broadcasts appear in each user's notification bell instantly.
-            Stock prices auto-update every 60 minutes from NGX; use "Update Stock Prices" on the Overview tab to force an immediate refresh.
+            Stock prices auto-update every 30 minutes from the official NGX price list and TradingView Nigeria; use "Update Stock Prices" on the Overview tab to force an immediate refresh.
           </p>
         </div>
       </motion.div>
