@@ -12,6 +12,56 @@ import type { Portfolio } from '../types';
 import { Shield, Zap, Crown, ChevronRight, X, Plus, Brain, BarChart3, RefreshCw } from 'lucide-react';
 import StockLogo from '../components/StockLogo';
 
+// Records the stocks a user has actually purchased via the Trading Account page.
+function TradingHoldingsSection() {
+  const realHoldings = useStore(s => s.realHoldings);
+  const prices = useStore(s => s.prices);
+  if (realHoldings.length === 0) return null;
+
+  const rows = realHoldings.map(h => {
+    const cur = prices[h.symbol]?.price ?? h.avgPrice;
+    const value = cur * h.shares;
+    const cost = h.avgPrice * h.shares;
+    const pl = value - cost;
+    const plPct = cost > 0 ? (pl / cost) * 100 : 0;
+    const stock = NGX_STOCKS.find(s => s.symbol === h.symbol);
+    return { ...h, cur, value, pl, plPct, name: stock?.name, sector: stock?.sector, website: stock?.website };
+  });
+  const totalValue = rows.reduce((t, r) => t + r.value, 0);
+
+  return (
+    <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="glass-card p-5 mb-8">
+      <div className="flex items-center justify-between mb-4">
+        <div>
+          <h3 className="text-sm font-semibold text-white">Your Trading Account Holdings</h3>
+          <p className="text-xs text-gray-500 mt-0.5">Stocks you purchased on the Trading Account page</p>
+        </div>
+        <div className="text-right">
+          <div className="text-[10px] text-gray-500 uppercase">Total Value</div>
+          <div className="text-lg font-bold text-yellow-400 tabular-nums">₦{formatLargeNumber(totalValue)}</div>
+        </div>
+      </div>
+      <div className="space-y-2">
+        {rows.map(r => (
+          <div key={r.symbol} className="flex items-center gap-3 p-3 rounded-xl" style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.06)' }}>
+            <StockLogo symbol={r.symbol} sector={r.sector} website={r.website} size={30} />
+            <div className="flex-1 min-w-0">
+              <div className="text-sm font-semibold text-white">{r.symbol}</div>
+              <div className="text-[11px] text-gray-500 truncate">{r.shares} shares · avg ₦{formatPrice(r.avgPrice)}</div>
+            </div>
+            <div className="text-right">
+              <div className="text-sm font-semibold text-white tabular-nums">₦{formatLargeNumber(r.value)}</div>
+              <div className="text-[11px] tabular-nums" style={{ color: r.pl >= 0 ? '#22c55e' : '#ef4444' }}>
+                {r.pl >= 0 ? '+' : ''}{formatLargeNumber(r.pl)} ({r.plPct >= 0 ? '+' : ''}{r.plPct.toFixed(1)}%)
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </motion.div>
+  );
+}
+
 const PORTFOLIO_ICONS: Record<string, React.ElementType> = {
   premium: Crown,
   safe: Shield,
@@ -439,6 +489,9 @@ export default function InvestmentPortfolios() {
           </motion.div>
         ))}
       </div>
+
+      {/* Holdings purchased via the Trading Account */}
+      <TradingHoldingsSection />
 
       {/* Performance Chart */}
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }} className="glass-card p-5 mb-8">

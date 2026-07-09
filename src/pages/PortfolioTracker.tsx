@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import * as XLSX from 'xlsx';
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
 import { useStore } from '../store';
+import TotalAssetsCard from '../components/TotalAssetsCard';
 import { NGX_STOCKS } from '../data/stocks';
 import { formatPrice, formatLargeNumber } from '../utils';
 import { Plus, Trash2, BarChart3, Wallet, TrendingUp, FileText, Sheet } from 'lucide-react';
@@ -172,6 +173,9 @@ export default function PortfolioTracker() {
           </button>
         </div>
       </div>
+
+      {/* Total assets summary — shared with Trading & Net Worth */}
+      <TotalAssetsCard />
 
       {/* Portfolio tabs */}
       {portfolios.length > 1 && (

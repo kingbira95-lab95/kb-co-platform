@@ -3,7 +3,7 @@ import { useStore } from '../../store';
 import {
   LayoutDashboard, TrendingUp, BarChart3, Star, Settings,
   Calculator, Newspaper, ChevronRight, Shield, BookOpen,
-  PieChart, Target, LogOut, X, Wallet, Activity, Search, Crown, Landmark
+  PieChart, Target, LogOut, X, Wallet, Activity, Search, Crown, Landmark, Gem
 } from 'lucide-react';
 
 const NAV_ITEMS = [
@@ -13,6 +13,7 @@ const NAV_ITEMS = [
   { id: 'screener', label: 'Screener', icon: Search },
   { id: 'watchlist', label: 'Watchlist', icon: Star },
   { id: 'portfolio-tracker', label: 'My Portfolio', icon: BarChart3 },
+  { id: 'net-worth', label: 'Net Worth', icon: Gem },
   { id: 'bonds', label: 'Fixed Income', icon: Landmark },
   { id: 'dividends', label: 'Dividends', icon: Wallet },
   { id: 'news', label: 'Market News', icon: Newspaper },

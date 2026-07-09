@@ -57,6 +57,32 @@ interface TradingAccountState {
   creditRealAccount: (amount: number) => void;
 }
 
+export interface NetWorthItem {
+  id: string;
+  label: string;
+  value: number;
+  category?: string; // e.g. 'Cash', 'Real Estate', 'Crypto', 'Loan'
+}
+
+interface NetWorthState {
+  manualAssets: NetWorthItem[];
+  liabilities: NetWorthItem[];
+  netWorthGoal: number;
+  addManualAsset: (item: Omit<NetWorthItem, 'id'>) => void;
+  removeManualAsset: (id: string) => void;
+  addLiability: (item: Omit<NetWorthItem, 'id'>) => void;
+  removeLiability: (id: string) => void;
+  setNetWorthGoal: (goal: number) => void;
+  // Derived selectors — single source of truth for "total assets"
+  getTradingValue: (mode: 'demo' | 'real') => number;
+  getPortfoliosValue: () => number;
+  getInvestedValue: () => number;   // real trading holdings + manual portfolio holdings
+  getManualAssetsTotal: () => number;
+  getLiabilitiesTotal: () => number;
+  getTotalAssets: () => number;     // cash + invested + other assets
+  getNetWorth: () => number;        // total assets − liabilities
+}
+
 interface UIState {
   sidebarOpen: boolean;
   activeTab: string;
@@ -66,7 +92,7 @@ interface UIState {
   toggleSidebar: () => void;
 }
 
-type AppStore = StockState & AuthState & PortfolioState & WatchlistState & NotificationState & TradingAccountState & UIState;
+type AppStore = StockState & AuthState & PortfolioState & WatchlistState & NotificationState & TradingAccountState & NetWorthState & UIState;
 
 export const useStore = create<AppStore>()(
   persist(
@@ -295,6 +321,35 @@ export const useStore = create<AppStore>()(
         get().addNotification({ type: 'system', title: 'Deposit Confirmed', message: `₦${amount.toLocaleString()} credited to your real trading account.`, urgent: true });
       },
 
+      // Net Worth State
+      manualAssets: [],
+      liabilities: [],
+      netWorthGoal: 0,
+      addManualAsset: (item) =>
+        set(state => ({ manualAssets: [...state.manualAssets, { ...item, id: `asset-${Date.now()}` }] })),
+      removeManualAsset: (id) =>
+        set(state => ({ manualAssets: state.manualAssets.filter(a => a.id !== id) })),
+      addLiability: (item) =>
+        set(state => ({ liabilities: [...state.liabilities, { ...item, id: `liab-${Date.now()}` }] })),
+      removeLiability: (id) =>
+        set(state => ({ liabilities: state.liabilities.filter(l => l.id !== id) })),
+      setNetWorthGoal: (goal) => set({ netWorthGoal: goal }),
+      getTradingValue: (mode) => {
+        const { prices, demoHoldings, realHoldings } = get();
+        const holdings = mode === 'demo' ? demoHoldings : realHoldings;
+        return holdings.reduce((total, h) => total + (prices[h.symbol]?.price ?? h.avgPrice) * h.shares, 0);
+      },
+      getPortfoliosValue: () => {
+        const { portfolios, prices } = get();
+        return portfolios.reduce((sum, p) =>
+          sum + p.holdings.reduce((t, h) => t + (prices[h.symbol]?.price ?? h.buyPrice) * h.shares, 0), 0);
+      },
+      getInvestedValue: () => get().getTradingValue('real') + get().getPortfoliosValue(),
+      getManualAssetsTotal: () => get().manualAssets.reduce((t, a) => t + a.value, 0),
+      getLiabilitiesTotal: () => get().liabilities.reduce((t, l) => t + l.value, 0),
+      getTotalAssets: () => get().realBalance + get().getInvestedValue() + get().getManualAssetsTotal(),
+      getNetWorth: () => get().getTotalAssets() - get().getLiabilitiesTotal(),
+
       // Notification State
       notifications: [
         {
@@ -375,6 +430,9 @@ export const useStore = create<AppStore>()(
         demoHoldings: state.demoHoldings,
         realBalance: state.realBalance,
         realHoldings: state.realHoldings,
+        manualAssets: state.manualAssets,
+        liabilities: state.liabilities,
+        netWorthGoal: state.netWorthGoal,
       }),
     }
   )

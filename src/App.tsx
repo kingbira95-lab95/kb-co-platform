@@ -29,6 +29,7 @@ import News from './pages/News';
 import AIAdvisor from './pages/AIAdvisor';
 import Calculator from './pages/Calculator';
 import Trading from './pages/Trading';
+import NetWorth from './pages/NetWorth';
 import Admin from './pages/Admin';
 import Subscription from './pages/Subscription';
 import BondMarket from './pages/BondMarket';
@@ -148,6 +149,7 @@ export default function App() {
       case 'calculator': return <Calculator />;
       case 'goals': return <Calculator />;
       case 'trading': return <Trading />;
+      case 'net-worth': return <NetWorth onNavigate={navigate} />;
       case 'reports': return <ResearchReports />;
       case 'bonds': return <BondMarket />;
       case 'subscription': return <Subscription />;

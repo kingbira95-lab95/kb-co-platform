@@ -9,6 +9,7 @@ import {
   ChevronDown, User, Camera, FileText,
 } from 'lucide-react';
 import StockLogo from '../components/StockLogo';
+import TotalAssetsCard from '../components/TotalAssetsCard';
 import { paymentsApi, usersApi, authApi } from '../services/api';
 import type { TradingHolding } from '../types';
 
@@ -836,6 +837,9 @@ export default function Trading() {
         </h2>
         <p className="text-sm text-gray-400 mt-1">Simulate with demo funds or trade with real NGN deposits</p>
       </motion.div>
+
+      {/* Total assets summary — shared with My Portfolio & Net Worth */}
+      <TotalAssetsCard />
 
       {/* Account type switcher */}
       <div className="flex gap-3 mb-6">
