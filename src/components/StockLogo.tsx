@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { getStockLogoUrl } from '../utils/stockLogo';
+import { LOGO_MANIFEST } from '../utils/logoManifest';
 
 // Sector → brand color for badge fallbacks (matches industry conventions)
 const SECTOR_COLORS: Record<string, string> = {
@@ -66,6 +67,7 @@ export default function StockLogo({ symbol, sector, website, size = 28, classNam
   const [localFailed, setLocalFailed] = useState(false);
   const [clearbitFailed, setClearbitFailed] = useState(false);
 
+  const localUrl = LOGO_MANIFEST[symbol];
   const clearbitUrl = getStockLogoUrl(symbol, website);
   const badgeColor = getSectorColor(sector);
 
@@ -85,12 +87,12 @@ export default function StockLogo({ symbol, sector, website, size = 28, classNam
     padding: Math.round(size * 0.1),
   };
 
-  // 1. Try local SVG first (user can add company SVGs to public/logos/)
-  if (!localFailed) {
+  // 1. Try local logo first (from public/logos/, resolved via generated manifest)
+  if (localUrl && !localFailed) {
     return (
       <div style={containerStyle} className={className}>
         <img
-          src={`/logos/${symbol}.svg`}
+          src={localUrl}
           alt={symbol}
           style={imgStyle}
           onError={() => setLocalFailed(true)}
