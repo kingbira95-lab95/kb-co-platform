@@ -4,6 +4,7 @@ import * as XLSX from 'xlsx';
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
 import { useStore } from '../store';
 import TotalAssetsCard from '../components/TotalAssetsCard';
+import StockLogo from '../components/StockLogo';
 import { NGX_STOCKS } from '../data/stocks';
 import { formatPrice, formatLargeNumber } from '../utils';
 import { Plus, Trash2, BarChart3, Wallet, TrendingUp, FileText, Sheet } from 'lucide-react';
@@ -243,7 +244,7 @@ export default function PortfolioTracker() {
                     <tr key={h.symbol} className="border-b hover:bg-white/[0.02] transition-colors" style={{ borderColor: 'rgba(255,255,255,0.04)' }}>
                       <td className="px-4 py-3">
                         <div className="flex items-center gap-2">
-                          <div className="w-6 h-6 rounded-lg flex items-center justify-center text-[9px] font-bold text-black" style={{ background: '#D4AF37' }}>{h.symbol.slice(0, 2)}</div>
+                          <StockLogo symbol={h.symbol} sector={h.stock?.sector} size={24} />
                           <div>
                             <div className="text-xs font-bold text-white">{h.symbol}</div>
                             <div className="text-[9px] text-gray-500 truncate" style={{ maxWidth: 80 }}>{h.stock?.name}</div>

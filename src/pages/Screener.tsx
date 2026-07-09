@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import StockLogo from '../components/StockLogo';
 import { motion } from 'framer-motion';
 import { NGX_STOCKS } from '../data/stocks';
 import { useStore } from '../store';
@@ -157,9 +158,7 @@ export default function Screener() {
                   >
                     <td className="px-3 py-3">
                       <div className="flex items-center gap-2">
-                        <div className="w-6 h-6 rounded-lg flex items-center justify-center text-[8px] font-bold text-black" style={{ background: '#D4AF37' }}>
-                          {stock.symbol.slice(0, 2)}
-                        </div>
+                        <StockLogo symbol={stock.symbol} sector={stock.sector} size={24} />
                         <div>
                           <div className="text-xs font-bold text-white">{stock.symbol}</div>
                           <div className="text-[9px] text-gray-500 hidden sm:block truncate" style={{ maxWidth: 100 }}>{stock.sector}</div>

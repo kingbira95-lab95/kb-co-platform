@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import StockLogo from '../components/StockLogo';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { NGX_STOCKS, getTopDividendStocks } from '../data/stocks';
 import { UPCOMING_DIVIDENDS } from '../data/news';
@@ -66,9 +67,7 @@ export default function DividendCenter() {
               <motion.div key={i} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}
                 className="flex items-center justify-between p-3 rounded-xl" style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.06)' }}>
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-xl flex items-center justify-center text-[10px] font-bold text-black" style={{ background: '#D4AF37' }}>
-                    {div.symbol.slice(0, 2)}
-                  </div>
+                  <StockLogo symbol={div.symbol} size={32} />
                   <div>
                     <div className="text-sm font-semibold text-white">{div.symbol}</div>
                     <div className="text-[10px] text-gray-500">{div.name}</div>
@@ -120,7 +119,7 @@ export default function DividendCenter() {
                   <tr key={stock.symbol} className="border-b hover:bg-white/[0.02] transition-colors" style={{ borderColor: 'rgba(255,255,255,0.04)' }}>
                     <td className="px-4 py-3">
                       <div className="flex items-center gap-2">
-                        <div className="w-6 h-6 rounded-lg flex items-center justify-center text-[9px] font-bold text-black" style={{ background: '#D4AF37' }}>{stock.symbol.slice(0, 2)}</div>
+                        <StockLogo symbol={stock.symbol} sector={stock.sector} size={24} />
                         <div>
                           <div className="text-xs font-bold text-white">{stock.symbol}</div>
                           <div className="text-[10px] text-gray-500">{stock.sector}</div>

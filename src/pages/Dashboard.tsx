@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import StockLogo from '../components/StockLogo';
 import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell
 } from 'recharts';
@@ -205,9 +206,7 @@ export default function Dashboard({ onNavigate }: { onNavigate: (p: string) => v
               return (
                 <div key={stock.symbol} className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <div className="w-7 h-7 rounded-lg flex items-center justify-center text-[10px] font-bold text-black" style={{ background: '#D4AF37' }}>
-                      {stock.symbol.slice(0, 2)}
-                    </div>
+                    <StockLogo symbol={stock.symbol} sector={stock.sector} size={28} />
                     <div>
                       <div className="text-xs font-semibold text-white">{stock.symbol}</div>
                       <div className="text-[10px] text-gray-500 truncate" style={{ maxWidth: 90 }}>{stock.sector}</div>
@@ -241,9 +240,7 @@ export default function Dashboard({ onNavigate }: { onNavigate: (p: string) => v
               return (
                 <div key={stock.symbol} className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <div className="w-7 h-7 rounded-lg flex items-center justify-center text-[10px] font-bold text-white" style={{ background: '#ef444430' }}>
-                      {stock.symbol.slice(0, 2)}
-                    </div>
+                    <StockLogo symbol={stock.symbol} sector={stock.sector} size={28} />
                     <div>
                       <div className="text-xs font-semibold text-white">{stock.symbol}</div>
                       <div className="text-[10px] text-gray-500 truncate" style={{ maxWidth: 90 }}>{stock.sector}</div>

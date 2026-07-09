@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import StockLogo from '../components/StockLogo';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
@@ -303,10 +304,7 @@ export default function StockProfile({ symbol, onBack }: { symbol: string; onBac
             <div className="flex items-start justify-between mb-4">
               <div className="flex items-center gap-3">
                 <div className="relative">
-                  <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-base font-black text-black"
-                    style={{ background: 'linear-gradient(135deg, #D4AF37, #F0D060, #A08020)' }}>
-                    {symbol.slice(0, 2)}
-                  </div>
+                  <StockLogo symbol={symbol} sector={stock?.sector} size={56} />
                   <div className={`absolute -bottom-1 -right-1 w-4 h-4 rounded-full border-2 breathe ${isUp ? 'bg-green-400' : 'bg-red-400'}`}
                     style={{ borderColor: '#0A0F1E' }} />
                 </div>

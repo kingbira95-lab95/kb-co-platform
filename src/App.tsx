@@ -30,6 +30,7 @@ import AIAdvisor from './pages/AIAdvisor';
 import Calculator from './pages/Calculator';
 import Trading from './pages/Trading';
 import NetWorth from './pages/NetWorth';
+import StockLogo from './components/StockLogo';
 import Admin from './pages/Admin';
 import Subscription from './pages/Subscription';
 import BondMarket from './pages/BondMarket';
@@ -47,9 +48,7 @@ function ResearchReports() {
           <motion.div key={stock.symbol} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.06 }}
             className="glass-card glass-card-hover p-5 cursor-pointer">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl flex items-center justify-center text-sm font-bold text-black" style={{ background: 'linear-gradient(135deg, #D4AF37, #A08020)' }}>
-                {stock.symbol.slice(0, 2)}
-              </div>
+              <StockLogo symbol={stock.symbol} sector={stock.sector} size={40} />
               <div>
                 <div className="text-sm font-bold text-white">{stock.symbol}</div>
                 <div className="text-[10px] text-gray-500">{stock.sector}</div>
